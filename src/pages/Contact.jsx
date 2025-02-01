@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import PixelwaveLogo from '../components/PixelwaveLogo'
 import emailjs from '@emailjs/browser'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
@@ -95,7 +94,6 @@ function Contact() {
   return (
     <div>
       <Header />
-      <PixelwaveLogo />
       <div style={{
         padding: '40px 20px',
         display: 'flex',
