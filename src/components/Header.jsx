@@ -1,43 +1,28 @@
 import { Link } from 'react-router-dom'
-import logoWave from '../assets/logo-wave.png'
+// import logo from '../assets/logo.png'  // Remove this line if it exists
 
 function Header() {
   return (
-    <header role="banner" aria-label="Main Header" style={{
+    <header style={{
       width: '100%',
-      height: '80px',
-      backgroundColor: 'white',
+      padding: '20px',
+      backgroundColor: '#ffffff',
       display: 'flex',
-      alignItems: 'center',
-      padding: '0 40px',
+      justifyContent: 'center',
+      borderBottom: '1px solid #eaeaea',
       position: 'fixed',
       top: 0,
       left: 0,
-      zIndex: 100,
+      zIndex: 1000,
       boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
     }}>
-      <img 
-        src={logoWave}
-        alt="Pixelwave Marketing - Digital Marketing and Web Design Agency"
-        style={{
-          height: '50px',
-          width: 'auto',
-          objectFit: 'contain'
-        }}
-      />
-      
-      <nav role="navigation" aria-label="Main navigation" style={{
-        position: 'absolute',
-        left: '50%',
-        transform: 'translateX(-50%)',
-        width: 'auto'
-      }}>
+      <nav>
         <ul style={{
           listStyle: 'none',
-          margin: 0,
-          padding: 0,
           display: 'flex',
-          gap: '40px'
+          gap: '30px',
+          margin: 0,
+          padding: 0
         }}>
           <li>
             <Link to="/" style={{
