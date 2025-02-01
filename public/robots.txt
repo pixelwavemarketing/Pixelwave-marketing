@@ -1,3 +1,5 @@
 User-agent: *
 Allow: /
-Sitemap: https://pixelwavemarketing.com/sitemap.xml 
+Disallow: /thank-you
+
+Sitemap: https://pixelwave-marketing.netlify.app/sitemap.xml 
