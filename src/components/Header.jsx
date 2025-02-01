@@ -16,13 +16,15 @@ function Header() {
       zIndex: 1000,
       boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
     }}>
-      <nav>
+      <nav style={{ width: '100%', maxWidth: '1200px' }}>
         <ul style={{
           listStyle: 'none',
           display: 'flex',
-          gap: '30px',
+          flexWrap: 'wrap',
+          gap: '20px',
           margin: 0,
-          padding: 0
+          padding: '0 20px',
+          justifyContent: 'center'
         }}>
           <li>
             <Link to="/" style={{
