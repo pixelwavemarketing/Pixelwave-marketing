@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Google Analytics -->
+    <!-- Updated Google Analytics Implementation -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-R7SFT14JN7"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+      function gtag(){
+        try {
+          dataLayer.push(arguments);
+        } catch (e) {
+          console.log('Analytics error:', e);
+        }
+      }
       gtag('js', new Date());
-      gtag('config', 'G-R7SFT14JN7');
+      gtag('config', 'G-R7SFT14JN7', {
+        cookie_flags: 'SameSite=None;Secure',
+        cookie_domain: 'auto'
+      });
     </script>
     
     <meta charset="UTF-8" />
