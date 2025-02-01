@@ -95,12 +95,11 @@ function Contact() {
     <div>
       <Header />
       <div style={{
-        padding: '40px 20px',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        gap: '40px'
+        marginTop: '80px',
+        padding: '20px',
+        textAlign: 'center'
       }}>
+        <h1 style={{ fontSize: '2.5rem', marginBottom: '30px' }}>Contact Us</h1>
         <form 
           onSubmit={handleSubmit}
           style={{
@@ -111,9 +110,6 @@ function Contact() {
             gap: '20px'
           }}
         >
-          <h1 style={{ textAlign: 'center', marginBottom: '20px', color: '#333' }}>Contact Us</h1>
-         
-          
           {/* Name Input */}
           <div>
             <label htmlFor="name" style={labelStyle}>
