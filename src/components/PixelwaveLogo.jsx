@@ -1,34 +1,24 @@
-import logo from '../assets/pixelwave-logo.png'
+import pixelwaveLogo from '../assets/pixelwave-logo.png'
 
 function PixelwaveLogo() {
   return (
     <div style={{
       width: '100%',
-      textAlign: 'center',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
       marginTop: '80px',
       padding: '20px'
     }}>
-      <div style={{
-        width: '100vw',
-        position: 'relative',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        overflow: 'hidden',
-        backgroundColor: '#ffffff'
-      }}>
-        <img 
-          src={logo} 
-          alt="Pixelwave Marketing Logo"
-          style={{
-            width: '100%',
-            height: '100%',
-            objectFit: 'contain',
-            maxHeight: '90vh',
-            padding: '0px'
-          }}
-        />
-      </div>
+      <img 
+        src={pixelwaveLogo}
+        alt="Pixelwave Logo"
+        style={{
+          maxWidth: '100%',
+          height: 'auto',
+          display: 'block'
+        }}
+      />
     </div>
   )
 }
