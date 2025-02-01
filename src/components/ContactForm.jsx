@@ -4,8 +4,7 @@ function ContactForm() {
       name="contact"
       method="POST"
       data-netlify="true"
-      action="/thank-you"
-      netlify-honeypot="bot-field"
+      netlify
       style={{
         width: '100%',
         maxWidth: '500px',
