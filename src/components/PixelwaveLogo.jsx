@@ -8,15 +8,17 @@ function PixelwaveLogo() {
       justifyContent: 'center',
       alignItems: 'center',
       marginTop: '80px',
-      padding: '20px'
+      padding: '0',
+      overflow: 'hidden'
     }}>
       <img 
         src={pixelwaveLogo}
         alt="Pixelwave Logo"
         style={{
-          maxWidth: '100%',
+          width: '100%',
           height: 'auto',
-          display: 'block'
+          display: 'block',
+          objectFit: 'cover'
         }}
       />
     </div>
