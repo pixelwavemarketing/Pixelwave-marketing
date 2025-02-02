@@ -92,6 +92,14 @@
 
     <!-- Responsive Design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- Preload critical assets -->
+    <link rel="preload" as="image" href="/pixelwave-logo.png">
+    <link rel="preload" as="style" href="/src/index.css">
+    
+    <!-- DNS Prefetch for external resources -->
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
   </head>
   <body>
     <div id="root"></div>

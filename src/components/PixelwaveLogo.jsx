@@ -1,3 +1,4 @@
+import { lazy } from 'react'
 import pixelwaveLogo from '../assets/pixelwave-logo.png'
 
 function PixelwaveLogo() {
@@ -14,6 +15,7 @@ function PixelwaveLogo() {
       <img 
         src={pixelwaveLogo}
         alt="Pixelwave Logo"
+        loading="lazy"
         style={{
           width: '100%',
           height: 'auto',
@@ -25,4 +27,4 @@ function PixelwaveLogo() {
   )
 }
 
-export default PixelwaveLogo 
+export default PixelwaveLogo
