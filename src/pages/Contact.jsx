@@ -113,6 +113,49 @@ function Contact() {
           Contact Us
         </h1>
         <ContactForm />
+        
+        {/* New Quick Contact Section */}
+        <div style={{
+          width: '100%',
+          maxWidth: '500px',
+          marginTop: '40px',
+          padding: '30px',
+          backgroundColor: '#f5f5f5',
+          borderRadius: '8px',
+          textAlign: 'center'
+        }}>
+          <h2 style={{
+            fontSize: '1.8rem',
+            marginBottom: '20px',
+            color: '#333'
+          }}>
+            Looking for a Faster Response?
+          </h2>
+          <p style={{
+            fontSize: '1.1rem',
+            marginBottom: '20px',
+            color: '#666',
+            lineHeight: '1.6'
+          }}>
+            For faster assistance, feel free to reach out directly:
+          </p>
+          <a
+            href="tel:+18024455570" // Replace with your actual phone number
+            style={{
+              display: 'inline-block',
+              padding: '15px 30px',
+              backgroundColor: '#333',
+              color: 'white',
+              textDecoration: 'none',
+              borderRadius: '4px',
+              fontSize: '1.1rem',
+              fontWeight: '500',
+              marginTop: '10px'
+            }}
+          >
+            Call Us Now!
+          </a>
+        </div>
       </div>
       <Footer />
     </div>
