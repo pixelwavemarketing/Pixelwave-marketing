@@ -1,0 +1,1 @@
+const siteUrl = 'https://usepixelwave.com' 

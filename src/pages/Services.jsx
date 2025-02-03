@@ -48,7 +48,7 @@ function Services() {
                 Expertise
               </h3>
               <p style={{ color: '#666' }}>
-                Years of experience in digital marketing and development
+                Experience in digital marketing and development
               </p>
             </div>
             <div>

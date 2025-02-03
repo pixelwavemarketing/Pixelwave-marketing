@@ -1,0 +1,1 @@
+const canonicalUrl = `https://usepixelwave.com${path}` 
