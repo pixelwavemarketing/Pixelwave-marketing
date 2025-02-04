@@ -1,5 +1,5 @@
 import { lazy } from 'react'
-import pixelwaveLogo from '../assets/pixelwave-logo.png'
+import pixelwaveLogo from '../assets/pixelwave-logo.webp'
 
 function PixelwaveLogo() {
   return (
@@ -8,7 +8,7 @@ function PixelwaveLogo() {
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
-      marginTop: '80px',
+      marginTop: '60px',
       padding: '0',
       overflow: 'hidden'
     }}>
@@ -18,7 +18,7 @@ function PixelwaveLogo() {
         loading="lazy"
         style={{
           width: '100%',
-          height: 'auto',
+          height: '100%',
           display: 'block',
           objectFit: 'cover'
         }}
