@@ -5,6 +5,7 @@ import analyticsIcon from '../assets/analytics.png'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import PixelwaveLogo from '../components/PixelwaveLogo'
+import truckImage from '../assets/truck-25.webp'
 
 function Services() {
   const navigate = useNavigate()
@@ -148,6 +149,58 @@ function Services() {
                 Comprehensive branding solutions to establish your market presence
               </p>
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Portfolio Section */}
+      <div style={{
+        padding: '60px 20px',
+        backgroundColor: '#f8f8f8'
+      }}>
+        <div style={{
+          maxWidth: '1200px',
+          margin: '0 auto',
+          textAlign: 'center'
+        }}>
+          <h2 style={{ fontSize: '2rem', marginBottom: '40px', color: '#333' }}>
+            Portfolio
+          </h2>
+          <div style={{
+            display: 'flex',
+            justifyContent: 'center',
+            padding: '0 20px'
+          }}>
+            <a 
+              href="https://thedumpsterman518.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              style={{
+                display: 'block',
+                transition: 'transform 0.2s',
+                ':hover': {
+                  transform: 'scale(1.05)'
+                }
+              }}
+            >
+              <img 
+                src={truckImage}
+                alt="The Dumpster Man"
+                style={{
+                  maxWidth: '100%',
+                  height: 'auto',
+                  borderRadius: '8px',
+                  boxShadow: '0 4px 8px rgba(0,0,0,0.1)'
+                }}
+              />
+              <h3 style={{ 
+                fontSize: '1.3rem', 
+                marginTop: '15px',
+                color: '#333'
+              }}>
+                The Dumpster Man
+              </h3>
+            </a>
           </div>
         </div>
       </div>
