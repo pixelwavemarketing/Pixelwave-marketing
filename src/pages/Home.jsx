@@ -56,7 +56,8 @@ function Home() {
           <button
             onClick={() => navigate('/services')}
             style={{
-              padding: '15px 90px',
+              padding: '15px 30px',
+              width: '250px',
               fontSize: '1.1rem',
               backgroundColor: '#333',
               color: 'white',
@@ -73,7 +74,8 @@ function Home() {
           <button
             onClick={() => navigate('/contact')}
             style={{
-              padding: '15px 90px',
+              padding: '15px 30px',
+              width: '250px',
               fontSize: '1.1rem',
               backgroundColor: '#333',
               color: 'white',
