@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Helmet } from 'react-helmet'
 import emailjs from '@emailjs/browser'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
@@ -94,6 +95,38 @@ function Contact() {
 
   return (
     <div>
+      <Helmet>
+        <title>Contact Pixelwave Marketing | Digital Marketing & Web Development Services</title>
+        <meta name="description" content="Get in touch with Pixelwave Marketing for expert digital marketing, web development, and business growth solutions." />
+        <meta name="keywords" content="contact pixelwave marketing, digital marketing contact, web development contact, marketing agency contact," />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "ContactPage",
+              "name": "Contact Pixelwave Marketing",
+              "description": "Contact page for Pixelwave Marketing",
+              "mainEntity": {
+                "@type": "LocalBusiness",
+                "name": "Pixelwave Marketing",
+                "telephone": "+18024555570",
+                "email": "pixelwavemarketing0@gmail.com",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Ballston",
+                  "addressRegion": "NY"
+                },
+                "contactPoint": {
+                  "@type": "ContactPoint",
+                  "telephone": "+18024555570",
+                  "contactType": "customer service",
+                  "availableLanguage": "English"
+                }
+              }
+            }
+          `}
+        </script>
+      </Helmet>
       <Header />
       <div style={{
         marginTop: '80px',
@@ -140,20 +173,28 @@ function Contact() {
             For faster assistance, feel free to reach out directly:
           </p>
           <a
-            href="tel:+18024455570" // Replace with your actual phone number
+            href="tel:+18024555570"
             style={{
               display: 'inline-block',
-              padding: '15px 30px',
-              backgroundColor: '#333',
+              padding: '15px 40px',
+              backgroundColor: '#2563eb',
               color: 'white',
               textDecoration: 'none',
-              borderRadius: '4px',
-              fontSize: '1.1rem',
-              fontWeight: '500',
-              marginTop: '10px'
+              borderRadius: '8px',
+              fontSize: '1.2rem',
+              fontWeight: '600',
+              marginTop: '20px',
+              boxShadow: '0 4px 6px rgba(37, 99, 235, 0.25)',
+              transition: 'all 0.3s ease',
+              cursor: 'pointer',
+              ':hover': {
+                backgroundColor: '#1e40af',
+                transform: 'translateY(-4px) scale(1.05)',
+                boxShadow: '0 8px 15px rgba(37, 99, 235, 0.4)'
+              }
             }}
           >
-            Call Us Now!
+            📞 Call Us Now
           </a>
         </div>
       </div>
