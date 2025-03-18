@@ -96,9 +96,9 @@ function Contact() {
   return (
     <div>
       <Helmet>
-        <title>Contact Pixelwave Marketing | Digital Marketing & Web Development Services</title>
-        <meta name="description" content="Get in touch with Pixelwave Marketing for expert digital marketing, web development, and business growth solutions." />
-        <meta name="keywords" content="contact pixelwave marketing, digital marketing contact, web development contact, marketing agency contact," />
+        <title>Contact Us | Pixelwave Marketing - Digital Solutions</title>
+        <meta name="description" content="Get in touch with Pixelwave Marketing for expert digital marketing, web development, and business growth solutions. Call us at (802) 445-5570 or send us a message." />
+        <meta name="keywords" content="contact pixelwave marketing, digital marketing contact, web development contact, marketing agency contact, Ballston NY" />
         <script type="application/ld+json">
           {`
             {

@@ -23,12 +23,13 @@ function Footer() {
           flex: '1',
           textAlign: window.innerWidth <= 768 ? 'center' : 'left'
         }}>
-          <h1 style={{ textAlign: 'center',
+          <h2 style={{ textAlign: 'center',
             fontSize: '1.8rem', 
-            marginBottom: '15px'
+            marginBottom: '15px',
+            color: 'white'
           }}>
             Pixelwave Marketing
-          </h1>
+          </h2>
           <p style={{textAlign: 'center'}}>
             Ready to take your business to the next level?
           </p>
