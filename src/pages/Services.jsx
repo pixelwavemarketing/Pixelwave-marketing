@@ -26,6 +26,7 @@ function Services() {
     }}>
       <Helmet>
         <title>Digital Marketing & Web Services | Pixelwave Marketing</title>
+        <link rel="canonical" href="https://pixelwavemarketing.com/services" />
         <meta name="description" content="Explore our comprehensive services including digital marketing, web development, brand identity, marketing automation, analytics, and print design solutions." />
         <meta name="keywords" content="digital marketing services, web development, brand identity, marketing automation, business analytics, print design, Ballston NY" />
         <script type="application/ld+json">

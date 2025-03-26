@@ -11,6 +11,7 @@ function Home() {
     <>
       <Helmet>
         <title>Pixelwave Marketing - Digital Marketing & Web Solutions</title>
+        <link rel="canonical" href="https://pixelwavemarketing.com" />
         <meta name="description" content="Pixelwave Marketing specializes in digital marketing, web development, and analytics solutions to help businesses thrive in the modern marketplace." />
         <meta name="keywords" content="digital marketing, web development, analytics, business growth, marketing agency" />
         <script type="application/ld+json">

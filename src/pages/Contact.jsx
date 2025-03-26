@@ -97,6 +97,7 @@ function Contact() {
     <div>
       <Helmet>
         <title>Contact Us | Pixelwave Marketing - Digital Solutions</title>
+        <link rel="canonical" href="https://pixelwavemarketing.com/contact" />
         <meta name="description" content="Get in touch with Pixelwave Marketing for expert digital marketing, web development, and business growth solutions. Call us at (802) 445-5570 or send us a message." />
         <meta name="keywords" content="contact pixelwave marketing, digital marketing contact, web development contact, marketing agency contact, Ballston NY" />
         <script type="application/ld+json">
