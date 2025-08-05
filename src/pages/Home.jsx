@@ -18,14 +18,9 @@ function Home() {
           {`
             {
               "@context": "https://schema.org",
-              "@type": "LocalBusiness",
+              "@type": "Organization",
               "name": "Pixelwave Marketing",
               "description": "Digital marketing and web development services to help businesses thrive",
-              "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Ballston",
-                "addressRegion": "NY"
-              },
               "telephone": "+18024555570",
               "email": "pixelwavemarketing0@gmail.com",
               "url": "https://pixelwavemarketing.com"
@@ -118,9 +113,9 @@ function Home() {
             </h2>
             <div style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 400px))',
               gap: '30px',
-              padding: '0 20px'
+              justifyContent: 'center'
             }}>
               {/* Column 1 - Digital Solutions */}
               <div style={{ 

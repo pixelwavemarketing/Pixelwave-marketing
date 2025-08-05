@@ -26,9 +26,9 @@ function Services() {
     }}>
       <Helmet>
         <title>Digital Marketing & Web Services | Pixelwave Marketing</title>
-        <link rel="canonical" href="https://pixelwavemarketing.com/services" />
+        <link rel="canonical" href="https://usepixelwave.com/services" />
         <meta name="description" content="Explore our comprehensive services including digital marketing, web development, brand identity, marketing automation, analytics, and print design solutions." />
-        <meta name="keywords" content="digital marketing services, web development, brand identity, marketing automation, business analytics, print design, Ballston NY" />
+        <meta name="keywords" content="digital marketing services, web development, brand identity, marketing automation, business analytics, print design" />
         <script type="application/ld+json">
           {`
             {
@@ -36,15 +36,9 @@ function Services() {
               "@type": "Service",
               "serviceType": "Digital Marketing and Web Development",
               "provider": {
-                "@type": "LocalBusiness",
-                "name": "Pixelwave Marketing",
-                "address": {
-                  "@type": "PostalAddress",
-                  "addressLocality": "Ballston",
-                  "addressRegion": "NY"
-                }
+                "@type": "Organization",
+                "name": "Pixelwave Marketing"
               },
-              "areaServed": "Ballston, NY and surrounding areas",
               "hasOfferCatalog": {
                 "@type": "OfferCatalog",
                 "name": "Digital Marketing Services",
@@ -122,7 +116,7 @@ function Services() {
           </h2>
           <div style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 400px))',
             gap: '30px',
             justifyContent: 'center',
             padding: '0 20px',
@@ -189,7 +183,7 @@ function Services() {
           </h2>
           <div style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 400px))',
             gap: '30px',
             justifyContent: 'center',
             padding: '0 20px',
@@ -197,12 +191,24 @@ function Services() {
             margin: '0 auto'
           }}>
             {/* Service 1 - Digital Marketing */}
-            <div style={{ 
-              padding: '20px',
-              maxWidth: '400px',
-              margin: '0 auto',
-              width: '100%'
-            }}>
+            <div 
+              onClick={() => navigate('/digital-marketing')}
+              style={{ 
+                padding: '20px',
+                maxWidth: '400px',
+                margin: '0 auto',
+                width: '100%',
+                cursor: 'pointer',
+                transition: 'all 0.3s ease',
+                borderRadius: '8px',
+                border: '1px solid transparent',
+                ':hover': {
+                  transform: 'translateY(-5px)',
+                  boxShadow: '0 10px 25px rgba(0,0,0,0.15)',
+                  border: '1px solid #e2e8f0'
+                }
+              }}
+            >
               <div style={{ 
                 fontSize: '4rem', 
                 color: '#4285F4', 
@@ -219,12 +225,24 @@ function Services() {
             </div>
 
             {/* Service 2 - Web Development */}
-            <div style={{ 
-              padding: '20px',
-              maxWidth: '400px',
-              margin: '0 auto',
-              width: '100%'
-            }}>
+            <div 
+              onClick={() => navigate('/web-development')}
+              style={{ 
+                padding: '20px',
+                maxWidth: '400px',
+                margin: '0 auto',
+                width: '100%',
+                cursor: 'pointer',
+                transition: 'all 0.3s ease',
+                borderRadius: '8px',
+                border: '1px solid transparent',
+                ':hover': {
+                  transform: 'translateY(-5px)',
+                  boxShadow: '0 10px 25px rgba(0,0,0,0.15)',
+                  border: '1px solid #e2e8f0'
+                }
+              }}
+            >
               <div style={{ 
                 fontSize: '4rem', 
                 color: '#333', 
@@ -241,12 +259,24 @@ function Services() {
             </div>
 
             {/* Service 3 - Brand Identity */}
-            <div style={{ 
-              padding: '20px',
-              maxWidth: '400px',
-              margin: '0 auto',
-              width: '100%'
-            }}>
+            <div 
+              onClick={() => navigate('/brand-identity')}
+              style={{ 
+                padding: '20px',
+                maxWidth: '400px',
+                margin: '0 auto',
+                width: '100%',
+                cursor: 'pointer',
+                transition: 'all 0.3s ease',
+                borderRadius: '8px',
+                border: '1px solid transparent',
+                ':hover': {
+                  transform: 'translateY(-5px)',
+                  boxShadow: '0 10px 25px rgba(0,0,0,0.15)',
+                  border: '1px solid #e2e8f0'
+                }
+              }}
+            >
               <div style={{ 
                 fontSize: '4rem', 
                 color: '#333', 
@@ -263,12 +293,24 @@ function Services() {
             </div>
 
             {/* Service 4 - Marketing Systems */}
-            <div style={{ 
-              padding: '20px',
-              maxWidth: '400px',
-              margin: '0 auto',
-              width: '100%'
-            }}>
+            <div 
+              onClick={() => navigate('/marketing-systems')}
+              style={{ 
+                padding: '20px',
+                maxWidth: '400px',
+                margin: '0 auto',
+                width: '100%',
+                cursor: 'pointer',
+                transition: 'all 0.3s ease',
+                borderRadius: '8px',
+                border: '1px solid transparent',
+                ':hover': {
+                  transform: 'translateY(-5px)',
+                  boxShadow: '0 10px 25px rgba(0,0,0,0.15)',
+                  border: '1px solid #e2e8f0'
+                }
+              }}
+            >
               <div style={{ 
                 fontSize: '4rem', 
                 color: '#333', 
@@ -285,12 +327,24 @@ function Services() {
             </div>
 
             {/* Service 5 - Analytics */}
-            <div style={{ 
-              padding: '20px',
-              maxWidth: '400px',
-              margin: '0 auto',
-              width: '100%'
-            }}>
+            <div 
+              onClick={() => navigate('/analytics')}
+              style={{ 
+                padding: '20px',
+                maxWidth: '400px',
+                margin: '0 auto',
+                width: '100%',
+                cursor: 'pointer',
+                transition: 'all 0.3s ease',
+                borderRadius: '8px',
+                border: '1px solid transparent',
+                ':hover': {
+                  transform: 'translateY(-5px)',
+                  boxShadow: '0 10px 25px rgba(0,0,0,0.15)',
+                  border: '1px solid #e2e8f0'
+                }
+              }}
+            >
               <div style={{ 
                 fontSize: '4rem', 
                 color: '#333', 
@@ -307,12 +361,24 @@ function Services() {
             </div>
 
             {/* Service 6 - Print Design */}
-            <div style={{ 
-              padding: '20px',
-              maxWidth: '400px',
-              margin: '0 auto',
-              width: '100%'
-            }}>
+            <div 
+              onClick={() => navigate('/print-design')}
+              style={{ 
+                padding: '20px',
+                maxWidth: '400px',
+                margin: '0 auto',
+                width: '100%',
+                cursor: 'pointer',
+                transition: 'all 0.3s ease',
+                borderRadius: '8px',
+                border: '1px solid transparent',
+                ':hover': {
+                  transform: 'translateY(-5px)',
+                  boxShadow: '0 10px 25px rgba(0,0,0,0.15)',
+                  border: '1px solid #e2e8f0'
+                }
+              }}
+            >
               <div style={{ 
                 fontSize: '4rem', 
                 color: '#333', 
