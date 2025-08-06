@@ -10,11 +10,10 @@ function ThankYou() {
   console.log('ThankYou component rendering') // Debug log
 
   return (
-    <div style={{
+    <div className="page-container" style={{
       display: 'flex',
       flexDirection: 'column',
-      minHeight: '100vh',
-      paddingTop: '44px'
+      minHeight: '100vh'
     }}>
       <Helmet>
         <title>Thank You | Pixelwave Marketing</title>
@@ -65,16 +64,9 @@ function ThankYou() {
           </p>
           <button
             onClick={() => navigate('/')}
+            className="cta-button"
             style={{
-              padding: '15px 40px',
-              backgroundColor: '#2563eb',
-              color: 'white',
-              border: 'none',
-              borderRadius: '8px',
-              cursor: 'pointer',
-              fontSize: '1.1rem',
-              fontWeight: '600',
-              transition: 'all 0.3s ease'
+              fontSize: '1.1rem'
             }}
           >
             Return to Home

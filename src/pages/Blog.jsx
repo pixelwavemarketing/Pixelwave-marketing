@@ -167,11 +167,10 @@ function Blog() {
   }
 
   return (
-    <div style={{
+    <div className="page-container" style={{
       display: 'flex',
       flexDirection: 'column',
-      minHeight: '100vh',
-      paddingTop: '40px'
+      minHeight: '100vh'
     }}>
       <Helmet>
         <title>Digital Marketing Blog | Pixelwave Marketing</title>
@@ -252,9 +251,10 @@ function Blog() {
         margin: '0 auto'
       }}>
         <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))',
-          gap: '40px'
+          display: 'flex',
+          flexWrap: 'wrap',
+          gap: '40px',
+          justifyContent: 'center'
         }}>
           {blogPosts.map((post) => (
             <article key={post.id} style={{
@@ -264,6 +264,9 @@ function Blog() {
               boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
               transition: 'transform 0.3s ease, box-shadow 0.3s ease',
               cursor: 'pointer',
+              minWidth: '280px',
+              flex: '1 1 400px',
+              maxWidth: '500px',
               ':hover': {
                 transform: 'translateY(-4px)',
                 boxShadow: '0 8px 15px rgba(0, 0, 0, 0.15)'
@@ -327,14 +330,10 @@ function Blog() {
                       e.stopPropagation()
                       handlePostClick(post.id)
                     }}
+                    className="cta-button"
                     style={{
                       marginTop: '20px',
                       padding: '8px 16px',
-                      backgroundColor: '#2563eb',
-                      color: 'white',
-                      border: 'none',
-                      borderRadius: '6px',
-                      cursor: 'pointer',
                       fontSize: '0.9rem'
                     }}
                   >
@@ -403,16 +402,9 @@ function Blog() {
           </p>
           <button
             onClick={() => navigate('/contact')}
+            className="cta-button"
             style={{
-              padding: '15px 40px',
-              fontSize: '1.1rem',
-              backgroundColor: '#2563eb',
-              color: 'white',
-              border: 'none',
-              borderRadius: '8px',
-              cursor: 'pointer',
-              transition: 'all 0.3s ease',
-              fontWeight: '600'
+              fontSize: '1.1rem'
             }}
           >
             Get Started Today

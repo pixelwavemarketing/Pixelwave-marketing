@@ -10,11 +10,10 @@ function Analytics() {
   const navigate = useNavigate()
 
   return (
-    <div style={{
+    <div className="page-container" style={{
       display: 'flex',
       flexDirection: 'column',
-      minHeight: '100vh',
-      paddingTop: '40px'
+      minHeight: '100vh'
     }}>
       <Helmet>
         <title>Business Analytics Services | Pixelwave Marketing</title>
@@ -77,17 +76,9 @@ function Analytics() {
           </p>
           <button
             onClick={() => navigate('/contact')}
+            className="cta-button"
             style={{
-              padding: '15px 40px',
-              fontSize: '1.2rem',
-              backgroundColor: '#2563eb',
-              color: 'white',
-              border: 'none',
-              borderRadius: '8px',
-              cursor: 'pointer',
-              fontWeight: '600',
-              transition: 'all 0.3s ease',
-              boxShadow: '0 4px 6px rgba(37, 99, 235, 0.25)'
+              fontSize: '1.2rem'
             }}
           >
             Get Analytics Insights
@@ -113,20 +104,22 @@ function Analytics() {
             Analytics Services
           </h2>
           <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 400px))',
+            display: 'flex',
+            flexWrap: 'wrap',
             gap: '30px',
             justifyContent: 'center'
           }}>
             {/* Performance Tracking */}
-            <div style={{
-              padding: '30px',
-              border: '1px solid #e2e8f0',
-              borderRadius: '12px',
-              textAlign: 'center',
-              transition: 'transform 0.3s ease',
-              cursor: 'pointer'
-            }}>
+            <div 
+              className="service-box"
+              style={{
+                padding: '30px',
+                border: '1px solid #e2e8f0',
+                borderRadius: '12px',
+                textAlign: 'center',
+                transition: 'transform 0.3s ease'
+              }}
+            >
               <div style={{
                 fontSize: '3rem',
                 color: '#7c3aed',
@@ -150,14 +143,16 @@ function Analytics() {
             </div>
 
             {/* Data Analysis */}
-            <div style={{
-              padding: '30px',
-              border: '1px solid #e2e8f0',
-              borderRadius: '12px',
-              textAlign: 'center',
-              transition: 'transform 0.3s ease',
-              cursor: 'pointer'
-            }}>
+            <div 
+              className="service-box"
+              style={{
+                padding: '30px',
+                border: '1px solid #e2e8f0',
+                borderRadius: '12px',
+                textAlign: 'center',
+                transition: 'transform 0.3s ease'
+              }}
+            >
               <div style={{
                 fontSize: '3rem',
                 color: '#059669',
@@ -181,14 +176,16 @@ function Analytics() {
             </div>
 
             {/* ROI Measurement */}
-            <div style={{
-              padding: '30px',
-              border: '1px solid #e2e8f0',
-              borderRadius: '12px',
-              textAlign: 'center',
-              transition: 'transform 0.3s ease',
-              cursor: 'pointer'
-            }}>
+            <div 
+              className="service-box"
+              style={{
+                padding: '30px',
+                border: '1px solid #e2e8f0',
+                borderRadius: '12px',
+                textAlign: 'center',
+                transition: 'transform 0.3s ease'
+              }}
+            >
               <div style={{
                 fontSize: '3rem',
                 color: '#dc2626',
@@ -212,14 +209,16 @@ function Analytics() {
             </div>
 
             {/* Customer Insights */}
-            <div style={{
-              padding: '30px',
-              border: '1px solid #e2e8f0',
-              borderRadius: '12px',
-              textAlign: 'center',
-              transition: 'transform 0.3s ease',
-              cursor: 'pointer'
-            }}>
+            <div 
+              className="service-box"
+              style={{
+                padding: '30px',
+                border: '1px solid #e2e8f0',
+                borderRadius: '12px',
+                textAlign: 'center',
+                transition: 'transform 0.3s ease'
+              }}
+            >
               <div style={{
                 fontSize: '3rem',
                 color: '#2563eb',
@@ -263,21 +262,23 @@ function Analytics() {
             Why Choose Pixelwave for Analytics?
           </h2>
           <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 400px))',
+            display: 'flex',
+            flexWrap: 'wrap',
             gap: '30px',
             justifyContent: 'center'
           }}>
 
-            {/* Performance Tracking */}
-            <div style={{
-              padding: '30px',
-              border: '1px solid #e2e8f0',
-              borderRadius: '12px',
-              textAlign: 'center',
-              transition: 'transform 0.3s ease',
-              cursor: 'pointer'
-            }}>
+            {/* Proven Results */}
+            <div 
+              className="service-box"
+              style={{
+                padding: '30px',
+                border: '1px solid #e2e8f0',
+                borderRadius: '12px',
+                textAlign: 'center',
+                transition: 'transform 0.3s ease'
+              }}
+            >
               <div style={{
                 fontSize: '3rem',
                 color: '#7c3aed',
@@ -290,25 +291,27 @@ function Analytics() {
                 marginBottom: '15px',
                 color: '#1e293b'
               }}>
-                Performance Tracking
+                Proven Results
               </h3>
               <p style={{
                 color: '#64748b',
                 lineHeight: '1.6'
               }}>
-                Comprehensive tracking of key performance indicators to measure your business success.
+                We've helped businesses increase their ROI through data-driven insights and strategic optimization. Your success is our mission.
               </p>
             </div>
 
-            {/* Data Analysis */}
-            <div style={{
-              padding: '30px',
-              border: '1px solid #e2e8f0',
-              borderRadius: '12px',
-              textAlign: 'center',
-              transition: 'transform 0.3s ease',
-              cursor: 'pointer'
-            }}>
+            {/* Personalized Strategy */}
+            <div 
+              className="service-box"
+              style={{
+                padding: '30px',
+                border: '1px solid #e2e8f0',
+                borderRadius: '12px',
+                textAlign: 'center',
+                transition: 'transform 0.3s ease'
+              }}
+            >
               <div style={{
                 fontSize: '3rem',
                 color: '#059669',
@@ -321,25 +324,27 @@ function Analytics() {
                 marginBottom: '15px',
                 color: '#1e293b'
               }}>
-                Data Analysis
+                Personalized Strategy
               </h3>
               <p style={{
                 color: '#64748b',
                 lineHeight: '1.6'
               }}>
-                Deep analysis of your business data to uncover trends and opportunities for growth.
+                Every business is unique. We create custom analytics strategies tailored to your specific industry, goals, and challenges.
               </p>
             </div>
 
-            {/* ROI Measurement */}
-            <div style={{
-              padding: '30px',
-              border: '1px solid #e2e8f0',
-              borderRadius: '12px',
-              textAlign: 'center',
-              transition: 'transform 0.3s ease',
-              cursor: 'pointer'
-            }}>
+            {/* Expert Team */}
+            <div 
+              className="service-box"
+              style={{
+                padding: '30px',
+                border: '1px solid #e2e8f0',
+                borderRadius: '12px',
+                textAlign: 'center',
+                transition: 'transform 0.3s ease'
+              }}
+            >
               <div style={{
                 fontSize: '3rem',
                 color: '#dc2626',
@@ -352,25 +357,27 @@ function Analytics() {
                 marginBottom: '15px',
                 color: '#1e293b'
               }}>
-                ROI Measurement
+                Expert Team
               </h3>
               <p style={{
                 color: '#64748b',
                 lineHeight: '1.6'
               }}>
-                Accurate measurement of return on investment for all your marketing and business activities.
+                Our certified analytics experts bring years of experience and deep industry knowledge to every project. We speak your language.
               </p>
             </div>
 
-            {/* Customer Insights */}
-            <div style={{
-              padding: '30px',
-              border: '1px solid #e2e8f0',
-              borderRadius: '12px',
-              textAlign: 'center',
-              transition: 'transform 0.3s ease',
-              cursor: 'pointer'
-            }}>
+            {/* Ongoing Support */}
+            <div 
+              className="service-box"
+              style={{
+                padding: '30px',
+                border: '1px solid #e2e8f0',
+                borderRadius: '12px',
+                textAlign: 'center',
+                transition: 'transform 0.3s ease'
+              }}
+            >
               <div style={{
                 fontSize: '3rem',
                 color: '#2563eb',
@@ -383,13 +390,13 @@ function Analytics() {
                 marginBottom: '15px',
                 color: '#1e293b'
               }}>
-                Customer Insights
+                Ongoing Support
               </h3>
               <p style={{
                 color: '#64748b',
                 lineHeight: '1.6'
               }}>
-                Understand your customers better with detailed analytics and behavioral insights.
+                We don't just set up analytics - we're your long-term partner. Reports, strategy sessions, and continuous optimization.
               </p>
             </div>
           </div>
@@ -422,16 +429,9 @@ function Analytics() {
           </p>
           <button
             onClick={() => navigate('/contact')}
+            className="cta-button"
             style={{
-              padding: '15px 40px',
-              fontSize: '1.2rem',
-              backgroundColor: '#2563eb',
-              color: 'white',
-              border: 'none',
-              borderRadius: '8px',
-              cursor: 'pointer',
-              fontWeight: '600',
-              transition: 'all 0.3s ease'
+              fontSize: '1.2rem'
             }}
           >
             Get Started

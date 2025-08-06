@@ -45,11 +45,10 @@ function FAQ() {
   ]
 
   return (
-    <div style={{
+    <div className="page-container" style={{
       display: 'flex',
       flexDirection: 'column',
-      minHeight: '100vh',
-      paddingTop: '40px'
+      minHeight: '100vh'
     }}>
       <Helmet>
         <title>Frequently Asked Questions | Pixelwave Marketing</title>
@@ -189,16 +188,9 @@ function FAQ() {
           </p>
           <button
             onClick={() => navigate('/contact')}
+            className="cta-button"
             style={{
-              padding: '15px 40px',
-              fontSize: '1.1rem',
-              backgroundColor: '#2563eb',
-              color: 'white',
-              border: 'none',
-              borderRadius: '8px',
-              cursor: 'pointer',
-              transition: 'all 0.3s ease',
-              fontWeight: '600'
+              fontSize: '1.1rem'
             }}
           >
             Contact Us

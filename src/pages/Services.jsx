@@ -13,17 +13,15 @@ import { faGoogle } from '@fortawesome/free-brands-svg-icons'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import PixelwaveLogo from '../components/PixelwaveLogo'
-import truckImage from '../assets/truck-25.webp'
 
 function Services() {
   const navigate = useNavigate()
 
   return (
-    <div style={{
+    <div className="page-container" style={{
       display: 'flex',
       flexDirection: 'column',
-      minHeight: '100vh',
-      paddingTop: '40px'
+      minHeight: '100vh'
     }}>
       <Helmet>
         <title>Digital Marketing & Web Services | Pixelwave Marketing</title>
@@ -116,20 +114,20 @@ function Services() {
             Why Choose Pixelwave Marketing
           </h2>
           <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 400px))',
+            display: 'flex',
+            flexWrap: 'wrap',
             gap: '30px',
             justifyContent: 'center',
             padding: '0 20px',
             maxWidth: '1200px',
             margin: '0 auto'
           }}>
-            <div style={{ 
-              padding: '20px',
-              maxWidth: '400px',
-              margin: '0 auto',
-              width: '100%'
-            }}>
+            <div 
+              className="service-box"
+              style={{ 
+                padding: '20px'
+              }}
+            >
               <h3 style={{ fontSize: '1.3rem', marginBottom: '15px', color: '#333' }}>
                 Expertise
               </h3>
@@ -138,12 +136,12 @@ function Services() {
               </p>
             </div>
 
-            <div style={{ 
-              padding: '20px',
-              maxWidth: '400px',
-              margin: '0 auto',
-              width: '100%'
-            }}>
+            <div 
+              className="service-box"
+              style={{ 
+                padding: '20px'
+              }}
+            >
               <h3 style={{ fontSize: '1.3rem', marginBottom: '15px', color: '#333' }}>
                 Custom Solutions
               </h3>
@@ -152,12 +150,12 @@ function Services() {
               </p>
             </div>
 
-            <div style={{ 
-              padding: '20px',
-              maxWidth: '400px',
-              margin: '0 auto',
-              width: '100%'
-            }}>
+            <div 
+              className="service-box"
+              style={{ 
+                padding: '20px'
+              }}
+            >
               <h3 style={{ fontSize: '1.3rem', marginBottom: '15px', color: '#333' }}>
                 Results Driven
               </h3>
@@ -183,8 +181,8 @@ function Services() {
             What We Offer
           </h2>
           <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 400px))',
+            display: 'flex',
+            flexWrap: 'wrap',
             gap: '30px',
             justifyContent: 'center',
             padding: '0 20px',
@@ -194,30 +192,16 @@ function Services() {
             {/* Service 1 - Digital Marketing */}
             <div 
               onClick={() => navigate('/digital-marketing')}
-              style={{ 
-                padding: '20px',
-                maxWidth: '400px',
-                margin: '0 auto',
-                width: '100%',
-                cursor: 'pointer',
-                transition: 'all 0.3s ease',
-                borderRadius: '8px',
-                border: '1px solid transparent',
-                ':hover': {
-                  transform: 'translateY(-5px)',
-                  boxShadow: '0 10px 25px rgba(0,0,0,0.15)',
-                  border: '1px solid #e2e8f0'
-                }
-              }}
+              className="service-card service-box"
             >
-              <div style={{ 
+              <div className="service-icon" style={{ 
                 fontSize: '4rem', 
                 color: '#4285F4', 
                 marginBottom: '25px' 
               }}>
                 <FontAwesomeIcon icon={faGoogle} />
               </div>
-              <h3 style={{ fontSize: '1.5rem', marginBottom: '15px', color: '#333' }}>
+              <h3 className="service-title" style={{ fontSize: '1.5rem', marginBottom: '15px', color: '#333' }}>
                 Digital Marketing
               </h3>
               <p style={{ color: '#666' }}>
@@ -228,30 +212,16 @@ function Services() {
             {/* Service 2 - Web Development */}
             <div 
               onClick={() => navigate('/web-development')}
-              style={{ 
-                padding: '20px',
-                maxWidth: '400px',
-                margin: '0 auto',
-                width: '100%',
-                cursor: 'pointer',
-                transition: 'all 0.3s ease',
-                borderRadius: '8px',
-                border: '1px solid transparent',
-                ':hover': {
-                  transform: 'translateY(-5px)',
-                  boxShadow: '0 10px 25px rgba(0,0,0,0.15)',
-                  border: '1px solid #e2e8f0'
-                }
-              }}
+              className="service-card service-box"
             >
-              <div style={{ 
+              <div className="service-icon" style={{ 
                 fontSize: '4rem', 
                 color: '#333', 
                 marginBottom: '25px' 
               }}>
                 <FontAwesomeIcon icon={faCode} />
               </div>
-              <h3 style={{ fontSize: '1.5rem', marginBottom: '15px', color: '#333' }}>
+              <h3 className="service-title" style={{ fontSize: '1.5rem', marginBottom: '15px', color: '#333' }}>
                 Web Development
               </h3>
               <p style={{ color: '#666' }}>
@@ -262,30 +232,16 @@ function Services() {
             {/* Service 3 - Brand Identity */}
             <div 
               onClick={() => navigate('/brand-identity')}
-              style={{ 
-                padding: '20px',
-                maxWidth: '400px',
-                margin: '0 auto',
-                width: '100%',
-                cursor: 'pointer',
-                transition: 'all 0.3s ease',
-                borderRadius: '8px',
-                border: '1px solid transparent',
-                ':hover': {
-                  transform: 'translateY(-5px)',
-                  boxShadow: '0 10px 25px rgba(0,0,0,0.15)',
-                  border: '1px solid #e2e8f0'
-                }
-              }}
+              className="service-card service-box"
             >
-              <div style={{ 
+              <div className="service-icon" style={{ 
                 fontSize: '4rem', 
                 color: '#333', 
                 marginBottom: '25px' 
               }}>
                 <FontAwesomeIcon icon={faPaintBrush} />
               </div>
-              <h3 style={{ fontSize: '1.5rem', marginBottom: '15px', color: '#333' }}>
+              <h3 className="service-title" style={{ fontSize: '1.5rem', marginBottom: '15px', color: '#333' }}>
                 Brand Identity
               </h3>
               <p style={{ color: '#666' }}>
@@ -296,30 +252,16 @@ function Services() {
             {/* Service 4 - Marketing Systems */}
             <div 
               onClick={() => navigate('/marketing-systems')}
-              style={{ 
-                padding: '20px',
-                maxWidth: '400px',
-                margin: '0 auto',
-                width: '100%',
-                cursor: 'pointer',
-                transition: 'all 0.3s ease',
-                borderRadius: '8px',
-                border: '1px solid transparent',
-                ':hover': {
-                  transform: 'translateY(-5px)',
-                  boxShadow: '0 10px 25px rgba(0,0,0,0.15)',
-                  border: '1px solid #e2e8f0'
-                }
-              }}
+              className="service-card service-box"
             >
-              <div style={{ 
+              <div className="service-icon" style={{ 
                 fontSize: '4rem', 
                 color: '#333', 
                 marginBottom: '25px' 
               }}>
                 <FontAwesomeIcon icon={faRobot} />
               </div>
-              <h3 style={{ fontSize: '1.5rem', marginBottom: '15px', color: '#333' }}>
+              <h3 className="service-title" style={{ fontSize: '1.5rem', marginBottom: '15px', color: '#333' }}>
                 Marketing Systems
               </h3>
               <p style={{ color: '#666' }}>
@@ -330,30 +272,16 @@ function Services() {
             {/* Service 5 - Analytics */}
             <div 
               onClick={() => navigate('/analytics')}
-              style={{ 
-                padding: '20px',
-                maxWidth: '400px',
-                margin: '0 auto',
-                width: '100%',
-                cursor: 'pointer',
-                transition: 'all 0.3s ease',
-                borderRadius: '8px',
-                border: '1px solid transparent',
-                ':hover': {
-                  transform: 'translateY(-5px)',
-                  boxShadow: '0 10px 25px rgba(0,0,0,0.15)',
-                  border: '1px solid #e2e8f0'
-                }
-              }}
+              className="service-card service-box"
             >
-              <div style={{ 
+              <div className="service-icon" style={{ 
                 fontSize: '4rem', 
                 color: '#333', 
                 marginBottom: '25px' 
               }}>
                 <FontAwesomeIcon icon={faChartLine} />
               </div>
-              <h3 style={{ fontSize: '1.5rem', marginBottom: '15px', color: '#333' }}>
+              <h3 className="service-title" style={{ fontSize: '1.5rem', marginBottom: '15px', color: '#333' }}>
                 Analytics
               </h3>
               <p style={{ color: '#666' }}>
@@ -364,30 +292,16 @@ function Services() {
             {/* Service 6 - Print Design */}
             <div 
               onClick={() => navigate('/print-design')}
-              style={{ 
-                padding: '20px',
-                maxWidth: '400px',
-                margin: '0 auto',
-                width: '100%',
-                cursor: 'pointer',
-                transition: 'all 0.3s ease',
-                borderRadius: '8px',
-                border: '1px solid transparent',
-                ':hover': {
-                  transform: 'translateY(-5px)',
-                  boxShadow: '0 10px 25px rgba(0,0,0,0.15)',
-                  border: '1px solid #e2e8f0'
-                }
-              }}
+              className="service-card service-box"
             >
-              <div style={{ 
+              <div className="service-icon" style={{ 
                 fontSize: '4rem', 
                 color: '#333', 
                 marginBottom: '25px' 
               }}>
                 <FontAwesomeIcon icon={faPrint} />
               </div>
-              <h3 style={{ fontSize: '1.5rem', marginBottom: '15px', color: '#333' }}>
+              <h3 className="service-title" style={{ fontSize: '1.5rem', marginBottom: '15px', color: '#333' }}>
                 Print Design
               </h3>
               <p style={{ color: '#666' }}>
@@ -399,56 +313,7 @@ function Services() {
       </div>
 
       {/* Portfolio Section */}
-      <div style={{
-        padding: '60px 20px',
-        backgroundColor: '#f8f8f8'
-      }}>
-        <div style={{
-          maxWidth: '1200px',
-          margin: '0 auto',
-          textAlign: 'center'
-        }}>
-          <h2 style={{ fontSize: '2rem', marginBottom: '40px', color: '#333' }}>
-            Portfolio
-          </h2>
-          <div style={{
-            display: 'flex',
-            justifyContent: 'center',
-            padding: '0 20px'
-          }}>
-            <a 
-              href="https://thedumpsterman518.com" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              style={{
-                display: 'block',
-                transition: 'transform 0.2s',
-                ':hover': {
-                  transform: 'scale(1.05)'
-                }
-              }}
-            >
-              <img 
-                src={truckImage}
-                alt="The Dumpster Man"
-                style={{
-                  maxWidth: '100%',
-                  height: 'auto',
-                  borderRadius: '8px',
-                  boxShadow: '0 4px 8px rgba(0,0,0,0.1)'
-                }}
-              />
-              <h3 style={{ 
-                fontSize: '1.3rem', 
-                marginTop: '15px',
-                color: '#333'
-              }}>
-                The Dumpster Man
-              </h3>
-            </a>
-          </div>
-        </div>
-      </div>
+
 
       {/* Call to Action */}
       <div style={{
@@ -477,16 +342,9 @@ function Services() {
           </p>
           <button
             onClick={() => navigate('/contact')}
+            className="cta-button"
             style={{
-              padding: '15px 30px',
-              fontSize: '1.1rem',
-              backgroundColor: '#FFFFFF',
-              color: '#333',
-              border: 'none',
-              borderRadius: '4px',
-              cursor: 'pointer',
-              fontWeight: '500',
-              transition: 'background-color 0.2s'
+              fontSize: '1.1rem'
             }}
           >
             Contact Us

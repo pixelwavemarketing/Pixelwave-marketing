@@ -68,11 +68,10 @@ function Home() {
           `}
         </script>
       </Helmet>
-      <main style={{
+      <main className="page-container" style={{
         display: 'flex',
         flexDirection: 'column',
-        minHeight: '100vh',
-        paddingTop: '44px'
+        minHeight: '100vh'
       }}>
         <Header />
         <section style={{ 
@@ -115,23 +114,10 @@ function Home() {
           }}>
             <button
               onClick={() => navigate('/contact')}
+              className="cta-button"
               style={{
-                padding: '15px 40px',
                 width: '250px',
-                fontSize: '1.2rem',
-                backgroundColor: '#2563eb',
-                color: 'white',
-                border: 'none',
-                borderRadius: '8px',
-                cursor: 'pointer',
-                transition: 'all 0.3s ease',
-                fontWeight: '600',
-                boxShadow: '0 4px 6px rgba(37, 99, 235, 0.25)',
-                ':hover': {
-                  backgroundColor: '#1e40af',
-                  transform: 'translateY(-4px) scale(1.05)',
-                  boxShadow: '0 8px 15px rgba(37, 99, 235, 0.4)'
-                }
+                fontSize: '1.2rem'
               }}
             >
               Contact Us
@@ -165,23 +151,15 @@ function Home() {
             </p>
             
             <div style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-              gap: '30px'
+              display: 'flex',
+              flexWrap: 'wrap',
+              gap: '30px',
+              justifyContent: 'center'
             }}>
-              <div style={{
-                backgroundColor: '#ffffff',
-                padding: '30px',
-                borderRadius: '12px',
-                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
-                cursor: 'pointer',
-                transition: 'transform 0.3s ease',
-                ':hover': {
-                  transform: 'translateY(-4px)'
-                }
-              }}
-              onClick={() => navigate('/digital-marketing')}>
-                <h3 style={{
+              <div 
+                className="service-card service-box"
+                onClick={() => navigate('/digital-marketing')}>
+                <h3 className="service-title" style={{
                   fontSize: '1.5rem',
                   color: '#1e293b',
                   marginBottom: '15px'
@@ -196,19 +174,10 @@ function Home() {
                 </p>
               </div>
 
-              <div style={{
-                backgroundColor: '#ffffff',
-                padding: '30px',
-                borderRadius: '12px',
-                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
-                cursor: 'pointer',
-                transition: 'transform 0.3s ease',
-                ':hover': {
-                  transform: 'translateY(-4px)'
-                }
-              }}
-              onClick={() => navigate('/web-development')}>
-                <h3 style={{
+              <div 
+                className="service-card service-box"
+                onClick={() => navigate('/web-development')}>
+                <h3 className="service-title" style={{
                   fontSize: '1.5rem',
                   color: '#1e293b',
                   marginBottom: '15px'
@@ -223,19 +192,10 @@ function Home() {
                 </p>
               </div>
 
-              <div style={{
-                backgroundColor: '#ffffff',
-                padding: '30px',
-                borderRadius: '12px',
-                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
-                cursor: 'pointer',
-                transition: 'transform 0.3s ease',
-                ':hover': {
-                  transform: 'translateY(-4px)'
-                }
-              }}
-              onClick={() => navigate('/analytics')}>
-                <h3 style={{
+              <div 
+                className="service-card service-box"
+                onClick={() => navigate('/analytics')}>
+                <h3 className="service-title" style={{
                   fontSize: '1.5rem',
                   color: '#1e293b',
                   marginBottom: '15px'

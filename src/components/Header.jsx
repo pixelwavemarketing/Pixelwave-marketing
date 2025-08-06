@@ -27,52 +27,32 @@ function Header() {
           justifyContent: 'center'
         }}>
           <li>
-            <Link to="/" style={{
-              textDecoration: 'none',
-              color: '#333333',
-              fontSize: '1.2rem',
-              fontWeight: '500'
-            }}>
+            <Link to="/" className="nav-link">
               Home
             </Link>
           </li>
           <li>
-            <Link to="/services" style={{
-              textDecoration: 'none',
-              color: '#333333',
-              fontSize: '1.2rem',
-              fontWeight: '500'
-            }}>
+            <Link to="/services" className="nav-link">
               Services
             </Link>
           </li>
           <li>
-            <Link to="/blog" style={{
-              textDecoration: 'none',
-              color: '#333333',
-              fontSize: '1.2rem',
-              fontWeight: '500'
-            }}>
+            <Link to="/blog" className="nav-link">
               Blog
             </Link>
           </li>
           <li>
-            <Link to="/faq" style={{
-              textDecoration: 'none',
-              color: '#333333',
-              fontSize: '1.2rem',
-              fontWeight: '500'
-            }}>
+            <Link to="/faq" className="nav-link">
               FAQ
             </Link>
           </li>
           <li>
-            <Link to="/contact" style={{
-              textDecoration: 'none',
-              color: '#333333',
-              fontSize: '1.2rem',
-              fontWeight: '500'
-            }}>
+            <Link to="/portfolio" className="nav-link">
+              Portfolio
+            </Link>
+          </li>
+          <li>
+            <Link to="/contact" className="nav-link">
               Contact
             </Link>
           </li>

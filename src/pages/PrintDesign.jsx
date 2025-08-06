@@ -10,11 +10,10 @@ function PrintDesign() {
   const navigate = useNavigate()
 
   return (
-    <div style={{
+    <div className="page-container" style={{
       display: 'flex',
       flexDirection: 'column',
-      minHeight: '100vh',
-      paddingTop: '44px'
+      minHeight: '100vh'
     }}>
       <Helmet>
         <title>Print Design Services | Pixelwave Marketing</title>
@@ -77,17 +76,9 @@ function PrintDesign() {
           </p>
           <button
             onClick={() => navigate('/contact')}
+            className="cta-button"
             style={{
-              padding: '15px 40px',
-              fontSize: '1.2rem',
-              backgroundColor: '#2563eb',
-              color: 'white',
-              border: 'none',
-              borderRadius: '8px',
-              cursor: 'pointer',
-              fontWeight: '600',
-              transition: 'all 0.3s ease',
-              boxShadow: '0 4px 6px rgba(37, 99, 235, 0.25)'
+              fontSize: '1.2rem'
             }}
           >
             Start Your Print Project
@@ -113,8 +104,8 @@ function PrintDesign() {
             Print Design Services
           </h2>
           <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 400px))',
+            display: 'flex',
+            flexWrap: 'wrap',
             gap: '30px',
             justifyContent: 'center'
           }}>
@@ -125,7 +116,10 @@ function PrintDesign() {
               borderRadius: '12px',
               textAlign: 'center',
               transition: 'transform 0.3s ease',
-              cursor: 'pointer'
+              maxWidth: '400px',
+              minWidth: '280px',
+              flex: '1 1 350px',
+              margin: '0 auto'
             }}>
               <div style={{
                 fontSize: '3rem',
@@ -156,7 +150,10 @@ function PrintDesign() {
               borderRadius: '12px',
               textAlign: 'center',
               transition: 'transform 0.3s ease',
-              cursor: 'pointer'
+              maxWidth: '400px',
+              minWidth: '280px',
+              flex: '1 1 350px',
+              margin: '0 auto'
             }}>
               <div style={{
                 fontSize: '3rem',
@@ -187,7 +184,10 @@ function PrintDesign() {
               borderRadius: '12px',
               textAlign: 'center',
               transition: 'transform 0.3s ease',
-              cursor: 'pointer'
+              maxWidth: '400px',
+              minWidth: '280px',
+              flex: '1 1 350px',
+              margin: '0 auto'
             }}>
               <div style={{
                 fontSize: '3rem',
@@ -218,7 +218,10 @@ function PrintDesign() {
               borderRadius: '12px',
               textAlign: 'center',
               transition: 'transform 0.3s ease',
-              cursor: 'pointer'
+              maxWidth: '400px',
+              minWidth: '280px',
+              flex: '1 1 350px',
+              margin: '0 auto'
             }}>
               <div style={{
                 fontSize: '3rem',
@@ -271,16 +274,9 @@ function PrintDesign() {
           </p>
           <button
             onClick={() => navigate('/contact')}
+            className="cta-button"
             style={{
-              padding: '15px 40px',
-              fontSize: '1.2rem',
-              backgroundColor: '#2563eb',
-              color: 'white',
-              border: 'none',
-              borderRadius: '8px',
-              cursor: 'pointer',
-              fontWeight: '600',
-              transition: 'all 0.3s ease'
+              fontSize: '1.2rem'
             }}
           >
             Get Started

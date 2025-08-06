@@ -94,11 +94,10 @@ function Contact() {
   }
 
   return (
-    <div style={{
+    <div className="page-container" style={{
       display: 'flex',
       flexDirection: 'column',
-      minHeight: '100vh',
-      paddingTop: '40px'
+      minHeight: '100vh'
     }}>
       <Helmet>
         <title>Contact Us | Pixelwave Marketing - Digital Solutions</title>
@@ -194,24 +193,11 @@ function Contact() {
           </p>
           <a
             href="tel:+18024555570"
+            className="cta-button"
             style={{
               display: 'inline-block',
-              padding: '15px 40px',
-              backgroundColor: '#2563eb',
-              color: 'white',
-              textDecoration: 'none',
-              borderRadius: '8px',
               fontSize: '1.2rem',
-              fontWeight: '600',
-              marginTop: '20px',
-              boxShadow: '0 4px 6px rgba(37, 99, 235, 0.25)',
-              transition: 'all 0.3s ease',
-              cursor: 'pointer',
-              ':hover': {
-                backgroundColor: '#1e40af',
-                transform: 'translateY(-4px) scale(1.05)',
-                boxShadow: '0 8px 15px rgba(37, 99, 235, 0.4)'
-              }
+              marginTop: '20px'
             }}
           >
             📞 Call Us Now

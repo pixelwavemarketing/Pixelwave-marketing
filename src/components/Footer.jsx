@@ -41,9 +41,8 @@ function Footer() {
           textAlign: 'center'
         }}>
           <a href="mailto:pixelwavemarketing0@gmail.com" 
+             className="footer-link"
              style={{
-               color: '#fff',
-               textDecoration: 'none',
                display: 'block',
                marginBottom: '8px',
                fontSize: '1rem'
@@ -53,9 +52,8 @@ function Footer() {
           </a>
           
           <a href="tel:+18024555570"
+             className="footer-link"
              style={{
-               color: '#fff',
-               textDecoration: 'none',
                display: 'block',
                marginBottom: '15px',
                fontSize: '1rem'
@@ -73,14 +71,14 @@ function Footer() {
             <a href="https://www.facebook.com/profile.php?id=61571502117710" 
                target="_blank" 
                rel="noopener noreferrer"
-               style={{ color: '#fff', fontSize: '24px' }}
+               className="social-link"
             >
               <FontAwesomeIcon icon={faFacebook} />
             </a>
             <a href="https://www.yelp.com/biz/pixelwave-marketing-ballston?osq=pixelwave+marketing&override_cta=Ask+for+information" 
                target="_blank" 
                rel="noopener noreferrer"
-               style={{ color: '#fff', fontSize: '24px' }}
+               className="social-link"
             >
               <FontAwesomeIcon icon={faYelp} />
             </a>
@@ -96,11 +94,12 @@ function Footer() {
           gap: '20px',
           flexWrap: 'wrap'
         }}>
-          <a href="/" style={{ color: '#fff', textDecoration: 'none', fontSize: '0.9rem' }}>Home</a>
-          <a href="/services" style={{ color: '#fff', textDecoration: 'none', fontSize: '0.9rem' }}>Services</a>
-          <a href="/blog" style={{ color: '#fff', textDecoration: 'none', fontSize: '0.9rem' }}>Blog</a>
-          <a href="/faq" style={{ color: '#fff', textDecoration: 'none', fontSize: '0.9rem' }}>FAQ</a>
-          <a href="/contact" style={{ color: '#fff', textDecoration: 'none', fontSize: '0.9rem' }}>Contact</a>
+          <a href="/" className="footer-link">Home</a>
+          <a href="/services" className="footer-link">Services</a>
+          <a href="/blog" className="footer-link">Blog</a>
+          <a href="/faq" className="footer-link">FAQ</a>
+          <a href="/portfolio" className="footer-link">Portfolio</a>
+          <a href="/contact" className="footer-link">Contact</a>
         </div>
       </div>
     </footer>

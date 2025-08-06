@@ -8,6 +8,7 @@ import BrandIdentity from './pages/BrandIdentity'
 import MarketingSystems from './pages/MarketingSystems'
 import Analytics from './pages/Analytics'
 import PrintDesign from './pages/PrintDesign'
+import Portfolio from './pages/Portfolio'
 import Contact from './pages/Contact'
 import ThankYou from './pages/ThankYou'
 import Blog from './pages/Blog'
@@ -28,6 +29,7 @@ function App() {
         <Route path="/print-design" element={<PrintDesign />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/faq" element={<FAQ />} />
+        <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/thank-you" element={<ThankYou />} />
       </Routes>

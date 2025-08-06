@@ -10,11 +10,10 @@ function WebDevelopment() {
   const navigate = useNavigate()
 
   return (
-    <div style={{
+    <div className="page-container" style={{
       display: 'flex',
       flexDirection: 'column',
-      minHeight: '100vh',
-      paddingTop: '40px'
+      minHeight: '100vh'
     }}>
       <Helmet>
         <title>Web Development Services | Pixelwave Marketing</title>
@@ -111,17 +110,9 @@ function WebDevelopment() {
           </p>
           <button
             onClick={() => navigate('/contact')}
+            className="cta-button"
             style={{
-              padding: '15px 40px',
-              fontSize: '1.2rem',
-              backgroundColor: '#2563eb',
-              color: 'white',
-              border: 'none',
-              borderRadius: '8px',
-              cursor: 'pointer',
-              fontWeight: '600',
-              transition: 'all 0.3s ease',
-              boxShadow: '0 4px 6px rgba(37, 99, 235, 0.25)'
+              fontSize: '1.2rem'
             }}
           >
             Start Your Project
@@ -147,20 +138,22 @@ function WebDevelopment() {
             Web Development Services
           </h2>
           <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 400px))',
+            display: 'flex',
+            flexWrap: 'wrap',
             gap: '30px',
             justifyContent: 'center'
           }}>
             {/* Custom Websites */}
-            <div style={{
-              padding: '30px',
-              border: '1px solid #e2e8f0',
-              borderRadius: '12px',
-              textAlign: 'center',
-              transition: 'transform 0.3s ease',
-              cursor: 'pointer'
-            }}>
+            <div 
+              className="service-box"
+              style={{
+                padding: '30px',
+                border: '1px solid #e2e8f0',
+                borderRadius: '12px',
+                textAlign: 'center',
+                transition: 'transform 0.3s ease'
+              }}
+            >
               <div style={{
                 fontSize: '3rem',
                 color: '#2563eb',
@@ -184,14 +177,16 @@ function WebDevelopment() {
             </div>
 
             {/* E-commerce */}
-            <div style={{
-              padding: '30px',
-              border: '1px solid #e2e8f0',
-              borderRadius: '12px',
-              textAlign: 'center',
-              transition: 'transform 0.3s ease',
-              cursor: 'pointer'
-            }}>
+            <div 
+              className="service-box"
+              style={{
+                padding: '30px',
+                border: '1px solid #e2e8f0',
+                borderRadius: '12px',
+                textAlign: 'center',
+                transition: 'transform 0.3s ease'
+              }}
+            >
               <div style={{
                 fontSize: '3rem',
                 color: '#059669',
@@ -215,14 +210,16 @@ function WebDevelopment() {
             </div>
 
             {/* Responsive Design */}
-            <div style={{
-              padding: '30px',
-              border: '1px solid #e2e8f0',
-              borderRadius: '12px',
-              textAlign: 'center',
-              transition: 'transform 0.3s ease',
-              cursor: 'pointer'
-            }}>
+            <div 
+              className="service-box"
+              style={{
+                padding: '30px',
+                border: '1px solid #e2e8f0',
+                borderRadius: '12px',
+                textAlign: 'center',
+                transition: 'transform 0.3s ease'
+              }}
+            >
               <div style={{
                 fontSize: '3rem',
                 color: '#dc2626',
@@ -246,14 +243,16 @@ function WebDevelopment() {
             </div>
 
             {/* SEO Optimization */}
-            <div style={{
-              padding: '30px',
-              border: '1px solid #e2e8f0',
-              borderRadius: '12px',
-              textAlign: 'center',
-              transition: 'transform 0.3s ease',
-              cursor: 'pointer'
-            }}>
+            <div 
+              className="service-box"
+              style={{
+                padding: '30px',
+                border: '1px solid #e2e8f0',
+                borderRadius: '12px',
+                textAlign: 'center',
+                transition: 'transform 0.3s ease'
+              }}
+            >
               <div style={{
                 fontSize: '3rem',
                 color: '#7c3aed',
@@ -286,6 +285,7 @@ function WebDevelopment() {
       }}>
         <div style={{
           maxWidth: '1200px',
+          minWidth: '200px',
           margin: '0 auto'
         }}>
           <h2 style={{
@@ -297,17 +297,24 @@ function WebDevelopment() {
             Technologies We Use
           </h2>
           <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 250px))',
+            display: 'flex',
+            flexWrap: 'wrap', 
             gap: '20px',
-            justifyContent: 'center'
+            justifyContent: 'center',
+            margin: '0 auto',
+            padding: '0 20px',
+            width: '100%' 
           }}>
             <div style={{
               padding: '20px',
               backgroundColor: 'white',
               borderRadius: '8px',
               textAlign: 'center',
-              boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
+              boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
+              maxWidth: '200px',
+              minWidth: '150px',
+              flex: '1 1 180px',
+              margin: '0 auto'
             }}>
               <h3 style={{
                 fontSize: '1.2rem',
@@ -328,7 +335,11 @@ function WebDevelopment() {
               backgroundColor: 'white',
               borderRadius: '8px',
               textAlign: 'center',
-              boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
+              boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
+              maxWidth: '200px',
+              minWidth: '150px',
+              flex: '1 1 180px',
+              margin: '0 auto'
             }}>
               <h3 style={{
                 fontSize: '1.2rem',
@@ -349,7 +360,11 @@ function WebDevelopment() {
               backgroundColor: 'white',
               borderRadius: '8px',
               textAlign: 'center',
-              boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
+              boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
+              maxWidth: '200px',
+              minWidth: '150px',
+              flex: '1 1 180px',
+              margin: '0 auto'
             }}>
               <h3 style={{
                 fontSize: '1.2rem',
@@ -370,7 +385,11 @@ function WebDevelopment() {
               backgroundColor: 'white',
               borderRadius: '8px',
               textAlign: 'center',
-              boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
+              boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
+              maxWidth: '200px',
+              minWidth: '150px',
+              flex: '1 1 180px',
+              margin: '0 auto'
             }}>
               <h3 style={{
                 fontSize: '1.2rem',
@@ -575,16 +594,9 @@ function WebDevelopment() {
           </p>
           <button
             onClick={() => navigate('/contact')}
+            className="cta-button"
             style={{
-              padding: '15px 40px',
-              fontSize: '1.2rem',
-              backgroundColor: '#2563eb',
-              color: 'white',
-              border: 'none',
-              borderRadius: '8px',
-              cursor: 'pointer',
-              fontWeight: '600',
-              transition: 'all 0.3s ease'
+              fontSize: '1.2rem'
             }}
           >
             Get Free Quote
