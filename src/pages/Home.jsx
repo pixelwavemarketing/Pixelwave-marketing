@@ -23,7 +23,47 @@ function Home() {
               "description": "Digital marketing and web development services to help businesses thrive",
               "telephone": "+18024555570",
               "email": "pixelwavemarketing0@gmail.com",
-              "url": "https://pixelwavemarketing.com"
+              "url": "https://pixelwavemarketing.com",
+              "foundingDate": "2023",
+              "numberOfEmployees": "5-10",
+              "knowsAbout": [
+                "Digital Marketing",
+                "Web Development", 
+                "Search Engine Optimization",
+                "Google Ads",
+                "Social Media Marketing",
+                "Content Marketing",
+                "Analytics",
+                "Brand Identity",
+                "E-commerce Development"
+              ],
+              "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Digital Marketing Services",
+                "itemListElement": [
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Web Development",
+                      "description": "Custom responsive websites and e-commerce solutions"
+                    }
+                  },
+                  {
+                    "@type": "Offer", 
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Digital Marketing",
+                      "description": "Google Ads, SEO, and social media marketing"
+                    }
+                  }
+                ]
+              },
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.9",
+                "reviewCount": "25"
+              }
             }
           `}
         </script>
@@ -98,163 +138,122 @@ function Home() {
           </div>
         </section>
 
-        {/* Key Services Preview */}
+        {/* Services Section */}
         <section style={{
-          padding: '40px 20px',
-          backgroundColor: '#f8f8f8'
+          padding: '60px 20px',
+          backgroundColor: '#f8fafc'
         }}>
           <div style={{
             maxWidth: '1200px',
             margin: '0 auto',
             textAlign: 'center'
           }}>
-            <h2 style={{ fontSize: '2rem', marginBottom: '40px', color: '#333' }}>
-              Our Solutions
+            <h2 style={{
+              fontSize: '2.5rem',
+              color: '#1e293b',
+              marginBottom: '20px'
+            }}>
+              Our Services
             </h2>
+            <p style={{
+              fontSize: '1.2rem',
+              color: '#64748b',
+              marginBottom: '50px'
+            }}>
+              Comprehensive digital solutions to grow your business
+            </p>
+            
             <div style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 400px))',
-              gap: '30px',
-              justifyContent: 'center'
+              gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+              gap: '30px'
             }}>
-              {/* Column 1 - Digital Solutions */}
-              <div style={{ 
-                padding: '30px', 
-                backgroundColor: 'white',
-                borderRadius: '8px',
-                boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
-              }}>
-                <h3 style={{ fontSize: '1.5rem', marginBottom: '15px', color: '#333' }}>
-                  Digital Solutions
-                </h3>
-                <ul style={{ 
-                  listStyle: 'none', 
-                  padding: 0,
-                  color: '#666',
-                  textAlign: 'left'
+              <div style={{
+                backgroundColor: '#ffffff',
+                padding: '30px',
+                borderRadius: '12px',
+                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+                cursor: 'pointer',
+                transition: 'transform 0.3s ease',
+                ':hover': {
+                  transform: 'translateY(-4px)'
+                }
+              }}
+              onClick={() => navigate('/digital-marketing')}>
+                <h3 style={{
+                  fontSize: '1.5rem',
+                  color: '#1e293b',
+                  marginBottom: '15px'
                 }}>
-                  <li style={{ marginBottom: '10px' }}>• Digital Marketing</li>
-                  <li style={{ marginBottom: '10px' }}>• Web Development</li>
-                  <li style={{ marginBottom: '10px' }}>• Analytics & Tracking</li>
-                </ul>
+                  Digital Marketing
+                </h3>
+                <p style={{
+                  color: '#64748b',
+                  lineHeight: '1.6'
+                }}>
+                  Google Ads, SEO, and social media marketing to increase your online visibility and drive more leads.
+                </p>
               </div>
 
-              {/* Column 2 - Brand Development */}
-              <div style={{ 
-                padding: '30px', 
-                backgroundColor: 'white',
-                borderRadius: '8px',
-                boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
-              }}>
-                <h3 style={{ fontSize: '1.5rem', marginBottom: '15px', color: '#333' }}>
-                  Brand Development
-                </h3>
-                <ul style={{ 
-                  listStyle: 'none', 
-                  padding: 0,
-                  color: '#666',
-                  textAlign: 'left'
+              <div style={{
+                backgroundColor: '#ffffff',
+                padding: '30px',
+                borderRadius: '12px',
+                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+                cursor: 'pointer',
+                transition: 'transform 0.3s ease',
+                ':hover': {
+                  transform: 'translateY(-4px)'
+                }
+              }}
+              onClick={() => navigate('/web-development')}>
+                <h3 style={{
+                  fontSize: '1.5rem',
+                  color: '#1e293b',
+                  marginBottom: '15px'
                 }}>
-                  <li style={{ marginBottom: '10px' }}>• Logo Design</li>
-                  <li style={{ marginBottom: '10px' }}>• Business Cards</li>
-                  <li style={{ marginBottom: '10px' }}>• Print Materials</li>
-                </ul>
+                  Web Development
+                </h3>
+                <p style={{
+                  color: '#64748b',
+                  lineHeight: '1.6'
+                }}>
+                  Custom websites and e-commerce solutions built with modern technologies for optimal performance.
+                </p>
               </div>
 
-              {/* Column 3 - Business Systems */}
-              <div style={{ 
-                padding: '30px', 
-                backgroundColor: 'white',
-                borderRadius: '8px',
-                boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
-              }}>
-                <h3 style={{ fontSize: '1.5rem', marginBottom: '15px', color: '#333' }}>
-                  Business Systems
-                </h3>
-                <ul style={{ 
-                  listStyle: 'none', 
-                  padding: 0,
-                  color: '#666',
-                  textAlign: 'left'
+              <div style={{
+                backgroundColor: '#ffffff',
+                padding: '30px',
+                borderRadius: '12px',
+                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+                cursor: 'pointer',
+                transition: 'transform 0.3s ease',
+                ':hover': {
+                  transform: 'translateY(-4px)'
+                }
+              }}
+              onClick={() => navigate('/analytics')}>
+                <h3 style={{
+                  fontSize: '1.5rem',
+                  color: '#1e293b',
+                  marginBottom: '15px'
                 }}>
-                  <li style={{ marginBottom: '10px' }}>• Marketing Automation</li>
-                  <li style={{ marginBottom: '10px' }}>• CRM Integration</li>
-                  <li style={{ marginBottom: '10px' }}>• Performance Tracking</li>
-                </ul>
+                  Analytics
+                </h3>
+                <p style={{
+                  color: '#64748b',
+                  lineHeight: '1.6'
+                }}>
+                  Data-driven insights and performance tracking to optimize your marketing efforts and maximize ROI.
+                </p>
               </div>
             </div>
-            {/* View All Services button */}
-            <button
-              onClick={() => navigate('/services')}
-              style={{
-                padding: '15px 40px',
-                fontSize: '1.2rem',
-                backgroundColor: '#2563eb',
-                color: 'white',
-                border: 'none',
-                borderRadius: '8px',
-                cursor: 'pointer',
-                marginTop: '40px',
-                transition: 'all 0.3s ease',
-                fontWeight: '600',
-                boxShadow: '0 4px 6px rgba(37, 99, 235, 0.25)',
-                ':hover': {
-                  backgroundColor: '#1e40af',
-                  transform: 'translateY(-4px) scale(1.05)',
-                  boxShadow: '0 8px 15px rgba(37, 99, 235, 0.4)'
-                }
-              }}
-            >
-              View All Services
-            </button>
           </div>
         </section>
 
-        {/* Call to Action */}
-        <section style={{
-          padding: '60px 20px',
-          backgroundColor: '#333',
-          color: 'white',
-          textAlign: 'center'
-        }}>
-          <div style={{
-            maxWidth: '600px',
-            margin: '0 auto'
-          }}>
-            <h2 style={{ fontSize: '2rem', marginBottom: '20px' }}>
-              Ready to Grow Your Business?
-            </h2>
-            <p style={{ marginBottom: '30px', fontSize: '1.1rem' }}>
-              Let's discuss how we can help you achieve your goals
-            </p>
-            {/* Get Started button in Call to Action section */}
-            <button
-              onClick={() => navigate('/contact')}
-              style={{
-                padding: '15px 40px',
-                fontSize: '1.2rem',
-                backgroundColor: 'white',
-                color: '#2563eb',
-                border: 'none',
-                borderRadius: '8px',
-                cursor: 'pointer',
-                fontWeight: '600',
-                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
-                transition: 'all 0.3s ease',
-                ':hover': {
-                  backgroundColor: '#f8fafc',
-                  color: '#1e40af',
-                  transform: 'translateY(-4px) scale(1.05)',
-                  boxShadow: '0 8px 15px rgba(0, 0, 0, 0.2)'
-                }
-              }}
-            >
-              Get Started
-            </button>
-          </div>
-        </section>
+        <Footer />
       </main>
-      <Footer />
     </>
   )
 }

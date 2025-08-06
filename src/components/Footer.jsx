@@ -93,10 +93,13 @@ function Footer() {
           display: 'flex',
           flexDirection: 'row',
           justifyContent: window.innerWidth <= 768 ? 'center' : 'flex-end',
-          gap: '20px'
+          gap: '20px',
+          flexWrap: 'wrap'
         }}>
           <a href="/" style={{ color: '#fff', textDecoration: 'none', fontSize: '0.9rem' }}>Home</a>
           <a href="/services" style={{ color: '#fff', textDecoration: 'none', fontSize: '0.9rem' }}>Services</a>
+          <a href="/blog" style={{ color: '#fff', textDecoration: 'none', fontSize: '0.9rem' }}>Blog</a>
+          <a href="/faq" style={{ color: '#fff', textDecoration: 'none', fontSize: '0.9rem' }}>FAQ</a>
           <a href="/contact" style={{ color: '#fff', textDecoration: 'none', fontSize: '0.9rem' }}>Contact</a>
         </div>
       </div>

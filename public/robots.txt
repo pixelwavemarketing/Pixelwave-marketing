@@ -2,4 +2,17 @@ User-agent: *
 Allow: /
 Disallow: /thank-you
 
-Sitemap: https://pixelwave-marketing.netlify.app/sitemap.xml 
+# AI-specific crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+Sitemap: https://pixelwavemarketing.com/sitemap.xml 

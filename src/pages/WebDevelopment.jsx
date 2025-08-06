@@ -19,7 +19,7 @@ function WebDevelopment() {
         <title>Web Development Services | Pixelwave Marketing</title>
         <link rel="canonical" href="https://usepixelwave.com/web-development" />
         <meta name="description" content="Professional web development services. Custom websites, e-commerce solutions, and responsive design. Modern technologies for optimal performance." />
-        <meta name="keywords" content="web development, custom websites, e-commerce development, responsive design, WordPress development" />
+        <meta name="keywords" content="web development, custom websites, e-commerce development, responsive design, custom development" />
         <script type="application/ld+json">
           {`
             {
@@ -355,13 +355,13 @@ function WebDevelopment() {
                 color: '#1e293b',
                 marginBottom: '10px'
               }}>
-                WordPress
+                Custom Website
               </h3>
               <p style={{
                 color: '#64748b',
                 fontSize: '0.9rem'
               }}>
-                Content management
+                Responsive design
               </p>
             </div>
             <div style={{
@@ -508,7 +508,7 @@ function WebDevelopment() {
                 color: '#64748b',
                 lineHeight: '1.6'
               }}>
-                Our developers build your website using modern technologies and best practices for optimal performance.
+                Our team builds your website using modern technologies and best practices for optimal performance.
               </p>
             </div>
             <div style={{

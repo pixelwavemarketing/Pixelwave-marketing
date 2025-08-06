@@ -47,6 +47,26 @@ function Header() {
             </Link>
           </li>
           <li>
+            <Link to="/blog" style={{
+              textDecoration: 'none',
+              color: '#333333',
+              fontSize: '1.2rem',
+              fontWeight: '500'
+            }}>
+              Blog
+            </Link>
+          </li>
+          <li>
+            <Link to="/faq" style={{
+              textDecoration: 'none',
+              color: '#333333',
+              fontSize: '1.2rem',
+              fontWeight: '500'
+            }}>
+              FAQ
+            </Link>
+          </li>
+          <li>
             <Link to="/contact" style={{
               textDecoration: 'none',
               color: '#333333',

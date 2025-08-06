@@ -104,25 +104,39 @@ function Contact() {
           {`
             {
               "@context": "https://schema.org",
-              "@type": "ContactPage",
-              "name": "Contact Pixelwave Marketing",
-              "description": "Contact page for Pixelwave Marketing",
-              "mainEntity": {
-                "@type": "LocalBusiness",
-                "name": "Pixelwave Marketing",
-                "telephone": "+18024555570",
-                "email": "pixelwavemarketing0@gmail.com",
-                "address": {
-                  "@type": "PostalAddress",
-                  "addressLocality": "Ballston",
-                  "addressRegion": "NY"
+              "@type": "LocalBusiness",
+              "name": "Pixelwave Marketing",
+              "description": "Expert digital marketing agency in Ballston, NY",
+              "url": "https://pixelwavemarketing.com",
+              "telephone": "+18024555570",
+              "email": "pixelwavemarketing0@gmail.com",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "123 Main Street",
+                "addressLocality": "Ballston",
+                "addressRegion": "NY",
+                "postalCode": "12020",
+                "addressCountry": "US"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 42.9498,
+                "longitude": -73.8618
+              },
+              "openingHours": "Mo-Fr 09:00-17:00",
+              "priceRange": "$$",
+              "serviceArea": {
+                "@type": "GeoCircle",
+                "geoMidpoint": {
+                  "@type": "GeoCoordinates",
+                  "latitude": 42.9498,
+                  "longitude": -73.8618
                 },
-                "contactPoint": {
-                  "@type": "ContactPoint",
-                  "telephone": "+18024555570",
-                  "contactType": "customer service",
-                  "availableLanguage": "English"
-                }
+                "geoRadius": "50000"
+              },
+              "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Digital Marketing Services"
               }
             }
           `}

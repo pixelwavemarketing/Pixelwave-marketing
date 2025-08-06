@@ -10,6 +10,8 @@ import Analytics from './pages/Analytics'
 import PrintDesign from './pages/PrintDesign'
 import Contact from './pages/Contact'
 import ThankYou from './pages/ThankYou'
+import Blog from './pages/Blog'
+import FAQ from './pages/FAQ'
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
         <Route path="/marketing-systems" element={<MarketingSystems />} />
         <Route path="/analytics" element={<Analytics />} />
         <Route path="/print-design" element={<PrintDesign />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/faq" element={<FAQ />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/thank-you" element={<ThankYou />} />
       </Routes>
