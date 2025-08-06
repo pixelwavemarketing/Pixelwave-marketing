@@ -1,10 +1,41 @@
+import { useNavigate } from 'react-router-dom'
+
 function ContactForm() {
+  const navigate = useNavigate()
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    
+    // Get form data
+    const formData = new FormData(e.target)
+    const data = Object.fromEntries(formData)
+    
+    // Submit to Netlify
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams({
+        'form-name': 'contact',
+        ...data
+      })
+    })
+    .then(() => {
+      // Redirect to thank you page
+      navigate('/thank-you')
+    })
+    .catch((error) => {
+      console.error('Error:', error)
+      alert('There was an error submitting the form. Please try again.')
+    })
+  }
+
   return (
     <form 
       name="contact"
       method="POST"
       data-netlify="true"
       netlify
+      onSubmit={handleSubmit}
       style={{
         width: '100%',
         maxWidth: '500px',

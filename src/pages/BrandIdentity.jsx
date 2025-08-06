@@ -13,7 +13,8 @@ function BrandIdentity() {
     <div style={{
       display: 'flex',
       flexDirection: 'column',
-      minHeight: '100vh'
+      minHeight: '100vh',
+      paddingTop: '40px'
     }}>
       <Helmet>
         <title>Brand Identity Design | Pixelwave Marketing</title>

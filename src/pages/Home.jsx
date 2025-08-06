@@ -71,7 +71,8 @@ function Home() {
       <main style={{
         display: 'flex',
         flexDirection: 'column',
-        minHeight: '100vh'
+        minHeight: '100vh',
+        paddingTop: '44px'
       }}>
         <Header />
         <section style={{ 

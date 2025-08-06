@@ -13,7 +13,8 @@ function WebDevelopment() {
     <div style={{
       display: 'flex',
       flexDirection: 'column',
-      minHeight: '100vh'
+      minHeight: '100vh',
+      paddingTop: '40px'
     }}>
       <Helmet>
         <title>Web Development Services | Pixelwave Marketing</title>

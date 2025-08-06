@@ -22,7 +22,8 @@ function Services() {
     <div style={{
       display: 'flex',
       flexDirection: 'column',
-      minHeight: '100vh'
+      minHeight: '100vh',
+      paddingTop: '40px'
     }}>
       <Helmet>
         <title>Digital Marketing & Web Services | Pixelwave Marketing</title>

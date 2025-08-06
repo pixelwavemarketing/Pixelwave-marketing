@@ -14,7 +14,8 @@ function DigitalMarketing() {
     <div style={{
       display: 'flex',
       flexDirection: 'column',
-      minHeight: '100vh'
+      minHeight: '100vh',
+      paddingTop: '40px'
     }}>
       <Helmet>
         <title>Digital Marketing Services | Pixelwave Marketing</title>

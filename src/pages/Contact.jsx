@@ -94,7 +94,12 @@ function Contact() {
   }
 
   return (
-    <div>
+    <div style={{
+      display: 'flex',
+      flexDirection: 'column',
+      minHeight: '100vh',
+      paddingTop: '40px'
+    }}>
       <Helmet>
         <title>Contact Us | Pixelwave Marketing - Digital Solutions</title>
         <link rel="canonical" href="https://pixelwavemarketing.com/contact" />

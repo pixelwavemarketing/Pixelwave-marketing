@@ -48,7 +48,8 @@ function FAQ() {
     <div style={{
       display: 'flex',
       flexDirection: 'column',
-      minHeight: '100vh'
+      minHeight: '100vh',
+      paddingTop: '40px'
     }}>
       <Helmet>
         <title>Frequently Asked Questions | Pixelwave Marketing</title>

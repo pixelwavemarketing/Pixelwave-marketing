@@ -13,7 +13,8 @@ function Analytics() {
     <div style={{
       display: 'flex',
       flexDirection: 'column',
-      minHeight: '100vh'
+      minHeight: '100vh',
+      paddingTop: '40px'
     }}>
       <Helmet>
         <title>Business Analytics Services | Pixelwave Marketing</title>

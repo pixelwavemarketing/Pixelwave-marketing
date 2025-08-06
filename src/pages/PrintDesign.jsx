@@ -13,7 +13,8 @@ function PrintDesign() {
     <div style={{
       display: 'flex',
       flexDirection: 'column',
-      minHeight: '100vh'
+      minHeight: '100vh',
+      paddingTop: '44px'
     }}>
       <Helmet>
         <title>Print Design Services | Pixelwave Marketing</title>
