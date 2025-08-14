@@ -4,6 +4,7 @@ import Footer from '../components/Footer'
 import Header from '../components/Header'
 import truckImage from '../assets/truck-25.webp'
 import easyCleanLogo from '../assets/Easy clean - Pressure Washing.webp'
+import financingToolkit from '../assets/Finacing toolkit.png'
 
 function Portfolio() {
   const navigate = useNavigate()
@@ -308,44 +309,126 @@ function Portfolio() {
               </div>
             </div>
 
-            {/* Coming Soon Placeholder */}
-            <div style={{
-              backgroundColor: '#f8fafc',
-              borderRadius: '12px',
-              border: '2px dashed #cbd5e1',
-              padding: '60px 30px',
-              textAlign: 'center',
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              justifyContent: 'center',
-              minHeight: '400px',
-              maxWidth: '400px',
-              minWidth: '280px',
-              flex: '1 1 350px',
-              margin: '0 auto'
-            }}>
+            {/* Open Finance Calculators Project */}
+            <div 
+              className="portfolio-card"
+              style={{
+                backgroundColor: '#ffffff',
+                borderRadius: '12px',
+                overflow: 'hidden',
+                maxWidth: '400px',
+                minWidth: '280px',
+                flex: '1 1 350px',
+                margin: '0 auto'
+              }}
+              onClick={() => window.open('https://openfinancecalculators.com', '_blank')}
+            >
               <div style={{
-                fontSize: '3rem',
-                color: '#94a3b8',
-                marginBottom: '20px'
+                padding: '40px',
+                textAlign: 'center',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'center',
+                minHeight: '250px',
+                backgroundColor: '#f8fafc'
               }}>
-                🚀
+                <img 
+                  src={financingToolkit}
+                  alt="Open Finance Calculators Website"
+                  style={{
+                    maxWidth: '100%',
+                    height: 'auto',
+                    maxHeight: '200px',
+                    objectFit: 'contain'
+                  }}
+                />
               </div>
-              <h3 style={{
-                fontSize: '1.5rem',
-                marginBottom: '15px',
-                color: '#64748b'
+              <div style={{
+                padding: '30px'
               }}>
-                More Projects Coming Soon
-              </h3>
-              <p style={{
-                color: '#94a3b8',
-                lineHeight: '1.6',
-                maxWidth: '300px'
-              }}>
-                We're working on amazing projects. Check back soon to see more of our work!
-              </p>
+                <div style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  marginBottom: '15px'
+                }}>
+                  <span style={{
+                    backgroundColor: '#059669',
+                    color: 'white',
+                    padding: '6px 16px',
+                    borderRadius: '20px',
+                    fontSize: '0.9rem',
+                    fontWeight: '500'
+                  }}>
+                    Web Development
+                  </span>
+                  <span style={{
+                    color: '#64748b',
+                    fontSize: '0.9rem'
+                  }}>
+                  </span>
+                </div>
+                <h3 style={{
+                  fontSize: '1.5rem',
+                  marginBottom: '15px',
+                  color: '#1e293b',
+                  fontWeight: '600'
+                }}>
+                  Open Finance Calculators
+                </h3>
+                <p style={{
+                  color: '#64748b',
+                  lineHeight: '1.6',
+                  marginBottom: '20px'
+                }}>
+                  Comprehensive financial calculator website providing tools for loans, 
+                  investments, and financial planning. User-friendly interface with 
+                  accurate calculations.
+                </p>
+                <div style={{
+                  display: 'flex',
+                  flexWrap: 'wrap',
+                  gap: '8px'
+                }}>
+                  <span style={{
+                    backgroundColor: '#f1f5f9',
+                    color: '#475569',
+                    padding: '4px 12px',
+                    borderRadius: '12px',
+                    fontSize: '0.8rem'
+                  }}>
+                    Financial Tools
+                  </span>
+                  <span style={{
+                    backgroundColor: '#f1f5f9',
+                    color: '#475569',
+                    padding: '4px 12px',
+                    borderRadius: '12px',
+                    fontSize: '0.8rem'
+                  }}>
+                    Calculator Apps
+                  </span>
+                  <span style={{
+                    backgroundColor: '#f1f5f9',
+                    color: '#475569',
+                    padding: '4px 12px',
+                    borderRadius: '12px',
+                    fontSize: '0.8rem'
+                  }}>
+                    Responsive Design
+                  </span>
+                  <span style={{
+                    backgroundColor: '#f1f5f9',
+                    color: '#475569',
+                    padding: '4px 12px',
+                    borderRadius: '12px',
+                    fontSize: '0.8rem'
+                  }}>
+                    User Experience
+                  </span>
+                </div>
+              </div>
             </div>
 
             {/* Another Coming Soon Placeholder */}
