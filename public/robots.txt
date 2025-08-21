@@ -1,6 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /thank-you
 
 # AI-specific crawlers
 User-agent: GPTBot
@@ -15,4 +14,4 @@ Allow: /
 User-agent: anthropic-ai
 Allow: /
 
-Sitemap: https://pixelwavemarketing.com/sitemap.xml 
+Sitemap: https://usepixelwave.com/sitemap.xml 

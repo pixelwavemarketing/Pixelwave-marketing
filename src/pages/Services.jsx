@@ -312,9 +312,6 @@ function Services() {
         </div>
       </div>
 
-      {/* Portfolio Section */}
-
-
       {/* Call to Action */}
       <div style={{
         padding: '60px 20px',
