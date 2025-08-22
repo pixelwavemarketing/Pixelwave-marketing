@@ -75,7 +75,7 @@ function Footer() {
 						>
 							<FontAwesomeIcon icon={faFacebook} />
 						</a>
-						<a href="https://www.yelp.com/biz/pixelwave-marketing-ballston?osq=pixelwave+marketing&override_cta=Ask+for+information" 
+						<a href="https://www.yelp.com/biz/pixelwave-marketing-nashville?osq=pixelwave+marketing&override_cta=Ask+for+information" 
 						   target="_blank" 
 						   rel="noopener noreferrer"
 						   className="social-link"

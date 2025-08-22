@@ -103,29 +103,29 @@ function Contact() {
         <title>Contact Us | Pixelwave Marketing - Digital Solutions</title>
         <link rel="canonical" href="https://pixelwavemarketing.com/contact" />
         <meta name="description" content="Get in touch with Pixelwave Marketing for expert digital marketing, web development, and business growth solutions. Call us at (802) 445-5570 or send us a message." />
-        <meta name="keywords" content="contact pixelwave marketing, digital marketing contact, web development contact, marketing agency contact, Ballston NY" />
+        <meta name="keywords" content="contact pixelwave marketing, digital marketing contact, web development contact, marketing agency contact, Nashville TN" />
         <script type="application/ld+json">
           {`
             {
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               "name": "Pixelwave Marketing",
-              "description": "Expert digital marketing agency in Ballston, NY",
+              "description": "Expert digital marketing agency in Nashville, TN",
               "url": "https://pixelwavemarketing.com",
               "telephone": "+18024555570",
               "email": "pixelwavemarketing0@gmail.com",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "123 Main Street",
-                "addressLocality": "Ballston",
-                "addressRegion": "NY",
-                "postalCode": "12020",
+                "addressLocality": "Nashville",
+                "addressRegion": "TN",
+                "postalCode": "37201",
                 "addressCountry": "US"
               },
               "geo": {
                 "@type": "GeoCoordinates",
-                "latitude": 42.9498,
-                "longitude": -73.8618
+                "latitude": 36.1627,
+                "longitude": -86.7816
               },
               "openingHours": "Mo-Fr 09:00-17:00",
               "priceRange": "$$",
@@ -133,8 +133,8 @@ function Contact() {
                 "@type": "GeoCircle",
                 "geoMidpoint": {
                   "@type": "GeoCoordinates",
-                  "latitude": 42.9498,
-                  "longitude": -73.8618
+                  "latitude": 36.1627,
+                  "longitude": -86.7816
                 },
                 "geoRadius": "50000"
               },

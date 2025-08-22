@@ -97,7 +97,7 @@ function Blog() {
         <p>Your Google My Business profile is often the first thing potential customers see. Keep it updated with accurate information, photos, and regular posts.</p>
         
         <h3>Local Keyword Research</h3>
-        <p>Target keywords that include your location and service area. For example, "digital marketing agency Ballston NY" instead of just "digital marketing agency."</p>
+        <p>Target keywords that include your location and service area. For example, "digital marketing agency Nashville TN" instead of just "digital marketing agency."</p>
         
         <h3>Local Citations and Reviews</h3>
         <p>Consistent business information across directories and positive customer reviews significantly impact local search rankings.</p>
