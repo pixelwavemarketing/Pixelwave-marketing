@@ -1,23 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Updated Google Analytics Implementation -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R7SFT14JN7"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){
-        try {
-          dataLayer.push(arguments);
-        } catch (e) {
-          console.log('Analytics error:', e);
-        }
-      }
-      gtag('js', new Date());
-      gtag('config', 'G-R7SFT14JN7', {
-        cookie_flags: 'SameSite=None;Secure',
-        cookie_domain: 'auto'
+      <!-- GA4 base -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-R7SFT14JN7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ try { dataLayer.push(arguments); } catch(e){ console.log('Analytics error:', e);} }
+
+    // Enable "DebugView" only when ?debug=1 is present
+    var DEBUG = location.search.includes('debug=1');
+
+    gtag('js', new Date());
+    gtag('config', 'G-R7SFT14JN7', {
+      send_page_view: true,              // make the initial page_view explicit
+      cookie_domain: 'auto',
+      cookie_flags: 'SameSite=None;Secure',
+      debug_mode: DEBUG                  // lets you see events instantly in Admin → DebugView
+    });
+  </script>
+
+  <!-- SPA/Client-side routing support for GA4 -->
+  <script>
+  (function(){
+    if (!window.gtag) return;
+
+    function sendPV(){
+      gtag('event', 'page_view', {
+        page_location: location.href,
+        page_path: location.pathname + location.search + location.hash,
+        page_title: document.title
       });
-    </script>
+    }
+
+    // Fire on history API changes (pushState/replaceState)
+    ['pushState','replaceState'].forEach(function(m){
+      var orig = history[m];
+      history[m] = function(){
+        var ret = orig.apply(this, arguments);
+        sendPV();
+        return ret;
+      };
+    });
+
+    // Fire on back/forward & hash changes
+    window.addEventListener('popstate', sendPV);
+    window.addEventListener('hashchange', sendPV);
+  })();
+  </script>
     
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
