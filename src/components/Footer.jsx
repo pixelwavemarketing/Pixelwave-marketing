@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faYelp } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import siteConfig from '../config/siteConfig.js';
 
 function Footer() {
 	return (
@@ -40,26 +41,30 @@ function Footer() {
 					flex: '1',
 					textAlign: 'center'
 				}}>
-					<a href="mailto:pixelwavemarketing0@gmail.com" 
+					<a href={`mailto:${siteConfig.company.email}`}
 						 className="footer-link"
 						 style={{
 							display: 'block',
 							marginBottom: '8px',
-							fontSize: '1rem'
+							fontSize: '1rem',
+							color: 'white',
+							textDecoration: 'none'
 						 }}
 					>
-						Email at: pixelwavemarketing0@gmail.com
+						Email: {siteConfig.company.email}
 					</a>
 					
-					<a href="tel:+16155550123"
+					<a href={`tel:${siteConfig.company.telephone}`}
 						 className="footer-link"
 						 style={{
 							display: 'block',
 							marginBottom: '15px',
-							fontSize: '1rem'
+							fontSize: '1rem',
+							color: 'white',
+							textDecoration: 'none'
 						 }}
 					>
-						Call at: +1 (615) 555-0123
+						Call: {siteConfig.company.telephone}
 					</a>
 					
 					<div style={{
@@ -68,19 +73,50 @@ function Footer() {
 						gap: '20px',
 						marginTop: '10px'
 					}}>
-						<a href="https://www.facebook.com/profile.php?id=61571502117710" 
+						<a href={siteConfig.company.socialMedia.facebook}
 						   target="_blank" 
 						   rel="noopener noreferrer"
 						   className="social-link"
+						   style={{
+							 color: 'white',
+							 fontSize: '1.5rem',
+							 transition: 'color 0.3s ease'
+						   }}
+						   onMouseEnter={(e) => e.target.style.color = '#1877F2'}
+						   onMouseLeave={(e) => e.target.style.color = 'white'}
+						   title="Follow us on Facebook"
 						>
 							<FontAwesomeIcon icon={faFacebook} />
 						</a>
-						<a href="https://www.yelp.com/biz/pixelwave-marketing-nashville?osq=pixelwave+marketing&override_cta=Ask+for+information" 
+						<a href={siteConfig.company.socialMedia.instagram}
 						   target="_blank" 
 						   rel="noopener noreferrer"
 						   className="social-link"
+						   style={{
+							 color: 'white',
+							 fontSize: '1.5rem',
+							 transition: 'color 0.3s ease'
+						   }}
+						   onMouseEnter={(e) => e.target.style.color = '#E4405F'}
+						   onMouseLeave={(e) => e.target.style.color = 'white'}
+						   title="Follow us on Instagram"
 						>
-							<FontAwesomeIcon icon={faYelp} />
+							<FontAwesomeIcon icon={faInstagram} />
+						</a>
+						<a href={siteConfig.company.socialMedia.linkedin}
+						   target="_blank" 
+						   rel="noopener noreferrer"
+						   className="social-link"
+						   style={{
+							 color: 'white',
+							 fontSize: '1.5rem',
+							 transition: 'color 0.3s ease'
+						   }}
+						   onMouseEnter={(e) => e.target.style.color = '#0A66C2'}
+						   onMouseLeave={(e) => e.target.style.color = 'white'}
+						   title="Connect with us on LinkedIn"
+						>
+							<FontAwesomeIcon icon={faLinkedin} />
 						</a>
 					</div>
 				</div>
@@ -94,14 +130,45 @@ function Footer() {
 					gap: '20px',
 					flexWrap: 'wrap'
 				}}>
-					<a href="/" className="footer-link">Home</a>
-					<a href="/services" className="footer-link">Services</a>
-					<a href="/blog" className="footer-link">Blog</a>
-					<a href="/faq" className="footer-link">FAQ</a>
-					<a href="/portfolio" className="footer-link">Portfolio</a>
-					<a href="/contact" className="footer-link">Contact</a>
+					<a href="/" className="footer-link" style={{ color: 'white', textDecoration: 'none' }}>Home</a>
+					<a href="/services" className="footer-link" style={{ color: 'white', textDecoration: 'none' }}>Services</a>
+					<a href="/blog" className="footer-link" style={{ color: 'white', textDecoration: 'none' }}>Blog</a>
+					<a href="/faq" className="footer-link" style={{ color: 'white', textDecoration: 'none' }}>FAQ</a>
+					<a href="/portfolio" className="footer-link" style={{ color: 'white', textDecoration: 'none' }}>Portfolio</a>
+					<a href="/contact" className="footer-link" style={{ color: 'white', textDecoration: 'none' }}>Contact</a>
 				</div>
 			</div>
+			
+			{/* Footer Schema for SEO */}
+			<script type="application/ld+json">
+				{JSON.stringify({
+					"@context": "https://schema.org",
+					"@type": "Organization",
+					"name": siteConfig.company.name,
+					"url": siteConfig.company.url,
+					"logo": siteConfig.company.logo,
+					"description": siteConfig.company.description,
+					"contactPoint": {
+						"@type": "ContactPoint",
+						"telephone": siteConfig.company.telephone,
+						"contactType": "customer service",
+						"email": siteConfig.company.email,
+						"areaServed": siteConfig.company.areaServed,
+						"availableLanguage": "English"
+					},
+					"sameAs": [
+						siteConfig.company.socialMedia.facebook,
+						siteConfig.company.socialMedia.instagram,
+						siteConfig.company.socialMedia.linkedin
+					],
+					"address": {
+						"@type": "PostalAddress",
+						"addressLocality": siteConfig.company.address.addressLocality,
+						"addressRegion": siteConfig.company.address.addressRegion,
+						"addressCountry": siteConfig.company.address.addressCountry
+					}
+				})}
+			</script>
 		</footer>
 	)
 }

@@ -1,73 +1,49 @@
 import { useNavigate } from 'react-router-dom'
-import { Helmet } from 'react-helmet'
+import SEOOptimizer from '../components/SEOOptimizer'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import PixelwaveLogo from '../components/PixelwaveLogo'
+import Testimonials from '../components/Testimonials'
 
 function Home() {
 	const navigate = useNavigate()
 
+	// Sample testimonials data - you can customize these with real client feedback
+	const testimonials = [
+		{
+			name: "Dan",
+			title: "Owner",
+			company: "The Dumpster Man 518",
+			rating: 5,
+			content: "PixelWave built our website and we are very happy with the results. The local SEO work has brought us more customers than we could have imagined.",
+			avatar: null // You can add avatar images later
+		},
+		{
+			name: "Ethan",
+			title: "Owner",
+			company: "Easy Clean Power Washing",
+			rating: 5,
+			content: "Working with PixelWave was great! They were able to create our logo with ease and folow the vision we had in mind perfectly.",
+			avatar: null
+		},
+		{
+			name: "Shaun",
+			title: "Owner",
+			company: "Open Fiance Calculators",
+			rating: 5,
+			content: "The Team at PixelWave was awesome! They took our idea for a website and made it reality. We are very happy with the results!",
+			avatar: null
+		}
+	]
+
 	return (
 		<>
-			<Helmet>
-				<title>Pixelwave Marketing - Digital Marketing & Web Solutions</title>
-				<link rel="canonical" href="https://usepixelwave.com" />
-				<meta name="description" content="Pixelwave Marketing specializes in digital marketing, web development, and analytics solutions to help businesses thrive in the modern marketplace." />
-				<meta name="keywords" content="digital marketing, web development, analytics, business growth, marketing agency" />
-				<script type="application/ld+json">
-					{`
-						{
-							"@context": "https://schema.org",
-							"@type": "Organization",
-							"name": "Pixelwave Marketing",
-							"description": "Digital marketing and web development services to help businesses thrive",
-							"telephone": "+18024555570",
-							"email": "pixelwavemarketing0@gmail.com",
-							"url": "https://pixelwavemarketing.com",
-							"foundingDate": "2023",
-							"numberOfEmployees": "5-10",
-							"knowsAbout": [
-								"Digital Marketing",
-								"Web Development", 
-								"Search Engine Optimization",
-								"Google Ads",
-								"Social Media Marketing",
-								"Content Marketing",
-								"Analytics",
-								"Brand Identity",
-								"E-commerce Development"
-							],
-							"hasOfferCatalog": {
-								"@type": "OfferCatalog",
-								"name": "Digital Marketing Services",
-								"itemListElement": [
-									{
-										"@type": "Offer",
-										"itemOffered": {
-											"@type": "Service",
-											"name": "Web Development",
-											"description": "Custom responsive websites and e-commerce solutions"
-										}
-									},
-									{
-										"@type": "Offer", 
-										"itemOffered": {
-											"@type": "Service",
-											"name": "Digital Marketing",
-											"description": "Google Ads, SEO, and social media marketing"
-										}
-									}
-								]
-							},
-							"aggregateRating": {
-								"@type": "AggregateRating",
-								"ratingValue": "4.9",
-								"reviewCount": "25"
-							}
-						}
-					`}
-				</script>
-			</Helmet>
+			<SEOOptimizer 
+				title="PixelWave Marketing - Digital Marketing & Web Solutions"
+				description="PixelWave Marketing specializes in digital marketing, web development, and analytics solutions to help Nashville businesses thrive in the modern marketplace."
+				keywords="digital marketing, web development, analytics, business growth, marketing agency, Nashville"
+				structuredDataType="localBusiness"
+			/>
 			<main className="page-container" style={{
 				display: 'flex',
 				flexDirection: 'column',
@@ -209,6 +185,68 @@ function Home() {
 								</p>
 							</div>
 						</div>
+					</div>
+				</section>
+
+				{/* Testimonials Section */}
+				<Testimonials 
+					testimonials={testimonials}
+					title="What Our Clients Say"
+					description="Don't just take our word for it. See what our clients have to say about their experience with PixelWave."
+				/>
+
+				{/* Call to Action Section */}
+				<section style={{
+					padding: '80px 20px',
+					backgroundColor: '#1e293b',
+					color: 'white',
+					textAlign: 'center'
+				}}>
+					<div style={{
+						maxWidth: '800px',
+						margin: '0 auto'
+					}}>
+						<h2 style={{
+							fontSize: '2.5rem',
+							marginBottom: '20px',
+							color: '#FFFFFF'
+						}}>
+							Ready to Transform Your Business?
+						</h2>
+						<p style={{
+							fontSize: '1.2rem',
+							marginBottom: '40px',
+							color: '#cbd5e1',
+							lineHeight: '1.6'
+						}}>
+							Join the growing list of Nashville businesses that trust PixelWave to deliver results. 
+							Get your free consultation and discover how we can help you grow.
+						</p>
+						<button
+							onClick={() => navigate('/contact')}
+							className="cta-button"
+							style={{
+								fontSize: '1.2rem',
+								padding: '15px 30px',
+								backgroundColor: '#2563eb',
+								color: 'white',
+								border: 'none',
+								borderRadius: '8px',
+								cursor: 'pointer',
+								fontWeight: '600',
+								transition: 'all 0.3s ease'
+							}}
+							onMouseEnter={(e) => {
+								e.target.style.backgroundColor = '#1d4ed8';
+								e.target.style.transform = 'translateY(-2px)';
+							}}
+							onMouseLeave={(e) => {
+								e.target.style.backgroundColor = '#2563eb';
+								e.target.style.transform = 'translateY(0)';
+							}}
+						>
+							Get Free Consultation
+						</button>
 					</div>
 				</section>
 

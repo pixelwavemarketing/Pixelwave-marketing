@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import { Helmet } from 'react-helmet'
+import SEOOptimizer from '../components/SEOOptimizer'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGoogle, faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faChartLine, faBullseye, faRocket, faUsers } from '@fortawesome/free-solid-svg-icons'
@@ -16,77 +16,14 @@ function DigitalMarketing() {
       flexDirection: 'column',
       minHeight: '100vh'
     }}>
-      <Helmet>
-        <title>Digital Marketing Services | Pixelwave Marketing</title>
-        <link rel="canonical" href="https://usepixelwave.com/digital-marketing" />
-        <meta name="description" content="Expert digital marketing services in Nashville. Google Ads, social media marketing, SEO, and email marketing to grow your business. Free consultation available." />
-        <meta name="keywords" content="digital marketing Nashville, Google Ads Nashville, social media marketing Nashville, SEO services Nashville, email marketing Nashville, business marketing Nashville" />
-        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-        
-        {/* Open Graph */}
-        <meta property="og:title" content="Digital Marketing Services | Pixelwave Marketing" />
-        <meta property="og:description" content="Expert digital marketing services in Nashville. Google Ads, social media marketing, SEO, and email marketing to grow your business." />
-        <meta property="og:url" content="https://usepixelwave.com/digital-marketing" />
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Pixelwave Marketing" />
-        
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Digital Marketing Services | Pixelwave Marketing" />
-        <meta name="twitter:description" content="Expert digital marketing services in Nashville. Google Ads, social media marketing, SEO, and email marketing to grow your business." />
-        
-        <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "Service",
-              "name": "Digital Marketing Services",
-              "description": "Comprehensive digital marketing solutions including Google Ads, social media marketing, SEO, and email marketing for businesses",
-              "provider": {
-                "@type": "Organization",
-                "name": "Pixelwave Marketing",
-                "telephone": "+18024555570",
-                "email": "pixelwavemarketing0@gmail.com"
-              },
-              "serviceType": "Digital Marketing",
-              "hasOfferCatalog": {
-                "@type": "OfferCatalog",
-                "name": "Digital Marketing Services",
-                "itemListElement": [
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Google Ads Management"
-                    }
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Social Media Marketing"
-                    }
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Search Engine Optimization"
-                    }
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Email Marketing"
-                    }
-                  }
-                ]
-              }
-            }
-          `}
-        </script>
-      </Helmet>
+      <SEOOptimizer 
+        title="Digital Marketing Services | Pixelwave Marketing"
+        description="Expert digital marketing services in Nashville. Google Ads, social media marketing, SEO, and email marketing to grow your business. Free consultation available."
+        keywords="digital marketing Nashville, Google Ads Nashville, social media marketing Nashville, SEO services Nashville, email marketing Nashville, business marketing Nashville"
+        canonicalUrl="https://usepixelwave.com/digital-marketing"
+        structuredDataType="service"
+        ogImage="https://usepixelwave.com/pixelwave-logo.webp"
+      />
       <Header />
       <div style={{ 
         position: 'relative',

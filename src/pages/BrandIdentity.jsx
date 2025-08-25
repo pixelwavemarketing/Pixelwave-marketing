@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import { Helmet } from 'react-helmet'
+import SEOOptimizer from '../components/SEOOptimizer'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPaintBrush, faPalette, faEye, faLightbulb } from '@fortawesome/free-solid-svg-icons'
 import Footer from '../components/Footer'
@@ -15,43 +15,14 @@ function BrandIdentity() {
       flexDirection: 'column',
       minHeight: '100vh'
     }}>
-      <Helmet>
-        <title>Brand Identity Design | Pixelwave Marketing</title>
-        <link rel="canonical" href="https://usepixelwave.com/brand-identity" />
-        <meta name="description" content="Professional brand identity design in Nashville. Logo design, business cards, brand guidelines, and visual identity development for businesses. Free consultation available." />
-        <meta name="keywords" content="brand identity Nashville, logo design Nashville, business cards Nashville, brand guidelines Nashville, visual identity Nashville, graphic designer Nashville" />
-        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-        
-        {/* Open Graph */}
-        <meta property="og:title" content="Brand Identity Design | Pixelwave Marketing" />
-        <meta property="og:description" content="Professional brand identity design in Nashville. Logo design, business cards, brand guidelines, and visual identity development for businesses." />
-        <meta property="og:url" content="https://usepixelwave.com/brand-identity" />
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Pixelwave Marketing" />
-        
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Brand Identity Design | Pixelwave Marketing" />
-        <meta name="twitter:description" content="Professional brand identity design in Nashville. Logo design, business cards, brand guidelines, and visual identity development for businesses." />
-        
-        <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "Service",
-              "name": "Brand Identity Design",
-              "description": "Professional brand identity design services including logo design, business cards, and brand guidelines for businesses",
-              "provider": {
-                "@type": "Organization",
-                "name": "Pixelwave Marketing",
-                "telephone": "+18024555570",
-                "email": "pixelwavemarketing0@gmail.com"
-              },
-              "serviceType": "Brand Identity Design"
-            }
-          `}
-        </script>
-      </Helmet>
+      <SEOOptimizer 
+        title="Brand Identity Design | Pixelwave Marketing"
+        description="Professional brand identity design in Nashville. Logo design, business cards, brand guidelines, and visual identity development for businesses. Free consultation available."
+        keywords="brand identity Nashville, logo design Nashville, business cards Nashville, brand guidelines Nashville, visual identity Nashville, graphic designer Nashville"
+        canonicalUrl="https://usepixelwave.com/brand-identity"
+        structuredDataType="service"
+        ogImage="https://usepixelwave.com/pixelwave-logo.webp"
+      />
       <Header />
       <div style={{ 
         position: 'relative',

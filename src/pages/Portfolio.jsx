@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import { Helmet } from 'react-helmet'
+import SEOOptimizer from '../components/SEOOptimizer'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import truckImage from '../assets/truck-25.webp'
@@ -15,74 +15,14 @@ function Portfolio() {
       flexDirection: 'column',
       minHeight: '100vh'
     }}>
-      <Helmet>
-        <title>Portfolio | Pixelwave Marketing - Web Design & Digital Marketing Projects</title>
-        <link rel="canonical" href="https://usepixelwave.com/portfolio" />
-        <meta name="description" content="View our portfolio of successful digital marketing projects, web development work, and brand identity designs. See real results from Nashville businesses we've helped grow." />
-        <meta name="keywords" content="portfolio, web design portfolio, digital marketing portfolio, Nashville web design, brand identity portfolio, web development projects" />
-        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-        
-        {/* Open Graph */}
-        <meta property="og:title" content="Portfolio | Pixelwave Marketing - Web Design & Digital Marketing Projects" />
-        <meta property="og:description" content="View our portfolio of successful digital marketing projects, web development work, and brand identity designs. See real results from Nashville businesses we've helped grow." />
-        <meta property="og:url" content="https://usepixelwave.com/portfolio" />
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Pixelwave Marketing" />
-        
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Portfolio | Pixelwave Marketing" />
-        <meta name="twitter:description" content="View our portfolio of successful digital marketing projects, web development work, and brand identity designs." />
-        
-        {/* Structured Data */}
-        <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "CreativeWork",
-              "name": "Pixelwave Marketing Portfolio",
-              "description": "Portfolio showcasing web design, digital marketing, and brand identity projects for Nashville businesses",
-              "url": "https://usepixelwave.com/portfolio",
-              "creator": {
-                "@type": "Organization",
-                "name": "Pixelwave Marketing",
-                "url": "https://usepixelwave.com"
-              },
-              "hasPart": [
-                {
-                  "@type": "CreativeWork",
-                  "name": "The Dumpster Man Website",
-                  "description": "Professional website for a local dumpster rental business with service listings and contact forms",
-                  "url": "https://thedumpsterman518.com",
-                  "creator": {
-                    "@type": "Organization",
-                    "name": "Pixelwave Marketing"
-                  }
-                },
-                {
-                  "@type": "CreativeWork",
-                  "name": "Easy Clean Pressure Washing Logo",
-                  "description": "Professional logo design for a pressure washing services business",
-                  "creator": {
-                    "@type": "Organization",
-                    "name": "Pixelwave Marketing"
-                  }
-                },
-                {
-                  "@type": "CreativeWork",
-                  "name": "Open Finance Calculators",
-                  "description": "Comprehensive financial calculator website providing tools for loans and investments",
-                  "url": "https://openfinancecalculators.com",
-                  "creator": {
-                    "@type": "Organization",
-                    "name": "Pixelwave Marketing"
-                  }
-                }
-              ]
-            }
-          `}
-        </script>
-      </Helmet>
+      <SEOOptimizer 
+        title="Portfolio | Pixelwave Marketing - Web Design & Digital Marketing Projects"
+        description="View our portfolio of successful digital marketing projects, web development work, and brand identity designs. See real results from Nashville businesses we've helped grow."
+        keywords="portfolio, web design portfolio, digital marketing portfolio, Nashville web design, brand identity portfolio, web development projects"
+        canonicalUrl="https://usepixelwave.com/portfolio"
+        structuredDataType="aiOptimized"
+        ogImage="https://usepixelwave.com/pixelwave-logo.webp"
+      />
       
       <Header />
       
