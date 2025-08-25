@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect Test - PixelWave</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 50px auto; padding: 20px; }
+        .test-link { display: block; margin: 10px 0; padding: 10px; background: #f0f0f0; text-decoration: none; color: #333; }
+        .test-link:hover { background: #e0e0e0; }
+        .note { background: #fff3cd; border: 1px solid #ffeaa7; padding: 15px; margin: 20px 0; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Redirect Test Page</h1>
+    <p>This page tests if your redirects are working properly to prevent redirect chains.</p>
+    
+    <div class="note">
+        <strong>Note:</strong> These links should redirect to the canonical URL: <code>https://usepixelwave.com/</code>
+    </div>
+    
+    <h2>Test Links:</h2>
+    <a href="http://usepixelwave.com/" class="test-link">http://usepixelwave.com/ (should redirect to HTTPS)</a>
+    <a href="http://www.usepixelwave.com/" class="test-link">http://www.usepixelwave.com/ (should redirect to HTTPS + no www)</a>
+    <a href="https://www.usepixelwave.com/" class="test-link">https://www.usepixelwave.com/ (should redirect to no www)</a>
+    
+    <h2>Canonical URL (should not redirect):</h2>
+    <a href="https://usepixelwave.com/" class="test-link">https://usepixelwave.com/ (canonical - no redirect)</a>
+    
+    <h2>What to Check:</h2>
+    <ul>
+        <li>All non-canonical URLs should redirect with a 301 status</li>
+        <li>No redirect chains should occur (multiple redirects)</li>
+        <li>Final destination should always be: <code>https://usepixelwave.com/</code></li>
+        <li>Check browser network tab for redirect status codes</li>
+    </ul>
+    
+    <h2>SEO Impact:</h2>
+    <p>Proper redirects will:</p>
+    <ul>
+        <li>✅ Consolidate link equity to your canonical URL</li>
+        <li>✅ Prevent duplicate content issues</li>
+        <li>✅ Improve Google indexing</li>
+        <li>✅ Reduce redirect chain warnings</li>
+    </ul>
+</body>
+</html>

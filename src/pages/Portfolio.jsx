@@ -16,8 +16,72 @@ function Portfolio() {
       minHeight: '100vh'
     }}>
       <Helmet>
-        <title>Portfolio | Pixelwave Marketing</title>
-        <meta name="description" content="View our portfolio of successful digital marketing projects, web development work, and brand identity designs." />
+        <title>Portfolio | Pixelwave Marketing - Web Design & Digital Marketing Projects</title>
+        <link rel="canonical" href="https://usepixelwave.com/portfolio" />
+        <meta name="description" content="View our portfolio of successful digital marketing projects, web development work, and brand identity designs. See real results from Nashville businesses we've helped grow." />
+        <meta name="keywords" content="portfolio, web design portfolio, digital marketing portfolio, Nashville web design, brand identity portfolio, web development projects" />
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Portfolio | Pixelwave Marketing - Web Design & Digital Marketing Projects" />
+        <meta property="og:description" content="View our portfolio of successful digital marketing projects, web development work, and brand identity designs. See real results from Nashville businesses we've helped grow." />
+        <meta property="og:url" content="https://usepixelwave.com/portfolio" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Pixelwave Marketing" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Portfolio | Pixelwave Marketing" />
+        <meta name="twitter:description" content="View our portfolio of successful digital marketing projects, web development work, and brand identity designs." />
+        
+        {/* Structured Data */}
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "CreativeWork",
+              "name": "Pixelwave Marketing Portfolio",
+              "description": "Portfolio showcasing web design, digital marketing, and brand identity projects for Nashville businesses",
+              "url": "https://usepixelwave.com/portfolio",
+              "creator": {
+                "@type": "Organization",
+                "name": "Pixelwave Marketing",
+                "url": "https://usepixelwave.com"
+              },
+              "hasPart": [
+                {
+                  "@type": "CreativeWork",
+                  "name": "The Dumpster Man Website",
+                  "description": "Professional website for a local dumpster rental business with service listings and contact forms",
+                  "url": "https://thedumpsterman518.com",
+                  "creator": {
+                    "@type": "Organization",
+                    "name": "Pixelwave Marketing"
+                  }
+                },
+                {
+                  "@type": "CreativeWork",
+                  "name": "Easy Clean Pressure Washing Logo",
+                  "description": "Professional logo design for a pressure washing services business",
+                  "creator": {
+                    "@type": "Organization",
+                    "name": "Pixelwave Marketing"
+                  }
+                },
+                {
+                  "@type": "CreativeWork",
+                  "name": "Open Finance Calculators",
+                  "description": "Comprehensive financial calculator website providing tools for loans and investments",
+                  "url": "https://openfinancecalculators.com",
+                  "creator": {
+                    "@type": "Organization",
+                    "name": "Pixelwave Marketing"
+                  }
+                }
+              ]
+            }
+          `}
+        </script>
       </Helmet>
       
       <Header />
@@ -39,7 +103,7 @@ function Portfolio() {
             marginBottom: '20px',
             color: '#FFFFFF'
           }}>
-            Our Portfolio
+            Our Portfolio of Success
           </h1>
           <p style={{
             fontSize: '1.2rem',
@@ -49,8 +113,9 @@ function Portfolio() {
             margin: '0 auto 40px',
             lineHeight: '1.6'
           }}>
-            Discover how we've helped businesses grow through strategic digital marketing, 
-            professional web development, and compelling brand identity design.
+            Discover how we've helped Nashville businesses grow through strategic digital marketing, 
+            professional web development, and compelling brand identity design. Each project represents 
+            real results and measurable business growth.
           </p>
           <button
             onClick={() => navigate('/contact')}

@@ -18,8 +18,22 @@ function BrandIdentity() {
       <Helmet>
         <title>Brand Identity Design | Pixelwave Marketing</title>
         <link rel="canonical" href="https://usepixelwave.com/brand-identity" />
-        <meta name="description" content="Professional brand identity design. Logo design, business cards, brand guidelines, and visual identity development for businesses." />
-        <meta name="keywords" content="brand identity, logo design, business cards, brand guidelines, visual identity, graphic designer" />
+        <meta name="description" content="Professional brand identity design in Nashville. Logo design, business cards, brand guidelines, and visual identity development for businesses. Free consultation available." />
+        <meta name="keywords" content="brand identity Nashville, logo design Nashville, business cards Nashville, brand guidelines Nashville, visual identity Nashville, graphic designer Nashville" />
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Brand Identity Design | Pixelwave Marketing" />
+        <meta property="og:description" content="Professional brand identity design in Nashville. Logo design, business cards, brand guidelines, and visual identity development for businesses." />
+        <meta property="og:url" content="https://usepixelwave.com/brand-identity" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Pixelwave Marketing" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Brand Identity Design | Pixelwave Marketing" />
+        <meta name="twitter:description" content="Professional brand identity design in Nashville. Logo design, business cards, brand guidelines, and visual identity development for businesses." />
+        
         <script type="application/ld+json">
           {`
             {

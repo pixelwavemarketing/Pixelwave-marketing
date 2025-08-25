@@ -19,8 +19,22 @@ function DigitalMarketing() {
       <Helmet>
         <title>Digital Marketing Services | Pixelwave Marketing</title>
         <link rel="canonical" href="https://usepixelwave.com/digital-marketing" />
-        <meta name="description" content="Expert digital marketing services. Google Ads, social media marketing, SEO, and email marketing to grow your business. Free consultation available." />
-        <meta name="keywords" content="digital marketing, Google Ads, social media marketing, SEO services, email marketing, business marketing" />
+        <meta name="description" content="Expert digital marketing services in Nashville. Google Ads, social media marketing, SEO, and email marketing to grow your business. Free consultation available." />
+        <meta name="keywords" content="digital marketing Nashville, Google Ads Nashville, social media marketing Nashville, SEO services Nashville, email marketing Nashville, business marketing Nashville" />
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Digital Marketing Services | Pixelwave Marketing" />
+        <meta property="og:description" content="Expert digital marketing services in Nashville. Google Ads, social media marketing, SEO, and email marketing to grow your business." />
+        <meta property="og:url" content="https://usepixelwave.com/digital-marketing" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Pixelwave Marketing" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Digital Marketing Services | Pixelwave Marketing" />
+        <meta name="twitter:description" content="Expert digital marketing services in Nashville. Google Ads, social media marketing, SEO, and email marketing to grow your business." />
+        
         <script type="application/ld+json">
           {`
             {
