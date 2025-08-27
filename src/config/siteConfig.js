@@ -5,7 +5,7 @@ const siteConfig = {
     url: 'https://usepixelwave.com',
     logo: 'https://usepixelwave.com/logo.svg',
     telephone: '+18024555570',
-    email: 'pixelwavemarketing0@gmail.com',
+    	email: 'usepixelwave@gmail.com',
     coordinates: {
       latitude: 36.1627,
       longitude: -86.7816

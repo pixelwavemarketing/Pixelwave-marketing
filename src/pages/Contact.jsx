@@ -113,7 +113,7 @@ function Contact() {
               "description": "Expert digital marketing agency in Nashville, TN",
               "url": "https://pixelwavemarketing.com",
               "telephone": "+18024555570",
-              "email": "pixelwavemarketing0@gmail.com",
+              		"email": "usepixelwave@gmail.com",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "123 Main Street",

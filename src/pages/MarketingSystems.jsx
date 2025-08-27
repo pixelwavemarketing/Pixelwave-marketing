@@ -31,7 +31,7 @@ function MarketingSystems() {
                 "@type": "Organization",
                 "name": "Pixelwave Marketing",
                 "telephone": "+18024555570",
-                "email": "pixelwavemarketing0@gmail.com"
+                		"email": "usepixelwave@gmail.com"
               },
               "serviceType": "Marketing Automation"
             }
