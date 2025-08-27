@@ -101,7 +101,7 @@ function Contact() {
     }}>
       <Helmet>
         <title>Contact Us | Pixelwave Marketing - Digital Solutions</title>
-        <link rel="canonical" href="https://pixelwavemarketing.com/contact" />
+        <link rel="canonical" href="https://usepixelwave.com/contact" />
         <meta name="description" content="Get in touch with Pixelwave Marketing for expert digital marketing, web development, and business growth solutions. Call us at (802) 445-5570 or send us a message." />
         <meta name="keywords" content="contact pixelwave marketing, digital marketing contact, web development contact, marketing agency contact, Nashville TN" />
         <script type="application/ld+json">
@@ -111,7 +111,7 @@ function Contact() {
               "@type": "LocalBusiness",
               "name": "Pixelwave Marketing",
               "description": "Expert digital marketing agency in Nashville, TN",
-              "url": "https://pixelwavemarketing.com",
+              "url": "https://usepixelwave.com",
               "telephone": "+18024555570",
               		"email": "usepixelwave@gmail.com",
               "address": {
