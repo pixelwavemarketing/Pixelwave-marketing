@@ -174,6 +174,7 @@ function Blog() {
     }}>
       <Helmet>
         <title>Digital Marketing Blog | Pixelwave Marketing</title>
+        <link rel="canonical" href="https://usepixelwave.com/blog" />
         <meta name="description" content="Expert insights on digital marketing, web development, and business growth strategies. Stay updated with the latest trends and best practices." />
         <meta name="keywords" content="digital marketing blog, web development tips, SEO strategies, business growth, marketing insights" />
         <script type="application/ld+json">
@@ -376,6 +377,65 @@ function Blog() {
               </div>
             </article>
           ))}
+        </div>
+
+        {/* Internal Links Section */}
+        <div style={{
+          textAlign: 'center',
+          marginTop: '60px',
+          padding: '40px',
+          backgroundColor: '#f8fafc',
+          borderRadius: '12px',
+          marginBottom: '40px'
+        }}>
+          <h3 style={{
+            fontSize: '1.8rem',
+            color: '#1e293b',
+            marginBottom: '20px'
+          }}>
+            Explore Our Services
+          </h3>
+          <div style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            gap: '15px',
+            justifyContent: 'center',
+            marginBottom: '20px'
+          }}>
+            <a href="/services" style={{
+              padding: '10px 20px',
+              backgroundColor: '#2563eb',
+              color: 'white',
+              textDecoration: 'none',
+              borderRadius: '6px',
+              fontWeight: '500',
+              fontSize: '0.9rem'
+            }}>
+              All Services
+            </a>
+            <a href="/faq" style={{
+              padding: '10px 20px',
+              backgroundColor: '#64748b',
+              color: 'white',
+              textDecoration: 'none',
+              borderRadius: '6px',
+              fontWeight: '500',
+              fontSize: '0.9rem'
+            }}>
+              FAQ
+            </a>
+            <a href="/portfolio" style={{
+              padding: '10px 20px',
+              backgroundColor: '#059669',
+              color: 'white',
+              textDecoration: 'none',
+              borderRadius: '6px',
+              fontWeight: '500',
+              fontSize: '0.9rem'
+            }}>
+              Portfolio
+            </a>
+          </div>
         </div>
 
         {/* Call to Action */}

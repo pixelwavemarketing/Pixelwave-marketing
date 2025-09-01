@@ -312,42 +312,103 @@ function Services() {
         </div>
       </div>
 
-      {/* Call to Action */}
-      <div style={{
-        padding: '60px 20px',
-        backgroundColor: '#333',
-        color: '#FFFFFF',
-        textAlign: 'center'
-      }}>
+              {/* Internal Links Section */}
         <div style={{
-          maxWidth: '600px',
-          margin: '0 auto'
+          padding: '60px 20px',
+          backgroundColor: '#f8fafc',
+          textAlign: 'center'
         }}>
-          <h2 style={{ 
-            fontSize: '2rem', 
-            marginBottom: '20px',
-            color: '#FFFFFF'
+          <div style={{
+            maxWidth: '800px',
+            margin: '0 auto'
           }}>
-            Ready to Get Started?
-          </h2>
-          <p style={{ 
-            marginBottom: '30px', 
-            fontSize: '1.1rem',
-            color: '#FFFFFF'
-          }}>
-            Contact us today to discuss how we can help grow your business
-          </p>
-          <button
-            onClick={() => navigate('/contact')}
-            className="cta-button"
-            style={{
-              fontSize: '1.1rem'
-            }}
-          >
-            Contact Us
-          </button>
+            <h2 style={{ 
+              fontSize: '2rem', 
+              marginBottom: '30px',
+              color: '#1e293b'
+            }}>
+              Learn More About Our Services
+            </h2>
+            <div style={{
+              display: 'flex',
+              flexWrap: 'wrap',
+              gap: '20px',
+              justifyContent: 'center',
+              marginBottom: '40px'
+            }}>
+              <a href="/blog" style={{
+                padding: '12px 24px',
+                backgroundColor: '#2563eb',
+                color: 'white',
+                textDecoration: 'none',
+                borderRadius: '6px',
+                fontWeight: '500',
+                transition: 'background-color 0.3s ease'
+              }}>
+                Read Our Blog
+              </a>
+              <a href="/faq" style={{
+                padding: '12px 24px',
+                backgroundColor: '#64748b',
+                color: 'white',
+                textDecoration: 'none',
+                borderRadius: '6px',
+                fontWeight: '500',
+                transition: 'background-color 0.3s ease'
+              }}>
+                View FAQ
+              </a>
+              <a href="/portfolio" style={{
+                padding: '12px 24px',
+                backgroundColor: '#059669',
+                color: 'white',
+                textDecoration: 'none',
+                borderRadius: '6px',
+                fontWeight: '500',
+                transition: 'background-color 0.3s ease'
+              }}>
+                See Our Work
+              </a>
+            </div>
+          </div>
         </div>
-      </div>
+
+        {/* Call to Action */}
+        <div style={{
+          padding: '60px 20px',
+          backgroundColor: '#333',
+          color: '#FFFFFF',
+          textAlign: 'center'
+        }}>
+          <div style={{
+            maxWidth: '600px',
+            margin: '0 auto'
+          }}>
+            <h2 style={{ 
+              fontSize: '2rem', 
+              marginBottom: '20px',
+              color: '#FFFFFF'
+            }}>
+              Ready to Get Started?
+            </h2>
+            <p style={{ 
+              marginBottom: '30px', 
+              fontSize: '1.1rem',
+              color: '#FFFFFF'
+            }}>
+              Contact us today to discuss how we can help grow your business
+            </p>
+            <button
+              onClick={() => navigate('/contact')}
+              className="cta-button"
+              style={{
+                fontSize: '1.1rem'
+              }}
+            >
+              Contact Us
+            </button>
+          </div>
+        </div>
       <Footer />
     </div>
   )

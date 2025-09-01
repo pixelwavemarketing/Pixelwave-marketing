@@ -52,6 +52,7 @@ function FAQ() {
     }}>
       <Helmet>
         <title>Frequently Asked Questions | Pixelwave Marketing</title>
+        <link rel="canonical" href="https://usepixelwave.com/faq" />
         <meta name="description" content="Get answers to common questions about our digital marketing, web development, and business growth services. Learn about our process, pricing, and what makes us different." />
         <meta name="keywords" content="FAQ, digital marketing questions, web development FAQ, marketing agency questions, business growth services" />
         <script type="application/ld+json">
