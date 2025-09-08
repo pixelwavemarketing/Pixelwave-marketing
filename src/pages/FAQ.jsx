@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import { Helmet } from 'react-helmet'
+import SEOOptimizer from '../components/SEOOptimizer'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import PixelwaveLogo from '../components/PixelwaveLogo'
@@ -45,37 +45,19 @@ function FAQ() {
   ]
 
   return (
-    <div className="page-container" style={{
-      display: 'flex',
-      flexDirection: 'column',
-      minHeight: '100vh'
-    }}>
-      <Helmet>
-        <title>Frequently Asked Questions | Pixelwave Marketing</title>
-        <link rel="canonical" href="https://usepixelwave.com/faq" />
-        <meta name="description" content="Get answers to common questions about our digital marketing, web development, and business growth services. Learn about our process, pricing, and what makes us different." />
-        <meta name="keywords" content="FAQ, digital marketing questions, web development FAQ, marketing agency questions, business growth services" />
-        <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              "mainEntity": [
-                ${faqData.map(faq => `
-                  {
-                    "@type": "Question",
-                    "name": "${faq.question}",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "${faq.answer}"
-                    }
-                  }
-                `).join(',')}
-              ]
-            }
-          `}
-        </script>
-      </Helmet>
+    <>
+      <SEOOptimizer 
+        title="Frequently Asked Questions | Pixelwave Marketing"
+        description="Get answers to common questions about our digital marketing, web development, and business growth services. Learn about our process, pricing, and what makes us different."
+        keywords="FAQ, digital marketing questions, web development FAQ, marketing agency questions, business growth services"
+        canonicalUrl="https://usepixelwave.com/faq"
+        structuredDataType="faq"
+      />
+      <div className="page-container" style={{
+        display: 'flex',
+        flexDirection: 'column',
+        minHeight: '100vh'
+      }}>
       
       <Header />
       <div style={{ 
@@ -200,7 +182,8 @@ function FAQ() {
       </section>
 
       <Footer />
-    </div>
+      </div>
+    </>
   )
 }
 

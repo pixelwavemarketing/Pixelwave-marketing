@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import { Helmet } from 'react-helmet'
+import SEOOptimizer from '../components/SEOOptimizer'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { 
   faCode, 
@@ -18,78 +18,19 @@ function Services() {
   const navigate = useNavigate()
 
   return (
-    <div className="page-container" style={{
-      display: 'flex',
-      flexDirection: 'column',
-      minHeight: '100vh'
-    }}>
-      <Helmet>
-        <title>Digital Marketing & Web Services | Pixelwave Marketing</title>
-        <link rel="canonical" href="https://usepixelwave.com/services" />
-        <meta name="description" content="Explore our comprehensive services including digital marketing, web development, brand identity, marketing automation, analytics, and print design solutions." />
-        <meta name="keywords" content="digital marketing services, web development, brand identity, marketing automation, business analytics, print design" />
-        <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "Service",
-              "serviceType": "Digital Marketing and Web Development",
-              "provider": {
-                "@type": "Organization",
-                "name": "Pixelwave Marketing"
-              },
-              "hasOfferCatalog": {
-                "@type": "OfferCatalog",
-                "name": "Digital Marketing Services",
-                "itemListElement": [
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Digital Marketing"
-                    }
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Web Development"
-                    }
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Brand Identity"
-                    }
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Marketing Systems"
-                    }
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Analytics"
-                    }
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Print Design"
-                    }
-                  }
-                ]
-              }
-            }
-          `}
-        </script>
-      </Helmet>
+    <>
+      <SEOOptimizer 
+        title="Digital Marketing & Web Services | Pixelwave Marketing"
+        description="Explore our comprehensive services including digital marketing, web development, brand identity, marketing automation, analytics, and print design solutions."
+        keywords="digital marketing services, web development, brand identity, marketing automation, business analytics, print design"
+        canonicalUrl="https://usepixelwave.com/services"
+        structuredDataType="service"
+      />
+      <div className="page-container" style={{
+        display: 'flex',
+        flexDirection: 'column',
+        minHeight: '100vh'
+      }}>
       <Header />
       <div style={{ 
         position: 'relative',
@@ -410,7 +351,8 @@ function Services() {
           </div>
         </div>
       <Footer />
-    </div>
+      </div>
+    </>
   )
 }
 

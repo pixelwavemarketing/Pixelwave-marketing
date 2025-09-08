@@ -5,7 +5,6 @@
   Permissions-Policy: camera=(), microphone=(), geolocation=()
   Content-Security-Policy: default-src 'self' https: 'unsafe-inline' 'unsafe-eval'; img-src 'self' https: data:; font-src 'self' https: data:;
   Strict-Transport-Security: max-age=31536000; includeSubDomains
-  X-Robots-Tag: noindex, nofollow
 
 # Canonical redirects - prevent redirect chains
 http://usepixelwave.com/*

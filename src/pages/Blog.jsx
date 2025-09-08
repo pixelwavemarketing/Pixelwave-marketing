@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom'
-import { Helmet } from 'react-helmet'
 import { useState } from 'react'
+import SEOOptimizer from '../components/SEOOptimizer'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import PixelwaveLogo from '../components/PixelwaveLogo'
@@ -167,44 +167,19 @@ function Blog() {
   }
 
   return (
-    <div className="page-container" style={{
-      display: 'flex',
-      flexDirection: 'column',
-      minHeight: '100vh'
-    }}>
-      <Helmet>
-        <title>Digital Marketing Blog | Pixelwave Marketing</title>
-        <link rel="canonical" href="https://usepixelwave.com/blog" />
-        <meta name="description" content="Expert insights on digital marketing, web development, and business growth strategies. Stay updated with the latest trends and best practices." />
-        <meta name="keywords" content="digital marketing blog, web development tips, SEO strategies, business growth, marketing insights" />
-        <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "Blog",
-              "name": "Pixelwave Marketing Blog",
-              "description": "Expert insights on digital marketing and web development",
-              "publisher": {
-                "@type": "Organization",
-                "name": "Pixelwave Marketing"
-              },
-              "blogPost": [
-                ${blogPosts.map(post => `
-                  {
-                    "@type": "BlogPosting",
-                    "headline": "${post.title}",
-                    "description": "${post.excerpt}",
-                    "datePublished": "${post.date}",
-                    "dateModified": "${post.date}",
-                    "articleSection": "${post.category}",
-                    "wordCount": "${post.fullContent.split(' ').length}"
-                  }
-                `).join(',')}
-              ]
-            }
-          `}
-        </script>
-      </Helmet>
+    <>
+      <SEOOptimizer 
+        title="Digital Marketing Blog | Pixelwave Marketing"
+        description="Expert insights on digital marketing, web development, and business growth strategies. Stay updated with the latest trends and best practices."
+        keywords="digital marketing blog, web development tips, SEO strategies, business growth, marketing insights"
+        canonicalUrl="https://usepixelwave.com/blog"
+        structuredDataType="organization"
+      />
+      <div className="page-container" style={{
+        display: 'flex',
+        flexDirection: 'column',
+        minHeight: '100vh'
+      }}>
       
       <Header />
       <div style={{ 
@@ -473,7 +448,8 @@ function Blog() {
       </section>
 
       <Footer />
-    </div>
+      </div>
+    </>
   )
 }
 
