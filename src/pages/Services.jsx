@@ -1,5 +1,7 @@
 import { useNavigate } from 'react-router-dom'
+import { useEffect } from 'react'
 import SEOOptimizer from '../components/SEOOptimizer'
+import { trackServiceView, trackButtonClick } from '../components/FacebookPixel'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { 
   faCode, 
@@ -16,6 +18,11 @@ import PixelwaveLogo from '../components/PixelwaveLogo'
 
 function Services() {
   const navigate = useNavigate()
+
+  // Track service page view
+  useEffect(() => {
+    trackServiceView('Services Overview')
+  }, [])
 
   return (
     <>

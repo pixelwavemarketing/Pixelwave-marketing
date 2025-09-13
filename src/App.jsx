@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import ScrollToTop from './components/ScrollToTop'
+import FacebookPixel from './components/FacebookPixel'
 import Home from './pages/Home'
 import Services from './pages/Services'
 import DigitalMarketing from './pages/DigitalMarketing'
@@ -18,6 +19,7 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
+      <FacebookPixel />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />

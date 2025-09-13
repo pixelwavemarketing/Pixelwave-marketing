@@ -1,11 +1,18 @@
 import { useNavigate } from 'react-router-dom'
+import { useEffect } from 'react'
 import { Helmet } from 'react-helmet'
+import { trackLead } from '../components/FacebookPixel'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import PixelwaveLogo from '../components/PixelwaveLogo'
 
 function ThankYou() {
   const navigate = useNavigate()
+
+  // Track lead conversion when user reaches thank you page
+  useEffect(() => {
+    trackLead('contact_form', 0) // $0 value for lead generation
+  }, [])
 
   console.log('ThankYou component rendering') // Debug log
 

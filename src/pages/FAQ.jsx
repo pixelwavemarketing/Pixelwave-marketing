@@ -58,7 +58,7 @@ function FAQ() {
         flexDirection: 'column',
         minHeight: '100vh'
       }}>
-      
+        
       <Header />
       <div style={{ 
         position: 'relative',

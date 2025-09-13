@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom'
+import { trackContactForm, trackButtonClick } from './FacebookPixel'
 
 function ContactForm() {
   const navigate = useNavigate()
@@ -20,6 +21,8 @@ function ContactForm() {
       })
     })
     .then(() => {
+      // Track successful form submission
+      trackContactForm('contact')
       // Redirect to thank you page
       navigate('/thank-you')
     })
@@ -161,6 +164,7 @@ function ContactForm() {
 
       <button
         type="submit"
+        onClick={() => trackButtonClick('Contact Form Submit', 'contact_form')}
         style={{
           width: '100%',
           padding: '12px',
