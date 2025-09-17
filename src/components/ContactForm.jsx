@@ -1,35 +1,44 @@
 import { useNavigate } from 'react-router-dom'
+import { useState } from 'react'
 import { trackContactForm, trackButtonClick } from './FacebookPixel'
 
 function ContactForm() {
   const navigate = useNavigate()
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState('')
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
+    setIsSubmitting(true)
+    setSubmitStatus('')
     
     // Get form data
     const formData = new FormData(e.target)
     const data = Object.fromEntries(formData)
     
-    // Submit to Netlify
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: new URLSearchParams({
-        'form-name': 'contact',
-        ...data
+    try {
+      // Submit to Netlify
+      const response = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams({
+          'form-name': 'contact',
+          ...data
+        })
       })
-    })
-    .then(() => {
-      // Track successful form submission
-      trackContactForm('contact')
-      // Redirect to thank you page
-      navigate('/thank-you')
-    })
-    .catch((error) => {
-      console.error('Error:', error)
-      alert('There was an error submitting the form. Please try again.')
-    })
+
+      if (response.ok) {
+        // Track successful form submission
+        trackContactForm('contact')
+        // Redirect to thank you page
+        navigate('/thank-you')
+      } else {
+        throw new Error('Form submission failed')
+      }
+    } catch (error) {
+      setSubmitStatus('There was an error submitting the form. Please try again.')
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -162,21 +171,38 @@ function ContactForm() {
         />
       </div>
 
+      {/* Error/Status Message */}
+      {submitStatus && (
+        <div style={{
+          padding: '10px',
+          marginBottom: '10px',
+          borderRadius: '4px',
+          backgroundColor: '#fee2e2',
+          color: '#dc2626',
+          fontSize: '0.9rem',
+          textAlign: 'center'
+        }}>
+          {submitStatus}
+        </div>
+      )}
+
       <button
         type="submit"
+        disabled={isSubmitting}
         onClick={() => trackButtonClick('Contact Form Submit', 'contact_form')}
         style={{
           width: '100%',
           padding: '12px',
-          backgroundColor: '#333',
+          backgroundColor: isSubmitting ? '#9ca3af' : '#333',
           color: 'white',
           border: 'none',
           borderRadius: '4px',
-          cursor: 'pointer',
-          fontWeight: '500'
+          cursor: isSubmitting ? 'not-allowed' : 'pointer',
+          fontWeight: '500',
+          transition: 'background-color 0.3s ease'
         }}
       >
-        Send Message
+        {isSubmitting ? 'Sending...' : 'Send Message'}
       </button>
     </form>
   )

@@ -3,7 +3,7 @@
 ## 🚀 **LinkedIn Company Page Integration**
 
 ### **LinkedIn URL Added**
-- **Company Page**: [https://www.linkedin.com/company/108405028/](https://www.linkedin.com/company/108405028/)
+- **Company Page**: [https://www.linkedin.com/company/pixelwave-marketing](https://www.linkedin.com/company/pixelwave-marketing)
 - **Integration Status**: ✅ Complete
 - **SEO Impact**: High - Professional networking signals
 
@@ -19,8 +19,8 @@
 ```javascript
 socialMedia: {
   facebook: 'https://www.facebook.com/61577166790673',
-  instagram: 'https://www.instagram.com/__pixel__wave__/',
-  linkedin: 'https://www.linkedin.com/company/108405028/'
+  instagram: 'https://www.instagram.com/usepixelwave/',
+  linkedin: 'https://www.linkedin.com/company/pixelwave-marketing'
 }
 ```
 
@@ -120,8 +120,8 @@ socialMedia: {
   "@type": "Organization",
   "sameAs": [
     "https://www.facebook.com/61577166790673",
-    "https://www.instagram.com/__pixel__wave__/",
-    "https://www.linkedin.com/company/108405028/"
+    "https://www.instagram.com/usepixelwave/",
+    "https://www.linkedin.com/company/pixelwave-marketing"
   ]
 }
 ```

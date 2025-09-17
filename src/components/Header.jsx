@@ -5,7 +5,7 @@ function Header() {
 	return (
 		<header style={{
 			width: '100%',
-			padding: '20px',
+			padding: window.innerWidth <= 768 ? '15px 10px' : '20px',
 			backgroundColor: '#ffffff',
 			display: 'flex',
 			justifyContent: 'center',
@@ -14,17 +14,20 @@ function Header() {
 			top: 0,
 			left: 0,
 			zIndex: 1000,
-			boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
+			boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
+			minHeight: window.innerWidth <= 768 ? '60px' : '80px'
 		}}>
 			<nav style={{ width: '100%', maxWidth: '1200px' }}>
 				<ul style={{
 					listStyle: 'none',
 					display: 'flex',
 					flexWrap: 'wrap',
-					gap: '20px',
+					gap: window.innerWidth <= 768 ? '15px' : '20px',
 					margin: 0,
-					padding: '0 20px',
-					justifyContent: 'center'
+					padding: window.innerWidth <= 768 ? '0 10px' : '0 20px',
+					justifyContent: 'center',
+					alignItems: 'center',
+					fontSize: window.innerWidth <= 768 ? '0.9rem' : '1rem'
 				}}>
 					<li>
 						<Link to="/" className="nav-link">
@@ -34,11 +37,6 @@ function Header() {
 					<li>
 						<Link to="/services" className="nav-link">
 							Services
-							</Link>
-					</li>
-					<li>
-						<Link to="/blog" className="nav-link">
-							Blog
 							</Link>
 					</li>
 					<li>

@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet'
 import { trackLead } from '../components/FacebookPixel'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
-import PixelwaveLogo from '../components/PixelwaveLogo'
+import Breadcrumbs from '../components/Breadcrumbs'
 
 function ThankYou() {
   const navigate = useNavigate()
@@ -14,7 +14,6 @@ function ThankYou() {
     trackLead('contact_form', 0) // $0 value for lead generation
   }, [])
 
-  console.log('ThankYou component rendering') // Debug log
 
   return (
     <div className="page-container" style={{
@@ -29,14 +28,7 @@ function ThankYou() {
       </Helmet>
       
       <Header />
-      <div style={{ 
-        position: 'relative',
-        zIndex: 1,
-        marginTop: '10px',
-        overflow: 'hidden'
-      }}>
-        <PixelwaveLogo />
-      </div>
+      <Breadcrumbs />
 
       <div style={{
         display: 'flex',

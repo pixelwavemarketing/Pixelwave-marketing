@@ -4,10 +4,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPaintBrush, faPalette, faEye, faLightbulb } from '@fortawesome/free-solid-svg-icons'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
-import PixelwaveLogo from '../components/PixelwaveLogo'
+import Breadcrumbs from '../components/Breadcrumbs'
 
 function BrandIdentity() {
   const navigate = useNavigate()
+
+  const serviceData = {
+    name: "Brand Identity Design Services",
+    description: "Professional brand identity design in Nashville including logo design, business cards, brand guidelines, and visual identity development for businesses.",
+    serviceType: "Brand Identity Design"
+  }
 
   return (
     <div className="page-container" style={{
@@ -22,16 +28,10 @@ function BrandIdentity() {
         canonicalUrl="https://usepixelwave.com/brand-identity"
         structuredDataType="service"
         ogImage="https://usepixelwave.com/pixelwave-logo.webp"
+        serviceData={serviceData}
       />
       <Header />
-      <div style={{ 
-        position: 'relative',
-        zIndex: 1,
-        marginTop: '10px',
-        overflow: 'hidden'
-      }}>
-        <PixelwaveLogo />
-      </div>
+      <Breadcrumbs />
       
       {/* Hero Section */}
       <section style={{

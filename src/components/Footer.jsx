@@ -132,11 +132,26 @@ function Footer() {
 				}}>
 					<a href="/" className="footer-link" style={{ color: 'white', textDecoration: 'none' }}>Home</a>
 					<a href="/services" className="footer-link" style={{ color: 'white', textDecoration: 'none' }}>Services</a>
-					<a href="/blog" className="footer-link" style={{ color: 'white', textDecoration: 'none' }}>Blog</a>
 					<a href="/faq" className="footer-link" style={{ color: 'white', textDecoration: 'none' }}>FAQ</a>
 					<a href="/portfolio" className="footer-link" style={{ color: 'white', textDecoration: 'none' }}>Portfolio</a>
 					<a href="/contact" className="footer-link" style={{ color: 'white', textDecoration: 'none' }}>Contact</a>
 				</div>
+			</div>
+			
+			{/* Copyright Section */}
+			<div style={{
+				borderTop: '1px solid #555',
+				marginTop: '30px',
+				paddingTop: '20px',
+				textAlign: 'center'
+			}}>
+				<p style={{
+					color: '#999',
+					fontSize: '0.9rem',
+					margin: 0
+				}}>
+					© {new Date().getFullYear()} PixelWave Marketing. All rights reserved.
+				</p>
 			</div>
 			
 			{/* Footer Schema for SEO */}

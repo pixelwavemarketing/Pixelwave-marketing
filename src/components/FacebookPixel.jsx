@@ -16,7 +16,6 @@ const initFacebookPixel = () => {
 export const trackFacebookEvent = (eventName, parameters = {}) => {
   if (typeof window !== 'undefined' && window.fbq) {
     window.fbq('track', eventName, parameters)
-    console.log(`Facebook Pixel Event: ${eventName}`, parameters)
   }
 }
 
@@ -28,7 +27,6 @@ export const trackPageView = (url = window.location.href) => {
       page_path: window.location.pathname + window.location.search + window.location.hash,
       page_title: document.title
     })
-    console.log('Facebook Pixel PageView tracked:', url)
   }
 }
 
@@ -69,14 +67,6 @@ export const trackPortfolioView = (projectName) => {
   })
 }
 
-// Track blog post views
-export const trackBlogView = (postTitle) => {
-  trackFacebookEvent(PIXEL_EVENTS.BLOG_VIEW, {
-    content_name: postTitle,
-    content_category: CONTENT_CATEGORIES.BLOG,
-    content_type: CONTENT_TYPES.ARTICLE
-  })
-}
 
 // Track button clicks
 export const trackButtonClick = (buttonName, location = 'unknown') => {

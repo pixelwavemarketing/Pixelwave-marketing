@@ -2,8 +2,10 @@ import { useNavigate } from 'react-router-dom'
 import SEOOptimizer from '../components/SEOOptimizer'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
+import Breadcrumbs from '../components/Breadcrumbs'
 import truckImage from '../assets/truck-25.webp'
 import easyCleanLogo from '../assets/Easy clean - Pressure Washing.webp'
+import cinematicMountingLogo from '../assets/Cinematic Mounting.webp'
 import financingToolkit from '../assets/Finacing toolkit.png'
 
 function Portfolio() {
@@ -25,14 +27,14 @@ function Portfolio() {
       />
       
       <Header />
+      <Breadcrumbs />
       
       {/* Hero Section */}
       <section style={{
         padding: '80px 20px',
         backgroundColor: '#1e293b',
         color: 'white',
-        textAlign: 'center',
-        marginTop: '70px'
+        textAlign: 'center'
       }}>
         <div style={{
           maxWidth: '1200px',
@@ -106,11 +108,12 @@ function Portfolio() {
                 flex: '1 1 350px',
                 margin: '0 auto'
               }}
-              onClick={() => window.open('https://thedumpsterman518.com', '_blank')}
+              onClick={() => window.open('https://thedumpsterman518.com', '_blank', 'noopener,noreferrer')}
             >
               <img 
                 src={truckImage}
-                alt="The Dumpster Man Website"
+                alt="The Dumpster Man Website - Professional dumpster rental website design"
+                loading="lazy"
                 style={{
                   width: '100%',
                   height: '250px',
@@ -227,7 +230,8 @@ function Portfolio() {
               }}>
                 <img 
                   src={easyCleanLogo}
-                  alt="Easy Clean Pressure Washing Logo"
+                  alt="Easy Clean Pressure Washing Logo - Professional logo design for pressure washing business"
+                  loading="lazy"
                   style={{
                     maxWidth: '200%',
                     height: 'auto',
@@ -247,14 +251,14 @@ function Portfolio() {
                   marginBottom: '15px'
                 }}>
                   <span style={{
-                    backgroundColor: '#7c3aed',
+                    backgroundColor: '#10b981',
                     color: 'white',
                     padding: '6px 16px',
                     borderRadius: '20px',
-                    fontSize: '0.9rem',
+                    fontSize: '0.85rem',
                     fontWeight: '500'
                   }}>
-                    Brand Identity
+                    Logo Design
                   </span>
                   <span style={{
                     color: '#64748b',
@@ -314,6 +318,118 @@ function Portfolio() {
               </div>
             </div>
 
+            {/* Cinematic Mounting Logo Design */}
+            <div 
+              style={{
+                backgroundColor: '#ffffff',
+                borderRadius: '12px',
+                overflow: 'hidden',
+                maxWidth: '400px',
+                minWidth: '280px',
+                flex: '1 1 350px',
+                margin: '0 auto',
+                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
+              }}
+            >
+              <div style={{
+                padding: '0',
+                textAlign: 'center',
+                backgroundColor: '#f8fafc',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                minHeight: '250px'
+              }}>
+                <img 
+                  src={cinematicMountingLogo}
+                  alt="Cinematic Mounting Logo - Professional logo design for TV mounting and home theater installation service"
+                  loading="lazy"
+                  style={{
+                    maxWidth: '100%',
+                    maxHeight: '250px',
+                    width: 'auto',
+                    height: 'auto',
+                    objectFit: 'contain'
+                  }}
+                />
+              </div>
+              <div style={{
+                padding: '30px'
+              }}>
+                <div style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  marginBottom: '15px'
+                }}>
+                  <span style={{
+                    backgroundColor: '#10b981',
+                    color: 'white',
+                    padding: '6px 16px',
+                    borderRadius: '20px',
+                    fontSize: '0.85rem',
+                    fontWeight: '500'
+                  }}>
+                    Logo Design
+                  </span>
+                  <span style={{
+                    color: '#64748b',
+                    fontSize: '0.9rem'
+                  }}>
+                  </span>
+                </div>
+                <h3 style={{
+                  fontSize: '1.5rem',
+                  marginBottom: '15px',
+                  color: '#1e293b',
+                  fontWeight: '600'
+                }}>
+                  Cinematic Mounting
+                </h3>
+                <p style={{
+                  color: '#64748b',
+                  lineHeight: '1.6',
+                  marginBottom: '20px'
+                }}>
+                  Professional logo design for a TV mounting and home theater installation service. 
+                  Clean, bold design built to work everywhere from truck wraps to business cards.
+                </p>
+                <div style={{
+                  display: 'flex',
+                  flexWrap: 'wrap',
+                  gap: '8px'
+                }}>
+                  <span style={{
+                    backgroundColor: '#f1f5f9',
+                    color: '#475569',
+                    padding: '4px 12px',
+                    borderRadius: '12px',
+                    fontSize: '0.8rem'
+                  }}>
+                    Brand Identity
+                  </span>
+                  <span style={{
+                    backgroundColor: '#f1f5f9',
+                    color: '#475569',
+                    padding: '4px 12px',
+                    borderRadius: '12px',
+                    fontSize: '0.8rem'
+                  }}>
+                    Home Services
+                  </span>
+                  <span style={{
+                    backgroundColor: '#f1f5f9',
+                    color: '#475569',
+                    padding: '4px 12px',
+                    borderRadius: '12px',
+                    fontSize: '0.8rem'
+                  }}>
+                    Professional Logo
+                  </span>
+                </div>
+              </div>
+            </div>
+
             {/* Open Finance Calculators Project */}
             <div 
               className="portfolio-card"
@@ -326,7 +442,7 @@ function Portfolio() {
                 flex: '1 1 350px',
                 margin: '0 auto'
               }}
-              onClick={() => window.open('https://openfinancecalculators.com', '_blank')}
+              onClick={() => window.open('https://openfinancecalculators.com', '_blank', 'noopener,noreferrer')}
             >
               <div style={{
                 padding: '40px',
@@ -340,7 +456,8 @@ function Portfolio() {
               }}>
                 <img 
                   src={financingToolkit}
-                  alt="Open Finance Calculators Website"
+                  alt="Open Finance Calculators Website - Comprehensive financial calculator website with loan and investment tools"
+                  loading="lazy"
                   style={{
                     maxWidth: '100%',
                     height: 'auto',
@@ -359,7 +476,7 @@ function Portfolio() {
                   marginBottom: '15px'
                 }}>
                   <span style={{
-                    backgroundColor: '#059669',
+                    backgroundColor: '#2563eb',
                     color: 'white',
                     padding: '6px 16px',
                     borderRadius: '20px',

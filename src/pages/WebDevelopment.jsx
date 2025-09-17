@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCode, faMobile, faDesktop, faShoppingCart, faSearch, faRocket } from '@fortawesome/free-solid-svg-icons'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
-import PixelwaveLogo from '../components/PixelwaveLogo'
+import Breadcrumbs from '../components/Breadcrumbs'
 
 function WebDevelopment() {
   const navigate = useNavigate()
@@ -73,14 +73,7 @@ function WebDevelopment() {
         </script>
       </Helmet>
       <Header />
-      <div style={{ 
-        position: 'relative',
-        zIndex: 1,
-        marginTop: '10px',
-        overflow: 'hidden'
-      }}>
-        <PixelwaveLogo />
-      </div>
+      <Breadcrumbs />
       
       {/* Hero Section */}
       <section style={{

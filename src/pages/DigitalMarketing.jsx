@@ -5,10 +5,16 @@ import { faGoogle, faFacebook, faInstagram, faLinkedin } from '@fortawesome/free
 import { faChartLine, faBullseye, faRocket, faUsers } from '@fortawesome/free-solid-svg-icons'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
-import PixelwaveLogo from '../components/PixelwaveLogo'
+import Breadcrumbs from '../components/Breadcrumbs'
 
 function DigitalMarketing() {
   const navigate = useNavigate()
+
+  const serviceData = {
+    name: "Digital Marketing Services",
+    description: "Expert digital marketing services in Nashville including Google Ads, social media marketing, SEO, and email marketing to grow your business.",
+    serviceType: "Digital Marketing"
+  }
 
   return (
     <div className="page-container" style={{
@@ -23,16 +29,10 @@ function DigitalMarketing() {
         canonicalUrl="https://usepixelwave.com/digital-marketing"
         structuredDataType="service"
         ogImage="https://usepixelwave.com/pixelwave-logo.webp"
+        serviceData={serviceData}
       />
       <Header />
-      <div style={{ 
-        position: 'relative',
-        zIndex: 1,
-        marginTop: '10px',
-        overflow: 'hidden'
-      }}>
-        <PixelwaveLogo />
-      </div>
+      <Breadcrumbs />
       
       {/* Hero Section */}
       <section style={{

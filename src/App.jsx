@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import ScrollToTop from './components/ScrollToTop'
 import FacebookPixel from './components/FacebookPixel'
+import StickyCallButton from './components/StickyCallButton'
 import Home from './pages/Home'
 import Services from './pages/Services'
 import DigitalMarketing from './pages/DigitalMarketing'
@@ -12,7 +13,6 @@ import PrintDesign from './pages/PrintDesign'
 import Portfolio from './pages/Portfolio'
 import Contact from './pages/Contact'
 import ThankYou from './pages/ThankYou'
-import Blog from './pages/Blog'
 import FAQ from './pages/FAQ'
 
 function App() {
@@ -20,6 +20,7 @@ function App() {
     <Router>
       <ScrollToTop />
       <FacebookPixel />
+      <StickyCallButton />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
@@ -29,7 +30,6 @@ function App() {
         <Route path="/marketing-systems" element={<MarketingSystems />} />
         <Route path="/analytics" element={<Analytics />} />
         <Route path="/print-design" element={<PrintDesign />} />
-        <Route path="/blog" element={<Blog />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<Contact />} />

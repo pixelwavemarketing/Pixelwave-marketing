@@ -14,7 +14,7 @@ import {
 import { faGoogle } from '@fortawesome/free-brands-svg-icons'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
-import PixelwaveLogo from '../components/PixelwaveLogo'
+import Breadcrumbs from '../components/Breadcrumbs'
 
 function Services() {
   const navigate = useNavigate()
@@ -39,14 +39,7 @@ function Services() {
         minHeight: '100vh'
       }}>
       <Header />
-      <div style={{ 
-        position: 'relative',
-        zIndex: 1,
-        marginTop: '10px',  // Changed from 0px to account for header height
-        overflow: 'hidden'  // Prevent content from going behind header
-      }}>
-        <PixelwaveLogo />
-      </div>
+      <Breadcrumbs />
       
       {/* Why Choose Us Section */}
       <div style={{
@@ -284,17 +277,6 @@ function Services() {
               justifyContent: 'center',
               marginBottom: '40px'
             }}>
-              <a href="/blog" style={{
-                padding: '12px 24px',
-                backgroundColor: '#2563eb',
-                color: 'white',
-                textDecoration: 'none',
-                borderRadius: '6px',
-                fontWeight: '500',
-                transition: 'background-color 0.3s ease'
-              }}>
-                Read Our Blog
-              </a>
               <a href="/faq" style={{
                 padding: '12px 24px',
                 backgroundColor: '#64748b',

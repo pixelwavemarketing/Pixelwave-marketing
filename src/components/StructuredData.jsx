@@ -1,6 +1,6 @@
 import siteConfig from '../config/siteConfig.js';
 
-const StructuredData = ({ type = 'localBusiness' }) => {
+const StructuredData = ({ type = 'localBusiness', faqData = null, serviceData = null }) => {
   const baseOrganization = {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -89,44 +89,44 @@ const StructuredData = ({ type = 'localBusiness' }) => {
   const service = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": siteConfig.company.name,
-    "description": siteConfig.company.description,
+    "name": serviceData?.name || "Digital Marketing Services",
+    "description": serviceData?.description || siteConfig.company.description,
     "provider": {
-      "@type": "Organization",
+      "@type": "LocalBusiness",
       "name": siteConfig.company.name,
       "telephone": siteConfig.company.telephone,
-      "email": siteConfig.company.email
+      "email": siteConfig.company.email,
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": siteConfig.company.address.addressLocality,
+        "addressRegion": siteConfig.company.address.addressRegion,
+        "addressCountry": siteConfig.company.address.addressCountry
+      }
     },
-    "serviceType": "Digital Marketing",
-    "areaServed": siteConfig.company.areaServed,
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Digital Marketing Services",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Web Development",
-            "description": "Custom responsive websites and e-commerce solutions"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Digital Marketing",
-            "description": "Google Ads, SEO, and social media marketing"
-          }
-        }
-      ]
+    "serviceType": serviceData?.serviceType || "Digital Marketing",
+    "areaServed": siteConfig.company.areaServed.map(area => ({
+      "@type": "City", 
+      "name": area
+    })),
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock",
+      "priceCurrency": "USD",
+      "priceRange": siteConfig.company.priceRange
     }
   };
 
   const faq = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": [
+    "mainEntity": faqData ? faqData.map(item => ({
+      "@type": "Question",
+      "name": item.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.answer
+      }
+    })) : [
       {
         "@type": "Question",
         "name": "What services does PixelWave Marketing offer?",

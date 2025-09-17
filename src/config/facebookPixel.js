@@ -15,7 +15,6 @@ export const PIXEL_EVENTS = {
   // Custom events for your business
   SERVICE_VIEW: 'ViewContent',
   PORTFOLIO_VIEW: 'ViewContent',
-  BLOG_VIEW: 'ViewContent',
   FORM_SUBMIT: 'Lead',
   BUTTON_CLICK: 'CustomizeProduct',
   PHONE_CLICK: 'Contact',
@@ -26,7 +25,6 @@ export const PIXEL_EVENTS = {
 export const CONTENT_CATEGORIES = {
   SERVICES: 'Services',
   PORTFOLIO: 'Portfolio',
-  BLOG: 'Blog',
   LEAD_GENERATION: 'Lead Generation',
   CONTACT: 'Contact',
   BUTTON_CLICK: 'Button Click'

@@ -103,13 +103,42 @@ button:focus-visible {
 /* Add responsive padding for mobile devices */
 @media (max-width: 768px) {
   .page-container {
-    padding-top: 43px !important;
+    padding-top: 70px !important; /* Account for mobile header height */
+  }
+  
+  /* Pages with breadcrumbs need extra padding on mobile */
+  .page-container:has(nav[aria-label="Breadcrumb navigation"]) {
+    padding-top: 135px !important; /* Extra space for breadcrumbs */
+  }
+  
+  /* Breadcrumb adjustments for mobile */
+  nav[aria-label="Breadcrumb navigation"] {
+    padding: 8px 15px !important;
+    font-size: 0.8rem !important;
   }
 }
 
 /* Default desktop padding */
 .page-container {
-  padding-top: 0px;
+  padding-top: 90px; /* Account for desktop header height */
+}
+
+/* Breadcrumb mobile responsiveness - smaller and more subtle */
+@media (max-width: 768px) {
+  nav[aria-label="Breadcrumb navigation"] {
+    padding: 2px 15px !important;
+    opacity: 0.7 !important;
+  }
+  
+  nav[aria-label="Breadcrumb navigation"] ol {
+    font-size: 0.7rem !important;
+  }
+  
+  nav[aria-label="Breadcrumb navigation"] ol li span,
+  nav[aria-label="Breadcrumb navigation"] ol li a {
+    padding: 1px 2px !important;
+    font-size: 0.65rem !important;
+  }
 }
 
 /* Enhanced service card hover effects */
@@ -199,7 +228,20 @@ button:focus-visible {
   font-weight: 500;
   transition: all 0.3s ease;
   position: relative;
-  padding: 8px 0;
+  padding: 12px 8px; /* Better touch targets */
+  min-height: 44px; /* iOS recommended minimum touch target */
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+}
+
+/* Mobile navigation improvements */
+@media (max-width: 768px) {
+  .nav-link {
+    font-size: 1rem;
+    padding: 10px 6px;
+    min-height: 40px;
+  }
 }
 
 .nav-link:hover {
@@ -285,6 +327,62 @@ button:focus-visible {
   min-width: 280px;
   flex: 1 1 350px;
   margin: 0 auto;
+}
+
+/* Sticky Call Button Styles */
+.sticky-call-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+  z-index: 1001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  font-size: 1.4rem;
+  animation: pulse-call 2s infinite;
+}
+
+.sticky-call-button:hover {
+  transform: scale(1.1);
+  background: linear-gradient(135deg, #059669, #047857);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.6);
+}
+
+.sticky-call-button:active {
+  transform: scale(0.95);
+}
+
+/* Mobile adjustments for call button */
+@media (max-width: 768px) {
+  .sticky-call-button {
+    width: 60px;
+    height: 60px;
+    bottom: 15px;
+    right: 15px;
+    font-size: 1.2rem;
+  }
+}
+
+/* Subtle pulse animation */
+@keyframes pulse-call {
+  0% {
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+  }
+  50% {
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4), 0 0 0 8px rgba(16, 185, 129, 0.1);
+  }
+  100% {
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+  }
 }
 
 /* Portfolio card hover and touch effects */

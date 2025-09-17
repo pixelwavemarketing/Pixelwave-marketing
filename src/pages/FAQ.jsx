@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom'
 import SEOOptimizer from '../components/SEOOptimizer'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
-import PixelwaveLogo from '../components/PixelwaveLogo'
+import Breadcrumbs from '../components/Breadcrumbs'
 
 function FAQ() {
   const navigate = useNavigate()
@@ -52,6 +52,7 @@ function FAQ() {
         keywords="FAQ, digital marketing questions, web development FAQ, marketing agency questions, business growth services"
         canonicalUrl="https://usepixelwave.com/faq"
         structuredDataType="faq"
+        faqData={faqData}
       />
       <div className="page-container" style={{
         display: 'flex',
@@ -60,15 +61,8 @@ function FAQ() {
       }}>
         
       <Header />
-      <div style={{ 
-        position: 'relative',
-        zIndex: 1,
-        marginTop: '10px',
-        overflow: 'hidden'
-      }}>
-        <PixelwaveLogo />
-      </div>
-
+      <Breadcrumbs />
+      
       {/* Hero Section */}
       <section style={{
         padding: '80px 20px',

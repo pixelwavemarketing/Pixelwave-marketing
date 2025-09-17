@@ -8,14 +8,14 @@ function PixelwaveLogo() {
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
-      marginTop: '60px',
+      marginTop: window.innerWidth <= 768 ? '60px' : '0px',
       padding: '0',
       overflow: 'hidden'
     }}>
       <img 
         src={pixelwaveLogo}
-        alt="Pixelwave Logo"
-        loading="lazy"
+        alt="PixelWave Marketing Logo - Digital marketing and web development services in Nashville"
+        loading="eager"
         style={{
           width: '100%',
           height: '100%',

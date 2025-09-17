@@ -53,7 +53,7 @@ function Home() {
 				<section style={{ 
 					position: 'relative',
 					zIndex: 1,
-					marginTop: '10px',
+					marginTop: '0px',
 					overflow: 'hidden'
 				}}>
 					<PixelwaveLogo />

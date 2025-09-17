@@ -63,10 +63,6 @@
     fbq('init', '1291420825372627');
     fbq('track', 'PageView');
   </script>
-  <noscript>
-    <img height="1" width="1" style="display:none"
-         src="https://www.facebook.com/tr?id=1291420825372627&ev=PageView&noscript=1" />
-  </noscript>
   <!-- End Facebook Pixel Code -->
     
     <meta charset="UTF-8" />
@@ -80,43 +76,12 @@
     <link rel="icon" type="image/png" href="/web-app-manifest-192x192.png" sizes="192x192" />
     <link rel="icon" type="image/png" href="/web-app-manifest-512x512.png" sizes="512x512" />
 
-    <!-- Primary Meta Tags -->
-    <title>PixelWave Marketing | Nashville Web Design & SEO for Local Businesses</title>
-    <meta name="title" content="PixelWave Marketing | Nashville Web Design & SEO for Local Businesses">
-    <meta name="description" content="PixelWave Marketing builds high-converting websites and local SEO that bring Nashville businesses more calls, bookings, and revenue. See pricing, case studies, and process.">
-    <meta name="keywords" content="Nashville web design, Nashville SEO, digital marketing Nashville, web development Nashville, local SEO Nashville, business website Nashville, Nashville marketing agency, web design company Nashville, SEO services Nashville, digital marketing agency Nashville">
+    <!-- Basic fallback meta tags - React Helmet will override these -->
+    <title>PixelWave Marketing</title>
+    <meta name="description" content="Digital marketing and web development services">
     
-    <!-- Robots -->
-    <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://usepixelwave.com/">
-    <meta property="og:title" content="Nashville Web Design & SEO">
-    <meta property="og:description" content="Websites and SEO that get more calls and bookings.">
-    <meta property="og:image" content="https://usepixelwave.com/og-cover.jpg">
-    <meta property="og:site_name" content="PixelWave Marketing">
-    <meta property="og:locale" content="en_US">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://usepixelwave.com/">
-    <meta property="twitter:title" content="Nashville Web Design & SEO">
-    <meta property="twitter:description" content="Websites and SEO that get more calls and bookings.">
-    <meta property="twitter:image" content="https://usepixelwave.com/og-cover.jpg">
-
-    <!-- Additional SEO Tags -->
-    <meta name="author" content="PixelWave Marketing">
+    <!-- Static meta tags that don't change -->
     <meta name="language" content="English">
-    <meta name="revisit-after" content="7 days">
-    <meta name="geo.region" content="US-TN">
-    <meta name="geo.placename" content="Nashville">
-    <meta name="geo.position" content="36.1627;-86.7816">
-    <meta name="ICBM" content="36.1627, -86.7816">
-    <meta name="rating" content="general">
-    <meta name="distribution" content="global">
-    <meta name="coverage" content="Worldwide">
-    <meta name="target" content="all">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="format-detection" content="telephone=yes">
@@ -140,7 +105,7 @@
       "logo": "https://usepixelwave.com/logo.svg",
       "sameAs": [
         "https://www.facebook.com/61577166790673",
-        "https://www.instagram.com/__pixel__wave__/",
+        "https://www.instagram.com/usepixelwave/",
         "https://www.linkedin.com/company/pixelwave-marketing"
       ],
       "foundingDate": "2023",
@@ -192,9 +157,9 @@
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "PixelWave Marketing",
-      "image": "https://usepixelwave.com/office.jpg",
+      "image": "https://usepixelwave.com/pixelwave-logo.webp",
       "url": "https://usepixelwave.com",
-      "telephone": "+1-615-XXX-XXXX",
+      "telephone": "+18024555570",
       "priceRange": "$$",
       "address": {
         "@type": "PostalAddress",
@@ -209,25 +174,12 @@
     }
     </script>
 
-    <!-- Website SearchAction Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "url": "https://usepixelwave.com",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://usepixelwave.com/search?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
-    }
-    </script>
 
     <!-- Responsive Design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
     <!-- Preload critical assets -->
-    <link rel="preload" as="image" href="/pixelwave-logo.png">
+    <link rel="preload" as="image" href="/pixelwave-logo.webp">
     <link rel="preload" as="style" href="/src/index.css">
     
     <!-- DNS Prefetch for external resources -->
@@ -235,6 +187,12 @@
     <link rel="dns-prefetch" href="https://www.google-analytics.com">
   </head>
   <body>
+    <!-- Facebook Pixel noscript fallback -->
+    <noscript>
+      <img height="1" width="1" style="display:none"
+           src="https://www.facebook.com/tr?id=1291420825372627&ev=PageView&noscript=1" />
+    </noscript>
+    
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

@@ -10,7 +10,9 @@ const SEOOptimizer = ({
   canonicalUrl, 
   structuredDataType = 'localBusiness',
   ogImage = siteConfig.seo.ogImage,
-  ogType = 'website'
+  ogType = 'website',
+  faqData = null,
+  serviceData = null
 }) => {
   // Generate default values if not provided
   const defaultTitle = title || siteConfig.company.name;
@@ -58,7 +60,7 @@ const SEOOptimizer = ({
       
       {/* Structured Data */}
       <script type="application/ld+json">
-        {StructuredData({ type: structuredDataType })}
+        {StructuredData({ type: structuredDataType, faqData, serviceData })}
       </script>
       
       {/* Additional Schema for Local Business */}
@@ -84,20 +86,6 @@ const SEOOptimizer = ({
           })}
         </script>
       )}
-      
-      {/* Website SearchAction Schema */}
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "WebSite",
-          "url": siteConfig.company.url,
-          "potentialAction": {
-            "@type": "SearchAction",
-            "target": `${siteConfig.company.url}/search?q={search_term_string}`,
-            "query-input": "required name=search_term_string"
-          }
-        })}
-      </script>
     </Helmet>
   );
 };
@@ -109,7 +97,9 @@ SEOOptimizer.propTypes = {
   canonicalUrl: PropTypes.string,
   structuredDataType: PropTypes.oneOf(['localBusiness', 'service', 'faq', 'product', 'organization', 'aiOptimized']),
   ogImage: PropTypes.string,
-  ogType: PropTypes.string
+  ogType: PropTypes.string,
+  faqData: PropTypes.array,
+  serviceData: PropTypes.object
 };
 
 export default SEOOptimizer;
