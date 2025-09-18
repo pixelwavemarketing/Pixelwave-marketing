@@ -102,7 +102,7 @@ button:focus-visible {
 
 /* Separate padding for home page and other pages */
 .home-page {
-  padding-top: 20px; /* Home page desktop: 0 = behind header, 10 = just below header, 100+ = way below */
+  padding-top: 80px; /* Home page desktop: 0 = behind header, 10 = just below header, 100+ = way below */
 }
 
 .other-page {
@@ -116,6 +116,17 @@ button:focus-visible {
   
   .other-page {
     padding-top: 80px; /* Other pages mobile: 0 = behind header, 70 = just below header, 100+ = way below */
+  }
+}
+
+/* Smaller phones */
+@media (max-width: 480px) {
+  .home-page {
+    padding-top: 70px; /* Home page small phone: 0 = behind header, 5 = just below header, 100+ = way below */
+  }
+  
+  .other-page {
+    padding-top: 130px; /* Other pages small phone: 0 = behind header, 90 = just below header, 100+ = way below */
   }
 }
 
