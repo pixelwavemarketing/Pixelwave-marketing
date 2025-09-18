@@ -44,7 +44,7 @@ function Home() {
 				keywords="digital marketing, web development, analytics, business growth, marketing agency, Nashville"
 				structuredDataType="localBusiness"
 			/>
-			<main className="page-container" style={{
+			<main className="home-page" style={{
 				display: 'flex',
 				flexDirection: 'column',
 				minHeight: '100vh'

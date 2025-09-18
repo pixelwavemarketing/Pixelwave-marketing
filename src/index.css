@@ -100,31 +100,22 @@ button:focus-visible {
   }
 }
 
-/* Default desktop padding - ensure content isn't hidden behind header */
-body .page-container {
-  padding-top: 80px !important; /* Safe spacing to avoid header overlap */
+/* Separate padding for home page and other pages */
+.home-page {
+  padding-top: 90px; /* Home page desktop: 0 = behind header, 10 = just below header, 100+ = way below */
 }
 
-/* Pages with breadcrumbs need extra padding on desktop */
-body .page-container:has(nav[aria-label="Breadcrumb navigation"]) {
-  padding-top: 120px !important; /* Extra space for breadcrumbs on desktop */
+.other-page {
+  padding-top: 80px; /* Other pages desktop: 0 = behind header, 10 = just below header, 100+ = way below */
 }
 
-/* Add responsive padding for mobile devices */
 @media (max-width: 768px) {
-  .page-container {
-    padding-top: 70px !important; /* Account for mobile header height */
+  .home-page {
+    padding-top: 80px; /* Home page mobile: 0 = behind header, 70 = just below header, 100+ = way below */
   }
   
-  /* Pages with breadcrumbs need extra padding on mobile */
-  .page-container:has(nav[aria-label="Breadcrumb navigation"]) {
-    padding-top: 135px !important; /* Extra space for breadcrumbs */
-  }
-  
-  /* Breadcrumb adjustments for mobile */
-  nav[aria-label="Breadcrumb navigation"] {
-    padding: 8px 15px !important;
-    font-size: 0.8rem !important;
+  .other-page {
+    padding-top: 70px; /* Other pages mobile: 0 = behind header, 70 = just below header, 100+ = way below */
   }
 }
 
@@ -134,23 +125,6 @@ body {
 }
 
 
-/* Breadcrumb mobile responsiveness - smaller and more subtle */
-@media (max-width: 768px) {
-  nav[aria-label="Breadcrumb navigation"] {
-    padding: 2px 15px !important;
-    opacity: 0.7 !important;
-  }
-  
-  nav[aria-label="Breadcrumb navigation"] ol {
-    font-size: 0.7rem !important;
-  }
-  
-  nav[aria-label="Breadcrumb navigation"] ol li span,
-  nav[aria-label="Breadcrumb navigation"] ol li a {
-    padding: 1px 2px !important;
-    font-size: 0.65rem !important;
-  }
-}
 
 /* Enhanced service card hover effects */
 .service-card {

@@ -33,7 +33,7 @@ function Services() {
         canonicalUrl="https://usepixelwave.com/services"
         structuredDataType="service"
       />
-      <div className="page-container" style={{
+      <div className="other-page" style={{
         display: 'flex',
         flexDirection: 'column',
         minHeight: '100vh'

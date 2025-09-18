@@ -17,7 +17,7 @@ function DigitalMarketing() {
   }
 
   return (
-    <div className="page-container" style={{
+    <div className="other-page" style={{
       display: 'flex',
       flexDirection: 'column',
       minHeight: '100vh'

@@ -54,7 +54,7 @@ function FAQ() {
         structuredDataType="faq"
         faqData={faqData}
       />
-      <div className="page-container" style={{
+      <div className="other-page" style={{
         display: 'flex',
         flexDirection: 'column',
         minHeight: '100vh'
