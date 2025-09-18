@@ -46,7 +46,7 @@ function ContactForm() {
       name="contact"
       method="POST"
       data-netlify="true"
-      netlify
+      netlify="true"
       onSubmit={handleSubmit}
       style={{
         width: '100%',

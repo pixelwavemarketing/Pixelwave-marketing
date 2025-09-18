@@ -100,6 +100,16 @@ button:focus-visible {
   }
 }
 
+/* Default desktop padding - reduced for closer spacing */
+body .page-container {
+  padding-top: 5px !important; /* Minimal spacing for tight layout */
+}
+
+/* Pages with breadcrumbs need extra padding on desktop */
+body .page-container:has(nav[aria-label="Breadcrumb navigation"]) {
+  padding-top: 70px !important; /* Extra space for breadcrumbs on desktop */
+}
+
 /* Add responsive padding for mobile devices */
 @media (max-width: 768px) {
   .page-container {
@@ -118,10 +128,11 @@ button:focus-visible {
   }
 }
 
-/* Default desktop padding */
-.page-container {
-  padding-top: 90px; /* Account for desktop header height */
+/* Remove body padding to avoid double spacing */
+body {
+  padding-top: 0 !important;
 }
+
 
 /* Breadcrumb mobile responsiveness - smaller and more subtle */
 @media (max-width: 768px) {
@@ -333,7 +344,7 @@ button:focus-visible {
 .sticky-call-button {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  left: 20px;
   width: 70px;
   height: 70px;
   background: linear-gradient(135deg, #10b981, #059669);
@@ -367,12 +378,12 @@ button:focus-visible {
     width: 60px;
     height: 60px;
     bottom: 15px;
-    right: 15px;
+    left: 15px;
     font-size: 1.2rem;
   }
 }
 
-/* Subtle pulse animation */
+/* Subtle pulse animations */
 @keyframes pulse-call {
   0% {
     box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
@@ -384,6 +395,9 @@ button:focus-visible {
     box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
   }
 }
+
+
+
 
 /* Portfolio card hover and touch effects */
 .portfolio-card {
