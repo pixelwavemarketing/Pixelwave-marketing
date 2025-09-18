@@ -3,9 +3,10 @@ import { useEffect } from 'react'
 const ChatbotLoader = () => {
   useEffect(() => {
     const script = document.createElement('script')
-    script.src = 'https://ai-chatbot-five-ashy-81.vercel.app/embed.js'
+    script.src = 'https://ai-chatbot-p.netlify.app/embed.js'
+    script.setAttribute('data-width', '350px') // Set chat window width
+    script.setAttribute('data-height', '500px') // Set chat window height
     script.setAttribute('data-button-color', '#3b82f6') // Blue color to match your brand
-    script.setAttribute('data-width', '400px') // Set chat window width
     script.async = true
     document.body.appendChild(script)
     
