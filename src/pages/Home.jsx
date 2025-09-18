@@ -145,7 +145,7 @@ function Home() {
 									color: '#64748b',
 									lineHeight: '1.6'
 								}}>
-									Google Ads, SEO, and social media marketing to increase your online visibility and drive more leads.
+									Google Ads, SEO, Google Business Profile optimization, and analytics setup. We handle the technical work most agencies skip.
 								</p>
 							</div>
 
@@ -163,7 +163,7 @@ function Home() {
 									color: '#64748b',
 									lineHeight: '1.6'
 								}}>
-									Custom websites and e-commerce solutions built with modern technologies for optimal performance.
+									Custom websites with speed optimization, booking systems, live chat, and conversion tracking that turns visitors into customers.
 								</p>
 							</div>
 
@@ -181,7 +181,7 @@ function Home() {
 									color: '#64748b',
 									lineHeight: '1.6'
 								}}>
-									Data-driven insights and performance tracking to optimize your marketing efforts and maximize ROI.
+									Professional analytics setup with clean dashboards, lead tracking, and monthly report cards showing exactly where your business is growing.
 								</p>
 							</div>
 						</div>

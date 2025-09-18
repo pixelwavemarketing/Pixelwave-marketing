@@ -253,6 +253,206 @@ function Services() {
         </div>
       </div>
 
+      {/* Technical Services Section */}
+      <div style={{
+        padding: '60px 20px',
+        backgroundColor: '#ffffff'
+      }}>
+        <div style={{
+          maxWidth: '1200px',
+          margin: '0 auto',
+          textAlign: 'center'
+        }}>
+          <h2 style={{
+            fontSize: '2rem',
+            marginBottom: '20px',
+            color: '#333'
+          }}>
+            Technical Services That Most Agencies Don't Offer
+          </h2>
+          <p style={{
+            fontSize: '1.1rem',
+            color: '#666',
+            marginBottom: '40px',
+            maxWidth: '800px',
+            margin: '0 auto 40px auto'
+          }}>
+            We handle the technical setup that most business owners can't or won't do themselves
+          </p>
+          
+          <div style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            gap: '30px',
+            justifyContent: 'center',
+            padding: '0 20px'
+          }}>
+            {/* Google Business Profile */}
+            <div style={{
+              backgroundColor: '#f8fafc',
+              padding: '30px',
+              borderRadius: '12px',
+              border: '2px solid #e2e8f0',
+              textAlign: 'left',
+              transition: 'all 0.3s ease',
+              flex: '1 1 320px',
+              maxWidth: '400px'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.borderColor = '#4285F4';
+              e.currentTarget.style.transform = 'translateY(-4px)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.borderColor = '#e2e8f0';
+              e.currentTarget.style.transform = 'translateY(0)';
+            }}>
+              <h3 style={{ color: '#4285F4', fontSize: '1.3rem', marginBottom: '15px' }}>
+                🏢 Google Business Profile Optimization
+              </h3>
+              <p style={{ color: '#666', lineHeight: '1.6', marginBottom: '15px' }}>
+                Most businesses have a Google listing, but 90% aren't optimized correctly. We claim, verify, and optimize your profile for maximum local visibility.
+              </p>
+              <ul style={{ color: '#666', paddingLeft: '20px', lineHeight: '1.6', fontSize: '0.95rem' }}>
+                <li>Photo optimization and posting schedule</li>
+                <li>Review response management setup</li>
+                <li>UTM tracking for lead attribution</li>
+              </ul>
+            </div>
+
+            {/* Analytics & Tracking */}
+            <div style={{
+              backgroundColor: '#f8fafc',
+              padding: '30px',
+              borderRadius: '12px',
+              border: '2px solid #e2e8f0',
+              textAlign: 'left',
+              transition: 'all 0.3s ease',
+              flex: '1 1 320px',
+              maxWidth: '400px'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.borderColor = '#10b981';
+              e.currentTarget.style.transform = 'translateY(-4px)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.borderColor = '#e2e8f0';
+              e.currentTarget.style.transform = 'translateY(0)';
+            }}>
+              <h3 style={{ color: '#10b981', fontSize: '1.3rem', marginBottom: '15px' }}>
+                📊 Analytics & Tracking Setup
+              </h3>
+              <p style={{ color: '#666', lineHeight: '1.6', marginBottom: '15px' }}>
+                Know exactly where your leads come from with professional analytics setup and clean reporting dashboards.
+              </p>
+              <ul style={{ color: '#666', paddingLeft: '20px', lineHeight: '1.6', fontSize: '0.95rem' }}>
+                <li>Google Analytics 4 installation</li>
+                <li>Google Search Console connection</li>
+                <li>Facebook Pixel implementation</li>
+                <li>Monthly report card dashboards</li>
+              </ul>
+            </div>
+
+            {/* Local SEO Tools */}
+            <div style={{
+              backgroundColor: '#f8fafc',
+              padding: '30px',
+              borderRadius: '12px',
+              border: '2px solid #e2e8f0',
+              textAlign: 'left',
+              transition: 'all 0.3s ease',
+              flex: '1 1 320px',
+              maxWidth: '400px'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.borderColor = '#7c3aed';
+              e.currentTarget.style.transform = 'translateY(-4px)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.borderColor = '#e2e8f0';
+              e.currentTarget.style.transform = 'translateY(0)';
+            }}>
+              <h3 style={{ color: '#7c3aed', fontSize: '1.3rem', marginBottom: '15px' }}>
+                🎯 Local SEO Foundation
+              </h3>
+              <p style={{ color: '#666', lineHeight: '1.6', marginBottom: '15px' }}>
+                Consistent business information across all directories is crucial for local search rankings. We audit and fix everything.
+              </p>
+              <ul style={{ color: '#666', paddingLeft: '20px', lineHeight: '1.6', fontSize: '0.95rem' }}>
+                <li>Citation audit and cleanup</li>
+                <li>Directory listing optimization</li>
+                <li>NAP (Name, Address, Phone) consistency across platforms</li>
+                <li>Ongoing citation management</li>
+              </ul>
+            </div>
+
+            {/* Website Add-Ons */}
+            <div style={{
+              backgroundColor: '#f8fafc',
+              padding: '30px',
+              borderRadius: '12px',
+              border: '2px solid #e2e8f0',
+              textAlign: 'left',
+              transition: 'all 0.3s ease',
+              flex: '1 1 320px',
+              maxWidth: '400px'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.borderColor = '#f59e0b';
+              e.currentTarget.style.transform = 'translateY(-4px)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.borderColor = '#e2e8f0';
+              e.currentTarget.style.transform = 'translateY(0)';
+            }}>
+              <h3 style={{ color: '#f59e0b', fontSize: '1.3rem', marginBottom: '15px' }}>
+                🚀 Website Enhancement Tools
+              </h3>
+              <p style={{ color: '#666', lineHeight: '1.6', marginBottom: '15px' }}>
+                Turn your website into a lead-generating machine with professional tools that capture and convert visitors.
+              </p>
+              <ul style={{ color: '#666', paddingLeft: '20px', lineHeight: '1.6', fontSize: '0.95rem' }}>
+                <li>Live chat widget setup and styling</li>
+                <li>Booking calendar integration (Calendly)</li>
+                <li>Lead capture form optimization</li>
+              </ul>
+            </div>
+
+            {/* Performance & Ads Infrastructure */}
+            <div style={{
+              backgroundColor: '#f8fafc',
+              padding: '30px',
+              borderRadius: '12px',
+              border: '2px solid #e2e8f0',
+              textAlign: 'left',
+              transition: 'all 0.3s ease',
+              flex: '1 1 320px',
+              maxWidth: '400px'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.borderColor = '#ef4444';
+              e.currentTarget.style.transform = 'translateY(-4px)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.borderColor = '#e2e8f0';
+              e.currentTarget.style.transform = 'translateY(0)';
+            }}>
+              <h3 style={{ color: '#ef4444', fontSize: '1.3rem', marginBottom: '15px' }}>
+                ⚡ Performance & Ad Readiness
+              </h3>
+              <p style={{ color: '#666', lineHeight: '1.6', marginBottom: '15px' }}>
+                Speed optimization and advertising infrastructure setup. Start collecting data now, run ads later.
+              </p>
+              <ul style={{ color: '#666', paddingLeft: '20px', lineHeight: '1.6', fontSize: '0.95rem' }}>
+                <li>PageSpeed optimization and Core Web Vitals</li>
+                <li>Google Ads conversion tracking setup</li>
+                <li>Retargeting pixel installation</li>
+                <li>Campaign-ready infrastructure</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
               {/* Internal Links Section */}
         <div style={{
           padding: '60px 20px',
