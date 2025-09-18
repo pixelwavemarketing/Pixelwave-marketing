@@ -100,14 +100,14 @@ button:focus-visible {
   }
 }
 
-/* Default desktop padding - reduced for closer spacing */
+/* Default desktop padding - ensure content isn't hidden behind header */
 body .page-container {
-  padding-top: 5px !important; /* Minimal spacing for tight layout */
+  padding-top: 80px !important; /* Safe spacing to avoid header overlap */
 }
 
 /* Pages with breadcrumbs need extra padding on desktop */
 body .page-container:has(nav[aria-label="Breadcrumb navigation"]) {
-  padding-top: 70px !important; /* Extra space for breadcrumbs on desktop */
+  padding-top: 120px !important; /* Extra space for breadcrumbs on desktop */
 }
 
 /* Add responsive padding for mobile devices */
