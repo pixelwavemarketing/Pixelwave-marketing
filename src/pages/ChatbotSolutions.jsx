@@ -35,9 +35,9 @@ function ChatbotSolutions() {
   return (
     <>
       <SEOOptimizer 
-        title="AI Chatbot Solutions | 24/7 Customer Support Automation | Pixelwave Marketing"
-        description="Transform your customer service with intelligent AI chatbots. Available 24/7, multilingual support, lead capture, and seamless integration. Boost conversions and reduce response times."
-        keywords="AI chatbot, customer support automation, live chat, lead generation, 24/7 support, conversational AI, chatbot development, customer service bot"
+        title="AI Chatbot for Business | Custom Chatbot Development Services | Nashville"
+        description="Get a custom AI chatbot for your business website. 24/7 automated customer support, lead capture, and email integration. Professional chatbot development services in Nashville, TN. Boost sales and never miss a customer again."
+        keywords="AI chatbot for business, custom chatbot development, business chatbot services, website chatbot, automated customer service, chatbot Nashville, small business chatbot, lead generation chatbot, customer support automation, AI chat assistant"
         canonicalUrl="https://usepixelwave.com/chatbot-solutions"
         structuredDataType="service"
       />
@@ -72,7 +72,7 @@ function ChatbotSolutions() {
               marginBottom: '20px',
               fontWeight: 'bold'
             }}>
-              AI Chatbot Solutions
+              Custom AI Chatbot for Your Business
             </h1>
             <p style={{
               fontSize: '1.3rem',
@@ -80,8 +80,9 @@ function ChatbotSolutions() {
               opacity: '0.9',
               lineHeight: '1.6'
             }}>
-              Transform your customer service with intelligent AI chatbots that work 24/7, 
-              capture leads, and provide instant support to boost your conversions.
+              Get a professional AI chatbot for your business website. Our custom chatbot development 
+              services help Nashville businesses automate customer support, capture more leads, and 
+              never miss a potential customer again.
             </p>
             <button
               onClick={() => handleCTAClick('Hero CTA')}
@@ -111,6 +112,70 @@ function ChatbotSolutions() {
           </div>
         </section>
 
+        {/* Local Business SEO Section */}
+        <section style={{
+          padding: '60px 20px',
+          backgroundColor: 'white',
+          textAlign: 'center'
+        }}>
+          <div style={{
+            maxWidth: '800px',
+            margin: '0 auto'
+          }}>
+            <h2 style={{
+              fontSize: '2.2rem',
+              marginBottom: '20px',
+              color: '#1e293b'
+            }}>
+              Professional Chatbot Development for Nashville Businesses
+            </h2>
+            <p style={{
+              fontSize: '1.1rem',
+              color: '#64748b',
+              lineHeight: '1.7',
+              marginBottom: '30px'
+            }}>
+              As a leading <strong>chatbot development company in Nashville</strong>, we specialize in creating 
+              custom AI chatbots for small and medium businesses. Our <strong>business chatbot services</strong> help 
+              local companies automate customer service, generate more leads, and provide 24/7 support to their customers. 
+              Whether you need a <strong>website chatbot</strong> for your e-commerce store, service business, or professional 
+              practice, we build intelligent chat solutions that understand your customers and grow your business.
+            </p>
+            <div style={{
+              display: 'flex',
+              flexWrap: 'wrap',
+              gap: '20px',
+              justifyContent: 'center',
+              marginTop: '30px'
+            }}>
+              <div style={{
+                backgroundColor: '#f8fafc',
+                padding: '20px 30px',
+                borderRadius: '8px',
+                border: '1px solid #e2e8f0'
+              }}>
+                <strong style={{ color: '#667eea' }}>✓ Nashville Local Business</strong>
+              </div>
+              <div style={{
+                backgroundColor: '#f8fafc',
+                padding: '20px 30px',
+                borderRadius: '8px',
+                border: '1px solid #e2e8f0'
+              }}>
+                <strong style={{ color: '#667eea' }}>✓ Custom Chatbot Development</strong>
+              </div>
+              <div style={{
+                backgroundColor: '#f8fafc',
+                padding: '20px 30px',
+                borderRadius: '8px',
+                border: '1px solid #e2e8f0'
+              }}>
+                <strong style={{ color: '#667eea' }}>✓ Small Business Focused</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Key Benefits Section */}
         <section style={{
           padding: '80px 20px',
@@ -126,7 +191,7 @@ function ChatbotSolutions() {
               marginBottom: '20px',
               color: '#1e293b'
             }}>
-              Why Your Business Needs a Chatbot
+              Why Every Business Needs an AI Chatbot in 2024
             </h2>
             <p style={{
               fontSize: '1.2rem',
@@ -135,8 +200,9 @@ function ChatbotSolutions() {
               maxWidth: '700px',
               margin: '0 auto 60px auto'
             }}>
-              Don't lose potential customers to slow response times. Our AI chatbots provide instant, 
-              intelligent responses that turn visitors into leads.
+              <strong>Small businesses lose 27% of potential customers</strong> due to slow response times. 
+              Our custom AI chatbots provide instant, intelligent responses that convert website visitors 
+              into paying customers, even when you're not available.
             </p>
             
             <div style={{
@@ -632,6 +698,96 @@ function ChatbotSolutions() {
             <p style={{ color: '#64748b', fontSize: '0.95rem' }}>
               Free consultation • No commitment required • Transparent pricing
             </p>
+          </div>
+        </section>
+
+        {/* FAQ Section for SEO */}
+        <section style={{
+          padding: '80px 20px',
+          backgroundColor: '#f8fafc'
+        }}>
+          <div style={{
+            maxWidth: '800px',
+            margin: '0 auto'
+          }}>
+            <h2 style={{
+              fontSize: '2.5rem',
+              marginBottom: '50px',
+              color: '#1e293b',
+              textAlign: 'center'
+            }}>
+              Frequently Asked Questions About Business Chatbots
+            </h2>
+            
+            <div style={{
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '30px'
+            }}>
+              <div style={{
+                backgroundColor: 'white',
+                padding: '30px',
+                borderRadius: '12px',
+                boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
+              }}>
+                <h3 style={{ fontSize: '1.3rem', marginBottom: '15px', color: '#1e293b' }}>
+                  How much does a custom chatbot cost for a small business?
+                </h3>
+                <p style={{ color: '#64748b', lineHeight: '1.6' }}>
+                  Custom chatbot pricing varies based on your business needs, expected conversation volume, and 
+                  integration requirements. We provide personalized quotes for Nashville businesses, typically 
+                  ranging from affordable monthly plans for small businesses to comprehensive solutions for larger companies.
+                </p>
+              </div>
+
+              <div style={{
+                backgroundColor: 'white',
+                padding: '30px',
+                borderRadius: '12px',
+                boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
+              }}>
+                <h3 style={{ fontSize: '1.3rem', marginBottom: '15px', color: '#1e293b' }}>
+                  What's the difference between a chatbot and live chat?
+                </h3>
+                <p style={{ color: '#64748b', lineHeight: '1.6' }}>
+                  A chatbot uses AI to automatically respond to customer questions 24/7, while live chat requires 
+                  human agents to be online. Our AI chatbots can handle most customer inquiries instantly and send 
+                  detailed conversation summaries to your email for complex requests that need human follow-up.
+                </p>
+              </div>
+
+              <div style={{
+                backgroundColor: 'white',
+                padding: '30px',
+                borderRadius: '12px',
+                boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
+              }}>
+                <h3 style={{ fontSize: '1.3rem', marginBottom: '15px', color: '#1e293b' }}>
+                  Can I add a chatbot to my existing website?
+                </h3>
+                <p style={{ color: '#64748b', lineHeight: '1.6' }}>
+                  Yes! Our chatbots integrate with any website platform including WordPress, Shopify, Squarespace, 
+                  Wix, and custom-built sites. Installation is simple - just one line of code that we provide and 
+                  can help you install.
+                </p>
+              </div>
+
+              <div style={{
+                backgroundColor: 'white',
+                padding: '30px',
+                borderRadius: '12px',
+                boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
+              }}>
+                <h3 style={{ fontSize: '1.3rem', marginBottom: '15px', color: '#1e293b' }}>
+                  How do I know if my business needs a chatbot?
+                </h3>
+                <p style={{ color: '#64748b', lineHeight: '1.6' }}>
+                  If you get customer inquiries through your website, miss calls outside business hours, want to 
+                  capture more leads, or spend time answering the same questions repeatedly, a business chatbot 
+                  can help. It's especially valuable for service businesses, e-commerce stores, and professional practices in Nashville.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
