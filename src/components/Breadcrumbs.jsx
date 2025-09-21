@@ -10,6 +10,7 @@ const Breadcrumbs = ({ customBreadcrumbs = null }) => {
   // Route name mapping for better display names
   const routeNames = {
     'services': 'Services',
+    'chatbot-solutions': 'Chatbot Solutions',
     'digital-marketing': 'Digital Marketing',
     'web-development': 'Web Development',
     'brand-identity': 'Brand Identity',
@@ -24,6 +25,7 @@ const Breadcrumbs = ({ customBreadcrumbs = null }) => {
 
   // Define service pages that should have Services as parent
   const servicePages = [
+    'chatbot-solutions',
     'digital-marketing',
     'web-development', 
     'brand-identity',

@@ -80,7 +80,7 @@ function Home() {
 						lineHeight: '1.6',
 						marginBottom: '40px'
 					}}>
-						At Pixelwave Marketing, we specialize in creating digital solutions that help businesses thrive in the modern marketplace. Our team combines creativity with technical expertise to deliver exceptional results for our clients.
+						At Pixelwave Marketing, we specialize in creating digital solutions that help businesses thrive in the modern marketplace. From AI-powered chatbots that work 24/7 to comprehensive digital marketing strategies, our team combines creativity with technical expertise to deliver exceptional results for our clients.
 					</p>
 
 					{/* Multi-CTA row */}
@@ -131,6 +131,40 @@ function Home() {
 							gap: '30px',
 							justifyContent: 'center'
 						}}>
+							<div 
+								className="service-card service-box"
+								onClick={() => navigate('/chatbot-solutions')}
+								style={{
+									position: 'relative'
+								}}>
+								<div style={{
+									position: 'absolute',
+									top: '-10px',
+									right: '-10px',
+									backgroundColor: '#f59e0b',
+									color: 'white',
+									padding: '5px 15px',
+									borderRadius: '20px',
+									fontSize: '0.8rem',
+									fontWeight: '600'
+								}}>
+									NEW!
+								</div>
+								<h3 className="service-title" style={{
+									fontSize: '1.5rem',
+									color: '#1e293b',
+									marginBottom: '15px'
+								}}>
+									AI Chatbot Solutions
+								</h3>
+								<p style={{
+									color: '#64748b',
+									lineHeight: '1.6'
+								}}>
+									24/7 automated customer support that captures leads, answers questions, and sends detailed email summaries while you sleep. Never miss a customer again.
+								</p>
+							</div>
+
 							<div 
 								className="service-card service-box"
 								onClick={() => navigate('/digital-marketing')}>

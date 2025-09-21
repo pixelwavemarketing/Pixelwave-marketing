@@ -130,7 +130,45 @@ function Services() {
             maxWidth: '1200px',
             margin: '0 auto'
           }}>
-            {/* Service 1 - Digital Marketing */}
+            {/* Service 1 - AI Chatbot Solutions */}
+            <div 
+              onClick={() => navigate('/chatbot-solutions')}
+              className="service-card service-box"
+              style={{
+                position: 'relative',
+                background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                color: 'white'
+              }}
+            >
+              <div style={{
+                position: 'absolute',
+                top: '-10px',
+                right: '-10px',
+                backgroundColor: '#f59e0b',
+                color: 'white',
+                padding: '5px 15px',
+                borderRadius: '20px',
+                fontSize: '0.8rem',
+                fontWeight: '600'
+              }}>
+                NEW!
+              </div>
+              <div className="service-icon" style={{ 
+                fontSize: '4rem', 
+                color: '#ffffff', 
+                marginBottom: '25px' 
+              }}>
+                <FontAwesomeIcon icon={faRobot} />
+              </div>
+              <h3 className="service-title" style={{ fontSize: '1.5rem', marginBottom: '15px', color: '#ffffff' }}>
+                AI Chatbot Solutions
+              </h3>
+              <p style={{ color: '#ffffff', opacity: '0.9' }}>
+                24/7 automated customer support that captures leads, answers questions, and sends detailed email summaries while you sleep
+              </p>
+            </div>
+
+            {/* Service 2 - Digital Marketing */}
             <div 
               onClick={() => navigate('/digital-marketing')}
               className="service-card service-box"
@@ -150,7 +188,7 @@ function Services() {
               </p>
             </div>
 
-            {/* Service 2 - Web Development */}
+            {/* Service 3 - Web Development */}
             <div 
               onClick={() => navigate('/web-development')}
               className="service-card service-box"
@@ -170,7 +208,7 @@ function Services() {
               </p>
             </div>
 
-            {/* Service 3 - Brand Identity */}
+            {/* Service 4 - Brand Identity */}
             <div 
               onClick={() => navigate('/brand-identity')}
               className="service-card service-box"
@@ -190,7 +228,7 @@ function Services() {
               </p>
             </div>
 
-            {/* Service 4 - Marketing Systems */}
+            {/* Service 5 - Marketing Systems */}
             <div 
               onClick={() => navigate('/marketing-systems')}
               className="service-card service-box"
@@ -200,7 +238,7 @@ function Services() {
                 color: '#333', 
                 marginBottom: '25px' 
               }}>
-                <FontAwesomeIcon icon={faRobot} />
+                <FontAwesomeIcon icon={faGears} />
               </div>
               <h3 className="service-title" style={{ fontSize: '1.5rem', marginBottom: '15px', color: '#333' }}>
                 Marketing Systems
@@ -210,7 +248,7 @@ function Services() {
               </p>
             </div>
 
-            {/* Service 5 - Analytics */}
+            {/* Service 6 - Analytics */}
             <div 
               onClick={() => navigate('/analytics')}
               className="service-card service-box"
@@ -230,7 +268,7 @@ function Services() {
               </p>
             </div>
 
-            {/* Service 6 - Print Design */}
+            {/* Service 7 - Print Design */}
             <div 
               onClick={() => navigate('/print-design')}
               className="service-card service-box"

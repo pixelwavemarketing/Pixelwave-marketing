@@ -9,6 +9,7 @@ import DigitalMarketing from './pages/DigitalMarketing'
 import WebDevelopment from './pages/WebDevelopment'
 import BrandIdentity from './pages/BrandIdentity'
 import MarketingSystems from './pages/MarketingSystems'
+import ChatbotSolutions from './pages/ChatbotSolutions'
 import Analytics from './pages/Analytics'
 import PrintDesign from './pages/PrintDesign'
 import Portfolio from './pages/Portfolio'
@@ -30,6 +31,7 @@ function App() {
         <Route path="/web-development" element={<WebDevelopment />} />
         <Route path="/brand-identity" element={<BrandIdentity />} />
         <Route path="/marketing-systems" element={<MarketingSystems />} />
+        <Route path="/chatbot-solutions" element={<ChatbotSolutions />} />
         <Route path="/analytics" element={<Analytics />} />
         <Route path="/print-design" element={<PrintDesign />} />
         <Route path="/faq" element={<FAQ />} />
