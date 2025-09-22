@@ -13,10 +13,5 @@ http://usepixelwave.com/*
   X-Robots-Tag: noindex, nofollow
   Cache-Control: no-cache, no-store, must-revalidate
 
-http://www.usepixelwave.com/*
-  X-Robots-Tag: noindex, nofollow
-  Cache-Control: no-cache, no-store, must-revalidate
-
-https://www.usepixelwave.com/*
-  X-Robots-Tag: noindex, nofollow
-  Cache-Control: no-cache, no-store, must-revalidate 
+# Note: www versions are handled by redirects in _redirects file
+# No need for noindex headers as they redirect to canonical domain 
