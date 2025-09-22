@@ -194,7 +194,7 @@ function ChatbotSolutions() {
               marginBottom: '20px',
               color: '#1e293b'
             }}>
-              Why Every Business Needs an AI Chatbot in 2024
+              Why Every Business Needs an AI Chatbot in 2025
             </h2>
             <p style={{
               fontSize: '1.2rem',
