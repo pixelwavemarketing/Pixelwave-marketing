@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
-import { Helmet } from 'react-helmet'
 import emailjs from '@emailjs/browser'
+import SEOOptimizer from '../components/SEOOptimizer'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import ContactForm from '../components/ContactForm'
@@ -92,58 +92,19 @@ function Contact() {
   }
 
   return (
-    <div className="other-page" style={{
-      display: 'flex',
-      flexDirection: 'column',
-      minHeight: '100vh'
-    }}>
-      <Helmet>
-        <title>Contact Us | Pixelwave Marketing - Digital Solutions</title>
-        <link rel="canonical" href="https://usepixelwave.com/contact" />
-        <meta name="description" content="Get in touch with Pixelwave Marketing for expert digital marketing, web development, and business growth solutions. Call us at (802) 445-5570 or send us a message." />
-        <meta name="keywords" content="contact pixelwave marketing, digital marketing contact, web development contact, marketing agency contact, Nashville TN" />
-        <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "LocalBusiness",
-              "name": "Pixelwave Marketing",
-              "description": "Expert digital marketing agency in Nashville, TN",
-              "url": "https://usepixelwave.com",
-              "telephone": "+18024555570",
-              		"email": "usepixelwave@gmail.com",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "123 Main Street",
-                "addressLocality": "Nashville",
-                "addressRegion": "TN",
-                "postalCode": "37201",
-                "addressCountry": "US"
-              },
-              "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": 36.1627,
-                "longitude": -86.7816
-              },
-              "openingHours": "Mo-Fr 09:00-17:00",
-              "priceRange": "$$",
-              "serviceArea": {
-                "@type": "GeoCircle",
-                "geoMidpoint": {
-                  "@type": "GeoCoordinates",
-                  "latitude": 36.1627,
-                  "longitude": -86.7816
-                },
-                "geoRadius": "50000"
-              },
-              "hasOfferCatalog": {
-                "@type": "OfferCatalog",
-                "name": "Digital Marketing Services"
-              }
-            }
-          `}
-        </script>
-      </Helmet>
+    <>
+      <SEOOptimizer 
+        title="Contact Us | PixelWave Marketing - Nashville Digital Marketing"
+        description="Get in touch with PixelWave Marketing for digital marketing, web development, and SEO services. Contact us for a free consultation in Nashville, TN."
+        keywords="contact PixelWave Marketing, Nashville digital marketing contact, web development consultation, SEO services Nashville"
+        canonicalUrl="https://usepixelwave.com/contact"
+        structuredDataType="localBusiness"
+      />
+      <div className="other-page" style={{
+        display: 'flex',
+        flexDirection: 'column',
+        minHeight: '100vh'
+      }}>
       <Header />
       <Breadcrumbs />
       <div style={{
@@ -204,7 +165,8 @@ function Contact() {
         </div>
       </div>
       <Footer />
-    </div>
+      </div>
+    </>
   )
 }
 

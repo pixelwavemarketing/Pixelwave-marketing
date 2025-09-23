@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom'
-import { Helmet } from 'react-helmet'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faRobot, faCogs, faChartLine, faUsers } from '@fortawesome/free-solid-svg-icons'
+import SEOOptimizer from '../components/SEOOptimizer'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Breadcrumbs from '../components/Breadcrumbs'
@@ -10,34 +10,19 @@ function MarketingSystems() {
   const navigate = useNavigate()
 
   return (
-    <div className="other-page" style={{
-      display: 'flex',
-      flexDirection: 'column',
-      minHeight: '100vh'
-    }}>
-      <Helmet>
-        <title>Marketing Automation Systems | Pixelwave Marketing</title>
-        <link rel="canonical" href="https://usepixelwave.com/marketing-systems" />
-        <meta name="description" content="Marketing automation and CRM systems. Streamline your business operations with automated marketing solutions and customer relationship management." />
-        <meta name="keywords" content="marketing automation, CRM systems, automated marketing, business automation, marketing systems" />
-        <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "Service",
-              "name": "Marketing Automation Systems",
-              "description": "Marketing automation and CRM systems to streamline business operations for companies",
-              "provider": {
-                "@type": "Organization",
-                "name": "Pixelwave Marketing",
-                "telephone": "+18024555570",
-                		"email": "usepixelwave@gmail.com"
-              },
-              "serviceType": "Marketing Automation"
-            }
-          `}
-        </script>
-      </Helmet>
+    <>
+      <SEOOptimizer 
+        title="Marketing Automation Systems | PixelWave Marketing - Nashville"
+        description="Marketing automation and CRM systems in Nashville. Streamline your business operations with automated marketing solutions and customer relationship management."
+        keywords="marketing automation Nashville, CRM systems Nashville, automated marketing, business automation, marketing systems"
+        canonicalUrl="https://usepixelwave.com/marketing-systems"
+        structuredDataType="service"
+      />
+      <div className="other-page" style={{
+        display: 'flex',
+        flexDirection: 'column',
+        minHeight: '100vh'
+      }}>
       <Header />
       <Breadcrumbs />
       
@@ -277,7 +262,8 @@ function MarketingSystems() {
         </div>
       </section>
       <Footer />
-    </div>
+      </div>
+    </>
   )
 }
 

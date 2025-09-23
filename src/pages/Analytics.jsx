@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom'
-import { Helmet } from 'react-helmet'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChartLine, faSearch, faBullseye, faUsers } from '@fortawesome/free-solid-svg-icons'
+import SEOOptimizer from '../components/SEOOptimizer'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Breadcrumbs from '../components/Breadcrumbs'
@@ -10,34 +10,19 @@ function Analytics() {
   const navigate = useNavigate()
 
   return (
-    <div className="other-page" style={{
-      display: 'flex',
-      flexDirection: 'column',
-      minHeight: '100vh'
-    }}>
-      <Helmet>
-        <title>Business Analytics Services | Pixelwave Marketing</title>
-        <link rel="canonical" href="https://usepixelwave.com/analytics" />
-        <meta name="description" content="Comprehensive business analytics services. Data analysis, performance tracking, and insights to improve your business performance and ROI." />
-        <meta name="keywords" content="business analytics, data analysis, performance tracking, ROI measurement, analytics services" />
-        <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "Service",
-              "name": "Business Analytics Services",
-              "description": "Comprehensive analytics and data analysis services to improve business performance for companies",
-              "provider": {
-                "@type": "Organization",
-                "name": "Pixelwave Marketing",
-                "telephone": "+18024555570",
-                		"email": "usepixelwave@gmail.com"
-              },
-              "serviceType": "Business Analytics"
-            }
-          `}
-        </script>
-      </Helmet>
+    <>
+      <SEOOptimizer 
+        title="Business Analytics Services | PixelWave Marketing - Nashville"
+        description="Comprehensive business analytics services in Nashville. Data analysis, performance tracking, and insights to improve your business performance and ROI."
+        keywords="business analytics Nashville, data analysis Nashville, performance tracking, ROI measurement, analytics services"
+        canonicalUrl="https://usepixelwave.com/analytics"
+        structuredDataType="service"
+      />
+      <div className="other-page" style={{
+        display: 'flex',
+        flexDirection: 'column',
+        minHeight: '100vh'
+      }}>
       <Header />
       <Breadcrumbs />
       
@@ -432,7 +417,8 @@ function Analytics() {
         </div>
       </section>
       <Footer />
-    </div>
+      </div>
+    </>
   )
 }
 

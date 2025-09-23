@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom'
-import { Helmet } from 'react-helmet'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPrint, faPalette, faEye, faLightbulb } from '@fortawesome/free-solid-svg-icons'
+import SEOOptimizer from '../components/SEOOptimizer'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Breadcrumbs from '../components/Breadcrumbs'
@@ -10,34 +10,19 @@ function PrintDesign() {
   const navigate = useNavigate()
 
   return (
-    <div className="other-page" style={{
-      display: 'flex',
-      flexDirection: 'column',
-      minHeight: '100vh'
-    }}>
-      <Helmet>
-        <title>Print Design Services | Pixelwave Marketing</title>
-        <link rel="canonical" href="https://usepixelwave.com/print-design" />
-        <meta name="description" content="Professional print design services. Business cards, brochures, flyers, and print materials that complement your digital presence." />
-        <meta name="keywords" content="print design, business cards, brochures, flyers, print materials, graphic designer" />
-        <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "Service",
-              "name": "Print Design Services",
-              "description": "Professional print design services including business cards, brochures, and marketing materials for businesses",
-              "provider": {
-                "@type": "Organization",
-                "name": "Pixelwave Marketing",
-                "telephone": "+18024555570",
-                		"email": "usepixelwave@gmail.com"
-              },
-              "serviceType": "Print Design"
-            }
-          `}
-        </script>
-      </Helmet>
+    <>
+      <SEOOptimizer 
+        title="Print Design Services | PixelWave Marketing - Nashville"
+        description="Professional print design services in Nashville. Business cards, brochures, flyers, and print materials that complement your digital presence."
+        keywords="print design Nashville, business cards Nashville, brochures, flyers, print materials, graphic designer Nashville"
+        canonicalUrl="https://usepixelwave.com/print-design"
+        structuredDataType="service"
+      />
+      <div className="other-page" style={{
+        display: 'flex',
+        flexDirection: 'column',
+        minHeight: '100vh'
+      }}>
       <Header />
       <Breadcrumbs />
       
@@ -277,7 +262,8 @@ function PrintDesign() {
         </div>
       </section>
       <Footer />
-    </div>
+      </div>
+    </>
   )
 }
 

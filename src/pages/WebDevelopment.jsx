@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom'
-import { Helmet } from 'react-helmet'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCode, faMobile, faDesktop, faShoppingCart, faSearch, faRocket } from '@fortawesome/free-solid-svg-icons'
+import SEOOptimizer from '../components/SEOOptimizer'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Breadcrumbs from '../components/Breadcrumbs'
@@ -10,68 +10,19 @@ function WebDevelopment() {
   const navigate = useNavigate()
 
   return (
-    <div className="other-page" style={{
-      display: 'flex',
-      flexDirection: 'column',
-      minHeight: '100vh'
-    }}>
-      <Helmet>
-        <title>Web Development Services | Pixelwave Marketing</title>
-        <link rel="canonical" href="https://usepixelwave.com/web-development" />
-        <meta name="description" content="Professional web development services. Custom websites, e-commerce solutions, and responsive design. Modern technologies for optimal performance." />
-        <meta name="keywords" content="web development, custom websites, e-commerce development, responsive design, custom development" />
-        <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "Service",
-              "name": "Web Development Services",
-              "description": "Custom web development solutions including responsive design, e-commerce, and modern web applications for businesses",
-              "provider": {
-                "@type": "Organization",
-                "name": "Pixelwave Marketing",
-                "telephone": "+18024555570",
-                		"email": "usepixelwave@gmail.com"
-              },
-              "serviceType": "Web Development",
-              "hasOfferCatalog": {
-                "@type": "OfferCatalog",
-                "name": "Web Development Services",
-                "itemListElement": [
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Custom Website Development"
-                    }
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "E-commerce Development"
-                    }
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Responsive Design"
-                    }
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Website Maintenance"
-                    }
-                  }
-                ]
-              }
-            }
-          `}
-        </script>
-      </Helmet>
+    <>
+      <SEOOptimizer 
+        title="Web Development Services | PixelWave Marketing - Nashville"
+        description="Professional web development services in Nashville. Custom websites, e-commerce solutions, and responsive design. Modern technologies for optimal performance and user experience."
+        keywords="web development Nashville, custom websites Nashville, e-commerce development, responsive design, web development services"
+        canonicalUrl="https://usepixelwave.com/web-development"
+        structuredDataType="service"
+      />
+      <div className="other-page" style={{
+        display: 'flex',
+        flexDirection: 'column',
+        minHeight: '100vh'
+      }}>
       <Header />
       <Breadcrumbs />
       
@@ -597,7 +548,8 @@ function WebDevelopment() {
         </div>
       </section>
       <Footer />
-    </div>
+      </div>
+    </>
   )
 }
 
