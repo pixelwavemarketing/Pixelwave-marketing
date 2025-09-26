@@ -13,7 +13,8 @@ import {
   faShield,
   faMobile,
   faCode,
-  faHeadset
+  faHeadset,
+  faSync
 } from '@fortawesome/free-solid-svg-icons'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
@@ -151,14 +152,6 @@ function ChatbotSolutions() {
               justifyContent: 'center',
               marginTop: '30px'
             }}>
-              <div style={{
-                backgroundColor: '#f8fafc',
-                padding: '20px 30px',
-                borderRadius: '8px',
-                border: '1px solid #e2e8f0'
-              }}>
-                <strong style={{ color: '#667eea' }}>✓ Nashville Local Business</strong>
-              </div>
               <div style={{
                 backgroundColor: '#f8fafc',
                 padding: '20px 30px',
@@ -460,6 +453,33 @@ function ChatbotSolutions() {
                 </h3>
                 <p style={{ color: '#64748b', lineHeight: '1.6', fontSize: '0.95rem' }}>
                   Simple one-line code integration that works with any website platform or CMS.
+                </p>
+              </div>
+
+              <div 
+                className="service-box"
+                style={{
+                  padding: '30px',
+                  border: '2px solid #e2e8f0',
+                  borderRadius: '12px',
+                  transition: 'all 0.3s ease'
+                }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.borderColor = '#06b6d4';
+                e.currentTarget.style.transform = 'translateY(-3px)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.borderColor = '#e2e8f0';
+                e.currentTarget.style.transform = 'translateY(0)';
+              }}>
+                <div style={{ fontSize: '2.5rem', color: '#06b6d4', marginBottom: '15px' }}>
+                  <FontAwesomeIcon icon={faSync} />
+                </div>
+                <h3 style={{ fontSize: '1.3rem', marginBottom: '10px', color: '#1e293b' }}>
+                  Auto-Updates Daily
+                </h3>
+                <p style={{ color: '#64748b', lineHeight: '1.6', fontSize: '0.95rem' }}>
+                  Our chatbot automatically rescans your website daily to ensure it stays current with your latest content, services, and pricing.
                 </p>
               </div>
 
