@@ -402,32 +402,6 @@ function ChatbotSolutions() {
                 </p>
               </div>
 
-              <div 
-                className="service-box"
-                style={{
-                  padding: '30px',
-                  border: '2px solid #e2e8f0',
-                  borderRadius: '12px',
-                  transition: 'all 0.3s ease'
-                }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = '#3b82f6';
-                e.currentTarget.style.transform = 'translateY(-3px)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.borderColor = '#e2e8f0';
-                e.currentTarget.style.transform = 'translateY(0)';
-              }}>
-                <div style={{ fontSize: '2.5rem', color: '#3b82f6', marginBottom: '15px' }}>
-                  <FontAwesomeIcon icon={faMobile} />
-                </div>
-                <h3 style={{ fontSize: '1.3rem', marginBottom: '10px', color: '#1e293b' }}>
-                  Mobile Optimized
-                </h3>
-                <p style={{ color: '#64748b', lineHeight: '1.6', fontSize: '0.95rem' }}>
-                  Responsive design ensures perfect functionality across all devices and screen sizes.
-                </p>
-              </div>
 
               <div 
                 className="service-box"
