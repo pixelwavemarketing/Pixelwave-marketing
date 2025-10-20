@@ -1,7 +1,7 @@
 const siteConfig = {
   company: {
     name: 'PixelWave Marketing',
-    description: 'Digital marketing and web development services to help Nashville businesses thrive',
+    description: 'We help Nashville service businesses turn website visitors into booked jobs with AI-powered websites and smart automation',
     url: 'https://usepixelwave.com',
     logo: 'https://usepixelwave.com/logo.svg',
     telephone: '+18024555570',
@@ -17,7 +17,7 @@ const siteConfig = {
       postalCode: '37201',
       addressCountry: 'US'
     },
-    areaServed: ['Nashville TN', 'Franklin TN', 'Brentwood TN', 'Murfreesboro TN'],
+    areaServed: ['Nashville TN', 'Franklin TN', 'Brentwood TN', 'Murfreesboro TN', 'Memphis TN', 'Knoxville TN', 'Chattanooga TN'],
     foundingDate: '2023',
     numberOfEmployees: '5-10',
     priceRange: '$$',
@@ -57,8 +57,8 @@ const siteConfig = {
     }
   },
   seo: {
-    defaultKeywords: 'Nashville web design, Nashville SEO, digital marketing Nashville, web development Nashville, local SEO Nashville, business website Nashville, Nashville marketing agency, web design company Nashville, SEO services Nashville, digital marketing agency Nashville',
-    defaultDescription: 'PixelWave Marketing builds high-converting websites and local SEO that bring Nashville businesses more calls, bookings, and revenue. See pricing, case studies, and process.',
+    defaultKeywords: 'Nashville service business marketing, contractor website design, AI chatbot for business, local SEO Nashville, service business lead generation, Nashville digital marketing, contractor lead generation, HVAC marketing Nashville, plumber website design, electrician marketing',
+    defaultDescription: 'We help Nashville service businesses turn website visitors into booked jobs with AI-powered websites and smart automation. Never miss a customer again. Free consultation available.',
     themeColor: '#1e40af',
     ogImage: 'https://usepixelwave.com/pixelwave-logo.webp'
   }

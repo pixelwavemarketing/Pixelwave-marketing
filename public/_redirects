@@ -1,14 +1,9 @@
-# Redirect HTTP to HTTPS
+# Redirect HTTP to HTTPS (with www)
 http://usepixelwave.com/* https://usepixelwave.com/:splat 301!
 http://www.usepixelwave.com/* https://usepixelwave.com/:splat 301!
 
-# Redirect www to non-www
+# Redirect www to non-www (HTTPS only)
 https://www.usepixelwave.com/* https://usepixelwave.com/:splat 301!
-
-# Handle root redirects
-http://usepixelwave.com/ https://usepixelwave.com/ 301!
-http://www.usepixelwave.com/ https://usepixelwave.com/ 301!
-https://www.usepixelwave.com/ https://usepixelwave.com/ 301!
 
 # SPA fallback for all other routes
 /* /index.html 200 

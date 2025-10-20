@@ -3,6 +3,7 @@ import ScrollToTop from './components/ScrollToTop'
 import FacebookPixel from './components/FacebookPixel'
 import StickyCallButton from './components/StickyCallButton'
 import ChatbotLoader from './components/ChatbotLoader'
+import ErrorBoundary from './components/ErrorBoundary'
 import Home from './pages/Home'
 import Services from './pages/Services'
 import DigitalMarketing from './pages/DigitalMarketing'
@@ -19,12 +20,13 @@ import FAQ from './pages/FAQ'
 
 function App() {
   return (
-    <Router>
-      <ScrollToTop />
-      <FacebookPixel />
-      <StickyCallButton />
-      <ChatbotLoader />
-      <Routes>
+    <ErrorBoundary>
+      <Router>
+        <ScrollToTop />
+        <FacebookPixel />
+        <StickyCallButton />
+        <ChatbotLoader />
+        <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
         <Route path="/digital-marketing" element={<DigitalMarketing />} />
@@ -38,8 +40,9 @@ function App() {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/thank-you" element={<ThankYou />} />
-      </Routes>
-    </Router>
+        </Routes>
+      </Router>
+    </ErrorBoundary>
   )
 }
 

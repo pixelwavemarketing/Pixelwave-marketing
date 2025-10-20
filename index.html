@@ -15,7 +15,14 @@
       send_page_view: true,              // make the initial page_view explicit
       cookie_domain: 'auto',
       cookie_flags: 'SameSite=None;Secure',
-      debug_mode: DEBUG                  // lets you see events instantly in Admin → DebugView
+      debug_mode: DEBUG,                 // lets you see events instantly in Admin → DebugView
+      // Enhanced measurement
+      enhanced_measurement: true,
+      // Custom parameters for service business
+      custom_map: {
+        'custom_parameter_1': 'service_type',
+        'custom_parameter_2': 'business_size'
+      }
     });
   </script>
 
@@ -71,6 +78,10 @@
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#1e40af" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="PixelWave Marketing" />
     
     <!-- Add links for web app manifest icons -->
     <link rel="icon" type="image/png" href="/web-app-manifest-192x192.png" sizes="192x192" />
@@ -160,6 +171,7 @@
       "image": "https://usepixelwave.com/pixelwave-logo.webp",
       "url": "https://usepixelwave.com",
       "telephone": "+18024555570",
+      "email": "usepixelwave@gmail.com",
       "priceRange": "$$",
       "address": {
         "@type": "PostalAddress",
@@ -169,8 +181,53 @@
         "postalCode": "37201",
         "addressCountry": "US"
       },
-      "areaServed": [{"@type": "City", "name": "Nashville TN"}],
-      "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "09:00", "closes": "17:00"}]
+      "areaServed": [
+        {"@type": "City", "name": "Nashville TN"},
+        {"@type": "City", "name": "Franklin TN"},
+        {"@type": "City", "name": "Brentwood TN"},
+        {"@type": "City", "name": "Murfreesboro TN"}
+      ],
+      "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "09:00", "closes": "17:00"}],
+      "sameAs": [
+        "https://www.facebook.com/61577166790673",
+        "https://www.instagram.com/usepixelwave/",
+        "https://www.linkedin.com/company/pixelwave-marketing"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Digital Marketing Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Web Development",
+              "description": "Custom responsive websites and e-commerce solutions"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Digital Marketing",
+              "description": "Google Ads, SEO, and social media marketing"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "AI Chatbot Solutions",
+              "description": "24/7 automated customer support and lead generation"
+            }
+          }
+        ]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "25"
+      }
     }
     </script>
 
@@ -180,10 +237,34 @@
 
     <!-- Preload critical assets -->
     <link rel="preload" as="image" href="/pixelwave-logo.webp" fetchpriority="high">
+    <link rel="preload" as="font" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" crossorigin>
     
     <!-- DNS Prefetch for external resources -->
     <link rel="dns-prefetch" href="https://www.googletagmanager.com">
     <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://ai-chatbot-p.netlify.app">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    
+    <!-- Preconnect to critical third-party origins -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google-specific optimizations -->
+    <!-- Replace with your actual Google Search Console verification code -->
+    <!-- <meta name="google-site-verification" content="your-verification-code-here"> -->
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="bingbot" content="index, follow">
+    
+    <!-- Enhanced mobile optimization -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- Performance hints -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"></noscript>
     
   </head>
   <body>
@@ -195,6 +276,21 @@
     
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    
+    <!-- Service Worker Registration -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then((registration) => {
+              console.log('SW registered: ', registration);
+            })
+            .catch((registrationError) => {
+              console.log('SW registration failed: ', registrationError);
+            });
+        });
+      }
+    </script>
     
     <!-- AI Chatbot Script loaded via React useEffect -->
   </body>

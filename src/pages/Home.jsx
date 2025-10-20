@@ -1,9 +1,13 @@
 import { useNavigate } from 'react-router-dom'
+import { lazy, Suspense } from 'react'
 import SEOOptimizer from '../components/SEOOptimizer'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import PixelwaveLogo from '../components/PixelwaveLogo'
 import Testimonials from '../components/Testimonials'
+
+// Lazy load heavy components
+const LazyTestimonials = lazy(() => import('../components/Testimonials'))
 
 function Home() {
 	const navigate = useNavigate()
@@ -39,9 +43,9 @@ function Home() {
 	return (
 		<>
 			<SEOOptimizer 
-				title="PixelWave Marketing - Digital Marketing & Web Solutions"
-				description="PixelWave Marketing specializes in digital marketing, web development, and analytics solutions to help Nashville businesses thrive in the modern marketplace."
-				keywords="digital marketing, web development, analytics, business growth, marketing agency, Nashville"
+				title="Turn Website Visitors Into Booked Jobs | Nashville Marketing"
+				description="We help Nashville service businesses get found on Google and convert leads with AI-powered websites and smart automation. Free consultation available."
+				keywords="Nashville service business marketing, contractor website design, AI chatbot for business, local SEO Nashville, service business lead generation, Nashville digital marketing"
 				structuredDataType="localBusiness"
 			/>
 			<main className="home-page" style={{
@@ -59,29 +63,64 @@ function Home() {
 					<PixelwaveLogo />
 				</section>
 				
-				{/* Who We Are Section */}
+				{/* Hero Value Proposition Section */}
 				<section style={{
 					padding: '40px 20px',
-					maxWidth: '800px',
+					maxWidth: '900px',
 					margin: '0 auto',
 					textAlign: 'center'
 				}}>
 					<h1 style={{
-						fontSize: '2.5rem',
-						color: '#333',
-						marginBottom: '20px'
+						fontSize: '2.8rem',
+						color: '#1e293b',
+						marginBottom: '20px',
+						fontWeight: '700'
 					}}>
-						Who We Are
+						Turn Website Visitors Into Booked Jobs
 					</h1>
 					
 					<p style={{
-						fontSize: '1.2rem',
-						color: '#666',
+						fontSize: '1.3rem',
+						color: '#64748b',
 						lineHeight: '1.6',
+						marginBottom: '30px',
+						fontWeight: '500'
+					}}>
+						We help Nashville service businesses get found on Google and convert leads with AI-powered websites and smart automation. Never miss a customer again.
+					</p>
+
+					<div style={{
+						backgroundColor: '#f8fafc',
+						padding: '25px',
+						borderRadius: '12px',
+						border: '2px solid #e2e8f0',
 						marginBottom: '40px'
 					}}>
-						At Pixelwave Marketing, we specialize in creating digital solutions that help businesses thrive in the modern marketplace. From AI-powered chatbots that work 24/7 to comprehensive digital marketing strategies, our team combines creativity with technical expertise to deliver exceptional results for our clients.
-					</p>
+						<h2 style={{
+							fontSize: '1.4rem',
+							color: '#1e293b',
+							marginBottom: '15px',
+							fontWeight: '600'
+						}}>
+							Perfect for Nashville Service Businesses:
+						</h2>
+						<div style={{
+							display: 'flex',
+							flexWrap: 'wrap',
+							gap: '15px',
+							justifyContent: 'center',
+							fontSize: '1rem',
+							color: '#64748b'
+						}}>
+							<span style={{ backgroundColor: 'white', padding: '8px 16px', borderRadius: '20px', border: '1px solid #e2e8f0' }}>Contractors</span>
+							<span style={{ backgroundColor: 'white', padding: '8px 16px', borderRadius: '20px', border: '1px solid #e2e8f0' }}>Landscapers</span>
+							<span style={{ backgroundColor: 'white', padding: '8px 16px', borderRadius: '20px', border: '1px solid #e2e8f0' }}>HVAC Companies</span>
+							<span style={{ backgroundColor: 'white', padding: '8px 16px', borderRadius: '20px', border: '1px solid #e2e8f0' }}>Plumbers</span>
+							<span style={{ backgroundColor: 'white', padding: '8px 16px', borderRadius: '20px', border: '1px solid #e2e8f0' }}>Electricians</span>
+							<span style={{ backgroundColor: 'white', padding: '8px 16px', borderRadius: '20px', border: '1px solid #e2e8f0' }}>Pressure Washing</span>
+							<span style={{ backgroundColor: 'white', padding: '8px 16px', borderRadius: '20px', border: '1px solid #e2e8f0' }}>And Many More</span>
+						</div>
+					</div>
 
 					{/* Multi-CTA row */}
 					<div style={{
@@ -161,7 +200,7 @@ function Home() {
 									color: '#64748b',
 									lineHeight: '1.6'
 								}}>
-									24/7 automated customer support that captures leads, answers questions, and sends detailed email summaries while you sleep. Never miss a customer again.
+									Turn website visitors into booked jobs 24/7. Our AI captures leads, answers questions, and sends you detailed summaries while you sleep. Never miss a customer again.
 								</p>
 							</div>
 
@@ -179,7 +218,7 @@ function Home() {
 									color: '#64748b',
 									lineHeight: '1.6'
 								}}>
-									Google Ads, SEO, Google Business Profile optimization, and analytics setup. We handle the technical work most agencies skip.
+									Get found on Google and turn clicks into customers. We handle Google Ads, SEO, and Business Profile optimization so you can focus on running your business.
 								</p>
 							</div>
 
@@ -197,7 +236,7 @@ function Home() {
 									color: '#64748b',
 									lineHeight: '1.6'
 								}}>
-									Custom websites with speed optimization, booking systems, live chat, and conversion tracking that turns visitors into customers.
+									Professional websites that book jobs while you sleep. Fast, mobile-friendly sites with booking systems and lead capture that converts visitors into paying customers.
 								</p>
 							</div>
 
@@ -215,7 +254,7 @@ function Home() {
 									color: '#64748b',
 									lineHeight: '1.6'
 								}}>
-									Professional analytics setup with clean dashboards, lead tracking, and monthly report cards showing exactly where your business is growing.
+									Know exactly where your customers come from. We set up tracking and send you monthly reports showing which marketing efforts are bringing in the most jobs.
 								</p>
 							</div>
 						</div>
@@ -223,11 +262,13 @@ function Home() {
 				</section>
 
 				{/* Testimonials Section */}
-				<Testimonials 
-					testimonials={testimonials}
-					title="What Our Clients Say"
-					description="Don't just take our word for it. See what our clients have to say about their experience with PixelWave."
-				/>
+				<Suspense fallback={<div style={{ textAlign: 'center', padding: '60px 20px' }}>Loading testimonials...</div>}>
+					<LazyTestimonials 
+						testimonials={testimonials}
+						title="What Our Clients Say"
+						description="Don't just take our word for it. See what our clients have to say about their experience with PixelWave."
+					/>
+				</Suspense>
 
 				{/* Call to Action Section */}
 				<section style={{
@@ -245,7 +286,7 @@ function Home() {
 							marginBottom: '20px',
 							color: '#FFFFFF'
 						}}>
-							Ready to Transform Your Business?
+							Ready to Book More Jobs?
 						</h2>
 						<p style={{
 							fontSize: '1.2rem',
@@ -253,8 +294,8 @@ function Home() {
 							color: '#cbd5e1',
 							lineHeight: '1.6'
 						}}>
-							Join the growing list of Nashville businesses that trust PixelWave to deliver results. 
-							Get your free consultation and discover how we can help you grow.
+							Join Nashville service businesses that are getting more leads and booking more jobs with our AI-powered websites and marketing systems. 
+							Get your free consultation and see how we can help you grow.
 						</p>
 						<button
 							onClick={() => navigate('/contact')}

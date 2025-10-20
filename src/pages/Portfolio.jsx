@@ -18,7 +18,7 @@ function Portfolio() {
       minHeight: '100vh'
     }}>
       <SEOOptimizer 
-        title="Portfolio | Pixelwave Marketing - Web Design & Digital Marketing Projects"
+        title="Portfolio | Pixelwave Marketing - Web Design Projects"
         description="View our portfolio of successful digital marketing projects, web development work, and brand identity designs. See real results from Nashville businesses we've helped grow."
         keywords="portfolio, web design portfolio, digital marketing portfolio, Nashville web design, brand identity portfolio, web development projects"
         canonicalUrl="https://usepixelwave.com/portfolio"

@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom'
 import { useEffect } from 'react'
 import { Helmet } from 'react-helmet'
 import { trackLead } from '../components/FacebookPixel'
+import SEOOptimizer from '../components/SEOOptimizer'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Breadcrumbs from '../components/Breadcrumbs'
@@ -16,16 +17,19 @@ function ThankYou() {
 
 
   return (
-    <div className="other-page" style={{
-      display: 'flex',
-      flexDirection: 'column',
-      minHeight: '100vh'
-    }}>
-      <Helmet>
-        <title>Thank You | Pixelwave Marketing</title>
-        <meta name="description" content="Thank you for contacting Pixelwave Marketing. We'll get back to you soon." />
-        <meta name="robots" content="noindex, nofollow" />
-      </Helmet>
+    <>
+      <SEOOptimizer 
+        title="Thank You | PixelWave Marketing"
+        description="Thank you for contacting PixelWave Marketing. We'll get back to you within 24 hours to discuss your project needs."
+        keywords="thank you, contact confirmation, PixelWave Marketing"
+        canonicalUrl="https://usepixelwave.com/thank-you"
+        structuredDataType="localBusiness"
+      />
+      <div className="other-page" style={{
+        display: 'flex',
+        flexDirection: 'column',
+        minHeight: '100vh'
+      }}>
       
       <Header />
       <Breadcrumbs />
@@ -74,7 +78,8 @@ function ThankYou() {
       </div>
 
       <Footer />
-    </div>
+      </div>
+    </>
   )
 }
 

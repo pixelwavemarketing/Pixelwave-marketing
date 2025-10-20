@@ -13,7 +13,7 @@ function WebDevelopment() {
     <>
       <SEOOptimizer 
         title="Web Development Services | PixelWave Marketing - Nashville"
-        description="Professional web development services in Nashville. Custom websites, e-commerce solutions, and responsive design. Modern technologies for optimal performance and user experience."
+        description="Professional web development services in Nashville. Custom websites, e-commerce solutions, and responsive design for optimal performance."
         keywords="web development Nashville, custom websites Nashville, e-commerce development, responsive design, web development services"
         canonicalUrl="https://usepixelwave.com/web-development"
         structuredDataType="service"
