@@ -16,11 +16,14 @@ function PixelwaveLogo() {
         src={pixelwaveLogo}
         alt="PixelWave Marketing Logo - Digital marketing and web development services in Nashville"
         loading="eager"
+        width="1200"
+        height="400"
         style={{
           width: '100%',
-          height: '100%',
+          height: 'auto',
           display: 'block',
-          objectFit: 'cover'
+          objectFit: 'cover',
+          maxWidth: '1200px'
         }}
       />
     </div>

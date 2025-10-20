@@ -24,11 +24,11 @@ export default defineConfig({
     cssCodeSplit: true,
     rollupOptions: {
       output: {
-        manualChunks: {
-          vendor: ['react', 'react-dom', 'react-router-dom'],
-          fontawesome: ['@fortawesome/react-fontawesome', '@fortawesome/free-solid-svg-icons', '@fortawesome/free-brands-svg-icons'],
-          utils: ['@emailjs/browser', 'react-helmet-async']
-        }
+            manualChunks: {
+              vendor: ['react', 'react-dom', 'react-router-dom'],
+              fontawesome: ['@fortawesome/react-fontawesome', '@fortawesome/free-solid-svg-icons', '@fortawesome/free-brands-svg-icons'],
+              utils: ['@emailjs/browser', 'react-helmet-async']
+            }
       }
     },
     // Optimize asset handling

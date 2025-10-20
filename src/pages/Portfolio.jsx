@@ -114,6 +114,8 @@ function Portfolio() {
                 src={truckImage}
                 alt="The Dumpster Man Website - Professional dumpster rental website design"
                 loading="lazy"
+                width="400"
+                height="250"
                 style={{
                   width: '100%',
                   height: '250px',
@@ -226,12 +228,15 @@ function Portfolio() {
                 flexDirection: 'column',
                 alignItems: 'center',
                 justifyContent: 'center',
-                minHeight: '250px'
+                minHeight: '250px',
+                aspectRatio: '16/10'
               }}>
                 <img 
                   src={easyCleanLogo}
                   alt="Easy Clean Pressure Washing Logo - Professional logo design for pressure washing business"
                   loading="lazy"
+                  width="400"
+                  height="250"
                   style={{
                     maxWidth: '200%',
                     height: 'auto',
@@ -338,12 +343,15 @@ function Portfolio() {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                minHeight: '250px'
+                minHeight: '250px',
+                aspectRatio: '16/10'
               }}>
                 <img 
                   src={cinematicMountingLogo}
                   alt="Cinematic Mounting Logo - Professional logo design for TV mounting and home theater installation service"
                   loading="lazy"
+                  width="400"
+                  height="250"
                   style={{
                     maxWidth: '100%',
                     maxHeight: '250px',
@@ -452,12 +460,15 @@ function Portfolio() {
                 alignItems: 'center',
                 justifyContent: 'center',
                 minHeight: '250px',
-                backgroundColor: '#f8fafc'
+                backgroundColor: '#f8fafc',
+                aspectRatio: '16/10'
               }}>
                 <img 
                   src={financingToolkit}
                   alt="Open Finance Calculators Website - Comprehensive financial calculator website with loan and investment tools"
                   loading="lazy"
+                  width="400"
+                  height="200"
                   style={{
                     maxWidth: '100%',
                     height: 'auto',
