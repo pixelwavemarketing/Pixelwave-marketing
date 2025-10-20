@@ -13,8 +13,8 @@ function MarketingSystems() {
     <>
       <SEOOptimizer 
         title="Marketing Automation Systems | PixelWave Marketing - Nashville"
-        description="Marketing automation and CRM systems in Nashville. Streamline your business operations with automated marketing solutions and customer relationship management."
-        keywords="marketing automation Nashville, CRM systems Nashville, automated marketing, business automation, marketing systems"
+        description="Marketing automation and systems in Nashville. Streamline your business operations with marketing solutions and customer management."
+        keywords="marketing automation Nashville, marketing systems Nashville, automated marketing, business automation, marketing solutions"
         canonicalUrl="https://usepixelwave.com/marketing-systems"
         structuredDataType="service"
       />
@@ -50,7 +50,7 @@ function MarketingSystems() {
             lineHeight: '1.6',
             marginBottom: '40px'
           }}>
-            Streamline your business operations with automated marketing solutions and CRM systems that save time and increase efficiency.
+            Streamline your business operations with marketing solutions and systems that save time and increase efficiency.
           </p>
           <button
             onClick={() => navigate('/contact')}
@@ -121,39 +121,6 @@ function MarketingSystems() {
               </p>
             </div>
 
-            {/* CRM Integration */}
-            <div style={{
-              padding: '30px',
-              border: '1px solid #e2e8f0',
-              borderRadius: '12px',
-              textAlign: 'center',
-              transition: 'transform 0.3s ease',
-              maxWidth: '400px',
-              minWidth: '280px',
-              flex: '1 1 350px',
-              margin: '0 auto'
-            }}>
-              <div style={{
-                fontSize: '3rem',
-                color: '#059669',
-                marginBottom: '20px'
-              }}>
-                <FontAwesomeIcon icon={faUsers} />
-              </div>
-              <h3 style={{
-                fontSize: '1.5rem',
-                marginBottom: '15px',
-                color: '#1e293b'
-              }}>
-                CRM Integration
-              </h3>
-              <p style={{
-                color: '#64748b',
-                lineHeight: '1.6'
-              }}>
-                Seamless integration with popular CRM platforms to manage customer relationships effectively.
-              </p>
-            </div>
 
             {/* Workflow Automation */}
             <div style={{

@@ -244,7 +244,7 @@ function Services() {
                 Marketing Systems
               </h3>
               <p style={{ color: '#666' }}>
-                Automated marketing solutions and CRM systems to streamline your business operations
+                Marketing solutions and systems to streamline your business operations
               </p>
             </div>
 
