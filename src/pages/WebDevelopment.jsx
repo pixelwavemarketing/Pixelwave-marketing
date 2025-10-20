@@ -371,14 +371,17 @@ function WebDevelopment() {
             Our Development Process
           </h2>
           <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 300px))',
+            display: 'flex',
+            flexWrap: 'wrap',
             gap: '30px',
             justifyContent: 'center'
           }}>
             <div style={{
               textAlign: 'center',
-              padding: '20px'
+              padding: '20px',
+              flex: '1 1 250px',
+              maxWidth: '300px',
+              minWidth: '200px'
             }}>
               <div style={{
                 width: '60px',
@@ -411,7 +414,10 @@ function WebDevelopment() {
             </div>
             <div style={{
               textAlign: 'center',
-              padding: '20px'
+              padding: '20px',
+              flex: '1 1 250px',
+              maxWidth: '300px',
+              minWidth: '200px'
             }}>
               <div style={{
                 width: '60px',
@@ -444,7 +450,10 @@ function WebDevelopment() {
             </div>
             <div style={{
               textAlign: 'center',
-              padding: '20px'
+              padding: '20px',
+              flex: '1 1 250px',
+              maxWidth: '300px',
+              minWidth: '200px'
             }}>
               <div style={{
                 width: '60px',
@@ -477,7 +486,10 @@ function WebDevelopment() {
             </div>
             <div style={{
               textAlign: 'center',
-              padding: '20px'
+              padding: '20px',
+              flex: '1 1 250px',
+              maxWidth: '300px',
+              minWidth: '200px'
             }}>
               <div style={{
                 width: '60px',

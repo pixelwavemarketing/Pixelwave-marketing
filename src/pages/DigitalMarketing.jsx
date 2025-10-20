@@ -248,14 +248,17 @@ function DigitalMarketing() {
             Why Choose Pixelwave for Digital Marketing?
           </h2>
           <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 400px))',
+            display: 'flex',
+            flexWrap: 'wrap',
             gap: '30px',
             justifyContent: 'center'
           }}>
             <div style={{
               padding: '20px',
-              textAlign: 'center'
+              textAlign: 'center',
+              flex: '1 1 300px',
+              maxWidth: '400px',
+              minWidth: '280px'
             }}>
               <h3 style={{
                 fontSize: '1.3rem',
@@ -273,7 +276,10 @@ function DigitalMarketing() {
             </div>
             <div style={{
               padding: '20px',
-              textAlign: 'center'
+              textAlign: 'center',
+              flex: '1 1 300px',
+              maxWidth: '400px',
+              minWidth: '280px'
             }}>
               <h3 style={{
                 fontSize: '1.3rem',
@@ -291,7 +297,10 @@ function DigitalMarketing() {
             </div>
             <div style={{
               padding: '20px',
-              textAlign: 'center'
+              textAlign: 'center',
+              flex: '1 1 300px',
+              maxWidth: '400px',
+              minWidth: '280px'
             }}>
               <h3 style={{
                 fontSize: '1.3rem',
@@ -329,14 +338,17 @@ function DigitalMarketing() {
             Our Digital Marketing Process
           </h2>
           <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 300px))',
+            display: 'flex',
+            flexWrap: 'wrap',
             gap: '30px',
             justifyContent: 'center'
           }}>
             <div style={{
               textAlign: 'center',
-              padding: '20px'
+              padding: '20px',
+              flex: '1 1 250px',
+              maxWidth: '300px',
+              minWidth: '200px'
             }}>
               <div style={{
                 width: '60px',
@@ -369,7 +381,10 @@ function DigitalMarketing() {
             </div>
             <div style={{
               textAlign: 'center',
-              padding: '20px'
+              padding: '20px',
+              flex: '1 1 250px',
+              maxWidth: '300px',
+              minWidth: '200px'
             }}>
               <div style={{
                 width: '60px',
@@ -402,7 +417,10 @@ function DigitalMarketing() {
             </div>
             <div style={{
               textAlign: 'center',
-              padding: '20px'
+              padding: '20px',
+              flex: '1 1 250px',
+              maxWidth: '300px',
+              minWidth: '200px'
             }}>
               <div style={{
                 width: '60px',
@@ -435,7 +453,10 @@ function DigitalMarketing() {
             </div>
             <div style={{
               textAlign: 'center',
-              padding: '20px'
+              padding: '20px',
+              flex: '1 1 250px',
+              maxWidth: '300px',
+              minWidth: '200px'
             }}>
               <div style={{
                 width: '60px',
