@@ -6,27 +6,41 @@ const PIXEL_ID = FACEBOOK_PIXEL_ID
 
 // Initialize Facebook Pixel
 const initFacebookPixel = () => {
-  if (typeof window !== 'undefined' && window.fbq) {
-    window.fbq('init', PIXEL_ID)
-    window.fbq('track', 'PageView')
+  if (typeof window !== 'undefined' && window.fbq && !window.fbqLoadError) {
+    try {
+      window.fbq('init', PIXEL_ID)
+      window.fbq('track', 'PageView')
+    } catch (error) {
+      console.warn('Facebook Pixel initialization failed:', error)
+    }
+  } else if (window.fbqLoadError) {
+    console.warn('Facebook Pixel script failed to load, skipping initialization')
   }
 }
 
 // Track custom events
 export const trackFacebookEvent = (eventName, parameters = {}) => {
-  if (typeof window !== 'undefined' && window.fbq) {
-    window.fbq('track', eventName, parameters)
+  if (typeof window !== 'undefined' && window.fbq && !window.fbqLoadError) {
+    try {
+      window.fbq('track', eventName, parameters)
+    } catch (error) {
+      console.warn('Facebook Pixel tracking failed:', error)
+    }
   }
 }
 
 // Track page views for SPA routing
 export const trackPageView = (url = window.location.href) => {
-  if (typeof window !== 'undefined' && window.fbq) {
-    window.fbq('track', 'PageView', {
-      page_location: url,
-      page_path: window.location.pathname + window.location.search + window.location.hash,
-      page_title: document.title
-    })
+  if (typeof window !== 'undefined' && window.fbq && !window.fbqLoadError) {
+    try {
+      window.fbq('track', 'PageView', {
+        page_location: url,
+        page_path: window.location.pathname + window.location.search + window.location.hash,
+        page_title: document.title
+      })
+    } catch (error) {
+      console.warn('Facebook Pixel page view tracking failed:', error)
+    }
   }
 }
 

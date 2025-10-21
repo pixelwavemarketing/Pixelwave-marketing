@@ -30,11 +30,36 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
+  // Skip external third-party scripts that might fail
+  const externalDomains = [
+    'connect.facebook.net',
+    'www.googletagmanager.com',
+    'www.google-analytics.com'
+  ];
+  
+  const isExternalScript = externalDomains.some(domain => 
+    event.request.url.includes(domain)
+  );
+  
+  if (isExternalScript) {
+    // For external scripts, try network first without caching failures
+    event.respondWith(
+      fetch(event.request).catch(() => {
+        // If external script fails, don't cache the error
+        return new Response('', { status: 404, statusText: 'Not Found' });
+      })
+    );
+    return;
+  }
+
   event.respondWith(
     caches.match(event.request)
       .then((response) => {
         // Return cached version or fetch from network
-        return response || fetch(event.request);
+        return response || fetch(event.request).catch(() => {
+          // Return a fallback response if fetch fails
+          return new Response('', { status: 404, statusText: 'Not Found' });
+        });
       })
   );
 });

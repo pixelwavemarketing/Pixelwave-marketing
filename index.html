@@ -2,41 +2,76 @@
 <html lang="en">
   <head>
       <!-- GA4 base -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-R7SFT14JN7"></script>
+  <script>
+    // Load Google Analytics script with error handling
+    const gaScript = document.createElement('script');
+    gaScript.async = true;
+    gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-R7SFT14JN7';
+    
+    gaScript.onerror = function() {
+      console.warn('Google Analytics script failed to load');
+      window.gtagLoadError = true;
+    };
+    
+    gaScript.onload = function() {
+      console.log('Google Analytics script loaded successfully');
+      window.gtagLoadSuccess = true;
+    };
+    
+    document.head.appendChild(gaScript);
+  </script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){ try { dataLayer.push(arguments); } catch(e){ console.log('Analytics error:', e);} }
+    function gtag(){ 
+      try { 
+        if (window.gtagLoadError) {
+          console.warn('Google Analytics not available, skipping tracking');
+          return;
+        }
+        dataLayer.push(arguments); 
+      } catch(e){ 
+        console.log('Analytics error:', e);
+      }
+    }
 
     // Enable "DebugView" only when ?debug=1 is present
     var DEBUG = location.search.includes('debug=1');
 
-    gtag('js', new Date());
-    gtag('config', 'G-R7SFT14JN7', {
-      send_page_view: true,              // make the initial page_view explicit
-      cookie_domain: 'auto',
-      cookie_flags: 'SameSite=None;Secure',
-      debug_mode: DEBUG,                 // lets you see events instantly in Admin → DebugView
-      // Enhanced measurement
-      enhanced_measurement: true,
-      // Custom parameters for service business
-      custom_map: {
-        'custom_parameter_1': 'service_type',
-        'custom_parameter_2': 'business_size'
-      }
-    });
+    try {
+      gtag('js', new Date());
+      gtag('config', 'G-R7SFT14JN7', {
+        send_page_view: true,              // make the initial page_view explicit
+        cookie_domain: 'auto',
+        cookie_flags: 'SameSite=None;Secure',
+        debug_mode: DEBUG,                 // lets you see events instantly in Admin → DebugView
+        // Enhanced measurement
+        enhanced_measurement: true,
+        // Custom parameters for service business
+        custom_map: {
+          'custom_parameter_1': 'service_type',
+          'custom_parameter_2': 'business_size'
+        }
+      });
+    } catch(e) {
+      console.warn('Google Analytics initialization failed:', e);
+    }
   </script>
 
   <!-- SPA/Client-side routing support for GA4 -->
   <script>
   (function(){
-    if (!window.gtag) return;
+    if (!window.gtag || window.gtagLoadError) return;
 
     function sendPV(){
-      gtag('event', 'page_view', {
-        page_location: location.href,
-        page_path: location.pathname + location.search + location.hash,
-        page_title: document.title
-      });
+      try {
+        gtag('event', 'page_view', {
+          page_location: location.href,
+          page_path: location.pathname + location.search + location.hash,
+          page_title: document.title
+        });
+      } catch(e) {
+        console.warn('Google Analytics page view tracking failed:', e);
+      }
     }
 
     // Fire on history API changes (pushState/replaceState)
@@ -63,12 +98,30 @@
     if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
     n.queue=[];t=b.createElement(e);t.async=!0;
     t.src=v;s=b.getElementsByTagName(e)[0];
+    
+    // Add error handling for Facebook Pixel script loading
+    t.onerror = function() {
+      console.warn('Facebook Pixel script failed to load');
+      // Set a flag to indicate pixel failed to load
+      window.fbqLoadError = true;
+    };
+    
+    t.onload = function() {
+      console.log('Facebook Pixel script loaded successfully');
+      // Set a flag to indicate pixel loaded successfully
+      window.fbqLoadSuccess = true;
+    };
+    
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
     
-    // Replace YOUR_PIXEL_ID with your actual Facebook Pixel ID
-    fbq('init', '1291420825372627');
-    fbq('track', 'PageView');
+    // Initialize pixel with error handling
+    try {
+      fbq('init', '1291420825372627');
+      fbq('track', 'PageView');
+    } catch(e) {
+      console.warn('Facebook Pixel initialization failed:', e);
+    }
   </script>
   <!-- End Facebook Pixel Code -->
     
@@ -236,8 +289,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
     <!-- Preload critical assets -->
-    <link rel="preload" as="image" href="/pixelwave-logo.webp" fetchpriority="high" type="image/webp">
-    <link rel="preload" as="font" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" crossorigin>
+    <link rel="preload" as="image" href="/pixelwave-logo.webp" fetchpriority="high" type="image/webp" media="(min-width: 1px)">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" crossorigin onload="this.onload=null;this.rel='stylesheet'">
     
     <!-- DNS Prefetch for external resources -->
     <link rel="dns-prefetch" href="https://www.googletagmanager.com">
@@ -263,7 +316,6 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     
     <!-- Performance hints -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"></noscript>
     
   </head>
