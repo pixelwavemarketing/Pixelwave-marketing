@@ -15,7 +15,7 @@ function Home() {
 	// Sample testimonials data - you can customize these with real client feedback
 	const testimonials = [
 		{
-			name: "Dan",
+			name: "Daniel",
 			title: "Owner",
 			company: "The Dumpster Man 518",
 			rating: 5,
@@ -27,15 +27,15 @@ function Home() {
 			title: "Owner",
 			company: "Easy Clean Power Washing",
 			rating: 5,
-			content: "Working with PixelWave was great! They were able to create our logo with ease and folow the vision we had in mind perfectly.",
+			content: "Very helpful making a vision become a reality. Would 100% recommend!",
 			avatar: null
 		},
 		{
-			name: "Shaun",
+			name: "Dan",
 			title: "Owner",
-			company: "Open Fiance Calculators",
+			company: "Capital Pro Tree Removal",
 			rating: 5,
-			content: "The Team at PixelWave was awesome! They took our idea for a website and made it reality. We are very happy with the results!",
+			content: "PixelWave has been great to work with constantly meeting our needs, they have managed our social media for some time now and it has drum up great business!",
 			avatar: null
 		}
 	]
