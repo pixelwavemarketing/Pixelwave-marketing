@@ -12,7 +12,7 @@ function Analytics() {
   return (
     <>
       <SEOOptimizer 
-        title="Business Analytics Services | PixelWave Marketing - Nashville"
+        title="Business Analytics Services | PixelWave Marketing in Nashville"
         description="Comprehensive business analytics services in Nashville. Data analysis, performance tracking, and insights to improve your business performance and ROI."
         keywords="business analytics Nashville, data analysis Nashville, performance tracking, ROI measurement, analytics services"
         canonicalUrl="https://usepixelwave.com/analytics"
@@ -275,7 +275,7 @@ function Analytics() {
                 color: '#64748b',
                 lineHeight: '1.6'
               }}>
-                We've helped businesses increase their ROI through data-driven insights and strategic optimization. Your success is our mission.
+                We've helped businesses increase their ROI through data driven insights and strategic optimization. Your success is our mission.
               </p>
             </div>
 
@@ -374,7 +374,7 @@ function Analytics() {
                 color: '#64748b',
                 lineHeight: '1.6'
               }}>
-                We don't just set up analytics - we're your long-term partner. Reports, strategy sessions, and continuous optimization.
+                We don't just set up analytics we're your long term partner. Reports, strategy sessions, and continuous optimization.
               </p>
             </div>
           </div>

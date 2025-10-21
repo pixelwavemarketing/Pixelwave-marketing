@@ -20,7 +20,7 @@ function FAQ() {
     },
     {
       question: "Do you provide ongoing website maintenance?",
-      answer: "Yes, we offer comprehensive website maintenance packages that include security updates, content updates, performance optimization, technical support, and regular backups. Our maintenance plans ensure your website stays secure, fast, and up-to-date with the latest technologies."
+      answer: "Yes, we offer comprehensive website maintenance packages that include security updates, content updates, performance optimization, technical support, and regular backups. Our maintenance plans ensure your website stays secure, fast, and up to date with the latest technologies."
     },
     {
       question: "What makes Pixelwave Marketing different from other agencies?",
@@ -32,11 +32,11 @@ function FAQ() {
     },
     {
       question: "Do you work with small businesses?",
-      answer: "Absolutely! We specialize in helping small and medium-sized businesses grow their online presence. We understand the unique challenges small businesses face and offer scalable solutions that fit your budget and goals. Our services are designed to provide maximum ROI for businesses of all sizes."
+      answer: "Absolutely! We specialize in helping small and medium sized businesses grow their online presence. We understand the unique challenges small businesses face and offer scalable solutions that fit your budget and goals. Our services are designed to provide maximum ROI for businesses of all sizes."
     },
     {
       question: "What is your process for starting a new project?",
-      answer: "Our process begins with a free consultation to understand your business goals and challenges. We then create a customized strategy, present our recommendations, and once approved, we implement the solution with regular check-ins and reporting. We maintain open communication throughout the entire process."
+      answer: "Our process begins with a free consultation to understand your business goals and challenges. We then create a customized strategy, present our recommendations, and once approved, we implement the solution with regular check ins and reporting. We maintain open communication throughout the entire process."
     },
     {
       question: "Do you provide training for managing your own marketing?",

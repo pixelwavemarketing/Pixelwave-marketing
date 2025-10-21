@@ -94,7 +94,7 @@ function Contact() {
   return (
     <>
       <SEOOptimizer 
-        title="Contact Us | PixelWave Marketing - Nashville Digital Marketing"
+        title="Contact Us | PixelWave Marketing Nashville Digital Marketing"
         description="Get in touch with PixelWave Marketing for digital marketing, web development, and SEO services. Contact us for a free consultation in Nashville, TN."
         keywords="contact PixelWave Marketing, Nashville digital marketing contact, web development consultation, SEO services Nashville"
         canonicalUrl="https://usepixelwave.com/contact"

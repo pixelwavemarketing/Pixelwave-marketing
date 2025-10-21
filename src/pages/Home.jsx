@@ -86,7 +86,7 @@ function Home() {
 						marginBottom: '30px',
 						fontWeight: '500'
 					}}>
-						We help Nashville service businesses get found on Google and convert leads with AI-powered websites and smart automation. Never miss a customer again.
+						We help Nashville service businesses get found on Google and convert leads with AI powered websites and smart automation. Never miss a customer again.
 					</p>
 
 					<div style={{
@@ -236,7 +236,7 @@ function Home() {
 									color: '#64748b',
 									lineHeight: '1.6'
 								}}>
-									Professional websites that book jobs while you sleep. Fast, mobile-friendly sites with booking systems and lead capture that converts visitors into paying customers.
+									Professional websites that book jobs while you sleep. Fast, mobile friendly sites with booking systems and lead capture that converts visitors into paying customers.
 								</p>
 							</div>
 

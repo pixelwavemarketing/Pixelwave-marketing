@@ -344,7 +344,7 @@ function ChatbotSolutions() {
                   Intelligent Responses
                 </h3>
                 <p style={{ color: '#64748b', lineHeight: '1.6', fontSize: '0.95rem' }}>
-                  AI-powered natural language processing understands customer intent and provides relevant, helpful responses.
+                  AI powered natural language processing understands customer intent and provides relevant, helpful responses.
                 </p>
               </div>
 
@@ -398,7 +398,7 @@ function ChatbotSolutions() {
                   Data Security
                 </h3>
                 <p style={{ color: '#64748b', lineHeight: '1.6', fontSize: '0.95rem' }}>
-                  Enterprise-grade security ensures customer data is protected with encryption and secure data handling.
+                  Enterprise grade security ensures customer data is protected with encryption and secure data handling.
                 </p>
               </div>
 
@@ -426,7 +426,7 @@ function ChatbotSolutions() {
                   Easy Integration
                 </h3>
                 <p style={{ color: '#64748b', lineHeight: '1.6', fontSize: '0.95rem' }}>
-                  Simple one-line code integration that works with any website platform or CMS.
+                  Simple one line code integration that works with any website platform or CMS.
                 </p>
               </div>
 
@@ -450,7 +450,7 @@ function ChatbotSolutions() {
                   <FontAwesomeIcon icon={faSync} />
                 </div>
                 <h3 style={{ fontSize: '1.3rem', marginBottom: '10px', color: '#1e293b' }}>
-                  Auto-Updates Daily
+                  Auto Updates Daily
                 </h3>
                 <p style={{ color: '#64748b', lineHeight: '1.6', fontSize: '0.95rem' }}>
                   Our chatbot automatically rescans your website daily to ensure it stays current with your latest content, services, and pricing.
@@ -509,7 +509,7 @@ function ChatbotSolutions() {
                 textAlign: 'left'
               }}>
                 <div className="service-box">
-                  <h4 style={{ color: '#667eea', marginBottom: '10px' }}>✓ Industry-Specific Training</h4>
+                  <h4 style={{ color: '#667eea', marginBottom: '10px' }}>✓ Industry Specific Training</h4>
                   <p style={{ color: '#64748b', fontSize: '0.95rem' }}>
                     Trained on your business knowledge and industry best practices
                   </p>
@@ -517,7 +517,7 @@ function ChatbotSolutions() {
                 <div className="service-box">
                   <h4 style={{ color: '#667eea', marginBottom: '10px' }}>✓ Lead Qualification</h4>
                   <p style={{ color: '#64748b', fontSize: '0.95rem' }}>
-                    Automatically scores and routes high-quality leads
+                    Automatically scores and routes high quality leads
                   </p>
                 </div>
                 <div className="service-box">
@@ -765,7 +765,7 @@ function ChatbotSolutions() {
                 </h3>
                 <p style={{ color: '#64748b', lineHeight: '1.6' }}>
                   Yes! Our chatbots integrate with any website platform including WordPress, Shopify, Squarespace, 
-                  Wix, and custom-built sites. Installation is simple - just one line of code that we provide and 
+                  Wix, and custom built sites. Installation is simple, just one line of code that we provide and 
                   can help you install.
                 </p>
               </div>
