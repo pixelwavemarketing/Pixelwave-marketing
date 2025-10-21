@@ -1,5 +1,5 @@
 // Service Worker for caching static assets
-const CACHE_NAME = 'pixelwave-v1';
+const CACHE_NAME = 'pixelwave-v2';
 const STATIC_ASSETS = [
   '/',
   '/index.html',
@@ -34,7 +34,8 @@ self.addEventListener('fetch', (event) => {
   const externalDomains = [
     'connect.facebook.net',
     'www.googletagmanager.com',
-    'www.google-analytics.com'
+    'www.google-analytics.com',
+    'www.facebook.com'
   ];
   
   const isExternalScript = externalDomains.some(domain => 
@@ -42,13 +43,7 @@ self.addEventListener('fetch', (event) => {
   );
   
   if (isExternalScript) {
-    // For external scripts, try network first without caching failures
-    event.respondWith(
-      fetch(event.request).catch(() => {
-        // If external script fails, don't cache the error
-        return new Response('', { status: 404, statusText: 'Not Found' });
-      })
-    );
+    // For external scripts, skip service worker entirely and let browser handle
     return;
   }
 
