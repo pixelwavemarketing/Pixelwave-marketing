@@ -1,5 +1,5 @@
 import { lazy } from 'react'
-import pixelwaveLogo from '../assets/pixelwave-logo.webp'
+import pixelwaveLogo from '../assets/PixelWave.png'
 
 function PixelwaveLogo() {
   return (

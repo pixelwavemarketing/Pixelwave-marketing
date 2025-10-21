@@ -28,7 +28,7 @@ function DigitalMarketing() {
         keywords="digital marketing Nashville, Google Ads Nashville, social media marketing Nashville, SEO services Nashville, email marketing Nashville, business marketing Nashville"
         canonicalUrl="https://usepixelwave.com/digital-marketing"
         structuredDataType="service"
-        ogImage="https://usepixelwave.com/pixelwave-logo.webp"
+        ogImage="https://usepixelwave.com/PixelWave.png"
         serviceData={serviceData}
       />
       <Header />

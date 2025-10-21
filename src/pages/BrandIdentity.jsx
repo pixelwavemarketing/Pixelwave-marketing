@@ -27,7 +27,7 @@ function BrandIdentity() {
         keywords="brand identity Nashville, logo design Nashville, business cards Nashville, brand guidelines Nashville, visual identity Nashville, graphic designer Nashville"
         canonicalUrl="https://usepixelwave.com/brand-identity"
         structuredDataType="service"
-        ogImage="https://usepixelwave.com/pixelwave-logo.webp"
+        ogImage="https://usepixelwave.com/PixelWave.png"
         serviceData={serviceData}
       />
       <Header />

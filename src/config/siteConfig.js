@@ -60,7 +60,7 @@ const siteConfig = {
     defaultKeywords: 'Nashville service business marketing, contractor website design, AI chatbot for business, local SEO Nashville, service business lead generation, Nashville digital marketing, contractor lead generation, HVAC marketing Nashville, plumber website design, electrician marketing',
     defaultDescription: 'We help Nashville service businesses turn website visitors into booked jobs with AI-powered websites and smart automation. Never miss a customer again. Free consultation available.',
     themeColor: '#1e40af',
-    ogImage: 'https://usepixelwave.com/pixelwave-logo.webp'
+    ogImage: 'https://usepixelwave.com/PixelWave.png'
   }
 };
 

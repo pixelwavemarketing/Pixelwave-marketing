@@ -3,7 +3,7 @@ const CACHE_NAME = 'pixelwave-v3';
 const STATIC_ASSETS = [
   '/',
   '/index.html',
-  '/pixelwave-logo.webp',
+  '/PixelWave.png',
   '/favicon.ico',
   '/manifest.json'
 ];

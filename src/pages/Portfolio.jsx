@@ -23,7 +23,7 @@ function Portfolio() {
         keywords="portfolio, web design portfolio, digital marketing portfolio, Nashville web design, brand identity portfolio, web development projects"
         canonicalUrl="https://usepixelwave.com/portfolio"
         structuredDataType="aiOptimized"
-        ogImage="https://usepixelwave.com/pixelwave-logo.webp"
+        ogImage="https://usepixelwave.com/PixelWave.png"
       />
       
       <Header />
