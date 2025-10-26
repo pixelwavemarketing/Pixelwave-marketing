@@ -446,7 +446,7 @@ function Services() {
                 🚀 Website Enhancement Tools
               </h3>
               <p style={{ color: '#666', lineHeight: '1.6', marginBottom: '15px' }}>
-                Turn your website into a lead-generating machine with professional tools that capture and convert visitors.
+                Turn your website into a lead generating machine with professional tools that capture and convert visitors.
               </p>
               <ul style={{ color: '#666', paddingLeft: '20px', lineHeight: '1.6', fontSize: '0.95rem' }}>
                 <li>Live chat widget setup and styling</li>
@@ -484,7 +484,7 @@ function Services() {
                 <li>PageSpeed optimization and Core Web Vitals</li>
                 <li>Google Ads conversion tracking setup</li>
                 <li>Retargeting pixel installation</li>
-                <li>Campaign-ready infrastructure</li>
+                <li>Campaign ready infrastructure</li>
               </ul>
             </div>
           </div>
@@ -570,10 +570,13 @@ function Services() {
               onClick={() => navigate('/contact')}
               className="cta-button"
               style={{
-                fontSize: '1.1rem'
+                fontSize: '1.1rem',
+                backgroundColor: '#dc2626',
+                color: 'white',
+                fontWeight: '700'
               }}
             >
-              Contact Us
+              Get My Free Strategy Session
             </button>
           </div>
         </div>

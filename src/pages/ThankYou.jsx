@@ -69,7 +69,10 @@ function ThankYou() {
             onClick={() => navigate('/')}
             className="cta-button"
             style={{
-              fontSize: '1.1rem'
+              fontSize: '1.1rem',
+              backgroundColor: '#dc2626',
+              color: 'white',
+              fontWeight: '700'
             }}
           >
             Return to Home

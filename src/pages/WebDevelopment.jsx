@@ -56,10 +56,13 @@ function WebDevelopment() {
             onClick={() => navigate('/contact')}
             className="cta-button"
             style={{
-              fontSize: '1.2rem'
+              fontSize: '1.2rem',
+              backgroundColor: '#dc2626',
+              color: 'white',
+              fontWeight: '700'
             }}
           >
-            Start Your Project
+            Get My Website Quote Today
           </button>
         </div>
       </section>
@@ -296,7 +299,7 @@ function WebDevelopment() {
                 color: '#64748b',
                 fontSize: '0.9rem'
               }}>
-                Server-side JavaScript
+                Server side JavaScript
               </p>
             </div>
             <div style={{
@@ -552,10 +555,13 @@ function WebDevelopment() {
             onClick={() => navigate('/contact')}
             className="cta-button"
             style={{
-              fontSize: '1.2rem'
+              fontSize: '1.2rem',
+              backgroundColor: '#dc2626',
+              color: 'white',
+              fontWeight: '700'
             }}
           >
-            Get Free Quote
+            Build My Website Now
           </button>
         </div>
       </section>

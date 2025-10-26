@@ -56,10 +56,13 @@ function PrintDesign() {
             onClick={() => navigate('/contact')}
             className="cta-button"
             style={{
-              fontSize: '1.2rem'
+              fontSize: '1.2rem',
+              backgroundColor: '#dc2626',
+              color: 'white',
+              fontWeight: '700'
             }}
           >
-            Start Your Print Project
+            Design My Print Materials
           </button>
         </div>
       </section>
@@ -254,10 +257,13 @@ function PrintDesign() {
             onClick={() => navigate('/contact')}
             className="cta-button"
             style={{
-              fontSize: '1.2rem'
+              fontSize: '1.2rem',
+              backgroundColor: '#dc2626',
+              color: 'white',
+              fontWeight: '700'
             }}
           >
-            Get Started
+            Get My Print Quote
           </button>
         </div>
       </section>

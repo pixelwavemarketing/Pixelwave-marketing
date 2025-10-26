@@ -56,10 +56,13 @@ function Analytics() {
             onClick={() => navigate('/contact')}
             className="cta-button"
             style={{
-              fontSize: '1.2rem'
+              fontSize: '1.2rem',
+              backgroundColor: '#dc2626',
+              color: 'white',
+              fontWeight: '700'
             }}
           >
-            Get Analytics Insights
+            See My Marketing Data
           </button>
         </div>
       </section>
@@ -409,10 +412,13 @@ function Analytics() {
             onClick={() => navigate('/contact')}
             className="cta-button"
             style={{
-              fontSize: '1.2rem'
+              fontSize: '1.2rem',
+              backgroundColor: '#dc2626',
+              color: 'white',
+              fontWeight: '700'
             }}
           >
-            Get Started
+            Track My Results Now
           </button>
         </div>
       </section>

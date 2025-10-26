@@ -63,10 +63,13 @@ function BrandIdentity() {
             onClick={() => navigate('/contact')}
             className="cta-button"
             style={{
-              fontSize: '1.2rem'
+              fontSize: '1.2rem',
+              backgroundColor: '#dc2626',
+              color: 'white',
+              fontWeight: '700'
             }}
           >
-            Start Your Brand Project
+            Design My Brand Now
           </button>
         </div>
       </section>
@@ -260,10 +263,13 @@ function BrandIdentity() {
             onClick={() => navigate('/contact')}
             className="cta-button"
             style={{
-              fontSize: '1.2rem'
+              fontSize: '1.2rem',
+              backgroundColor: '#dc2626',
+              color: 'white',
+              fontWeight: '700'
             }}
           >
-            Get Started
+            Create My Brand Identity
           </button>
         </div>
       </section>

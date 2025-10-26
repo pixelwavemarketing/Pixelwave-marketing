@@ -122,20 +122,57 @@ function Home() {
 						</div>
 					</div>
 
-					{/* Multi-CTA row */}
+					{/* Primary CTA */}
 					<div style={{
 						display: 'flex',
-						flexWrap: 'wrap',
-						gap: '12px',
-						justifyContent: 'center'
+						flexDirection: 'column',
+						alignItems: 'center',
+						gap: '15px'
 					}}>
 						<button
 							onClick={() => navigate('/contact')}
-							className="cta-button"
-							style={{ minWidth: 180 }}
+							style={{
+								fontSize: window.innerWidth <= 768 ? '1.2rem' : '1.4rem',
+								padding: window.innerWidth <= 768 ? '18px 30px' : '20px 40px',
+								backgroundColor: '#dc2626',
+								color: 'white',
+								border: 'none',
+								borderRadius: '12px',
+								cursor: 'pointer',
+								fontWeight: '700',
+								boxShadow: '0 8px 25px rgba(220, 38, 38, 0.3)',
+								transition: 'all 0.3s ease',
+								textTransform: 'uppercase',
+								letterSpacing: '0.5px',
+								width: '100%',
+								maxWidth: '400px',
+								marginBottom: '10px'
+							}}
+							onMouseEnter={(e) => {
+								e.target.style.backgroundColor = '#b91c1c';
+								e.target.style.transform = 'translateY(-2px)';
+								e.target.style.boxShadow = '0 12px 30px rgba(220, 38, 38, 0.4)';
+							}}
+							onMouseLeave={(e) => {
+								e.target.style.backgroundColor = '#dc2626';
+								e.target.style.transform = 'translateY(0)';
+								e.target.style.boxShadow = '0 8px 25px rgba(220, 38, 38, 0.3)';
+							}}
 						>
-							Contact Us
+							Get A Free Consultation Today!
 						</button>
+						
+						{/* Urgency text */}
+						<div style={{
+							textAlign: 'center',
+							fontSize: '0.9rem',
+							color: '#64748b',
+							lineHeight: '1.4'
+						}}>
+							<p style={{ margin: '0', fontStyle: 'italic' }}>
+								Book your spot today!
+							</p>
+						</div>
 					</div>
 				</section>
 
@@ -303,24 +340,24 @@ function Home() {
 							style={{
 								fontSize: '1.2rem',
 								padding: '15px 30px',
-								backgroundColor: '#2563eb',
+								backgroundColor: '#dc2626',
 								color: 'white',
 								border: 'none',
 								borderRadius: '8px',
 								cursor: 'pointer',
-								fontWeight: '600',
+								fontWeight: '700',
 								transition: 'all 0.3s ease'
 							}}
 							onMouseEnter={(e) => {
-								e.target.style.backgroundColor = '#1d4ed8';
+								e.target.style.backgroundColor = '#b91c1c';
 								e.target.style.transform = 'translateY(-2px)';
 							}}
 							onMouseLeave={(e) => {
-								e.target.style.backgroundColor = '#2563eb';
+								e.target.style.backgroundColor = '#dc2626';
 								e.target.style.transform = 'translateY(0)';
 							}}
 						>
-							Get Free Consultation
+							Get Free Consultation Today
 						</button>
 					</div>
 				</section>

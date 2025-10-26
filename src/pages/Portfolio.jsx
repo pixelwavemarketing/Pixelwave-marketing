@@ -63,10 +63,13 @@ function Portfolio() {
             onClick={() => navigate('/contact')}
             className="cta-button"
             style={{
-              fontSize: '1.2rem'
+              fontSize: '1.2rem',
+              backgroundColor: '#dc2626',
+              color: 'white',
+              fontWeight: '700'
             }}
           >
-            Start Your Project
+            Get My Custom Quote
           </button>
         </div>
       </section>
@@ -161,7 +164,7 @@ function Portfolio() {
                   marginBottom: '20px'
                 }}>
                   Professional website for a local dumpster rental business. Features include 
-                  service listings, contact forms, and mobile-responsive design.
+                  service listings, contact forms, and mobile responsive design.
                 </p>
                 <div style={{
                   display: 'flex',
@@ -516,7 +519,7 @@ function Portfolio() {
                   marginBottom: '20px'
                 }}>
                   Comprehensive financial calculator website providing tools for loans, 
-                  investments, and financial planning. User-friendly interface with 
+                  investments, and financial planning. User friendly interface with 
                   accurate calculations.
                 </p>
                 <div style={{
@@ -636,10 +639,13 @@ function Portfolio() {
             onClick={() => navigate('/contact')}
             className="cta-button"
             style={{
-              fontSize: '1.2rem'
+              fontSize: '1.2rem',
+              backgroundColor: '#dc2626',
+              color: 'white',
+              fontWeight: '700'
             }}
           >
-            Start Your Project
+            Get My Custom Quote
           </button>
         </div>
       </section>

@@ -113,11 +113,11 @@ function ContactForm() {
           color: '#333',
           fontWeight: '500'
         }}>
-          Business Name <span style={{ color: '#ff4444' }}>*</span>
+          Phone Number <span style={{ color: '#ff4444' }}>*</span>
         </label>
         <input
-          type="text"
-          name="business"
+          type="tel"
+          name="phone"
           required
           style={{
             width: '100%',
@@ -135,11 +135,11 @@ function ContactForm() {
           color: '#333',
           fontWeight: '500'
         }}>
-          Phone Number <span style={{ color: '#ff4444' }}>*</span>
+          Business Name <span style={{ color: '#ff4444' }}>*</span>
         </label>
         <input
-          type="tel"
-          name="phone"
+          type="text"
+          name="business"
           required
           style={{
             width: '100%',

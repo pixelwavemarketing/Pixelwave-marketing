@@ -58,16 +58,19 @@ function DigitalMarketing() {
             lineHeight: '1.6',
             marginBottom: '40px'
           }}>
-            Transform your business with data-driven digital marketing strategies that deliver measurable results.
+            Transform your business with data driven digital marketing strategies that deliver measurable results.
           </p>
           <button
             onClick={() => navigate('/contact')}
             className="cta-button"
             style={{
-              fontSize: '1.2rem'
+              fontSize: '1.2rem',
+              backgroundColor: '#dc2626',
+              color: 'white',
+              fontWeight: '700'
             }}
           >
-            Get Free Consultation
+            Get More Leads Today
           </button>
         </div>
       </section>
@@ -286,7 +289,7 @@ function DigitalMarketing() {
                 marginBottom: '15px',
                 color: '#1e293b'
               }}>
-                Data-Driven Results
+                Data Driven Results
               </h3>
               <p style={{
                 color: '#64748b',
@@ -519,10 +522,13 @@ function DigitalMarketing() {
             onClick={() => navigate('/contact')}
             className="cta-button"
             style={{
-              fontSize: '1.2rem'
+              fontSize: '1.2rem',
+              backgroundColor: '#dc2626',
+              color: 'white',
+              fontWeight: '700'
             }}
           >
-            Get Free Consultation
+            Get More Leads Today
           </button>
         </div>
       </section>
