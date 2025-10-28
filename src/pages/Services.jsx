@@ -27,9 +27,9 @@ function Services() {
   return (
     <>
       <SEOOptimizer 
-        title="Digital Marketing & Web Services | Pixelwave Marketing"
-        description="Explore our comprehensive services including digital marketing, web development, brand identity, marketing automation, analytics, and print design solutions."
-        keywords="digital marketing services, web development, brand identity, marketing automation, business analytics, print design"
+        title="Nashville Service Business Marketing Services | AI Chatbot & Website Design"
+        description="Complete digital marketing services for Nashville contractors, HVAC, plumbing, electrical businesses. AI chatbots, website design, local SEO, Google Ads, and lead generation solutions."
+        keywords="Nashville service business marketing, contractor marketing Nashville, HVAC marketing Nashville, plumber website design, electrician marketing Nashville, AI chatbot Nashville, local SEO Nashville, contractor lead generation, service business websites Nashville, Nashville digital marketing agency"
         canonicalUrl="https://usepixelwave.com/services"
         structuredDataType="service"
       />
@@ -52,7 +52,7 @@ function Services() {
           textAlign: 'center'
         }}>
           <h2 style={{ fontSize: '2rem', marginBottom: '40px', color: '#333' }}>
-            Why Choose Pixelwave Marketing
+            Why Nashville Service Businesses Choose Pixelwave Marketing
           </h2>
           <div style={{
             display: 'flex',
@@ -119,7 +119,7 @@ function Services() {
           textAlign: 'center'
         }}>
           <h2 style={{ fontSize: '2rem', marginBottom: '40px', color: '#333' }}>
-            What We Offer
+            Nashville Service Business Marketing Solutions
           </h2>
           <div style={{
             display: 'flex',
@@ -161,10 +161,10 @@ function Services() {
                 <FontAwesomeIcon icon={faRobot} />
               </div>
               <h3 className="service-title" style={{ fontSize: '1.5rem', marginBottom: '15px', color: '#ffffff' }}>
-                AI Chatbot Solutions
+                AI Chatbot for Nashville Service Businesses
               </h3>
               <p style={{ color: '#ffffff', opacity: '0.9' }}>
-                24/7 automated customer support that captures leads, answers questions, and sends detailed email summaries while you sleep
+                Custom AI chatbot development for contractors, HVAC, plumbing, and electrical businesses. Automated lead capture, customer support, and appointment booking 24/7.
               </p>
             </div>
 
@@ -181,10 +181,10 @@ function Services() {
                 <FontAwesomeIcon icon={faGoogle} />
               </div>
               <h3 className="service-title" style={{ fontSize: '1.5rem', marginBottom: '15px', color: '#333' }}>
-                Digital Marketing
+                Nashville Digital Marketing Agency
               </h3>
               <p style={{ color: '#666' }}>
-                Strategic online marketing solutions and automated systems to boost your brand's presence and streamline your business
+                Local SEO, Google Ads, and social media marketing for Nashville contractors, HVAC, plumbing, and electrical businesses. Proven strategies to get found on Google.
               </p>
             </div>
 
@@ -201,10 +201,10 @@ function Services() {
                 <FontAwesomeIcon icon={faCode} />
               </div>
               <h3 className="service-title" style={{ fontSize: '1.5rem', marginBottom: '15px', color: '#333' }}>
-                Web Development
+                Contractor Website Design Nashville
               </h3>
               <p style={{ color: '#666' }}>
-                Custom websites that engage visitors and drive conversions, built with modern technologies
+                Professional website development for Nashville contractors, HVAC, plumbing, and electrical businesses. Mobile-responsive sites with lead capture and online booking.
               </p>
             </div>
 

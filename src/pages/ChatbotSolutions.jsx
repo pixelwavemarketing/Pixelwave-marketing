@@ -36,9 +36,9 @@ function ChatbotSolutions() {
   return (
     <>
       <SEOOptimizer 
-        title="AI Chatbot for Business | Custom Development Services Nashville TN"
-        description="Get a custom AI chatbot that converts visitors into customers 24/7. Professional chatbot development for Nashville businesses. Lead capture, automated support & email integration. Free consultation available."
-        keywords="AI chatbot for business, custom chatbot development, business chatbot services, website chatbot, automated customer service, chatbot Nashville, small business chatbot, lead generation chatbot, customer support automation, AI chat assistant"
+        title="AI Chatbot Development Nashville | Custom Business Chatbots for Service Companies"
+        description="Custom AI chatbot development for Nashville service businesses. Automated customer support, lead capture, and appointment booking for contractors, HVAC, plumbing, and electrical companies. Free consultation."
+        keywords="AI chatbot Nashville, custom chatbot development Nashville, business chatbot Nashville, service business chatbot, contractor chatbot Nashville, HVAC chatbot Nashville, plumber chatbot Nashville, electrician chatbot Nashville, automated customer service Nashville, chatbot development Nashville"
         canonicalUrl="https://usepixelwave.com/chatbot-solutions"
         structuredDataType="service"
       />
@@ -73,7 +73,7 @@ function ChatbotSolutions() {
               marginBottom: '20px',
               fontWeight: 'bold'
             }}>
-              Custom AI Chatbot for Your Business
+              Custom AI Chatbot Development for Nashville Service Businesses
             </h1>
             <p style={{
               fontSize: '1.3rem',
@@ -81,9 +81,9 @@ function ChatbotSolutions() {
               opacity: '0.9',
               lineHeight: '1.6'
             }}>
-              Get a professional AI chatbot for your business website. Our custom chatbot development 
-              services help Nashville businesses automate customer support, capture more leads, and 
-              never miss a potential customer again.
+              Professional AI chatbot development for Nashville contractors, HVAC, plumbing, and electrical businesses. 
+              Our custom chatbot solutions automate customer support, capture leads, and provide 24/7 service 
+              to help you never miss another customer inquiry.
             </p>
             <button
               onClick={() => handleCTAClick('Hero CTA')}
@@ -128,7 +128,7 @@ function ChatbotSolutions() {
               marginBottom: '20px',
               color: '#1e293b'
             }}>
-              Professional Chatbot Development for Nashville Businesses
+              Nashville AI Chatbot Development for Service Businesses
             </h2>
             <p style={{
               fontSize: '1.1rem',
@@ -136,14 +136,15 @@ function ChatbotSolutions() {
               lineHeight: '1.7',
               marginBottom: '30px'
             }}>
-              As a leading <strong>chatbot development company in Nashville</strong>, we specialize in creating 
-              custom AI chatbots for small and medium businesses. Our <strong>business chatbot services</strong> help 
-              local companies automate customer service, generate more leads, and provide 24/7 support to their customers. 
-              Whether you need a <strong>website chatbot</strong> for your e-commerce store, service business, or professional 
-              practice, we build intelligent conversational AI solutions that understand your customers and grow your business.
+              As Nashville's leading <strong>AI chatbot development company</strong>, we specialize in creating 
+              custom business chatbots for contractors, HVAC companies, plumbers, electricians, and service businesses. 
+              Our <strong>Nashville chatbot development services</strong> help local companies automate customer service, 
+              generate more leads, and provide 24/7 support to their customers. Whether you need a <strong>contractor chatbot</strong> 
+              for your HVAC business, a <strong>plumber chatbot</strong> for customer inquiries, or an <strong>electrician chatbot</strong> 
+              for appointment booking, we build intelligent conversational AI solutions that understand your customers and grow your business.
               
-              <br/><br/>Our chatbots integrate seamlessly with popular platforms like <strong>WordPress, Shopify, and Squarespace</strong>, 
-              making it easy to add automated customer support to any website without technical expertise.
+              <br/><br/>Our Nashville chatbot solutions integrate seamlessly with popular platforms like <strong>WordPress, Shopify, and Squarespace</strong>, 
+              making it easy to add automated customer support to any Nashville service business website without technical expertise.
             </p>
             <div style={{
               display: 'flex',
