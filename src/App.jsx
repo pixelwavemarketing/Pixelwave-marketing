@@ -16,6 +16,7 @@ import PrintDesign from './pages/PrintDesign'
 import Portfolio from './pages/Portfolio'
 import Contact from './pages/Contact'
 import ThankYou from './pages/ThankYou'
+import Landing from './pages/Landing'
 import FAQ from './pages/FAQ'
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/thank-you" element={<ThankYou />} />
+        <Route path="/landing" element={<Landing />} />
         </Routes>
       </Router>
     </ErrorBoundary>

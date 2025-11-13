@@ -55,7 +55,7 @@ function Portfolio() {
             margin: '0 auto 40px',
             lineHeight: '1.6'
           }}>
-            Discover how we've helped Nashville businesses grow through strategic digital marketing, 
+            Discover how we've helped local businesses grow through strategic digital marketing, 
             professional web development, and compelling brand identity design. Each project represents 
             real results and measurable business growth.
           </p>
