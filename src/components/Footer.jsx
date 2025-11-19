@@ -178,8 +178,6 @@ function Footer() {
 					],
 					"address": {
 						"@type": "PostalAddress",
-						"addressLocality": siteConfig.company.address.addressLocality,
-						"addressRegion": siteConfig.company.address.addressRegion,
 						"addressCountry": siteConfig.company.address.addressCountry
 					}
 				})}

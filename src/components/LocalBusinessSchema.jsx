@@ -8,34 +8,22 @@ const LocalBusinessSchema = ({
   currenciesAccepted = ['USD'],
   areaServed = siteConfig.company.areaServed
 }) => {
-  const localBusinessSchema = {
+  const organizationSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": "Organization",
     "name": siteConfig.company.name,
     "image": siteConfig.company.logo,
     "url": siteConfig.company.url,
     "telephone": siteConfig.company.telephone,
     "email": siteConfig.company.email,
-    "priceRange": siteConfig.company.priceRange,
-    "paymentAccepted": paymentMethods.join(', '),
-    "currenciesAccepted": currenciesAccepted.join(', '),
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": siteConfig.company.address.streetAddress,
-      "addressLocality": siteConfig.company.address.addressLocality,
-      "addressRegion": siteConfig.company.address.addressRegion,
-      "postalCode": siteConfig.company.address.postalCode,
       "addressCountry": siteConfig.company.address.addressCountry
     },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": siteConfig.company.coordinates.latitude,
-      "longitude": siteConfig.company.coordinates.longitude
+    "areaServed": {
+      "@type": "Country",
+      "name": "United States"
     },
-    "areaServed": areaServed.map(area => ({
-      "@type": "City",
-      "name": area
-    })),
     "openingHoursSpecification": siteConfig.company.openingHours,
     "sameAs": [
       siteConfig.company.socialMedia.facebook,
@@ -56,10 +44,10 @@ const LocalBusinessSchema = ({
               "@type": "Organization",
               "name": siteConfig.company.name
             },
-            "areaServed": areaServed.map(area => ({
-              "@type": "City",
-              "name": area
-            }))
+            "areaServed": {
+              "@type": "Country",
+              "name": "United States"
+            }
           }
         },
         {
@@ -72,10 +60,10 @@ const LocalBusinessSchema = ({
               "@type": "Organization",
               "name": siteConfig.company.name
             },
-            "areaServed": areaServed.map(area => ({
-              "@type": "City",
-              "name": area
-            }))
+            "areaServed": {
+              "@type": "Country",
+              "name": "United States"
+            }
           }
         },
         {
@@ -88,10 +76,10 @@ const LocalBusinessSchema = ({
               "@type": "Organization",
               "name": siteConfig.company.name
             },
-            "areaServed": areaServed.map(area => ({
-              "@type": "City",
-              "name": area
-            }))
+            "areaServed": {
+              "@type": "Country",
+              "name": "United States"
+            }
           }
         },
         {
@@ -99,15 +87,15 @@ const LocalBusinessSchema = ({
           "itemOffered": {
             "@type": "Service",
             "name": "Search Engine Optimization",
-            "description": "Local SEO and search ranking improvements",
+            "description": "SEO and search ranking improvements",
             "provider": {
               "@type": "Organization",
               "name": siteConfig.company.name
             },
-            "areaServed": areaServed.map(area => ({
-              "@type": "City",
-              "name": area
-            }))
+            "areaServed": {
+              "@type": "Country",
+              "name": "United States"
+            }
           }
         },
         ...additionalServices.map(service => ({
@@ -120,10 +108,10 @@ const LocalBusinessSchema = ({
               "@type": "Organization",
               "name": siteConfig.company.name
             },
-            "areaServed": areaServed.map(area => ({
-              "@type": "City",
-              "name": area
-            }))
+            "areaServed": {
+              "@type": "Country",
+              "name": "United States"
+            }
           }
         }))
       ]
@@ -145,8 +133,8 @@ const LocalBusinessSchema = ({
       "Analytics",
       "Brand Identity",
       "E-commerce Development",
-      "Local SEO",
-      "Nashville Business Marketing"
+      "SEO",
+      "Business Marketing"
     ],
     "foundingDate": siteConfig.company.foundingDate,
     "numberOfEmployees": siteConfig.company.numberOfEmployees
@@ -154,7 +142,7 @@ const LocalBusinessSchema = ({
 
   // Add special hours if provided
   if (specialHours.length > 0) {
-    localBusinessSchema.openingHoursSpecification = [
+    organizationSchema.openingHoursSpecification = [
       ...siteConfig.company.openingHours,
       ...specialHours
     ];
@@ -162,7 +150,7 @@ const LocalBusinessSchema = ({
 
   return (
     <script type="application/ld+json">
-      {JSON.stringify(localBusinessSchema)}
+      {JSON.stringify(organizationSchema)}
     </script>
   );
 };

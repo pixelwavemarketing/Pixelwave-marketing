@@ -11,7 +11,7 @@ function BrandIdentity() {
 
   const serviceData = {
     name: "Brand Identity Design Services",
-    description: "Professional brand identity design in Nashville including logo design, business cards, brand guidelines, and visual identity development for businesses.",
+    description: "Professional brand identity design including logo design, business cards, brand guidelines, and visual identity development for businesses.",
     serviceType: "Brand Identity Design"
   }
 
@@ -23,8 +23,8 @@ function BrandIdentity() {
     }}>
       <SEOOptimizer 
         title="Brand Identity Design | Pixelwave Marketing"
-        description="Professional brand identity design in Nashville. Logo design, business cards, brand guidelines, and visual identity development for businesses. Free consultation available."
-        keywords="brand identity Nashville, logo design Nashville, business cards Nashville, brand guidelines Nashville, visual identity Nashville, graphic designer Nashville"
+        description="Professional brand identity design. Logo design, business cards, brand guidelines, and visual identity development for businesses. Free consultation available."
+        keywords="brand identity, logo design, business cards, brand guidelines, visual identity, graphic designer"
         canonicalUrl="https://usepixelwave.com/brand-identity"
         structuredDataType="service"
         ogImage="https://usepixelwave.com/PixelWave.png"

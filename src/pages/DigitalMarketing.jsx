@@ -12,7 +12,7 @@ function DigitalMarketing() {
 
   const serviceData = {
     name: "Digital Marketing Services",
-    description: "Expert digital marketing services in Nashville including Google Ads, social media marketing, SEO, and email marketing to grow your business.",
+    description: "Expert digital marketing services including Google Ads, social media marketing, SEO, and email marketing to grow your business.",
     serviceType: "Digital Marketing"
   }
 
@@ -23,9 +23,9 @@ function DigitalMarketing() {
       minHeight: '100vh'
     }}>
       <SEOOptimizer 
-        title="Nashville Digital Marketing Agency | Local SEO & Google Ads for Service Businesses"
-        description="Leading Nashville digital marketing agency specializing in local SEO, Google Ads, and social media marketing for contractors, HVAC, plumbing, and electrical businesses. Free consultation."
-        keywords="Nashville digital marketing agency, local SEO Nashville, Google Ads Nashville, contractor marketing Nashville, HVAC marketing Nashville, plumber marketing Nashville, electrician marketing Nashville, service business marketing Nashville, Nashville SEO services, local business marketing Nashville"
+        title="Digital Marketing Agency | SEO & Google Ads for Service Businesses"
+        description="Leading digital marketing agency for contractors. SEO, Google Ads, and social media marketing for HVAC, plumbing, and electrical businesses. Free consultation."
+        keywords="digital marketing agency, SEO services, Google Ads, contractor marketing, HVAC marketing, plumber marketing, electrician marketing, service business marketing, SEO services, business marketing"
         canonicalUrl="https://usepixelwave.com/digital-marketing"
         structuredDataType="service"
         ogImage="https://usepixelwave.com/PixelWave.png"
@@ -50,7 +50,7 @@ function DigitalMarketing() {
             marginBottom: '20px',
             fontWeight: '700'
           }}>
-            Nashville Digital Marketing Agency for Service Businesses
+            Digital Marketing Agency for Service Businesses
           </h1>
           <p style={{
             fontSize: '1.3rem',
@@ -58,7 +58,7 @@ function DigitalMarketing() {
             lineHeight: '1.6',
             marginBottom: '40px'
           }}>
-            Leading Nashville digital marketing agency specializing in local SEO, Google Ads, and social media marketing for contractors, HVAC, plumbing, and electrical businesses.
+            Leading digital marketing agency specializing in SEO, Google Ads, and social media marketing for contractors, HVAC, plumbing, and electrical businesses.
           </p>
           <button
             onClick={() => navigate('/contact')}
@@ -90,7 +90,7 @@ function DigitalMarketing() {
             marginBottom: '50px',
             color: '#1e293b'
           }}>
-            Nashville Digital Marketing Services for Service Businesses
+            Digital Marketing Services for Service Businesses
           </h2>
           <div style={{
             display: 'flex',
@@ -121,13 +121,13 @@ function DigitalMarketing() {
                 marginBottom: '15px',
                 color: '#1e293b'
               }}>
-                Google Ads Management Nashville
+                Google Ads Management
               </h3>
               <p style={{
                 color: '#64748b',
                 lineHeight: '1.6'
               }}>
-                Strategic Google Ads campaigns for Nashville contractors, HVAC, plumbing, and electrical businesses. Target local customers and maximize your advertising ROI with our proven strategies.
+                Strategic Google Ads campaigns for contractors, HVAC, plumbing, and electrical businesses. Target customers and maximize your advertising ROI with our proven strategies.
               </p>
             </div>
 
@@ -154,13 +154,13 @@ function DigitalMarketing() {
                 marginBottom: '15px',
                 color: '#1e293b'
               }}>
-                Social Media Marketing Nashville
+                Social Media Marketing
               </h3>
               <p style={{
                 color: '#64748b',
                 lineHeight: '1.6'
               }}>
-                Build your Nashville service business brand across Facebook, Instagram, LinkedIn, and other platforms with engaging content that drives local customer engagement and conversions.
+                Build your service business brand across Facebook, Instagram, LinkedIn, and other platforms with engaging content that drives customer engagement and conversions.
               </p>
             </div>
 
@@ -187,13 +187,13 @@ function DigitalMarketing() {
                 marginBottom: '15px',
                 color: '#1e293b'
               }}>
-                Local SEO Nashville
+                SEO Services
               </h3>
               <p style={{
                 color: '#64748b',
                 lineHeight: '1.6'
               }}>
-                Improve your Nashville service business search rankings and drive local organic traffic with our comprehensive local SEO strategies tailored for contractors, HVAC, and service businesses.
+                Improve your service business search rankings and drive organic traffic with our comprehensive SEO strategies tailored for contractors, HVAC, and service businesses.
               </p>
             </div>
 

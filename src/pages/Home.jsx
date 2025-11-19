@@ -43,10 +43,10 @@ function Home() {
 	return (
 		<>
 			<SEOOptimizer 
-				title="Nashville Service Business Marketing | AI Chatbot & Website Design"
-				description="Nashville's leading service business marketing agency. AI chatbots, contractor websites, local SEO, and digital marketing for HVAC, plumbing, electrical contractors. Free consultation."
-				keywords="Nashville service business marketing, contractor website design Nashville, AI chatbot Nashville, local SEO Nashville, HVAC marketing Nashville, plumber website design, electrician marketing Nashville, service business lead generation, Nashville digital marketing agency, contractor lead generation Nashville"
-				structuredDataType="localBusiness"
+				title="Service Business Marketing | AI Chatbot & Website Design"
+				description="Leading service business marketing agency. AI chatbots, contractor websites, SEO, and digital marketing for HVAC, plumbing, and electrical contractors."
+				keywords="service business marketing, contractor website design, AI chatbot, SEO services, HVAC marketing, plumber website design, electrician marketing, service business lead generation, digital marketing agency, contractor lead generation"
+				structuredDataType="Organization"
 			/>
 			<main className="home-page" style={{
 				display: 'flex',
@@ -76,7 +76,7 @@ function Home() {
 						marginBottom: '20px',
 						fontWeight: '700'
 					}}>
-						Nashville Service Business Marketing That Books More Jobs
+						Service Business Marketing That Books More Jobs
 					</h1>
 					
 					<p style={{
@@ -86,7 +86,7 @@ function Home() {
 						marginBottom: '30px',
 						fontWeight: '500'
 					}}>
-						Leading Nashville digital marketing agency specializing in contractor websites, AI chatbots, and local SEO for HVAC, plumbing, electrical, and service businesses. Turn website visitors into booked jobs with our proven marketing systems.
+						Leading digital marketing agency specializing in contractor websites, AI chatbots, and SEO for HVAC, plumbing, electrical, and service businesses. Turn website visitors into booked jobs with our proven marketing systems.
 					</p>
 
 					<div style={{
@@ -102,7 +102,7 @@ function Home() {
 							marginBottom: '15px',
 							fontWeight: '600'
 						}}>
-							Perfect for Nashville Service Businesses:
+							Perfect for Service Businesses:
 						</h2>
 						<div style={{
 							display: 'flex',
@@ -191,14 +191,14 @@ function Home() {
 							color: '#1e293b',
 							marginBottom: '20px'
 						}}>
-							Nashville Service Business Marketing Solutions
+							Service Business Marketing Solutions
 						</h2>
 						<p style={{
 							fontSize: '1.2rem',
 							color: '#64748b',
 							marginBottom: '50px'
 						}}>
-							Complete digital marketing services for contractors, HVAC companies, plumbers, electricians, and service businesses in Nashville
+							Complete digital marketing services for contractors, HVAC companies, plumbers, electricians, and service businesses
 						</p>
 						
 						<div style={{
@@ -231,7 +231,7 @@ function Home() {
 									color: '#1e293b',
 									marginBottom: '15px'
 								}}>
-									AI Chatbot for Nashville Service Businesses
+									AI Chatbot for Service Businesses
 								</h3>
 								<p style={{
 									color: '#64748b',
@@ -249,13 +249,13 @@ function Home() {
 									color: '#1e293b',
 									marginBottom: '15px'
 								}}>
-									Nashville Digital Marketing Agency
+									Digital Marketing Agency
 								</h3>
 								<p style={{
 									color: '#64748b',
 									lineHeight: '1.6'
 								}}>
-									Local SEO, Google Ads, and social media marketing for Nashville service businesses. Get found on Google and convert leads into booked jobs with our proven strategies.
+									SEO, Google Ads, and social media marketing for service businesses. Get found on Google and convert leads into booked jobs with our proven strategies.
 								</p>
 							</div>
 
@@ -267,7 +267,7 @@ function Home() {
 									color: '#1e293b',
 									marginBottom: '15px'
 								}}>
-									Contractor Website Design Nashville
+									Contractor Website Design
 								</h3>
 								<p style={{
 									color: '#64748b',
@@ -285,13 +285,13 @@ function Home() {
 									color: '#1e293b',
 									marginBottom: '15px'
 								}}>
-									Service Business Analytics Nashville
+									Service Business Analytics
 								</h3>
 								<p style={{
 									color: '#64748b',
 									lineHeight: '1.6'
 								}}>
-									Track marketing ROI and lead sources for Nashville service businesses. Google Analytics setup, conversion tracking, and monthly reporting to optimize your marketing spend.
+									Track marketing ROI and lead sources for service businesses. Google Analytics setup, conversion tracking, and monthly reporting to optimize your marketing spend.
 								</p>
 							</div>
 						</div>
@@ -331,7 +331,7 @@ function Home() {
 							color: '#cbd5e1',
 							lineHeight: '1.6'
 						}}>
-							Join Nashville service businesses that are getting more leads and booking more jobs with our AI-powered websites and marketing systems. 
+							Join service businesses that are getting more leads and booking more jobs with our AI-powered websites and marketing systems. 
 							Get your free consultation and see how we can help you grow.
 						</p>
 						<button

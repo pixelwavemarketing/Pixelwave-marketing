@@ -12,9 +12,9 @@ function MarketingSystems() {
   return (
     <>
       <SEOOptimizer 
-        title="Marketing Automation Systems | PixelWave Marketing - Nashville"
-        description="Marketing automation and systems in Nashville. Streamline your business operations with marketing solutions and customer management."
-        keywords="marketing automation Nashville, marketing systems Nashville, automated marketing, business automation, marketing solutions"
+        title="Marketing Automation Systems | PixelWave Marketing"
+        description="Marketing automation and systems. Streamline your business operations with marketing solutions and customer management."
+        keywords="marketing automation, marketing systems, automated marketing, business automation, marketing solutions"
         canonicalUrl="https://usepixelwave.com/marketing-systems"
         structuredDataType="service"
       />

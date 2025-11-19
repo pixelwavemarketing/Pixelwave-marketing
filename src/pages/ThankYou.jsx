@@ -23,7 +23,7 @@ function ThankYou() {
         description="Thank you for contacting PixelWave Marketing. We'll get back to you within 24 hours to discuss your project needs."
         keywords="thank you, contact confirmation, PixelWave Marketing"
         canonicalUrl="https://usepixelwave.com/thank-you"
-        structuredDataType="localBusiness"
+        structuredDataType="Organization"
       />
       <div className="other-page" style={{
         display: 'flex',

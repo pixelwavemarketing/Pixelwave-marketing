@@ -27,9 +27,9 @@ function Services() {
   return (
     <>
       <SEOOptimizer 
-        title="Nashville Service Business Marketing Services | AI Chatbot & Website Design"
-        description="Complete digital marketing services for Nashville contractors, HVAC, plumbing, electrical businesses. AI chatbots, website design, local SEO, Google Ads, and lead generation solutions."
-        keywords="Nashville service business marketing, contractor marketing Nashville, HVAC marketing Nashville, plumber website design, electrician marketing Nashville, AI chatbot Nashville, local SEO Nashville, contractor lead generation, service business websites Nashville, Nashville digital marketing agency"
+        title="Service Business Marketing Services | AI Chatbot & Website Design"
+        description="Complete digital marketing services for contractors, HVAC, plumbing, and electrical businesses. AI chatbots, websites, SEO, Google Ads, and lead generation."
+        keywords="service business marketing, contractor marketing, HVAC marketing, plumber website design, electrician marketing, AI chatbot, SEO services, contractor lead generation, service business websites, digital marketing agency"
         canonicalUrl="https://usepixelwave.com/services"
         structuredDataType="service"
       />
@@ -52,7 +52,7 @@ function Services() {
           textAlign: 'center'
         }}>
           <h2 style={{ fontSize: '2rem', marginBottom: '40px', color: '#333' }}>
-            Why Nashville Service Businesses Choose Pixelwave Marketing
+            Why Service Businesses Choose Pixelwave Marketing
           </h2>
           <div style={{
             display: 'flex',
@@ -119,7 +119,7 @@ function Services() {
           textAlign: 'center'
         }}>
           <h2 style={{ fontSize: '2rem', marginBottom: '40px', color: '#333' }}>
-            Nashville Service Business Marketing Solutions
+            Service Business Marketing Solutions
           </h2>
           <div style={{
             display: 'flex',
@@ -161,7 +161,7 @@ function Services() {
                 <FontAwesomeIcon icon={faRobot} />
               </div>
               <h3 className="service-title" style={{ fontSize: '1.5rem', marginBottom: '15px', color: '#ffffff' }}>
-                AI Chatbot for Nashville Service Businesses
+                AI Chatbot for Service Businesses
               </h3>
               <p style={{ color: '#ffffff', opacity: '0.9' }}>
                 Custom AI chatbot development for contractors, HVAC, plumbing, and electrical businesses. Automated lead capture, customer support, and appointment booking 24/7.
@@ -181,10 +181,10 @@ function Services() {
                 <FontAwesomeIcon icon={faGoogle} />
               </div>
               <h3 className="service-title" style={{ fontSize: '1.5rem', marginBottom: '15px', color: '#333' }}>
-                Nashville Digital Marketing Agency
+                Digital Marketing Agency
               </h3>
               <p style={{ color: '#666' }}>
-                Local SEO, Google Ads, and social media marketing for Nashville contractors, HVAC, plumbing, and electrical businesses. Proven strategies to get found on Google.
+                SEO, Google Ads, and social media marketing for contractors, HVAC, plumbing, and electrical businesses. Proven strategies to get found on Google.
               </p>
             </div>
 
@@ -201,10 +201,10 @@ function Services() {
                 <FontAwesomeIcon icon={faCode} />
               </div>
               <h3 className="service-title" style={{ fontSize: '1.5rem', marginBottom: '15px', color: '#333' }}>
-                Contractor Website Design Nashville
+                Contractor Website Design
               </h3>
               <p style={{ color: '#666' }}>
-                Professional website development for Nashville contractors, HVAC, plumbing, and electrical businesses. Mobile-responsive sites with lead capture and online booking.
+                Professional website development for contractors, HVAC, plumbing, and electrical businesses. Mobile-responsive sites with lead capture and online booking.
               </p>
             </div>
 

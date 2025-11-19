@@ -1,6 +1,6 @@
 import siteConfig from '../config/siteConfig.js';
 
-const StructuredData = ({ type = 'localBusiness', faqData = null, serviceData = null }) => {
+const StructuredData = ({ type = 'organization', faqData = null, serviceData = null }) => {
   const baseOrganization = {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -19,27 +19,22 @@ const StructuredData = ({ type = 'localBusiness', faqData = null, serviceData = 
     ]
   };
 
-  const localBusiness = {
+  const organizationSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": "Organization",
     "name": siteConfig.company.name,
     "image": siteConfig.company.logo,
     "url": siteConfig.company.url,
     "telephone": siteConfig.company.telephone,
     "email": siteConfig.company.email,
-    "priceRange": siteConfig.company.priceRange,
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": siteConfig.company.address.streetAddress,
-      "addressLocality": siteConfig.company.address.addressLocality,
-      "addressRegion": siteConfig.company.address.addressRegion,
-      "postalCode": siteConfig.company.address.postalCode,
       "addressCountry": siteConfig.company.address.addressCountry
     },
-    "areaServed": siteConfig.company.areaServed.map(area => ({
-      "@type": "City",
-      "name": area
-    })),
+    "areaServed": {
+      "@type": "Country",
+      "name": "United States"
+    },
     "openingHoursSpecification": siteConfig.company.openingHours,
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
@@ -92,22 +87,20 @@ const StructuredData = ({ type = 'localBusiness', faqData = null, serviceData = 
     "name": serviceData?.name || "Digital Marketing Services",
     "description": serviceData?.description || siteConfig.company.description,
     "provider": {
-      "@type": "LocalBusiness",
+      "@type": "Organization",
       "name": siteConfig.company.name,
       "telephone": siteConfig.company.telephone,
       "email": siteConfig.company.email,
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": siteConfig.company.address.addressLocality,
-        "addressRegion": siteConfig.company.address.addressRegion,
         "addressCountry": siteConfig.company.address.addressCountry
       }
     },
     "serviceType": serviceData?.serviceType || "Digital Marketing",
-    "areaServed": siteConfig.company.areaServed.map(area => ({
-      "@type": "City", 
-      "name": area
-    })),
+    "areaServed": {
+      "@type": "Country",
+      "name": "United States"
+    },
     "offers": {
       "@type": "Offer",
       "availability": "https://schema.org/InStock",
@@ -132,7 +125,7 @@ const StructuredData = ({ type = 'localBusiness', faqData = null, serviceData = 
         "name": "What services does PixelWave Marketing offer?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "We offer web development, digital marketing, SEO, brand identity design, and marketing systems for Nashville businesses."
+          "text": "We offer web development, digital marketing, SEO, brand identity design, and marketing systems for businesses."
         }
       },
       {
@@ -241,15 +234,15 @@ const StructuredData = ({ type = 'localBusiness', faqData = null, serviceData = 
   };
 
   const schemas = {
-    localBusiness,
+    localBusiness: organizationSchema, // Legacy support - maps to Organization
+    organization: organizationSchema,
     service,
     faq,
     product,
-    organization,
     aiOptimized
   };
 
-  return JSON.stringify(schemas[type] || localBusiness);
+  return JSON.stringify(schemas[type] || organizationSchema);
 };
 
 export default StructuredData;

@@ -19,8 +19,8 @@ function Portfolio() {
     }}>
       <SEOOptimizer 
         title="Portfolio | Pixelwave Marketing - Web Design Projects"
-        description="View our portfolio of successful digital marketing projects, web development work, and brand identity designs. See real results from Nashville businesses we've helped grow."
-        keywords="portfolio, web design portfolio, digital marketing portfolio, Nashville web design, brand identity portfolio, web development projects"
+        description="View our portfolio of successful digital marketing projects, web development work, and brand identity designs. See real results from businesses we've helped."
+        keywords="portfolio, web design portfolio, digital marketing portfolio, web design, brand identity portfolio, web development projects"
         canonicalUrl="https://usepixelwave.com/portfolio"
         structuredDataType="aiOptimized"
         ogImage="https://usepixelwave.com/PixelWave.png"
@@ -55,7 +55,7 @@ function Portfolio() {
             margin: '0 auto 40px',
             lineHeight: '1.6'
           }}>
-            Discover how we've helped local businesses grow through strategic digital marketing, 
+            Discover how we've helped businesses grow through strategic digital marketing, 
             professional web development, and compelling brand identity design. Each project represents 
             real results and measurable business growth.
           </p>
@@ -163,7 +163,7 @@ function Portfolio() {
                   lineHeight: '1.6',
                   marginBottom: '20px'
                 }}>
-                  Professional website for a local dumpster rental business. Features include 
+                  Professional website for a dumpster rental business. Features include 
                   service listings, contact forms, and mobile responsive design.
                 </p>
                 <div style={{

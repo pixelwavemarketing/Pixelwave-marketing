@@ -8,7 +8,7 @@ const SEOOptimizer = ({
   description, 
   keywords, 
   canonicalUrl, 
-  structuredDataType = 'localBusiness',
+  structuredDataType = 'organization',
   ogImage = siteConfig.seo.ogImage,
   ogType = 'website',
   faqData = null,
@@ -53,8 +53,7 @@ const SEOOptimizer = ({
       <meta name="msapplication-TileColor" content={siteConfig.seo.themeColor} />
       
       {/* Business Information */}
-      <meta name="geo.region" content="US-TN" />
-      <meta name="geo.placename" content="Nashville, Tennessee" />
+      <meta name="geo.region" content="US" />
       <meta name="geo.position" content={`${siteConfig.company.coordinates.latitude};${siteConfig.company.coordinates.longitude}`} />
       <meta name="ICBM" content={`${siteConfig.company.coordinates.latitude}, ${siteConfig.company.coordinates.longitude}`} />
       
@@ -63,8 +62,8 @@ const SEOOptimizer = ({
         {StructuredData({ type: structuredDataType, faqData, serviceData })}
       </script>
       
-      {/* Additional Schema for Local Business */}
-      {structuredDataType === 'localBusiness' && (
+      {/* Additional Schema for Organization */}
+      {(structuredDataType === 'localBusiness' || structuredDataType === 'organization') && (
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

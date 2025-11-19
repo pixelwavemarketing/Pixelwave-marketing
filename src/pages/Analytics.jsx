@@ -12,9 +12,9 @@ function Analytics() {
   return (
     <>
       <SEOOptimizer 
-        title="Business Analytics Services | PixelWave Marketing in Nashville"
-        description="Comprehensive business analytics services in Nashville. Data analysis, performance tracking, and insights to improve your business performance and ROI."
-        keywords="business analytics Nashville, data analysis Nashville, performance tracking, ROI measurement, analytics services"
+        title="Business Analytics Services | PixelWave Marketing"
+        description="Comprehensive business analytics services. Data analysis, performance tracking, and insights to improve your business performance and ROI."
+        keywords="business analytics, data analysis, performance tracking, ROI measurement, analytics services"
         canonicalUrl="https://usepixelwave.com/analytics"
         structuredDataType="service"
       />

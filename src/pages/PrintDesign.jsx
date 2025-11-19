@@ -12,9 +12,9 @@ function PrintDesign() {
   return (
     <>
       <SEOOptimizer 
-        title="Print Design Services | PixelWave Marketing - Nashville"
-        description="Professional print design services in Nashville. Business cards, brochures, flyers, and print materials that complement your digital presence."
-        keywords="print design Nashville, business cards Nashville, brochures, flyers, print materials, graphic designer Nashville"
+        title="Print Design Services | PixelWave Marketing"
+        description="Professional print design services. Business cards, brochures, flyers, and print materials that complement your digital presence."
+        keywords="print design, business cards, brochures, flyers, print materials, graphic designer"
         canonicalUrl="https://usepixelwave.com/print-design"
         structuredDataType="service"
       />

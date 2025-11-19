@@ -12,9 +12,9 @@ function WebDevelopment() {
   return (
     <>
       <SEOOptimizer 
-        title="Contractor Website Design Nashville | Professional Web Development for Service Businesses"
-        description="Professional website development for Nashville contractors, HVAC, plumbing, and electrical businesses. Custom websites with lead capture, online booking, and mobile-responsive design. Free consultation."
-        keywords="contractor website design Nashville, Nashville web developer, service business website Nashville, HVAC website design Nashville, plumber website Nashville, electrician website Nashville, contractor website Nashville, Nashville web development, service business web design Nashville, Nashville website design"
+        title="Contractor Website Design | Professional Web Development for Service Businesses"
+        description="Professional website development for contractors. Custom sites with lead capture, online booking, and mobile-responsive design. Free consultation."
+        keywords="contractor website design, web developer, service business website, HVAC website design, plumber website, electrician website, contractor website, web development, service business web design, website design"
         canonicalUrl="https://usepixelwave.com/web-development"
         structuredDataType="service"
       />
@@ -42,7 +42,7 @@ function WebDevelopment() {
             marginBottom: '20px',
             fontWeight: '700'
           }}>
-            Nashville Contractor Website Design & Web Development
+            Contractor Website Design & Web Development
           </h1>
           <p style={{
             fontSize: '1.3rem',
@@ -50,7 +50,7 @@ function WebDevelopment() {
             lineHeight: '1.6',
             marginBottom: '40px'
           }}>
-            Professional website development for Nashville contractors, HVAC, plumbing, and electrical businesses. 
+            Professional website development for contractors, HVAC, plumbing, and electrical businesses. 
             Custom websites with lead capture, online booking, mobile-responsive design, and SEO optimization 
             to convert visitors into booked jobs.
           </p>
@@ -84,7 +84,7 @@ function WebDevelopment() {
             marginBottom: '50px',
             color: '#1e293b'
           }}>
-            Nashville Service Business Website Development Services
+            Service Business Website Development Services
           </h2>
           <div style={{
             display: 'flex',
@@ -115,13 +115,13 @@ function WebDevelopment() {
                 marginBottom: '15px',
                 color: '#1e293b'
               }}>
-                Custom Contractor Website Design Nashville
+                Custom Contractor Website Design
               </h3>
               <p style={{
                 color: '#64748b',
                 lineHeight: '1.6'
               }}>
-                Bespoke contractor websites designed to reflect your Nashville service business brand and drive conversions. 
+                Bespoke contractor websites designed to reflect your service business brand and drive conversions. 
                 Built with clean code and modern frameworks optimized for contractors, HVAC, plumbing, and electrical businesses.
               </p>
             </div>
@@ -149,13 +149,13 @@ function WebDevelopment() {
                 marginBottom: '15px',
                 color: '#1e293b'
               }}>
-                E-commerce Development Nashville
+                E-commerce Development
               </h3>
               <p style={{
                 color: '#64748b',
                 lineHeight: '1.6'
               }}>
-                Complete online stores for Nashville service businesses with secure payment processing, inventory management, 
+                Complete online stores for service businesses with secure payment processing, inventory management, 
                 customer account features, and appointment booking systems.
               </p>
             </div>
@@ -183,14 +183,14 @@ function WebDevelopment() {
                 marginBottom: '15px',
                 color: '#1e293b'
               }}>
-                Mobile-Responsive Design Nashville
+                Mobile-Responsive Design
               </h3>
               <p style={{
                 color: '#64748b',
                 lineHeight: '1.6'
               }}>
-                Nashville contractor websites that look and function perfectly on all devices - desktop, tablet, and mobile phones. 
-                Essential for Nashville service businesses to capture mobile customers.
+                Contractor websites that look and function perfectly on all devices - desktop, tablet, and mobile phones. 
+                Essential for service businesses to capture mobile customers.
               </p>
             </div>
 
@@ -217,14 +217,14 @@ function WebDevelopment() {
                 marginBottom: '15px',
                 color: '#1e293b'
               }}>
-                SEO-Optimized Website Development Nashville
+                SEO-Optimized Website Development
               </h3>
               <p style={{
                 color: '#64748b',
                 lineHeight: '1.6'
               }}>
-                Nashville contractor websites built with local SEO optimization from the ground up for better Google visibility. 
-                Optimized for Nashville service business keywords and local search rankings.
+                Contractor websites built with SEO optimization from the ground up for better Google visibility. 
+                Optimized for service business keywords and search rankings.
               </p>
             </div>
           </div>

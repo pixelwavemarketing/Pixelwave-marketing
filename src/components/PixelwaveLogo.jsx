@@ -14,7 +14,7 @@ function PixelwaveLogo() {
     }}>
       <img 
         src={pixelwaveLogo}
-        alt="PixelWave Marketing Logo - Digital marketing and web development services in Nashville"
+        alt="PixelWave Marketing Logo - Digital marketing and web development services"
         loading="eager"
         width="1200"
         height="400"

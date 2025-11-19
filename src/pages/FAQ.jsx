@@ -48,7 +48,7 @@ function FAQ() {
     <>
       <SEOOptimizer 
         title="Frequently Asked Questions | Pixelwave Marketing"
-        description="Get answers to common questions about our digital marketing, web development, and business growth services. Learn about our process, pricing, and what makes us different."
+        description="Get answers to common questions about our digital marketing, web development, and business growth services. Learn about our process and pricing."
         keywords="FAQ, digital marketing questions, web development FAQ, marketing agency questions, business growth services"
         canonicalUrl="https://usepixelwave.com/faq"
         structuredDataType="faq"

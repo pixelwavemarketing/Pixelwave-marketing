@@ -177,7 +177,7 @@ function Landing() {
 						{[
 							{
 								title: 'Built for Contractors',
-								text: 'HVAC, plumbing, roofing, landscaping, pressure washing, electrical, remodeling—we speak the language of home service leads and many more local trades.'
+								text: 'HVAC, plumbing, roofing, landscaping, pressure washing, electrical, remodeling—we speak the language of home service leads and many more trades.'
 							},
 							{
 								title: 'Conversion First',
@@ -263,8 +263,8 @@ function Landing() {
 									detail: 'We score your current homepage and service pages against 30+ conversion best practices tailored to home service buyers.'
 								},
 								{
-									title: 'SEO & Local Visibility Snapshot',
-									detail: 'See exactly where you rank, which keywords have gaps, and how competitors are winning in your local market.'
+									title: 'SEO & Visibility Snapshot',
+									detail: 'See exactly where you rank, which keywords have gaps, and how competitors are winning in your market.'
 								},
 								{
 									title: 'Google Ads & Tracking Checkup',
@@ -366,7 +366,7 @@ function Landing() {
 								{[
 									'Google Ads + Local Service Ads strategy built for the trades',
 									'High-converting landing pages engineered for phone calls & form fills',
-									'Local SEO that ranks service pages in the markets that matter',
+									'SEO that ranks service pages in the markets that matter',
 									'CRM, call tracking, and reporting setup so you know what is working'
 								].map((point) => (
 									<li
@@ -425,7 +425,7 @@ function Landing() {
 								}}
 							>
 								<li>• Side-by-side breakdown of a top competitor's best-converting page</li>
-								<li>• Local keyword playbook showing the phrases your crew should own</li>
+								<li>• Keyword playbook showing the phrases your crew should own</li>
 								<li>• Fresh angles for your next ad set: two proven headline frameworks</li>
 								<li>• Visual wireframe outlining the ideal layout for your #1 revenue service</li>
 							</ul>
@@ -513,7 +513,7 @@ function Landing() {
 								marginBottom: '36px'
 							}}
 						>
-							Claim the free website & lead audit and we'll send over your custom action plan within 5 business days. Zero pressure just clear answers on what it takes to win more local jobs online.
+							Claim the free website & lead audit and we'll send over your custom action plan within 5 business days. Zero pressure just clear answers on what it takes to win more jobs online.
 						</p>
 						<button
 							type="button"
