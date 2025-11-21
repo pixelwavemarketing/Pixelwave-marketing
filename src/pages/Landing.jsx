@@ -53,7 +53,7 @@ function Landing() {
 				structuredDataType="service"
 			/>
 			<main
-				className="home-page"
+				className="landing-page"
 				style={{
 					display: 'flex',
 					flexDirection: 'column',
