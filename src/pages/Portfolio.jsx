@@ -63,10 +63,8 @@ function Portfolio() {
             onClick={() => navigate('/contact')}
             className="cta-button"
             style={{
-              fontSize: '1.2rem',
-              backgroundColor: '#dc2626',
-              color: 'white',
-              fontWeight: '700'
+              fontSize: '1.3rem',
+              fontWeight: '600'
             }}
           >
             Get My Custom Quote
@@ -639,10 +637,8 @@ function Portfolio() {
             onClick={() => navigate('/contact')}
             className="cta-button"
             style={{
-              fontSize: '1.2rem',
-              backgroundColor: '#dc2626',
-              color: 'white',
-              fontWeight: '700'
+              fontSize: '1.3rem',
+              fontWeight: '600'
             }}
           >
             Get My Custom Quote

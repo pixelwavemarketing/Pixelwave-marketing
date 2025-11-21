@@ -183,24 +183,25 @@ body {
 
 /* Enhanced button hover effects */
 .cta-button {
-  background-color: #2563eb;
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
   color: white;
   border: none;
-  border-radius: 8px;
-  padding: 15px 40px;
-  font-size: 1.1rem;
+  border-radius: 10px;
+  padding: 22px 48px;
+  font-size: 1.3rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(37, 99, 235, 0.25);
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.2);
   position: relative;
   overflow: hidden;
+  letter-spacing: 0.02em;
 }
 
 .cta-button:hover {
-  background-color: #1e40af;
+  background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
   transform: translateY(-2px);
-  box-shadow: 0 8px 15px rgba(37, 99, 235, 0.4);
+  box-shadow: 0 12px 28px rgba(59, 130, 246, 0.3);
 }
 
 .cta-button:active {

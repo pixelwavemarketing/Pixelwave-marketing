@@ -119,28 +119,29 @@ function Landing() {
 								type="button"
 								onClick={handlePrimaryCTA}
 								style={{
-									backgroundColor: '#dc2626',
+									background: 'linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)',
 									color: 'white',
 									border: 'none',
-									borderRadius: '12px',
-									padding: '20px 40px',
-									fontSize: '1.2rem',
-									fontWeight: '700',
+									borderRadius: '10px',
+									padding: '22px 48px',
+									fontSize: '1.3rem',
+									fontWeight: '600',
 									cursor: 'pointer',
-									boxShadow: '0 16px 35px rgba(220, 38, 38, 0.25)',
+									boxShadow: '0 8px 20px rgba(59, 130, 246, 0.2)',
 									transition: 'all 0.3s ease',
-									textTransform: 'uppercase',
-									letterSpacing: '0.04em'
+									letterSpacing: '0.02em'
 								}}
 								onMouseEnter={(e) => {
 									const target = e.currentTarget
-									target.style.backgroundColor = '#b91c1c'
+									target.style.background = 'linear-gradient(135deg, #2563eb 0%, #1e40af 100%)'
 									target.style.transform = 'translateY(-2px)'
+									target.style.boxShadow = '0 12px 28px rgba(59, 130, 246, 0.3)'
 								}}
 								onMouseLeave={(e) => {
 									const target = e.currentTarget
-									target.style.backgroundColor = '#dc2626'
+									target.style.background = 'linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)'
 									target.style.transform = 'translateY(0)'
+									target.style.boxShadow = '0 8px 20px rgba(59, 130, 246, 0.2)'
 								}}
 							>
 								Get My Free Website & Lead Audit
@@ -435,23 +436,27 @@ function Landing() {
 								style={{
 									marginTop: '28px',
 									width: '100%',
-									padding: '16px',
-									backgroundColor: '#dc2626',
+									padding: '22px',
+									background: 'linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)',
 									color: 'white',
 									border: 'none',
 									borderRadius: '10px',
-									fontSize: '1.1rem',
-									fontWeight: '700',
+									fontSize: '1.3rem',
+									fontWeight: '600',
 									cursor: 'pointer',
-									letterSpacing: '0.03em'
+									letterSpacing: '0.02em',
+									boxShadow: '0 8px 20px rgba(59, 130, 246, 0.2)',
+									transition: 'all 0.3s ease'
 								}}
 								onMouseEnter={(e) => {
 									const target = e.currentTarget
-									target.style.backgroundColor = '#b91c1c'
+									target.style.background = 'linear-gradient(135deg, #2563eb 0%, #1e40af 100%)'
+									target.style.boxShadow = '0 12px 28px rgba(59, 130, 246, 0.3)'
 								}}
 								onMouseLeave={(e) => {
 									const target = e.currentTarget
-									target.style.backgroundColor = '#dc2626'
+									target.style.background = 'linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)'
+									target.style.boxShadow = '0 8px 20px rgba(59, 130, 246, 0.2)'
 								}}
 							>
 								Reserve My Audit
@@ -519,25 +524,29 @@ function Landing() {
 							type="button"
 							onClick={handlePrimaryCTA}
 							style={{
-								backgroundColor: '#dc2626',
+								background: 'linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)',
 								color: 'white',
 								border: 'none',
-								borderRadius: '12px',
-								padding: '18px 34px',
-								fontSize: '1.2rem',
-								fontWeight: '700',
+								borderRadius: '10px',
+								padding: '22px 48px',
+								fontSize: '1.3rem',
+								fontWeight: '600',
 								cursor: 'pointer',
-								boxShadow: '0 16px 35px rgba(220, 38, 38, 0.25)',
-								textTransform: 'uppercase',
-								letterSpacing: '0.04em'
+								boxShadow: '0 8px 20px rgba(59, 130, 246, 0.2)',
+								transition: 'all 0.3s ease',
+								letterSpacing: '0.02em'
 							}}
 							onMouseEnter={(e) => {
 								const target = e.currentTarget
-								target.style.backgroundColor = '#b91c1c'
+								target.style.background = 'linear-gradient(135deg, #2563eb 0%, #1e40af 100%)'
+								target.style.transform = 'translateY(-2px)'
+								target.style.boxShadow = '0 12px 28px rgba(59, 130, 246, 0.3)'
 							}}
 							onMouseLeave={(e) => {
 								const target = e.currentTarget
-								target.style.backgroundColor = '#dc2626'
+								target.style.background = 'linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)'
+								target.style.transform = 'translateY(0)'
+								target.style.boxShadow = '0 8px 20px rgba(59, 130, 246, 0.2)'
 							}}
 						>
 							Get My Free Website & Lead Audit

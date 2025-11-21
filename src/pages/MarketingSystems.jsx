@@ -57,9 +57,7 @@ function MarketingSystems() {
             className="cta-button"
             style={{
               fontSize: '1.2rem',
-              backgroundColor: '#dc2626',
-              color: 'white',
-              fontWeight: '700'
+              fontWeight: '600'
             }}
           >
             Automate Your Marketing
@@ -225,9 +223,7 @@ function MarketingSystems() {
             className="cta-button"
             style={{
               fontSize: '1.2rem',
-              backgroundColor: '#dc2626',
-              color: 'white',
-              fontWeight: '700'
+              fontWeight: '600'
             }}
           >
             Automate My Marketing Now

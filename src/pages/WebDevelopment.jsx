@@ -59,9 +59,7 @@ function WebDevelopment() {
             className="cta-button"
             style={{
               fontSize: '1.2rem',
-              backgroundColor: '#dc2626',
-              color: 'white',
-              fontWeight: '700'
+              fontWeight: '600'
             }}
           >
             Get My Website Quote Today
@@ -562,9 +560,7 @@ function WebDevelopment() {
             className="cta-button"
             style={{
               fontSize: '1.2rem',
-              backgroundColor: '#dc2626',
-              color: 'white',
-              fontWeight: '700'
+              fontWeight: '600'
             }}
           >
             Build My Website Now

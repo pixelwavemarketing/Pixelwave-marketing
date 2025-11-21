@@ -37,7 +37,7 @@ function ChatbotSolutions() {
     <>
       <SEOOptimizer 
         title="AI Chatbot Development | Custom Business Chatbots for Service Companies"
-        description="Custom AI chatbot development for service businesses. Automated customer support, lead capture, and appointment booking. Free consultation."
+        description="Custom AI chatbot development for service businesses. Chatbots that read your website content and respond to visitors while collecting contact information. Free consultation."
         keywords="AI chatbot, custom chatbot development, business chatbot, service business chatbot, contractor chatbot, HVAC chatbot, plumber chatbot, electrician chatbot, automated customer service, chatbot development"
         canonicalUrl="https://usepixelwave.com/chatbot-solutions"
         structuredDataType="service"
@@ -82,14 +82,14 @@ function ChatbotSolutions() {
               lineHeight: '1.6'
             }}>
               Professional AI chatbot development for contractors, HVAC, plumbing, and electrical businesses. 
-              Our custom chatbot solutions automate customer support, capture leads, and provide 24/7 service 
-              to help you never miss another customer inquiry.
+              Our chatbots automatically read your website content and respond to visitors with information from your pages, 
+              while collecting contact information to help you never miss another customer inquiry.
             </p>
             <button
               onClick={() => handleCTAClick('Hero CTA')}
               style={{
-                backgroundColor: '#ffffff',
-                color: '#667eea',
+                background: 'linear-gradient(135deg, #6d28d9 0%, #764ba2 100%)',
+                color: '#ffffff',
                 padding: '15px 35px',
                 fontSize: '1.2rem',
                 border: 'none',
@@ -97,15 +97,17 @@ function ChatbotSolutions() {
                 fontWeight: '600',
                 cursor: 'pointer',
                 transition: 'all 0.3s ease',
-                boxShadow: '0 4px 15px rgba(0,0,0,0.2)'
+                boxShadow: '0 4px 15px rgba(102, 126, 234, 0.3)'
               }}
               onMouseEnter={(e) => {
+                e.target.style.background = 'linear-gradient(135deg, #764ba2 0%, #667eea 100%)';
                 e.target.style.transform = 'translateY(-2px)';
-                e.target.style.boxShadow = '0 6px 20px rgba(0,0,0,0.3)';
+                e.target.style.boxShadow = '0 6px 20px rgba(102, 126, 234, 0.4)';
               }}
               onMouseLeave={(e) => {
+                e.target.style.background = 'linear-gradient(135deg, #764ba2 0%, #667eea 100%)';
                 e.target.style.transform = 'translateY(0)';
-                e.target.style.boxShadow = '0 4px 15px rgba(0,0,0,0.2)';
+                e.target.style.boxShadow = '0 4px 15px rgba(102, 126, 234, 0.3)';
               }}
             >
               Get Your Custom Chatbot
@@ -138,10 +140,11 @@ function ChatbotSolutions() {
             }}>
               As a leading <strong>AI chatbot development company</strong>, we specialize in creating 
               custom business chatbots for contractors, HVAC companies, plumbers, electricians, and service businesses. 
-              Our <strong>chatbot development services</strong> help companies automate customer service, 
-              generate more leads, and provide 24/7 support to their customers. Whether you need a <strong>contractor chatbot</strong> 
+              Our <strong>chatbot development services</strong> help companies provide instant answers to customer questions 
+              and capture leads 24/7. Whether you need a <strong>contractor chatbot</strong> 
               for your HVAC business, a <strong>plumber chatbot</strong> for customer inquiries, or an <strong>electrician chatbot</strong> 
-              for appointment booking, we build intelligent conversational AI solutions that understand your customers and grow your business.
+              for information requests, we build intelligent conversational AI solutions that read your website content and respond 
+              with information from your pages while collecting visitor contact information.
               
               <br/><br/>Our chatbot solutions integrate seamlessly with popular platforms like <strong>WordPress, Shopify, and Squarespace</strong>, 
               making it easy to add automated customer support to any service business website without technical expertise.
@@ -253,8 +256,8 @@ function ChatbotSolutions() {
                   Instant Lead Capture
                 </h3>
                 <p style={{ color: '#64748b', lineHeight: '1.6' }}>
-                  Qualify leads automatically and collect contact information while providing 
-                  immediate value to your visitors.
+                  Collect contact information from visitors while providing 
+                  immediate answers about your services and business.
                 </p>
               </div>
 
@@ -345,7 +348,8 @@ function ChatbotSolutions() {
                   Intelligent Responses
                 </h3>
                 <p style={{ color: '#64748b', lineHeight: '1.6', fontSize: '0.95rem' }}>
-                  AI powered natural language processing understands customer intent and provides relevant, helpful responses.
+                  AI powered natural language processing reads your website content and provides relevant, helpful responses 
+                  based on the information from your pages.
                 </p>
               </div>
 
@@ -454,7 +458,7 @@ function ChatbotSolutions() {
                   Auto Updates Daily
                 </h3>
                 <p style={{ color: '#64748b', lineHeight: '1.6', fontSize: '0.95rem' }}>
-                  Our chatbot automatically rescans your website daily to ensure it stays current with your latest content, services, and pricing.
+                  Our chatbot automatically reads your website daily to ensure it stays current with your latest content, services, and pricing information.
                 </p>
               </div>
 
@@ -510,27 +514,27 @@ function ChatbotSolutions() {
                 textAlign: 'left'
               }}>
                 <div className="service-box">
-                  <h4 style={{ color: '#667eea', marginBottom: '10px' }}>✓ Industry Specific Training</h4>
+                  <h4 style={{ color: '#667eea', marginBottom: '10px' }}>✓ Reads Your Website</h4>
                   <p style={{ color: '#64748b', fontSize: '0.95rem' }}>
-                    Trained on your business knowledge and industry best practices
+                    Automatically reads and understands your website content to answer questions
                   </p>
                 </div>
                 <div className="service-box">
-                  <h4 style={{ color: '#667eea', marginBottom: '10px' }}>✓ Lead Qualification</h4>
+                  <h4 style={{ color: '#667eea', marginBottom: '10px' }}>✓ Information Collection</h4>
                   <p style={{ color: '#64748b', fontSize: '0.95rem' }}>
-                    Automatically scores and routes high quality leads
+                    Collects contact information from interested visitors while providing helpful answers
                   </p>
                 </div>
                 <div className="service-box">
-                  <h4 style={{ color: '#667eea', marginBottom: '10px' }}>✓ Appointment Booking</h4>
+                  <h4 style={{ color: '#667eea', marginBottom: '10px' }}>✓ Email Notifications</h4>
                   <p style={{ color: '#64748b', fontSize: '0.95rem' }}>
-                    Integrates with your calendar for seamless scheduling
+                    Sends conversation summaries and lead information directly to your email
                   </p>
                 </div>
                 <div className="service-box">
-                  <h4 style={{ color: '#667eea', marginBottom: '10px' }}>✓ Analytics Dashboard</h4>
+                  <h4 style={{ color: '#667eea', marginBottom: '10px' }}>✓ Page-Based Responses</h4>
                   <p style={{ color: '#64748b', fontSize: '0.95rem' }}>
-                    Track conversations, leads, and ROI with detailed reports
+                    Responds with information directly from your website pages and content
                   </p>
                 </div>
               </div>
@@ -539,7 +543,7 @@ function ChatbotSolutions() {
             <button
               onClick={() => handleCTAClick('Demo CTA')}
               style={{
-                backgroundColor: '#667eea',
+                background: 'linear-gradient(135deg, #6d28d9 0%, #764ba2 100%)',
                 color: 'white',
                 padding: '15px 35px',
                 fontSize: '1.2rem',
@@ -551,12 +555,12 @@ function ChatbotSolutions() {
                 boxShadow: '0 4px 15px rgba(102, 126, 234, 0.3)'
               }}
               onMouseEnter={(e) => {
-                e.target.style.backgroundColor = '#5a67d8';
+                e.target.style.background = 'linear-gradient(135deg, #764ba2 0%, #667eea 100%)';
                 e.target.style.transform = 'translateY(-2px)';
                 e.target.style.boxShadow = '0 6px 20px rgba(102, 126, 234, 0.4)';
               }}
               onMouseLeave={(e) => {
-                e.target.style.backgroundColor = '#667eea';
+                e.target.style.background = 'linear-gradient(135deg, #764ba2 0%, #667eea 100%)';
                 e.target.style.transform = 'translateY(0)';
                 e.target.style.boxShadow = '0 4px 15px rgba(102, 126, 234, 0.3)';
               }}
@@ -642,7 +646,7 @@ function ChatbotSolutions() {
                   <h4 style={{ color: '#667eea', marginBottom: '10px' }}>✓ What's Included</h4>
                   <ul style={{ textAlign: 'left', color: '#64748b', lineHeight: '1.8', fontSize: '0.95rem', paddingLeft: '20px' }}>
                     <li>Custom chatbot development</li>
-                    <li>AI training & optimization</li>
+                    <li>Website content reading setup</li>
                     <li>Full setup & integration</li>
                     <li>Ongoing support & maintenance</li>
                   </ul>
@@ -658,7 +662,7 @@ function ChatbotSolutions() {
                   <h4 style={{ color: '#10b981', marginBottom: '10px' }}>✓ Pricing Factors</h4>
                   <ul style={{ textAlign: 'left', color: '#64748b', lineHeight: '1.8', fontSize: '0.95rem', paddingLeft: '20px' }}>
                     <li>Expected conversation volume</li>
-                    <li>Complexity of AI responses</li>
+                    <li>Website size and content amount</li>
                     <li>Website integration requirements</li>
                     <li>Email notification preferences</li>
                   </ul>
@@ -668,7 +672,7 @@ function ChatbotSolutions() {
               <button
                 onClick={() => handleCTAClick('Custom Pricing')}
                 style={{
-                  backgroundColor: '#667eea',
+                  background: 'linear-gradient(135deg, #6d28d9 0%, #764ba2 100%)',
                   color: 'white',
                   padding: '15px 35px',
                   fontSize: '1.2rem',
@@ -680,12 +684,12 @@ function ChatbotSolutions() {
                   boxShadow: '0 4px 15px rgba(102, 126, 234, 0.3)'
                 }}
                 onMouseEnter={(e) => {
-                  e.target.style.backgroundColor = '#5a67d8';
+                  e.target.style.background = 'linear-gradient(135deg, #764ba2 0%, #667eea 100%)';
                   e.target.style.transform = 'translateY(-2px)';
                   e.target.style.boxShadow = '0 6px 20px rgba(102, 126, 234, 0.4)';
                 }}
                 onMouseLeave={(e) => {
-                  e.target.style.backgroundColor = '#667eea';
+                  e.target.style.background = 'linear-gradient(135deg, #764ba2 0%, #667eea 100%)';
                   e.target.style.transform = 'translateY(0)';
                   e.target.style.boxShadow = '0 4px 15px rgba(102, 126, 234, 0.3)';
                 }}
@@ -837,7 +841,7 @@ function ChatbotSolutions() {
             <button
               onClick={() => handleCTAClick('Final CTA')}
               style={{
-                backgroundColor: '#667eea',
+                background: 'linear-gradient(135deg, #6d28d9 0%, #764ba2 100%)',
                 color: 'white',
                 padding: '18px 40px',
                 fontSize: '1.3rem',
@@ -849,12 +853,12 @@ function ChatbotSolutions() {
                 boxShadow: '0 4px 15px rgba(102, 126, 234, 0.3)'
               }}
               onMouseEnter={(e) => {
-                e.target.style.backgroundColor = '#5a67d8';
+                e.target.style.background = 'linear-gradient(135deg, #764ba2 0%, #667eea 100%)';
                 e.target.style.transform = 'translateY(-2px)';
                 e.target.style.boxShadow = '0 6px 20px rgba(102, 126, 234, 0.4)';
               }}
               onMouseLeave={(e) => {
-                e.target.style.backgroundColor = '#667eea';
+                e.target.style.background = 'linear-gradient(135deg, #764ba2 0%, #667eea 100%)';
                 e.target.style.transform = 'translateY(0)';
                 e.target.style.boxShadow = '0 4px 15px rgba(102, 126, 234, 0.3)';
               }}

@@ -57,9 +57,7 @@ function Analytics() {
             className="cta-button"
             style={{
               fontSize: '1.2rem',
-              backgroundColor: '#dc2626',
-              color: 'white',
-              fontWeight: '700'
+              fontWeight: '600'
             }}
           >
             See My Marketing Data
@@ -413,9 +411,7 @@ function Analytics() {
             className="cta-button"
             style={{
               fontSize: '1.2rem',
-              backgroundColor: '#dc2626',
-              color: 'white',
-              fontWeight: '700'
+              fontWeight: '600'
             }}
           >
             Track My Results Now

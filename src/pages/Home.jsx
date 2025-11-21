@@ -132,31 +132,30 @@ function Home() {
 						<button
 							onClick={() => navigate('/contact')}
 							style={{
-								fontSize: window.innerWidth <= 768 ? '1.2rem' : '1.4rem',
-								padding: window.innerWidth <= 768 ? '18px 30px' : '20px 40px',
-								backgroundColor: '#dc2626',
+								fontSize: window.innerWidth <= 768 ? '1.2rem' : '1.3rem',
+								padding: window.innerWidth <= 768 ? '20px 40px' : '22px 48px',
+								background: 'linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)',
 								color: 'white',
 								border: 'none',
-								borderRadius: '12px',
+								borderRadius: '10px',
 								cursor: 'pointer',
-								fontWeight: '700',
-								boxShadow: '0 8px 25px rgba(220, 38, 38, 0.3)',
+								fontWeight: '600',
+								boxShadow: '0 8px 20px rgba(59, 130, 246, 0.2)',
 								transition: 'all 0.3s ease',
-								textTransform: 'uppercase',
-								letterSpacing: '0.5px',
+								letterSpacing: '0.02em',
 								width: '100%',
 								maxWidth: '400px',
 								marginBottom: '10px'
 							}}
 							onMouseEnter={(e) => {
-								e.target.style.backgroundColor = '#b91c1c';
+								e.target.style.background = 'linear-gradient(135deg, #2563eb 0%, #1e40af 100%)';
 								e.target.style.transform = 'translateY(-2px)';
-								e.target.style.boxShadow = '0 12px 30px rgba(220, 38, 38, 0.4)';
+								e.target.style.boxShadow = '0 12px 28px rgba(59, 130, 246, 0.3)';
 							}}
 							onMouseLeave={(e) => {
-								e.target.style.backgroundColor = '#dc2626';
+								e.target.style.background = 'linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)';
 								e.target.style.transform = 'translateY(0)';
-								e.target.style.boxShadow = '0 8px 25px rgba(220, 38, 38, 0.3)';
+								e.target.style.boxShadow = '0 8px 20px rgba(59, 130, 246, 0.2)';
 							}}
 						>
 							Get A Free Consultation Today!
@@ -338,23 +337,27 @@ function Home() {
 							onClick={() => navigate('/contact')}
 							className="cta-button"
 							style={{
-								fontSize: '1.2rem',
-								padding: '15px 30px',
-								backgroundColor: '#dc2626',
+								fontSize: '1.3rem',
+								padding: '22px 48px',
+								background: 'linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)',
 								color: 'white',
 								border: 'none',
-								borderRadius: '8px',
+								borderRadius: '10px',
 								cursor: 'pointer',
-								fontWeight: '700',
-								transition: 'all 0.3s ease'
+								fontWeight: '600',
+								transition: 'all 0.3s ease',
+								boxShadow: '0 8px 20px rgba(59, 130, 246, 0.2)',
+								letterSpacing: '0.02em'
 							}}
 							onMouseEnter={(e) => {
-								e.target.style.backgroundColor = '#b91c1c';
+								e.target.style.background = 'linear-gradient(135deg, #2563eb 0%, #1e40af 100%)';
 								e.target.style.transform = 'translateY(-2px)';
+								e.target.style.boxShadow = '0 12px 28px rgba(59, 130, 246, 0.3)';
 							}}
 							onMouseLeave={(e) => {
-								e.target.style.backgroundColor = '#dc2626';
+								e.target.style.background = 'linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)';
 								e.target.style.transform = 'translateY(0)';
+								e.target.style.boxShadow = '0 8px 20px rgba(59, 130, 246, 0.2)';
 							}}
 						>
 							Get Free Consultation Today

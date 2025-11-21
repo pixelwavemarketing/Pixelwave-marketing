@@ -115,7 +115,7 @@ function FAQ() {
               {faq.question}
             </h3>
             <p style={{
-              fontSize: '1.1rem',
+              fontSize: '1.3rem',
               lineHeight: '1.6',
               color: '#64748b',
               marginBottom: faq.linkUrl ? '15px' : '0'
@@ -167,10 +167,8 @@ function FAQ() {
             onClick={() => navigate('/contact')}
             className="cta-button"
             style={{
-              fontSize: '1.1rem',
-              backgroundColor: '#dc2626',
-              color: 'white',
-              fontWeight: '700'
+              fontSize: '1.3rem',
+              fontWeight: '600'
             }}
           >
             Contact Us

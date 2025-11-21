@@ -64,9 +64,7 @@ function BrandIdentity() {
             className="cta-button"
             style={{
               fontSize: '1.2rem',
-              backgroundColor: '#dc2626',
-              color: 'white',
-              fontWeight: '700'
+              fontWeight: '600'
             }}
           >
             Design My Brand Now
@@ -264,9 +262,7 @@ function BrandIdentity() {
             className="cta-button"
             style={{
               fontSize: '1.2rem',
-              backgroundColor: '#dc2626',
-              color: 'white',
-              fontWeight: '700'
+              fontWeight: '600'
             }}
           >
             Create My Brand Identity
