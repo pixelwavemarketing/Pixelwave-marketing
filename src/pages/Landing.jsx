@@ -18,7 +18,7 @@ function Landing() {
 				company: "The Dumpster Man 518",
 				rating: 5,
 				content:
-					"PixelWave rebuilt our site and we started booking more dumpster rentals within weeks. The new landing pages keep leads flowing."
+					"PixelWave built our website and we are very happy with the results. The SEO work has brought us more customers than we could have imagined."
 			},
 			{
 				name: "Ethan",
@@ -26,7 +26,7 @@ function Landing() {
 				company: "Easy Clean Power Washing",
 				rating: 5,
 				content:
-					"They dialed in our Google Ads and website so every click counts. We finally have a predictable pipeline."
+					"Very helpful making a vision become a reality. Would 100% recommend!"
 			},
 			{
 				name: "Dan",
@@ -34,7 +34,7 @@ function Landing() {
 				company: "Capital Pro Tree Removal",
 				rating: 5,
 				content:
-					"The audit showed exactly what to fix. Since launching the new pages, our crews are booked solid."
+					"PixelWave has been great to work with constantly meeting our needs, they have managed our social media for some time now and it has drum up great business!"
 			}
 		],
 		[]
@@ -47,13 +47,13 @@ function Landing() {
 	return (
 		<>
 			<SEOOptimizer
-				title="Contractor Landing Page: Turn Your Home Service Website Into a Lead Machine"
-				description="PixelWave builds contractor websites that convert. Claim your free website & lead audit to uncover missed revenue from Google Ads, SEO, and on-page experience."
-				keywords="home service website audit, contractor lead generation, home services marketing, website conversion audit, pixelwave landing page, contractor google ads landing page"
+				title="Turn Your Home Service Website Into a Lead Machine"
+				description="Turn your home service website into a lead-generating machine. Get a free website audit and discover how to double your leads from Google Ads and SEO."
+				keywords="home service website audit, contractor lead generation, home services marketing, website conversion audit, contractor website design, service business marketing"
 				structuredDataType="service"
 			/>
 			<main
-				className="landing-page"
+				className="home-page"
 				style={{
 					display: 'flex',
 					flexDirection: 'column',
@@ -105,7 +105,7 @@ function Landing() {
 								marginBottom: '36px'
 							}}
 						>
-							You run the crews. We dial in the website, landing pages, and ads so every click turns into a booked job. Contractors trust PixelWave to build funnels that convert year round.
+							You run the crews. We dial in your website, web pages, and ads so every click turns into a booked job. Contractors trust PixelWave to build funnels that convert year round.
 						</p>
 						<div
 							style={{
@@ -181,7 +181,7 @@ function Landing() {
 							},
 							{
 								title: 'Conversion First',
-								text: 'Lightning-fast landing pages, persuasive copy, and forms that qualify and schedule leads without back-and-forth.'
+								text: 'Lightning-fast web pages, persuasive copy, and forms that qualify and schedule leads without back-and-forth.'
 							},
 							{
 								title: 'Measurable ROI',
@@ -365,7 +365,7 @@ function Landing() {
 							>
 								{[
 									'Google Ads + Local Service Ads strategy built for the trades',
-									'High-converting landing pages engineered for phone calls & form fills',
+									'High-converting web pages engineered for phone calls & form fills',
 									'SEO that ranks service pages in the markets that matter',
 									'CRM, call tracking, and reporting setup so you know what is working'
 								].map((point) => (
@@ -478,7 +478,7 @@ function Landing() {
 					<Testimonials
 						testimonials={testimonials}
 						title="Home Service Owners Trust PixelWave"
-						description="Real contractors sharing the wins they saw after dialing in their website, landing pages, and lead flow with our team."
+						description="Real contractors sharing the wins they saw after dialing in their website, web pages, and lead flow with our team."
 					/>
 				</section>
 

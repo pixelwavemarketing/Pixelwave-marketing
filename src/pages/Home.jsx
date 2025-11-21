@@ -19,7 +19,7 @@ function Home() {
 			title: "Owner",
 			company: "The Dumpster Man 518",
 			rating: 5,
-			content: "PixelWave built our website and we are very happy with the results. The local SEO work has brought us more customers than we could have imagined.",
+			content: "PixelWave built our website and we are very happy with the results. The SEO work has brought us more customers than we could have imagined.",
 			avatar: null // You can add avatar images later
 		},
 		{
