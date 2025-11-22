@@ -114,7 +114,7 @@ function Services() {
             <div 
               onClick={() => {
                 trackButtonClick('Digital Marketing Service', 'Services Page')
-                navigate('/digital-marketing')
+                navigate('/contact?service=digital-marketing')
               }}
               className="service-card service-box"
               style={{
@@ -210,7 +210,7 @@ function Services() {
             <div 
               onClick={() => {
                 trackButtonClick('Web Development Service', 'Services Page')
-                navigate('/web-development')
+                navigate('/contact?service=web-development')
               }}
               className="service-card service-box"
               style={{
@@ -282,7 +282,7 @@ function Services() {
                 lineHeight: '1.7',
                 fontSize: '1rem'
               }}>
-                Professional video content, social media posts, blog articles, and marketing materials that engage your audience and drive conversions for your service business.
+                Professional social media posts, blog articles, and digital marketing materials that engage your audience and drive conversions for your service business.
               </p>
             </div>
 
@@ -290,7 +290,7 @@ function Services() {
             <div 
               onClick={() => {
                 trackButtonClick('Brand Identity Service', 'Services Page')
-                navigate('/brand-identity')
+                navigate('/contact?service=brand-identity')
               }}
               className="service-card service-box"
               style={{
@@ -330,7 +330,7 @@ function Services() {
             <div 
               onClick={() => {
                 trackButtonClick('Marketing Systems Service', 'Services Page')
-                navigate('/marketing-systems')
+                navigate('/contact?service=marketing-systems')
               }}
               className="service-card service-box"
               style={{
@@ -370,7 +370,7 @@ function Services() {
             <div 
               onClick={() => {
                 trackButtonClick('Analytics Service', 'Services Page')
-                navigate('/analytics')
+                navigate('/contact?service=analytics')
               }}
               className="service-card service-box"
               style={{
@@ -410,7 +410,7 @@ function Services() {
             <div 
               onClick={() => {
                 trackButtonClick('Print Design Service', 'Services Page')
-                navigate('/print-design')
+                navigate('/contact?service=print-design')
               }}
               className="service-card service-box"
               style={{
