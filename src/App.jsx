@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import ScrollToTop from './components/ScrollToTop'
 import FacebookPixel from './components/FacebookPixel'
+import Apollo from './components/Apollo'
 import StickyCallButton from './components/StickyCallButton'
 import ChatbotLoader from './components/ChatbotLoader'
 import ErrorBoundary from './components/ErrorBoundary'
@@ -25,6 +26,7 @@ function App() {
       <Router>
         <ScrollToTop />
         <FacebookPixel />
+        <Apollo />
         <StickyCallButton />
         <ChatbotLoader />
         <Routes>

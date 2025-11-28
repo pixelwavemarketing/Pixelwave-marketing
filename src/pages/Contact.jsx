@@ -5,6 +5,7 @@ import Footer from '../components/Footer'
 import Header from '../components/Header'
 import ContactForm from '../components/ContactForm'
 import Breadcrumbs from '../components/Breadcrumbs'
+import { trackApolloFormSubmit, trackApolloLead } from '../components/Apollo'
 
 function Contact() {
   useEffect(() => {
@@ -42,6 +43,19 @@ function Contact() {
         templateParams,
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
+
+      // Track with Apollo.io
+      trackApolloFormSubmit('contact', {
+        name: formData.name,
+        email: formData.email,
+        business: formData.business,
+        phone: formData.number
+      })
+      trackApolloLead('contact_form', {
+        name: formData.name,
+        email: formData.email,
+        company: formData.business
+      })
 
       setSubmitStatus('Message sent successfully!')
       setFormData({
