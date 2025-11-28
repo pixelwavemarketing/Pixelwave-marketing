@@ -54,8 +54,6 @@ const SEOOptimizer = ({
       
       {/* Business Information */}
       <meta name="geo.region" content="US" />
-      <meta name="geo.position" content={`${siteConfig.company.coordinates.latitude};${siteConfig.company.coordinates.longitude}`} />
-      <meta name="ICBM" content={`${siteConfig.company.coordinates.latitude}, ${siteConfig.company.coordinates.longitude}`} />
       
       {/* Structured Data */}
       <script type="application/ld+json">

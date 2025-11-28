@@ -154,7 +154,7 @@ function Services() {
             <div 
               onClick={() => {
                 trackButtonClick('AI Chatbot Service', 'Services Page')
-                navigate('/chatbot-solutions')
+                navigate('/contact?service=ai-chatbot')
               }}
               className="service-card service-box"
               style={{
