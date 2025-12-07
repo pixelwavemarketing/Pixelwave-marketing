@@ -12,9 +12,9 @@ function WebDevelopment() {
   return (
     <>
       <SEOOptimizer 
-        title="Contractor Website Design | Professional Web Development for Service Businesses"
-        description="Professional website development for contractors. Custom sites with lead capture, online booking, and mobile-responsive design. Free consultation."
-        keywords="contractor website design, web developer, service business website, HVAC website design, plumber website, electrician website, contractor website, web development, service business web design, website design"
+        title="Service Business Website Design | Professional Web Development"
+        description="Professional website development for service businesses. Custom sites with lead capture, online booking, and mobile-responsive design. Free consultation."
+        keywords="service business website design, web developer, service business website, HVAC website design, plumber website, electrician website, service business web development, web development, service business web design, website design"
         canonicalUrl="https://usepixelwave.com/web-development"
         structuredDataType="service"
       />
@@ -42,7 +42,7 @@ function WebDevelopment() {
             marginBottom: '20px',
             fontWeight: '700'
           }}>
-            Contractor Website Design & Web Development
+            Service Business Website Design & Web Development
           </h1>
           <p style={{
             fontSize: '1.3rem',
@@ -50,7 +50,7 @@ function WebDevelopment() {
             lineHeight: '1.6',
             marginBottom: '40px'
           }}>
-            Professional website development for contractors, HVAC, plumbing, and electrical businesses. 
+            Professional website development for service businesses including HVAC, plumbing, electrical, landscaping, and more. 
             Custom websites with lead capture, online booking, mobile-responsive design, and SEO optimization 
             to convert visitors into booked jobs.
           </p>
@@ -113,14 +113,14 @@ function WebDevelopment() {
                 marginBottom: '15px',
                 color: '#1e293b'
               }}>
-                Custom Contractor Website Design
+                Custom Service Business Website Design
               </h3>
               <p style={{
                 color: '#64748b',
                 lineHeight: '1.6'
               }}>
-                Bespoke contractor websites designed to reflect your service business brand and drive conversions. 
-                Built with clean code and modern frameworks optimized for contractors, HVAC, plumbing, and electrical businesses.
+                Bespoke service business websites designed to reflect your brand and drive conversions. 
+                Built with clean code and modern frameworks optimized for service businesses including HVAC, plumbing, electrical, landscaping, and more.
               </p>
             </div>
 
@@ -153,7 +153,7 @@ function WebDevelopment() {
                 color: '#64748b',
                 lineHeight: '1.6'
               }}>
-                Contractor websites that look and function perfectly on all devices - desktop, tablet, and mobile phones. 
+                Service business websites that look and function perfectly on all devices - desktop, tablet, and mobile phones. 
                 Essential for service businesses to capture mobile customers.
               </p>
             </div>
@@ -187,7 +187,7 @@ function WebDevelopment() {
                 color: '#64748b',
                 lineHeight: '1.6'
               }}>
-                Contractor websites built with SEO optimization from the ground up for better Google visibility. 
+                Service business websites built with SEO optimization from the ground up for better Google visibility. 
                 Optimized for service business keywords and search rankings.
               </p>
             </div>

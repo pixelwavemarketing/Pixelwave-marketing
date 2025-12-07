@@ -33,8 +33,8 @@ const siteConfig = {
   services: {
     webDevelopment: {
       name: 'Web Development',
-      description: 'Custom responsive websites for service businesses and contractors',
-      keywords: 'web development, website design, contractor websites'
+      description: 'Custom responsive websites for service businesses',
+      keywords: 'web development, website design, service business websites'
     },
     digitalMarketing: {
       name: 'Digital Marketing',
@@ -53,8 +53,8 @@ const siteConfig = {
     }
   },
   seo: {
-    defaultKeywords: 'service business marketing, contractor website design, AI chatbot, SEO services, HVAC marketing, plumber website design, electrician marketing, digital marketing agency, contractor lead generation, service business websites, web developer, contractor chatbot, SEO services, business marketing',
-    defaultDescription: 'Leading digital marketing agency for service businesses. AI chatbots, contractor websites, and SEO that turn visitors into booked jobs. Free consultation.',
+    defaultKeywords: 'service business marketing, service business website design, AI chatbot, SEO services, HVAC marketing, plumber website design, electrician marketing, digital marketing agency, service business lead generation, service business websites, web developer, service business chatbot, SEO services, business marketing',
+    defaultDescription: 'Leading digital marketing agency for service businesses. AI chatbots, service business websites, and SEO that turn visitors into booked jobs. Free consultation.',
     themeColor: '#1e40af',
     ogImage: 'https://usepixelwave.com/PixelWave.png'
   }

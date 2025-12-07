@@ -49,7 +49,7 @@ function Landing() {
 			<SEOOptimizer
 				title="Turn Your Home Service Website Into a Lead Machine"
 				description="Turn your home service website into a lead-generating machine. Get a free website audit and discover how to double your leads from Google Ads and SEO."
-				keywords="home service website audit, contractor lead generation, home services marketing, website conversion audit, contractor website design, service business marketing"
+				keywords="home service website audit, service business lead generation, home services marketing, website conversion audit, service business website design, service business marketing"
 				structuredDataType="service"
 			/>
 			<main
@@ -105,7 +105,7 @@ function Landing() {
 								marginBottom: '36px'
 							}}
 						>
-							You run the crews. We dial in your website, web pages, and ads so every click turns into a booked job. Contractors trust PixelWave to build funnels that convert year round.
+							You run the crews. We dial in your website, web pages, and ads so every click turns into a booked job. Service businesses trust PixelWave to build funnels that convert year round.
 						</p>
 						<div
 							style={{
@@ -177,7 +177,7 @@ function Landing() {
 					>
 						{[
 							{
-								title: 'Built for Contractors',
+								title: 'Built for Service Businesses',
 								text: 'HVAC, plumbing, roofing, landscaping, pressure washing, electrical, remodeling we speak the language of home service leads and many more trades.'
 							},
 							{
@@ -259,7 +259,7 @@ function Landing() {
 									marginBottom: '20px'
 								}}
 							>
-								Why Contractors Choose PixelWave
+								Why Service Businesses Choose PixelWave
 							</h2>
 							<p
 								style={{
@@ -322,7 +322,7 @@ function Landing() {
 					<Testimonials
 						testimonials={testimonials}
 						title="Home Service Owners Trust PixelWave"
-						description="Real contractors sharing the wins they saw after dialing in their website, web pages, and lead flow with our team."
+						description="Real service business owners sharing the wins they saw after dialing in their website, web pages, and lead flow with our team."
 					/>
 				</section>
 

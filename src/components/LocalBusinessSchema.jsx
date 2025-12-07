@@ -39,7 +39,7 @@ const LocalBusinessSchema = ({
           "itemOffered": {
             "@type": "Service",
             "name": "Web Development",
-            "description": "Custom responsive websites for service businesses and contractors",
+            "description": "Custom responsive websites for service businesses",
             "provider": {
               "@type": "Organization",
               "name": siteConfig.company.name

@@ -44,8 +44,8 @@ function Home() {
 		<>
 			<SEOOptimizer 
 				title="Service Business Marketing | AI Chatbot & Website Design"
-				description="Leading service business marketing agency. AI chatbots, contractor websites, SEO, and digital marketing for HVAC, plumbing, and electrical contractors."
-				keywords="service business marketing, contractor website design, AI chatbot, SEO services, HVAC marketing, plumber website design, electrician marketing, service business lead generation, digital marketing agency, contractor lead generation"
+				description="Leading service business marketing agency. AI chatbots, service business websites, SEO, and digital marketing for HVAC, plumbing, electrical, landscaping, and more."
+				keywords="service business marketing, service business website design, AI chatbot, SEO services, HVAC marketing, plumber website design, electrician marketing, service business lead generation, digital marketing agency, service business lead generation"
 				structuredDataType="Organization"
 			/>
 			<main className="home-page" style={{
@@ -86,7 +86,7 @@ function Home() {
 						marginBottom: '30px',
 						fontWeight: '500'
 					}}>
-						Leading digital marketing agency specializing in contractor websites, AI chatbots, and SEO for HVAC, plumbing, electrical, and service businesses. Turn website visitors into booked jobs with our proven marketing systems.
+						Leading digital marketing agency specializing in service business websites, AI chatbots, and SEO for HVAC, plumbing, electrical, landscaping, and more. Turn website visitors into booked jobs with our proven marketing systems.
 					</p>
 
 					<div style={{
@@ -112,7 +112,7 @@ function Home() {
 							fontSize: '1rem',
 							color: '#64748b'
 						}}>
-							<span style={{ backgroundColor: 'white', padding: '8px 16px', borderRadius: '20px', border: '1px solid #e2e8f0' }}>Contractors</span>
+							<span style={{ backgroundColor: 'white', padding: '8px 16px', borderRadius: '20px', border: '1px solid #e2e8f0' }}>Service Businesses</span>
 							<span style={{ backgroundColor: 'white', padding: '8px 16px', borderRadius: '20px', border: '1px solid #e2e8f0' }}>Landscapers</span>
 							<span style={{ backgroundColor: 'white', padding: '8px 16px', borderRadius: '20px', border: '1px solid #e2e8f0' }}>HVAC Companies</span>
 							<span style={{ backgroundColor: 'white', padding: '8px 16px', borderRadius: '20px', border: '1px solid #e2e8f0' }}>Plumbers</span>
@@ -197,7 +197,7 @@ function Home() {
 							color: '#64748b',
 							marginBottom: '50px'
 						}}>
-							Complete digital marketing services for contractors, HVAC companies, plumbers, electricians, and service businesses
+							Complete digital marketing services for service businesses including HVAC companies, plumbers, electricians, landscapers, and more
 						</p>
 						
 						<div style={{
@@ -236,7 +236,7 @@ function Home() {
 									color: '#64748b',
 									lineHeight: '1.6'
 								}}>
-									Custom AI chatbot development for contractors, HVAC, and service businesses. Automated lead capture, customer support, and appointment booking 24/7. Never miss another customer inquiry.
+									Custom AI chatbot development for service businesses including HVAC, plumbing, electrical, landscaping, and more. Automated lead capture, customer support, and appointment booking 24/7. Never miss another customer inquiry.
 								</p>
 							</div>
 
@@ -266,13 +266,13 @@ function Home() {
 									color: '#1e293b',
 									marginBottom: '15px'
 								}}>
-									Contractor Website Design
+									Service Business Website Design
 								</h3>
 								<p style={{
 									color: '#64748b',
 									lineHeight: '1.6'
 								}}>
-									Professional website development for contractors, HVAC, plumbing, and electrical businesses. Mobile-responsive sites with lead capture, online booking, and SEO optimization.
+									Professional website development for service businesses including HVAC, plumbing, electrical, landscaping, and more. Mobile-responsive sites with lead capture, online booking, and SEO optimization.
 								</p>
 							</div>
 

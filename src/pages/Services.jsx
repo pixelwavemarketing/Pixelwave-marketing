@@ -29,8 +29,8 @@ function Services() {
     <>
       <SEOOptimizer 
         title="Service Business Marketing Services | AI Chatbot & Website Design"
-        description="Complete digital marketing services for contractors, HVAC, plumbing, and electrical businesses. AI chatbots, websites, SEO, Google Ads, and lead generation."
-        keywords="service business marketing, contractor marketing, HVAC marketing, plumber website design, electrician marketing, AI chatbot, SEO services, contractor lead generation, service business websites, digital marketing agency"
+        description="Complete digital marketing services for service businesses including HVAC, plumbing, electrical, landscaping, and more. AI chatbots, websites, SEO, Google Ads, and lead generation."
+        keywords="service business marketing, service business website design, HVAC marketing, plumber website design, electrician marketing, AI chatbot, SEO services, service business lead generation, service business websites, digital marketing agency"
         canonicalUrl="https://usepixelwave.com/services"
         structuredDataType="service"
       />
@@ -69,7 +69,7 @@ function Services() {
             margin: '0 auto',
             lineHeight: '1.6'
           }}>
-            From AI chatbots to content creation, we provide everything your contractor, HVAC, plumbing, or electrical business needs to dominate online.
+            From AI chatbots to content creation, we provide everything your service business needs to dominate online - whether you're in HVAC, plumbing, electrical, landscaping, or any other service industry.
           </p>
         </div>
       </div>
@@ -146,7 +146,7 @@ function Services() {
                 lineHeight: '1.7',
                 fontSize: '1rem'
               }}>
-                SEO, Google Ads, and social media marketing for contractors, HVAC, plumbing, and electrical businesses. Proven strategies to get found on Google.
+                SEO, Google Ads, and social media marketing for service businesses including HVAC, plumbing, electrical, landscaping, and more. Proven strategies to get found on Google.
               </p>
             </div>
 
@@ -202,7 +202,7 @@ function Services() {
                 lineHeight: '1.7',
                 fontSize: '1rem'
               }}>
-                Custom AI chatbot development for contractors, HVAC, plumbing, and electrical businesses. Automated lead capture, customer support, and appointment booking 24/7.
+                Custom AI chatbot development for service businesses including HVAC, plumbing, electrical, landscaping, and more. Automated lead capture, customer support, and appointment booking 24/7.
               </p>
             </div>
 
@@ -242,7 +242,7 @@ function Services() {
                 lineHeight: '1.7',
                 fontSize: '1rem'
               }}>
-                Professional website development for contractors, HVAC, plumbing, and electrical businesses. Mobile-responsive sites with lead capture and online booking.
+                Professional website development for service businesses including HVAC, plumbing, electrical, landscaping, and more. Mobile-responsive sites with lead capture and online booking.
               </p>
             </div>
 
@@ -555,7 +555,7 @@ function Services() {
                 lineHeight: '1.7',
                 fontSize: '1rem'
               }}>
-                Deep experience in digital marketing and development specifically for service businesses and contractors.
+                Deep experience in digital marketing and development specifically for service businesses across all industries.
               </p>
             </div>
 

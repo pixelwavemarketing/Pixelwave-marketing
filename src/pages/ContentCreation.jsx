@@ -24,7 +24,7 @@ function ContentCreation() {
       <SEOOptimizer 
         title="Content Creation Services | Social Media Content for Service Businesses"
         description="Professional content creation for service businesses. Social media posts and digital marketing materials that engage your audience and drive conversions. Free consultation."
-        keywords="content creation, social media content, content marketing, service business content, contractor content, HVAC content, plumber content, electrician content"
+        keywords="content creation, social media content, content marketing, service business content, HVAC content, plumber content, electrician content"
         canonicalUrl="https://usepixelwave.com/content-creation"
         structuredDataType="service"
         ogImage="https://usepixelwave.com/PixelWave.png"
@@ -281,7 +281,7 @@ function ContentCreation() {
                 color: '#64748b',
                 lineHeight: '1.6'
               }}>
-                Content tailored specifically for service businesses, contractors, HVAC, plumbing, and electrical companies.
+                Content tailored specifically for service businesses including HVAC, plumbing, electrical, landscaping, and more.
               </p>
             </div>
             <div style={{

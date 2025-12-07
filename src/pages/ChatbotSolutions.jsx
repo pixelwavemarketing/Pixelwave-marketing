@@ -38,7 +38,7 @@ function ChatbotSolutions() {
       <SEOOptimizer 
         title="AI Chatbot Development | Custom Business Chatbots for Service Companies"
         description="Custom AI chatbot development for service businesses. Chatbots that read your website content and respond to visitors while collecting contact information. Free consultation."
-        keywords="AI chatbot, custom chatbot development, business chatbot, service business chatbot, contractor chatbot, HVAC chatbot, plumber chatbot, electrician chatbot, automated customer service, chatbot development"
+        keywords="AI chatbot, custom chatbot development, business chatbot, service business chatbot, HVAC chatbot, plumber chatbot, electrician chatbot, automated customer service, chatbot development"
         canonicalUrl="https://usepixelwave.com/chatbot-solutions"
         structuredDataType="service"
       />
@@ -81,7 +81,7 @@ function ChatbotSolutions() {
               opacity: '0.9',
               lineHeight: '1.6'
             }}>
-              Professional AI chatbot development for contractors, HVAC, plumbing, and electrical businesses. 
+              Professional AI chatbot development for service businesses including HVAC, plumbing, electrical, landscaping, and more. 
               Our chatbots automatically read your website content and respond to visitors with information from your pages, 
               while collecting contact information to help you never miss another customer inquiry.
             </p>
@@ -139,9 +139,9 @@ function ChatbotSolutions() {
               marginBottom: '30px'
             }}>
               As a leading <strong>AI chatbot development company</strong>, we specialize in creating 
-              custom business chatbots for contractors, HVAC companies, plumbers, electricians, and service businesses. 
+              custom business chatbots for service businesses including HVAC companies, plumbers, electricians, landscapers, and more. 
               Our <strong>chatbot development services</strong> help companies provide instant answers to customer questions 
-              and capture leads 24/7. Whether you need a <strong>contractor chatbot</strong> 
+              and capture leads 24/7. Whether you need a <strong>service business chatbot</strong> 
               for your HVAC business, a <strong>plumber chatbot</strong> for customer inquiries, or an <strong>electrician chatbot</strong> 
               for information requests, we build intelligent conversational AI solutions that read your website content and respond 
               with information from your pages while collecting visitor contact information.
@@ -841,7 +841,7 @@ function ChatbotSolutions() {
                 <p style={{ color: '#64748b', lineHeight: '1.6' }}>
                   If you get customer inquiries through your website, miss calls outside business hours, want to 
                   capture more leads, or spend time answering the same questions repeatedly, a business chatbot 
-                  can help. It's especially valuable for service businesses, contractors, and professional practices.
+                  can help. It's especially valuable for service businesses across all industries and professional practices.
                 </p>
               </div>
 

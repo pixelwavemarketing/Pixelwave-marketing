@@ -24,8 +24,8 @@ function DigitalMarketing() {
     }}>
       <SEOOptimizer 
         title="Digital Marketing Agency | SEO & Google Ads for Service Businesses"
-        description="Leading digital marketing agency for contractors. SEO, Google Ads, and social media marketing for HVAC, plumbing, and electrical businesses. Free consultation."
-        keywords="digital marketing agency, SEO services, Google Ads, contractor marketing, HVAC marketing, plumber marketing, electrician marketing, service business marketing, SEO services, business marketing"
+        description="Leading digital marketing agency for service businesses. SEO, Google Ads, and social media marketing for HVAC, plumbing, electrical, landscaping, and more. Free consultation."
+        keywords="digital marketing agency, SEO services, Google Ads, service business marketing, HVAC marketing, plumber marketing, electrician marketing, service business marketing, SEO services, business marketing"
         canonicalUrl="https://usepixelwave.com/digital-marketing"
         structuredDataType="service"
         ogImage="https://usepixelwave.com/PixelWave.png"
@@ -58,7 +58,7 @@ function DigitalMarketing() {
             lineHeight: '1.6',
             marginBottom: '40px'
           }}>
-            Leading digital marketing agency specializing in SEO, Google Ads, and social media marketing for contractors, HVAC, plumbing, and electrical businesses.
+            Leading digital marketing agency specializing in SEO, Google Ads, and social media marketing for service businesses including HVAC, plumbing, electrical, landscaping, and more.
           </p>
           <button
             onClick={() => navigate('/contact')}
@@ -125,7 +125,7 @@ function DigitalMarketing() {
                 color: '#64748b',
                 lineHeight: '1.6'
               }}>
-                Strategic Google Ads campaigns for contractors, HVAC, plumbing, and electrical businesses. Target customers and maximize your advertising ROI with our proven strategies.
+                Strategic Google Ads campaigns for service businesses including HVAC, plumbing, electrical, landscaping, and more. Target customers and maximize your advertising ROI with our proven strategies.
               </p>
             </div>
 
@@ -191,7 +191,7 @@ function DigitalMarketing() {
                 color: '#64748b',
                 lineHeight: '1.6'
               }}>
-                Improve your service business search rankings and drive organic traffic with our comprehensive SEO strategies tailored for contractors, HVAC, and service businesses.
+                Improve your service business search rankings and drive organic traffic with our comprehensive SEO strategies tailored for service businesses across all industries.
               </p>
             </div>
           </div>

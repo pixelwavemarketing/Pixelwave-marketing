@@ -213,7 +213,7 @@ const StructuredData = ({ type = 'organization', faqData = null, serviceData = n
           "itemOffered": {
             "@type": "Service",
             "name": "Web Development",
-            "description": "Custom responsive websites for service businesses and contractors"
+            "description": "Custom responsive websites for service businesses"
           }
         },
         {
