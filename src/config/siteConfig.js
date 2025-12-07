@@ -25,7 +25,7 @@ const siteConfig = {
       }
     ],
     socialMedia: {
-      facebook: 'https://www.facebook.com/61577166790673',
+      facebook: 'https://www.facebook.com/profile.php?id=61571502117710',
       instagram: 'https://www.instagram.com/usepixelwave/',
       linkedin: 'https://www.linkedin.com/company/pixelwave-marketing'
     }

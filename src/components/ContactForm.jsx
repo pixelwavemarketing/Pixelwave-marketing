@@ -7,6 +7,27 @@ function ContactForm() {
   const navigate = useNavigate()
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState('')
+  const [selectedServices, setSelectedServices] = useState([])
+  const [otherService, setOtherService] = useState('')
+
+  const services = [
+    'Digital Marketing',
+    'AI Chatbot Solutions',
+    'Website Design',
+    'Content Creation',
+    'Brand Identity',
+    'Marketing Systems',
+    'Analytics & Reporting',
+    'Print Design'
+  ]
+
+  const handleServiceChange = (service) => {
+    setSelectedServices(prev => 
+      prev.includes(service) 
+        ? prev.filter(s => s !== service)
+        : [...prev, service]
+    )
+  }
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -16,6 +37,14 @@ function ContactForm() {
     // Get form data
     const formData = new FormData(e.target)
     const data = Object.fromEntries(formData)
+    
+    // Add selected services to form data
+    if (selectedServices.length > 0) {
+      data.services = selectedServices.join(', ')
+    }
+    if (otherService.trim()) {
+      data.other_service = otherService.trim()
+    }
     
     try {
       // Submit to Netlify
@@ -161,6 +190,97 @@ function ContactForm() {
             border: '1px solid #ddd'
           }}
         />
+      </div>
+
+      <div style={{ marginBottom: '20px' }}>
+        <label style={{
+          display: 'block',
+          marginBottom: '10px',
+          color: '#333',
+          fontWeight: '500'
+        }}>
+          Services of Interest (Select all that apply)
+        </label>
+        <div style={{
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '10px',
+          padding: '15px',
+          backgroundColor: '#f8fafc',
+          borderRadius: '4px',
+          border: '1px solid #e2e8f0'
+        }}>
+          {services.map((service) => (
+            <label
+              key={service}
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                cursor: 'pointer',
+                fontSize: '15px',
+                color: '#333'
+              }}
+            >
+              <input
+                type="checkbox"
+                name="services"
+                value={service}
+                checked={selectedServices.includes(service)}
+                onChange={() => handleServiceChange(service)}
+                style={{
+                  marginRight: '10px',
+                  width: '18px',
+                  height: '18px',
+                  cursor: 'pointer'
+                }}
+              />
+              <span>{service}</span>
+            </label>
+          ))}
+          <label
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              cursor: 'pointer',
+              fontSize: '15px',
+              color: '#333',
+              marginTop: '5px'
+            }}
+          >
+            <input
+              type="checkbox"
+              name="services"
+              value="Other"
+              checked={selectedServices.includes('Other')}
+              onChange={() => handleServiceChange('Other')}
+              style={{
+                marginRight: '10px',
+                width: '18px',
+                height: '18px',
+                cursor: 'pointer'
+              }}
+            />
+            <span>Other</span>
+          </label>
+          {selectedServices.includes('Other') && (
+            <input
+              type="text"
+              name="other_service"
+              placeholder="Please specify..."
+              value={otherService}
+              onChange={(e) => setOtherService(e.target.value)}
+              style={{
+                marginLeft: '28px',
+                marginTop: '8px',
+                width: 'calc(100% - 28px)',
+                padding: '8px',
+                borderRadius: '4px',
+                border: '1px solid #ddd',
+                fontSize: '14px'
+              }}
+            />
+          )}
+        </div>
       </div>
 
       <div style={{ marginBottom: '20px' }}>

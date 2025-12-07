@@ -178,11 +178,11 @@ function Landing() {
 						{[
 							{
 								title: 'Built for Contractors',
-								text: 'HVAC, plumbing, roofing, landscaping, pressure washing, electrical, remodeling—we speak the language of home service leads and many more trades.'
+								text: 'HVAC, plumbing, roofing, landscaping, pressure washing, electrical, remodeling we speak the language of home service leads and many more trades.'
 							},
 							{
 								title: 'Conversion First',
-								text: 'Lightning-fast web pages, persuasive copy, and forms that qualify and schedule leads without back-and-forth.'
+								text: 'Lightning fast web pages, persuasive copy, and forms that qualify and schedule leads without back and forth.'
 							},
 							{
 								title: 'Measurable ROI',
@@ -190,7 +190,7 @@ function Landing() {
 							},
 							{
 								title: 'Done-With-You Support',
-								text: 'We partner with your team to execute the audit recommendations or handle everything turn-key.'
+								text: 'We partner with your team to execute the audit recommendations or handle everything turn key.'
 							}
 						].map((item) => (
 							<div
@@ -224,89 +224,6 @@ function Landing() {
 								</p>
 							</div>
 						))}
-					</div>
-				</section>
-
-				<section
-					style={{
-						padding: '60px 20px',
-						backgroundColor: 'white'
-					}}
-				>
-					<div
-						style={{
-							maxWidth: '1040px',
-							margin: '0 auto'
-						}}
-					>
-						<h2
-							style={{
-								fontSize: '2.3rem',
-								fontWeight: '700',
-								color: '#1e293b',
-								textAlign: 'center',
-								marginBottom: '40px'
-							}}
-						>
-							What You Get Inside the Free Audit
-						</h2>
-						<div
-							style={{
-								display: 'flex',
-								flexWrap: 'wrap',
-								justifyContent: 'center',
-								gap: '24px'
-							}}
-						>
-							{[
-								{
-									title: 'Website Conversion Review',
-									detail: 'We score your current homepage and service pages against 30+ conversion best practices tailored to home service buyers.'
-								},
-								{
-									title: 'SEO & Visibility Snapshot',
-									detail: 'See exactly where you rank, which keywords have gaps, and how competitors are winning in your market.'
-								},
-								{
-									title: 'Google Ads & Tracking Checkup',
-									detail: 'Audit structure, messaging, and tracking to make sure every campaign is feeding reliable data (and not wasting budget).'
-								},
-								{
-									title: 'Live Walkthrough Call',
-									detail: 'Review the findings with a PixelWave strategist and get your questions answered before you move forward.'
-								}
-							].map((item) => (
-								<div
-									key={item.title}
-									style={{
-										padding: '26px',
-										borderRadius: '16px',
-										border: '1px solid #e2e8f0',
-										backgroundColor: '#f8fafc',
-										flex: '1 1 280px',
-										maxWidth: '340px'
-									}}
-								>
-									<h3
-										style={{
-											fontSize: '1.25rem',
-											color: '#0f172a',
-											marginBottom: '14px'
-										}}
-									>
-										{item.title}
-									</h3>
-									<p
-										style={{
-											color: '#475569',
-											lineHeight: '1.6'
-										}}
-									>
-										{item.detail}
-									</p>
-								</div>
-							))}
-						</div>
 					</div>
 				</section>
 
@@ -368,7 +285,7 @@ function Landing() {
 									'Google Ads + Local Service Ads strategy built for the trades',
 									'High-converting web pages engineered for phone calls & form fills',
 									'SEO that ranks service pages in the markets that matter',
-									'CRM, call tracking, and reporting setup so you know what is working'
+									
 								].map((point) => (
 									<li
 										key={point}
@@ -392,84 +309,6 @@ function Landing() {
 									</li>
 								))}
 							</ul>
-						</div>
-						<div
-							style={{
-								backgroundColor: '#111827',
-								borderRadius: '18px',
-								padding: '30px',
-								border: '1px solid rgba(148, 163, 184, 0.2)',
-								boxShadow: '0 32px 60px rgba(15, 23, 42, 0.4)',
-								flex: '1 1 280px',
-								maxWidth: '420px',
-								minWidth: '260px'
-							}}
-						>
-							<h3
-								style={{
-									fontSize: '1.4rem',
-									fontWeight: '700',
-									marginBottom: '18px',
-									color: '#facc15'
-								}}
-							>
-								Next 10 Audits Include:
-							</h3>
-							<ul
-								style={{
-									listStyle: 'none',
-									padding: 0,
-									margin: 0,
-									display: 'grid',
-									gap: '14px',
-									color: 'rgba(226, 232, 240, 0.85)'
-								}}
-							>
-								<li>• Side-by-side breakdown of a top competitor's best-converting page</li>
-								<li>• Keyword playbook showing the phrases your crew should own</li>
-								<li>• Fresh angles for your next ad set: two proven headline frameworks</li>
-								<li>• Visual wireframe outlining the ideal layout for your #1 revenue service</li>
-							</ul>
-							<button
-								type="button"
-								onClick={handlePrimaryCTA}
-								style={{
-									marginTop: '28px',
-									width: '100%',
-									padding: '22px',
-									background: 'linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)',
-									color: 'white',
-									border: 'none',
-									borderRadius: '10px',
-									fontSize: '1.3rem',
-									fontWeight: '600',
-									cursor: 'pointer',
-									letterSpacing: '0.02em',
-									boxShadow: '0 8px 20px rgba(59, 130, 246, 0.2)',
-									transition: 'all 0.3s ease'
-								}}
-								onMouseEnter={(e) => {
-									const target = e.currentTarget
-									target.style.background = 'linear-gradient(135deg, #2563eb 0%, #1e40af 100%)'
-									target.style.boxShadow = '0 12px 28px rgba(59, 130, 246, 0.3)'
-								}}
-								onMouseLeave={(e) => {
-									const target = e.currentTarget
-									target.style.background = 'linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)'
-									target.style.boxShadow = '0 8px 20px rgba(59, 130, 246, 0.2)'
-								}}
-							>
-								Reserve My Audit
-							</button>
-							<p
-								style={{
-									fontSize: '0.85rem',
-									color: 'rgba(148, 163, 184, 0.8)',
-									marginTop: '12px'
-								}}
-							>
-								Only 10 spots available each month to ensure every partner gets hands-on support.
-							</p>
 						</div>
 					</div>
 				</section>
