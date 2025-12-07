@@ -8,7 +8,6 @@ function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState('')
   const [selectedServices, setSelectedServices] = useState([])
-  const [otherService, setOtherService] = useState('')
 
   const services = [
     'Digital Marketing',
@@ -42,16 +41,10 @@ function ContactForm() {
     let servicesText = ''
     if (selectedServices.length > 0) {
       servicesText = selectedServices.join(', ')
-      if (selectedServices.includes('Other') && otherService.trim()) {
-        servicesText += ` (Other: ${otherService.trim()})`
-      }
     }
     
     // Add services to form data
     data.services = servicesText || 'None selected'
-    if (otherService.trim()) {
-      data.other_service = otherService.trim()
-    }
     
     // Append services to message so it's visible in email
     if (servicesText) {
@@ -118,16 +111,9 @@ function ContactForm() {
         type="hidden" 
         name="services" 
         value={selectedServices.length > 0 
-          ? (selectedServices.includes('Other') && otherService.trim()
-              ? selectedServices.join(', ') + ` (Other: ${otherService.trim()})`
-              : selectedServices.join(', '))
+          ? selectedServices.join(', ')
           : 'None selected'
         } 
-      />
-      <input 
-        type="hidden" 
-        name="other_service" 
-        value={otherService.trim() || ''} 
       />
       
       {/* Bot field honeypot */}
@@ -268,49 +254,6 @@ function ContactForm() {
               <span>{service}</span>
             </label>
           ))}
-          <label
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              cursor: 'pointer',
-              fontSize: '15px',
-              color: '#333',
-              marginTop: '5px'
-            }}
-          >
-            <input
-              type="checkbox"
-              name="services"
-              value="Other"
-              checked={selectedServices.includes('Other')}
-              onChange={() => handleServiceChange('Other')}
-              style={{
-                marginRight: '10px',
-                width: '18px',
-                height: '18px',
-                cursor: 'pointer'
-              }}
-            />
-            <span>Other</span>
-          </label>
-          {selectedServices.includes('Other') && (
-            <input
-              type="text"
-              name="other_service"
-              placeholder="Please specify..."
-              value={otherService}
-              onChange={(e) => setOtherService(e.target.value)}
-              style={{
-                marginLeft: '28px',
-                marginTop: '8px',
-                width: 'calc(100% - 28px)',
-                padding: '8px',
-                borderRadius: '4px',
-                border: '1px solid #ddd',
-                fontSize: '14px'
-              }}
-            />
-          )}
         </div>
       </div>
 
