@@ -99,6 +99,22 @@ function ContactForm() {
       {/* Hidden input for Netlify */}
       <input type="hidden" name="form-name" value="contact" />
       
+      {/* Hidden inputs for selected services - Netlify needs these */}
+      {selectedServices.length > 0 && (
+        <input 
+          type="hidden" 
+          name="services" 
+          value={selectedServices.join(', ')} 
+        />
+      )}
+      {otherService.trim() && (
+        <input 
+          type="hidden" 
+          name="other_service" 
+          value={otherService.trim()} 
+        />
+      )}
+      
       {/* Bot field honeypot */}
       <p style={{ display: 'none' }}>
         <label>Don't fill this out if you're human: <input name="bot-field" /></label>
