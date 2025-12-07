@@ -38,12 +38,26 @@ function ContactForm() {
     const formData = new FormData(e.target)
     const data = Object.fromEntries(formData)
     
-    // Add selected services to form data
+    // Build services string
+    let servicesText = ''
     if (selectedServices.length > 0) {
-      data.services = selectedServices.join(', ')
+      servicesText = selectedServices.join(', ')
+      if (selectedServices.includes('Other') && otherService.trim()) {
+        servicesText += ` (Other: ${otherService.trim()})`
+      }
     }
+    
+    // Add services to form data
+    data.services = servicesText || 'None selected'
     if (otherService.trim()) {
       data.other_service = otherService.trim()
+    }
+    
+    // Append services to message so it's visible in email
+    if (servicesText) {
+      const originalMessage = data.message || ''
+      data.message = originalMessage + (originalMessage ? '\n\n' : '') + 
+        `Services of Interest: ${servicesText}`
     }
     
     try {
@@ -99,21 +113,22 @@ function ContactForm() {
       {/* Hidden input for Netlify */}
       <input type="hidden" name="form-name" value="contact" />
       
-      {/* Hidden inputs for selected services - Netlify needs these */}
-      {selectedServices.length > 0 && (
-        <input 
-          type="hidden" 
-          name="services" 
-          value={selectedServices.join(', ')} 
-        />
-      )}
-      {otherService.trim() && (
-        <input 
-          type="hidden" 
-          name="other_service" 
-          value={otherService.trim()} 
-        />
-      )}
+      {/* Hidden inputs for selected services - Always present for Netlify */}
+      <input 
+        type="hidden" 
+        name="services" 
+        value={selectedServices.length > 0 
+          ? (selectedServices.includes('Other') && otherService.trim()
+              ? selectedServices.join(', ') + ` (Other: ${otherService.trim()})`
+              : selectedServices.join(', '))
+          : 'None selected'
+        } 
+      />
+      <input 
+        type="hidden" 
+        name="other_service" 
+        value={otherService.trim() || ''} 
+      />
       
       {/* Bot field honeypot */}
       <p style={{ display: 'none' }}>
