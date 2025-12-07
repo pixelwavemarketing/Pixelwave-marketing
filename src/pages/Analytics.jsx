@@ -223,6 +223,60 @@ function Analytics() {
         </div>
       </section>
 
+      {/* Prominent CTA Section */}
+      <section style={{
+        padding: '80px 20px',
+        background: 'linear-gradient(135deg, #60a5fa 0%, #1e40af 100%)',
+        color: 'white',
+        textAlign: 'center'
+      }}>
+        <div style={{
+          maxWidth: '700px',
+          margin: '0 auto'
+        }}>
+          <h2 style={{
+            fontSize: '2.5rem',
+            marginBottom: '20px',
+            fontWeight: '700'
+          }}>
+            Ready to Track Your Success?
+          </h2>
+          <p style={{
+            fontSize: '1.2rem',
+            marginBottom: '40px',
+            opacity: '0.95',
+            lineHeight: '1.6'
+          }}>
+            Let's set up comprehensive analytics to track your performance and make data-driven decisions.
+          </p>
+          <button
+            onClick={() => navigate('/contact')}
+            style={{
+              background: 'white',
+              color: '#60a5fa',
+              padding: '18px 45px',
+              fontSize: '1.3rem',
+              border: 'none',
+              borderRadius: '10px',
+              fontWeight: '700',
+              cursor: 'pointer',
+              transition: 'all 0.3s ease',
+              boxShadow: '0 8px 25px rgba(0, 0, 0, 0.2)'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-3px)'
+              e.currentTarget.style.boxShadow = '0 12px 35px rgba(0, 0, 0, 0.3)'
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0)'
+              e.currentTarget.style.boxShadow = '0 8px 25px rgba(0, 0, 0, 0.2)'
+            }}
+          >
+            Get Started Today
+          </button>
+        </div>
+      </section>
+
       {/* Why Choose Us */}
       <section style={{
         padding: '60px 20px',

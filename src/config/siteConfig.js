@@ -33,8 +33,8 @@ const siteConfig = {
   services: {
     webDevelopment: {
       name: 'Web Development',
-      description: 'Custom responsive websites and e-commerce solutions',
-      keywords: 'web development, website design, e-commerce development'
+      description: 'Custom responsive websites for service businesses and contractors',
+      keywords: 'web development, website design, contractor websites'
     },
     digitalMarketing: {
       name: 'Digital Marketing',

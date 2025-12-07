@@ -12,7 +12,7 @@ function DigitalMarketing() {
 
   const serviceData = {
     name: "Digital Marketing Services",
-    description: "Expert digital marketing services including Google Ads, social media marketing, SEO, and email marketing to grow your business.",
+    description: "Expert digital marketing services including Google Ads, social media marketing, and SEO to grow your business.",
     serviceType: "Digital Marketing"
   }
 
@@ -194,40 +194,61 @@ function DigitalMarketing() {
                 Improve your service business search rankings and drive organic traffic with our comprehensive SEO strategies tailored for contractors, HVAC, and service businesses.
               </p>
             </div>
-
-            {/* Email Marketing */}
-            <div 
-              className="service-box"
-              style={{
-                padding: '30px',
-                border: '1px solid #e2e8f0',
-                borderRadius: '12px',
-                textAlign: 'center',
-                transition: 'transform 0.3s ease'
-              }}
-            >
-              <div style={{
-                fontSize: '3rem',
-                color: '#dc2626',
-                marginBottom: '20px'
-              }}>
-                <FontAwesomeIcon icon={faBullseye} />
-              </div>
-              <h3 style={{
-                fontSize: '1.5rem',
-                marginBottom: '15px',
-                color: '#1e293b'
-              }}>
-                Email Marketing
-              </h3>
-              <p style={{
-                color: '#64748b',
-                lineHeight: '1.6'
-              }}>
-                Nurture leads and drive sales with targeted email campaigns that convert. From automation to segmentation, we handle it all.
-              </p>
-            </div>
           </div>
+        </div>
+      </section>
+
+      {/* Prominent CTA Section */}
+      <section style={{
+        padding: '80px 20px',
+        background: 'linear-gradient(135deg, #3b82f6 0%, #1e40af 100%)',
+        color: 'white',
+        textAlign: 'center'
+      }}>
+        <div style={{
+          maxWidth: '700px',
+          margin: '0 auto'
+        }}>
+          <h2 style={{
+            fontSize: '2.5rem',
+            marginBottom: '20px',
+            fontWeight: '700'
+          }}>
+            Ready to Get More Leads?
+          </h2>
+          <p style={{
+            fontSize: '1.2rem',
+            marginBottom: '40px',
+            opacity: '0.95',
+            lineHeight: '1.6'
+          }}>
+            Let's discuss how our digital marketing services can help you attract more customers and grow your service business.
+          </p>
+          <button
+            onClick={() => navigate('/contact')}
+            style={{
+              background: 'white',
+              color: '#3b82f6',
+              padding: '18px 45px',
+              fontSize: '1.3rem',
+              border: 'none',
+              borderRadius: '10px',
+              fontWeight: '700',
+              cursor: 'pointer',
+              transition: 'all 0.3s ease',
+              boxShadow: '0 8px 25px rgba(0, 0, 0, 0.2)'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-3px)'
+              e.currentTarget.style.boxShadow = '0 12px 35px rgba(0, 0, 0, 0.3)'
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0)'
+              e.currentTarget.style.boxShadow = '0 8px 25px rgba(0, 0, 0, 0.2)'
+            }}
+          >
+            Get Started Today
+          </button>
         </div>
       </section>
 

@@ -14,6 +14,7 @@ import MarketingSystems from './pages/MarketingSystems'
 import ChatbotSolutions from './pages/ChatbotSolutions'
 import Analytics from './pages/Analytics'
 import PrintDesign from './pages/PrintDesign'
+import ContentCreation from './pages/ContentCreation'
 import Portfolio from './pages/Portfolio'
 import Contact from './pages/Contact'
 import ThankYou from './pages/ThankYou'
@@ -39,6 +40,7 @@ function App() {
         <Route path="/chatbot-solutions" element={<ChatbotSolutions />} />
         <Route path="/analytics" element={<Analytics />} />
         <Route path="/print-design" element={<PrintDesign />} />
+        <Route path="/content-creation" element={<ContentCreation />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<Contact />} />

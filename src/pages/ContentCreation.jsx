@@ -1,68 +1,95 @@
 import { useNavigate } from 'react-router-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCode, faMobile, faDesktop, faShoppingCart, faSearch, faRocket } from '@fortawesome/free-solid-svg-icons'
 import SEOOptimizer from '../components/SEOOptimizer'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faVideo, faPen, faImage, faBullhorn, faRocket, faUsers } from '@fortawesome/free-solid-svg-icons'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Breadcrumbs from '../components/Breadcrumbs'
 
-function WebDevelopment() {
+function ContentCreation() {
   const navigate = useNavigate()
 
+  const serviceData = {
+    name: "Content Creation Services",
+    description: "Professional content creation including social media posts and digital marketing materials for service businesses.",
+    serviceType: "Content Creation"
+  }
+
   return (
-    <>
+    <div className="other-page" style={{
+      display: 'flex',
+      flexDirection: 'column',
+      minHeight: '100vh'
+    }}>
       <SEOOptimizer 
-        title="Contractor Website Design | Professional Web Development for Service Businesses"
-        description="Professional website development for contractors. Custom sites with lead capture, online booking, and mobile-responsive design. Free consultation."
-        keywords="contractor website design, web developer, service business website, HVAC website design, plumber website, electrician website, contractor website, web development, service business web design, website design"
-        canonicalUrl="https://usepixelwave.com/web-development"
+        title="Content Creation Services | Social Media Content for Service Businesses"
+        description="Professional content creation for service businesses. Social media posts and digital marketing materials that engage your audience and drive conversions. Free consultation."
+        keywords="content creation, social media content, content marketing, service business content, contractor content, HVAC content, plumber content, electrician content"
+        canonicalUrl="https://usepixelwave.com/content-creation"
         structuredDataType="service"
+        ogImage="https://usepixelwave.com/PixelWave.png"
+        serviceData={serviceData}
       />
-      <div className="other-page" style={{
-        display: 'flex',
-        flexDirection: 'column',
-        minHeight: '100vh'
-      }}>
       <Header />
       <Breadcrumbs />
       
       {/* Hero Section */}
       <section style={{
         padding: '80px 20px',
-        backgroundColor: '#f8fafc',
+        background: 'linear-gradient(135deg, #06b6d4 0%, #0e7490 100%)',
+        color: 'white',
         textAlign: 'center'
       }}>
         <div style={{
           maxWidth: '800px',
           margin: '0 auto'
         }}>
+          <div style={{ 
+            fontSize: '4rem', 
+            marginBottom: '20px',
+            color: '#ffffff'
+          }}>
+            <FontAwesomeIcon icon={faVideo} />
+          </div>
           <h1 style={{
             fontSize: '3rem',
-            color: '#1e293b',
             marginBottom: '20px',
-            fontWeight: '700'
+            fontWeight: 'bold'
           }}>
-            Contractor Website Design & Web Development
+            Content Creation for Service Businesses
           </h1>
           <p style={{
             fontSize: '1.3rem',
-            color: '#64748b',
-            lineHeight: '1.6',
-            marginBottom: '40px'
+            marginBottom: '40px',
+            opacity: '0.9',
+            lineHeight: '1.6'
           }}>
-            Professional website development for contractors, HVAC, plumbing, and electrical businesses. 
-            Custom websites with lead capture, online booking, mobile-responsive design, and SEO optimization 
-            to convert visitors into booked jobs.
+            Professional social media posts and digital marketing materials that engage your audience and drive conversions for your service business.
           </p>
           <button
             onClick={() => navigate('/contact')}
-            className="cta-button"
             style={{
+              background: 'linear-gradient(135deg, #0891b2 0%, #0e7490 100%)',
+              color: '#ffffff',
+              padding: '15px 35px',
               fontSize: '1.2rem',
-              fontWeight: '600'
+              border: 'none',
+              borderRadius: '8px',
+              fontWeight: '600',
+              cursor: 'pointer',
+              transition: 'all 0.3s ease',
+              boxShadow: '0 4px 15px rgba(6, 182, 212, 0.3)'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-2px)'
+              e.currentTarget.style.boxShadow = '0 6px 20px rgba(6, 182, 212, 0.4)'
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0)'
+              e.currentTarget.style.boxShadow = '0 4px 15px rgba(6, 182, 212, 0.3)'
             }}
           >
-            Get My Website Quote Today
+            Get Content Created Today
           </button>
         </div>
       </section>
@@ -82,7 +109,7 @@ function WebDevelopment() {
             marginBottom: '50px',
             color: '#1e293b'
           }}>
-            Service Business Website Development Services
+            Content Creation Services
           </h2>
           <div style={{
             display: 'flex',
@@ -90,7 +117,7 @@ function WebDevelopment() {
             gap: '30px',
             justifyContent: 'center'
           }}>
-            {/* Custom Websites */}
+            {/* Social Media Content */}
             <div 
               className="service-box"
               style={{
@@ -103,28 +130,27 @@ function WebDevelopment() {
             >
               <div style={{
                 fontSize: '3rem',
-                color: '#2563eb',
+                color: '#06b6d4',
                 marginBottom: '20px'
               }}>
-                <FontAwesomeIcon icon={faDesktop} />
+                <FontAwesomeIcon icon={faBullhorn} />
               </div>
               <h3 style={{
                 fontSize: '1.5rem',
                 marginBottom: '15px',
                 color: '#1e293b'
               }}>
-                Custom Contractor Website Design
+                Social Media Content
               </h3>
               <p style={{
                 color: '#64748b',
                 lineHeight: '1.6'
               }}>
-                Bespoke contractor websites designed to reflect your service business brand and drive conversions. 
-                Built with clean code and modern frameworks optimized for contractors, HVAC, plumbing, and electrical businesses.
+                Engaging social media posts for Facebook, Instagram, LinkedIn, and other platforms that showcase your services and connect with your audience.
               </p>
             </div>
 
-            {/* Responsive Design */}
+            {/* Visual Content */}
             <div 
               className="service-box"
               style={{
@@ -137,58 +163,23 @@ function WebDevelopment() {
             >
               <div style={{
                 fontSize: '3rem',
-                color: '#dc2626',
+                color: '#0e7490',
                 marginBottom: '20px'
               }}>
-                <FontAwesomeIcon icon={faMobile} />
+                <FontAwesomeIcon icon={faImage} />
               </div>
               <h3 style={{
                 fontSize: '1.5rem',
                 marginBottom: '15px',
                 color: '#1e293b'
               }}>
-                Mobile-Responsive Design
+                Visual Content
               </h3>
               <p style={{
                 color: '#64748b',
                 lineHeight: '1.6'
               }}>
-                Contractor websites that look and function perfectly on all devices - desktop, tablet, and mobile phones. 
-                Essential for service businesses to capture mobile customers.
-              </p>
-            </div>
-
-            {/* SEO Optimization */}
-            <div 
-              className="service-box"
-              style={{
-                padding: '30px',
-                border: '1px solid #e2e8f0',
-                borderRadius: '12px',
-                textAlign: 'center',
-                transition: 'transform 0.3s ease'
-              }}
-            >
-              <div style={{
-                fontSize: '3rem',
-                color: '#7c3aed',
-                marginBottom: '20px'
-              }}>
-                <FontAwesomeIcon icon={faSearch} />
-              </div>
-              <h3 style={{
-                fontSize: '1.5rem',
-                marginBottom: '15px',
-                color: '#1e293b'
-              }}>
-                SEO-Optimized Website Development
-              </h3>
-              <p style={{
-                color: '#64748b',
-                lineHeight: '1.6'
-              }}>
-                Contractor websites built with SEO optimization from the ground up for better Google visibility. 
-                Optimized for service business keywords and search rankings.
+                Eye-catching graphics, infographics, and visual content that makes your brand stand out and drives engagement.
               </p>
             </div>
           </div>
@@ -198,7 +189,7 @@ function WebDevelopment() {
       {/* Prominent CTA Section */}
       <section style={{
         padding: '80px 20px',
-        background: 'linear-gradient(135deg, #475569 0%, #1e293b 100%)',
+        background: 'linear-gradient(135deg, #06b6d4 0%, #0e7490 100%)',
         color: 'white',
         textAlign: 'center'
       }}>
@@ -211,7 +202,7 @@ function WebDevelopment() {
             marginBottom: '20px',
             fontWeight: '700'
           }}>
-            Ready for a Professional Website?
+            Ready to Elevate Your Content?
           </h2>
           <p style={{
             fontSize: '1.2rem',
@@ -219,13 +210,13 @@ function WebDevelopment() {
             opacity: '0.95',
             lineHeight: '1.6'
           }}>
-            Let's discuss how a custom website can help you attract more customers and grow your service business.
+            Let's create content that engages your audience and drives real results for your service business.
           </p>
           <button
             onClick={() => navigate('/contact')}
             style={{
               background: 'white',
-              color: '#475569',
+              color: '#06b6d4',
               padding: '18px 45px',
               fontSize: '1.3rem',
               border: 'none',
@@ -249,14 +240,13 @@ function WebDevelopment() {
         </div>
       </section>
 
-      {/* Technologies */}
+      {/* Why Choose Us */}
       <section style={{
         padding: '60px 20px',
         backgroundColor: '#f8fafc'
       }}>
         <div style={{
           maxWidth: '1200px',
-          minWidth: '200px',
           margin: '0 auto'
         }}>
           <h2 style={{
@@ -265,97 +255,82 @@ function WebDevelopment() {
             marginBottom: '50px',
             color: '#1e293b'
           }}>
-            Technologies We Use
+            Why Choose Pixelwave for Content Creation?
           </h2>
           <div style={{
             display: 'flex',
-            flexWrap: 'wrap', 
-            gap: '20px',
-            justifyContent: 'center',
-            margin: '0 auto',
-            padding: '0 20px',
-            width: '100%' 
+            flexWrap: 'wrap',
+            gap: '30px',
+            justifyContent: 'center'
           }}>
             <div style={{
               padding: '20px',
-              backgroundColor: 'white',
-              borderRadius: '8px',
               textAlign: 'center',
-              boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
-              maxWidth: '200px',
-              minWidth: '150px',
-              flex: '1 1 180px',
-              margin: '0 auto'
+              flex: '1 1 300px',
+              maxWidth: '400px',
+              minWidth: '280px'
             }}>
               <h3 style={{
-                fontSize: '1.2rem',
-                color: '#1e293b',
-                marginBottom: '10px'
+                fontSize: '1.3rem',
+                marginBottom: '15px',
+                color: '#1e293b'
               }}>
-                React.js
+                Industry-Specific Content
               </h3>
               <p style={{
                 color: '#64748b',
-                fontSize: '0.9rem'
+                lineHeight: '1.6'
               }}>
-                Modern frontend framework
+                Content tailored specifically for service businesses, contractors, HVAC, plumbing, and electrical companies.
               </p>
             </div>
             <div style={{
               padding: '20px',
-              backgroundColor: 'white',
-              borderRadius: '8px',
               textAlign: 'center',
-              boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
-              maxWidth: '200px',
-              minWidth: '150px',
-              flex: '1 1 180px',
-              margin: '0 auto'
+              flex: '1 1 300px',
+              maxWidth: '400px',
+              minWidth: '280px'
             }}>
               <h3 style={{
-                fontSize: '1.2rem',
-                color: '#1e293b',
-                marginBottom: '10px'
+                fontSize: '1.3rem',
+                marginBottom: '15px',
+                color: '#1e293b'
               }}>
-                Node.js
+                SEO Optimized
               </h3>
               <p style={{
                 color: '#64748b',
-                fontSize: '0.9rem'
+                lineHeight: '1.6'
               }}>
-                Server side JavaScript
+                All content is optimized for search engines to help you rank higher and attract more customers.
               </p>
             </div>
             <div style={{
               padding: '20px',
-              backgroundColor: 'white',
-              borderRadius: '8px',
               textAlign: 'center',
-              boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
-              maxWidth: '200px',
-              minWidth: '150px',
-              flex: '1 1 180px',
-              margin: '0 auto'
+              flex: '1 1 300px',
+              maxWidth: '400px',
+              minWidth: '280px'
             }}>
               <h3 style={{
-                fontSize: '1.2rem',
-                color: '#1e293b',
-                marginBottom: '10px'
+                fontSize: '1.3rem',
+                marginBottom: '15px',
+                color: '#1e293b'
               }}>
-                Custom Website
+                Consistent Brand Voice
               </h3>
               <p style={{
                 color: '#64748b',
-                fontSize: '0.9rem'
+                lineHeight: '1.6'
               }}>
-                Responsive design
+                Maintain a consistent brand voice across all content that reflects your business values and connects with your audience.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Process */}
+      {/* Process Section */}
       <section style={{
         padding: '60px 20px',
         backgroundColor: 'white'
@@ -370,7 +345,7 @@ function WebDevelopment() {
             marginBottom: '50px',
             color: '#1e293b'
           }}>
-            Our Development Process
+            Our Content Creation Process
           </h2>
           <div style={{
             display: 'flex',
@@ -388,7 +363,7 @@ function WebDevelopment() {
               <div style={{
                 width: '60px',
                 height: '60px',
-                backgroundColor: '#2563eb',
+                backgroundColor: '#06b6d4',
                 borderRadius: '50%',
                 display: 'flex',
                 alignItems: 'center',
@@ -405,13 +380,13 @@ function WebDevelopment() {
                 marginBottom: '15px',
                 color: '#1e293b'
               }}>
-                Discovery & Planning
+                Content Strategy
               </h3>
               <p style={{
                 color: '#64748b',
                 lineHeight: '1.6'
               }}>
-                We understand your business goals, target audience, and requirements to create a comprehensive project plan.
+                We develop a content strategy aligned with your business goals and target audience.
               </p>
             </div>
             <div style={{
@@ -424,7 +399,7 @@ function WebDevelopment() {
               <div style={{
                 width: '60px',
                 height: '60px',
-                backgroundColor: '#2563eb',
+                backgroundColor: '#06b6d4',
                 borderRadius: '50%',
                 display: 'flex',
                 alignItems: 'center',
@@ -441,13 +416,13 @@ function WebDevelopment() {
                 marginBottom: '15px',
                 color: '#1e293b'
               }}>
-                Design & Prototyping
+                Content Creation
               </h3>
               <p style={{
                 color: '#64748b',
                 lineHeight: '1.6'
               }}>
-                We create wireframes and design mockups for your approval before moving to development.
+                Our team creates high-quality, engaging content that resonates with your audience.
               </p>
             </div>
             <div style={{
@@ -460,7 +435,7 @@ function WebDevelopment() {
               <div style={{
                 width: '60px',
                 height: '60px',
-                backgroundColor: '#2563eb',
+                backgroundColor: '#06b6d4',
                 borderRadius: '50%',
                 display: 'flex',
                 alignItems: 'center',
@@ -477,13 +452,13 @@ function WebDevelopment() {
                 marginBottom: '15px',
                 color: '#1e293b'
               }}>
-                Development
+                Optimization
               </h3>
               <p style={{
                 color: '#64748b',
                 lineHeight: '1.6'
               }}>
-                Our team builds your website using modern technologies and best practices for optimal performance.
+                Content is optimized for SEO and engagement to maximize reach and conversions.
               </p>
             </div>
             <div style={{
@@ -496,7 +471,7 @@ function WebDevelopment() {
               <div style={{
                 width: '60px',
                 height: '60px',
-                backgroundColor: '#2563eb',
+                backgroundColor: '#06b6d4',
                 borderRadius: '50%',
                 display: 'flex',
                 alignItems: 'center',
@@ -513,20 +488,20 @@ function WebDevelopment() {
                 marginBottom: '15px',
                 color: '#1e293b'
               }}>
-                Testing & Launch
+                Publishing & Analysis
               </h3>
               <p style={{
                 color: '#64748b',
                 lineHeight: '1.6'
               }}>
-                Thorough testing ensures everything works perfectly before we launch your website to the world.
+                We help publish content and analyze performance to continuously improve results.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* Final CTA Section */}
       <section style={{
         padding: '80px 20px',
         backgroundColor: '#1e293b',
@@ -541,14 +516,14 @@ function WebDevelopment() {
             fontSize: '2.5rem',
             marginBottom: '20px'
           }}>
-            Ready to Build Your Website?
+            Ready to Transform Your Content?
           </h2>
           <p style={{
             fontSize: '1.2rem',
             marginBottom: '40px',
             color: '#cbd5e1'
           }}>
-            Let's discuss your project and create a custom website that drives results for your business.
+            Let's discuss how our content creation services can help you engage your audience and drive more business.
           </p>
           <button
             onClick={() => navigate('/contact')}
@@ -558,14 +533,14 @@ function WebDevelopment() {
               fontWeight: '600'
             }}
           >
-            Build My Website Now
+            Get Content Created Today
           </button>
         </div>
       </section>
       <Footer />
-      </div>
-    </>
+    </div>
   )
 }
 
-export default WebDevelopment 
+export default ContentCreation
+

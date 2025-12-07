@@ -88,7 +88,7 @@ function MarketingSystems() {
             gap: '30px',
             justifyContent: 'center'
           }}>
-            {/* Email Automation */}
+            {/* Workflow Automation Setup */}
             <div style={{
               padding: '30px',
               border: '1px solid #e2e8f0',
@@ -105,20 +105,20 @@ function MarketingSystems() {
                 color: '#7c3aed',
                 marginBottom: '20px'
               }}>
-                <FontAwesomeIcon icon={faRobot} />
+                <FontAwesomeIcon icon={faCogs} />
               </div>
               <h3 style={{
                 fontSize: '1.5rem',
                 marginBottom: '15px',
                 color: '#1e293b'
               }}>
-                Email Automation
+                Workflow Automation Setup
               </h3>
               <p style={{
                 color: '#64748b',
                 lineHeight: '1.6'
               }}>
-                Automated email sequences that nurture leads and drive conversions without manual intervention.
+                We help you set up workflow automation systems that streamline your business operations and improve efficiency.
               </p>
             </div>
 
@@ -191,6 +191,60 @@ function MarketingSystems() {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Prominent CTA Section */}
+      <section style={{
+        padding: '80px 20px',
+        background: 'linear-gradient(135deg, #10b981 0%, #047857 100%)',
+        color: 'white',
+        textAlign: 'center'
+      }}>
+        <div style={{
+          maxWidth: '700px',
+          margin: '0 auto'
+        }}>
+          <h2 style={{
+            fontSize: '2.5rem',
+            marginBottom: '20px',
+            fontWeight: '700'
+          }}>
+            Ready to Automate Your Marketing?
+          </h2>
+          <p style={{
+            fontSize: '1.2rem',
+            marginBottom: '40px',
+            opacity: '0.95',
+            lineHeight: '1.6'
+          }}>
+            Let's discuss how marketing automation can streamline your operations and generate more leads.
+          </p>
+          <button
+            onClick={() => navigate('/contact')}
+            style={{
+              background: 'white',
+              color: '#10b981',
+              padding: '18px 45px',
+              fontSize: '1.3rem',
+              border: 'none',
+              borderRadius: '10px',
+              fontWeight: '700',
+              cursor: 'pointer',
+              transition: 'all 0.3s ease',
+              boxShadow: '0 8px 25px rgba(0, 0, 0, 0.2)'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-3px)'
+              e.currentTarget.style.boxShadow = '0 12px 35px rgba(0, 0, 0, 0.3)'
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0)'
+              e.currentTarget.style.boxShadow = '0 8px 25px rgba(0, 0, 0, 0.2)'
+            }}
+          >
+            Get Started Today
+          </button>
         </div>
       </section>
 

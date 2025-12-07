@@ -176,6 +176,60 @@ function ChatbotSolutions() {
           </div>
         </section>
 
+        {/* Prominent CTA Section */}
+        <section style={{
+          padding: '80px 20px',
+          background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+          color: 'white',
+          textAlign: 'center'
+        }}>
+          <div style={{
+            maxWidth: '700px',
+            margin: '0 auto'
+          }}>
+            <h2 style={{
+              fontSize: '2.5rem',
+              marginBottom: '20px',
+              fontWeight: '700'
+            }}>
+              Ready for Your Custom AI Chatbot?
+            </h2>
+            <p style={{
+              fontSize: '1.2rem',
+              marginBottom: '40px',
+              opacity: '0.95',
+              lineHeight: '1.6'
+            }}>
+              Let's discuss how an AI chatbot can help you capture more leads and provide 24/7 customer support.
+            </p>
+            <button
+              onClick={() => handleCTAClick('Prominent CTA')}
+              style={{
+                background: 'white',
+                color: '#667eea',
+                padding: '18px 45px',
+                fontSize: '1.3rem',
+                border: 'none',
+                borderRadius: '10px',
+                fontWeight: '700',
+                cursor: 'pointer',
+                transition: 'all 0.3s ease',
+                boxShadow: '0 8px 25px rgba(0, 0, 0, 0.2)'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-3px)'
+                e.currentTarget.style.boxShadow = '0 12px 35px rgba(0, 0, 0, 0.3)'
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)'
+                e.currentTarget.style.boxShadow = '0 8px 25px rgba(0, 0, 0, 0.2)'
+              }}
+            >
+              Get Started Today
+            </button>
+          </div>
+        </section>
+
         {/* Key Benefits Section */}
         <section style={{
           padding: '80px 20px',
@@ -787,7 +841,7 @@ function ChatbotSolutions() {
                 <p style={{ color: '#64748b', lineHeight: '1.6' }}>
                   If you get customer inquiries through your website, miss calls outside business hours, want to 
                   capture more leads, or spend time answering the same questions repeatedly, a business chatbot 
-                  can help. It's especially valuable for service businesses, e-commerce stores, and professional practices.
+                  can help. It's especially valuable for service businesses, contractors, and professional practices.
                 </p>
               </div>
 

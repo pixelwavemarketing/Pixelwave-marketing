@@ -173,7 +173,7 @@ const StructuredData = ({ type = 'organization', faqData = null, serviceData = n
       "Content Marketing",
       "Analytics",
       "Brand Identity",
-      "E-commerce Development"
+      "Website Development"
     ]
   };
 
@@ -202,7 +202,7 @@ const StructuredData = ({ type = 'organization', faqData = null, serviceData = n
       "Content Marketing",
       "Analytics",
       "Brand Identity",
-      "E-commerce Development"
+      "Website Development"
     ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
@@ -213,7 +213,7 @@ const StructuredData = ({ type = 'organization', faqData = null, serviceData = n
           "itemOffered": {
             "@type": "Service",
             "name": "Web Development",
-            "description": "Custom responsive websites and e-commerce solutions"
+            "description": "Custom responsive websites for service businesses and contractors"
           }
         },
         {

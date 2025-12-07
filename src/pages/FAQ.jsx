@@ -10,7 +10,7 @@ function FAQ() {
   const faqData = [
     {
       question: "What digital marketing services does Pixelwave Marketing offer?",
-      answer: "We offer comprehensive digital marketing services including Google Ads management, SEO optimization, social media marketing, content creation, email marketing, and analytics reporting. Our team specializes in creating customized strategies that drive measurable results for your business. You can see a comprehensive list of all our services here.",
+      answer: "We offer comprehensive digital marketing services including Google Ads management, SEO optimization, social media marketing, content creation, and analytics reporting. Our team specializes in creating customized strategies that drive measurable results for your business. You can see a comprehensive list of all our services here.",
       linkText: "View all services",
       linkUrl: "/services"
     },
