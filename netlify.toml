@@ -1,0 +1,46 @@
+[build]
+  publish = "dist"
+  command = "npm run build"
+
+[[redirects]]
+  from = "http://usepixelwave.com/*"
+  to = "https://usepixelwave.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.usepixelwave.com/*"
+  to = "https://usepixelwave.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.usepixelwave.com/*"
+  to = "https://usepixelwave.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://usepixelwave.com"
+  to = "https://usepixelwave.com"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.usepixelwave.com"
+  to = "https://usepixelwave.com"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.usepixelwave.com"
+  to = "https://usepixelwave.com"
+  status = 301
+  force = true
+
+# SPA fallback
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+

@@ -46,6 +46,7 @@ function Home() {
 				title="Service Business Marketing | AI Chatbot & Website Design"
 				description="Leading service business marketing agency. AI chatbots, service business websites, SEO, and digital marketing for HVAC, plumbing, electrical, landscaping, and more."
 				keywords="service business marketing, service business website design, AI chatbot, SEO services, HVAC marketing, plumber website design, electrician marketing, service business lead generation, digital marketing agency, service business lead generation"
+				canonicalUrl="https://usepixelwave.com/"
 				structuredDataType="Organization"
 			/>
 			<main className="home-page" style={{

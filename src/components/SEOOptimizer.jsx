@@ -18,7 +18,22 @@ const SEOOptimizer = ({
   const defaultTitle = title || siteConfig.company.name;
   const defaultDescription = description || siteConfig.seo.defaultDescription;
   const defaultKeywords = keywords || siteConfig.seo.defaultKeywords;
-  const defaultCanonical = canonicalUrl || `${siteConfig.company.url}${window.location.pathname}`;
+  
+  // Normalize canonical URL - always use non-www HTTPS version
+  const getCanonicalUrl = () => {
+    if (canonicalUrl) {
+      // Normalize provided canonical URL
+      return canonicalUrl
+        .replace(/^https?:\/\/(www\.)?/, 'https://')
+        .replace(/^http:\/\//, 'https://')
+        .replace(/^https:\/\/www\./, 'https://');
+    }
+    // Generate from current path, ensuring non-www HTTPS
+    const path = typeof window !== 'undefined' ? window.location.pathname : '';
+    return `${siteConfig.company.url}${path}`;
+  };
+  
+  const defaultCanonical = getCanonicalUrl();
 
   return (
     <Helmet>

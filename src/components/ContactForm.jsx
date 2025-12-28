@@ -1,7 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 import { trackContactForm, trackButtonClick } from './FacebookPixel'
-import { trackApolloFormSubmit, trackApolloLead } from './Apollo'
 
 function ContactForm() {
   const navigate = useNavigate()
@@ -67,18 +66,6 @@ function ContactForm() {
       if (response.ok) {
         // Track successful form submission
         trackContactForm('contact')
-        // Track with Apollo.io
-        trackApolloFormSubmit('contact', {
-          name: data.name,
-          email: data.email,
-          business: data.business,
-          phone: data.phone
-        })
-        trackApolloLead('contact_form', {
-          name: data.name,
-          email: data.email,
-          company: data.business
-        })
         // Redirect to thank you page
         navigate('/thank-you')
       } else {

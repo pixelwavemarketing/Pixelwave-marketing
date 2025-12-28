@@ -8,10 +8,15 @@ https://usepixelwave.com/*
   Strict-Transport-Security: max-age=31536000; includeSubDomains
   X-Robots-Tag: index, follow
 
-# Non-canonical domains - prevent indexing to avoid duplicate content
+# Non-canonical domains - prevent indexing (these should redirect, but add noindex as backup)
 http://usepixelwave.com/*
   X-Robots-Tag: noindex, nofollow
   Cache-Control: no-cache, no-store, must-revalidate
 
-# Note: www versions are handled by redirects in _redirects file
-# No need for noindex headers as they redirect to canonical domain 
+http://www.usepixelwave.com/*
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: no-cache, no-store, must-revalidate
+
+https://www.usepixelwave.com/*
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: no-cache, no-store, must-revalidate 
