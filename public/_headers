@@ -8,6 +8,25 @@ https://usepixelwave.com/*
   Strict-Transport-Security: max-age=31536000; includeSubDomains
   X-Robots-Tag: index, follow
 
+# Ensure correct MIME types for JavaScript and CSS files
+/assets/*.js
+  Content-Type: application/javascript; charset=utf-8
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/*.css
+  Content-Type: text/css; charset=utf-8
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/*.js.gz
+  Content-Type: application/javascript; charset=utf-8
+  Content-Encoding: gzip
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/*.css.gz
+  Content-Type: text/css; charset=utf-8
+  Content-Encoding: gzip
+  Cache-Control: public, max-age=31536000, immutable
+
 # Non-canonical domains - prevent indexing (these should redirect, but add noindex as backup)
 http://usepixelwave.com/*
   X-Robots-Tag: noindex, nofollow
