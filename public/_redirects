@@ -11,4 +11,5 @@ https://www.usepixelwave.com/* https://usepixelwave.com/:splat 301!
 https://www.usepixelwave.com https://usepixelwave.com 301!
 
 # SPA fallback for all other routes
+# Note: Netlify automatically excludes existing files (assets) from this redirect
 /* /index.html 200 

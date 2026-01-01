@@ -38,7 +38,7 @@
   status = 301
   force = true
 
-# SPA fallback
+# SPA fallback - Netlify automatically excludes existing files (like assets)
 [[redirects]]
   from = "/*"
   to = "/index.html"

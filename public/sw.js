@@ -1,5 +1,5 @@
 // Service Worker for caching static assets
-const CACHE_NAME = 'pixelwave-v3';
+const CACHE_NAME = 'pixelwave-v4';
 const STATIC_ASSETS = [
   '/',
   '/index.html',
@@ -35,6 +35,8 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
+  const url = new URL(event.request.url);
+  
   // Skip external third-party scripts that might fail
   const externalDomains = [
     'connect.facebook.net',
@@ -44,7 +46,7 @@ self.addEventListener('fetch', (event) => {
   ];
   
   const isExternalScript = externalDomains.some(domain => 
-    event.request.url.includes(domain)
+    url.hostname.includes(domain)
   );
   
   if (isExternalScript) {
@@ -52,11 +54,57 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
+  // For asset files (JS, CSS, images, fonts), always fetch from network first
+  // Don't serve cached HTML for asset requests
+  const isAssetRequest = url.pathname.match(/\.(js|css|jsx|ts|tsx|json|png|jpg|jpeg|gif|svg|webp|woff|woff2|ttf|eot|ico)$/i);
+  
+  if (isAssetRequest) {
+    // For assets, try network first, then cache
+    event.respondWith(
+      fetch(event.request)
+        .then((response) => {
+          // Only cache successful responses
+          if (response.status === 200) {
+            const responseToCache = response.clone();
+            caches.open(CACHE_NAME).then((cache) => {
+              cache.put(event.request, responseToCache);
+            });
+          }
+          return response;
+        })
+        .catch(() => {
+          // If network fails, try cache, but don't serve HTML for asset requests
+          return caches.match(event.request).then((cachedResponse) => {
+            if (cachedResponse) {
+              // Check if cached response is actually the right type
+              const contentType = cachedResponse.headers.get('content-type');
+              if (contentType && !contentType.includes('text/html')) {
+                return cachedResponse;
+              }
+            }
+            // Return 404 if we can't find the asset
+            return new Response('Asset not found', { status: 404, statusText: 'Not Found' });
+          });
+        })
+    );
+    return;
+  }
+
+  // For HTML pages, try cache first, then network
   event.respondWith(
     caches.match(event.request)
       .then((response) => {
         // Return cached version or fetch from network
-        return response || fetch(event.request).catch(() => {
+        return response || fetch(event.request).then((networkResponse) => {
+          // Cache successful responses
+          if (networkResponse.status === 200) {
+            const responseToCache = networkResponse.clone();
+            caches.open(CACHE_NAME).then((cache) => {
+              cache.put(event.request, responseToCache);
+            });
+          }
+          return networkResponse;
+        }).catch(() => {
           // Return a fallback response if fetch fails
           return new Response('', { status: 404, statusText: 'Not Found' });
         });
