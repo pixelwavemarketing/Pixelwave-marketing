@@ -143,7 +143,7 @@ function ContentCreation() {
                 Social Media Content
               </h3>
               <p style={{
-                color: '#64748b',
+                color: '#475569',
                 lineHeight: '1.6'
               }}>
                 Engaging social media posts for Facebook, Instagram, LinkedIn, and other platforms that showcase your services and connect with your audience.
@@ -176,7 +176,7 @@ function ContentCreation() {
                 Visual Content
               </h3>
               <p style={{
-                color: '#64748b',
+                color: '#475569',
                 lineHeight: '1.6'
               }}>
                 Eye-catching graphics, infographics, and visual content that makes your brand stand out and drives engagement.
@@ -278,7 +278,7 @@ function ContentCreation() {
                 Industry-Specific Content
               </h3>
               <p style={{
-                color: '#64748b',
+                color: '#475569',
                 lineHeight: '1.6'
               }}>
                 Content tailored specifically for service businesses including HVAC, plumbing, electrical, landscaping, and more.
@@ -299,7 +299,7 @@ function ContentCreation() {
                 SEO Optimized
               </h3>
               <p style={{
-                color: '#64748b',
+                color: '#475569',
                 lineHeight: '1.6'
               }}>
                 All content is optimized for search engines to help you rank higher and attract more customers.
@@ -320,7 +320,7 @@ function ContentCreation() {
                 Consistent Brand Voice
               </h3>
               <p style={{
-                color: '#64748b',
+                color: '#475569',
                 lineHeight: '1.6'
               }}>
                 Maintain a consistent brand voice across all content that reflects your business values and connects with your audience.
@@ -383,7 +383,7 @@ function ContentCreation() {
                 Content Strategy
               </h3>
               <p style={{
-                color: '#64748b',
+                color: '#475569',
                 lineHeight: '1.6'
               }}>
                 We develop a content strategy aligned with your business goals and target audience.
@@ -419,7 +419,7 @@ function ContentCreation() {
                 Content Creation
               </h3>
               <p style={{
-                color: '#64748b',
+                color: '#475569',
                 lineHeight: '1.6'
               }}>
                 Our team creates high-quality, engaging content that resonates with your audience.
@@ -455,7 +455,7 @@ function ContentCreation() {
                 Optimization
               </h3>
               <p style={{
-                color: '#64748b',
+                color: '#475569',
                 lineHeight: '1.6'
               }}>
                 Content is optimized for SEO and engagement to maximize reach and conversions.
@@ -491,7 +491,7 @@ function ContentCreation() {
                 Publishing & Analysis
               </h3>
               <p style={{
-                color: '#64748b',
+                color: '#475569',
                 lineHeight: '1.6'
               }}>
                 We help publish content and analyze performance to continuously improve results.

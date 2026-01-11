@@ -46,7 +46,7 @@ function MarketingSystems() {
           </h1>
           <p style={{
             fontSize: '1.3rem',
-            color: '#64748b',
+            color: '#475569',
             lineHeight: '1.6',
             marginBottom: '40px'
           }}>
@@ -115,7 +115,7 @@ function MarketingSystems() {
                 Workflow Automation Setup
               </h3>
               <p style={{
-                color: '#64748b',
+                color: '#475569',
                 lineHeight: '1.6'
               }}>
                 We help you set up workflow automation systems that streamline your business operations and improve efficiency.
@@ -150,7 +150,7 @@ function MarketingSystems() {
                 Workflow Automation
               </h3>
               <p style={{
-                color: '#64748b',
+                color: '#475569',
                 lineHeight: '1.6'
               }}>
                 Automated workflows that streamline repetitive tasks and improve team productivity.
@@ -171,7 +171,7 @@ function MarketingSystems() {
             }}>
               <div style={{
                 fontSize: '3rem',
-                color: '#2563eb',
+                color: '#9e74d0',
                 marginBottom: '20px'
               }}>
                 <FontAwesomeIcon icon={faChartLine} />
@@ -184,7 +184,7 @@ function MarketingSystems() {
                 Performance Tracking
               </h3>
               <p style={{
-                color: '#64748b',
+                color: '#475569',
                 lineHeight: '1.6'
               }}>
                 Comprehensive tracking and reporting to measure the success of your automated marketing campaigns.

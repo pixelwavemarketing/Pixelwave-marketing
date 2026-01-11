@@ -82,7 +82,7 @@ function Home() {
 					
 					<p style={{
 						fontSize: '1.3rem',
-						color: '#64748b',
+						color: '#475569',
 						lineHeight: '1.6',
 						marginBottom: '30px',
 						fontWeight: '500'
@@ -111,7 +111,7 @@ function Home() {
 							gap: '15px',
 							justifyContent: 'center',
 							fontSize: '1rem',
-							color: '#64748b'
+							color: '#475569'
 						}}>
 							<span style={{ backgroundColor: 'white', padding: '8px 16px', borderRadius: '20px', border: '1px solid #e2e8f0' }}>Service Businesses</span>
 							<span style={{ backgroundColor: 'white', padding: '8px 16px', borderRadius: '20px', border: '1px solid #e2e8f0' }}>Landscapers</span>
@@ -135,13 +135,13 @@ function Home() {
 							style={{
 								fontSize: window.innerWidth <= 768 ? '1.2rem' : '1.3rem',
 								padding: window.innerWidth <= 768 ? '20px 40px' : '22px 48px',
-								background: 'linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)',
+								background: 'linear-gradient(135deg, #9e74d0 0%, #8b5fc7 100%)',
 								color: 'white',
 								border: 'none',
 								borderRadius: '10px',
 								cursor: 'pointer',
 								fontWeight: '600',
-								boxShadow: '0 8px 20px rgba(59, 130, 246, 0.2)',
+								boxShadow: '0 8px 20px rgba(158, 116, 208, 0.3)',
 								transition: 'all 0.3s ease',
 								letterSpacing: '0.02em',
 								width: '100%',
@@ -149,14 +149,14 @@ function Home() {
 								marginBottom: '10px'
 							}}
 							onMouseEnter={(e) => {
-								e.target.style.background = 'linear-gradient(135deg, #2563eb 0%, #1e40af 100%)';
+								e.target.style.background = 'linear-gradient(135deg, #8b5fc7 0%, #7a4ab8 100%)';
 								e.target.style.transform = 'translateY(-2px)';
-								e.target.style.boxShadow = '0 12px 28px rgba(59, 130, 246, 0.3)';
+								e.target.style.boxShadow = '0 12px 28px rgba(158, 116, 208, 0.4)';
 							}}
 							onMouseLeave={(e) => {
-								e.target.style.background = 'linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)';
+								e.target.style.background = 'linear-gradient(135deg, #9e74d0 0%, #8b5fc7 100%)';
 								e.target.style.transform = 'translateY(0)';
-								e.target.style.boxShadow = '0 8px 20px rgba(59, 130, 246, 0.2)';
+								e.target.style.boxShadow = '0 8px 20px rgba(158, 116, 208, 0.3)';
 							}}
 						>
 							Get A Free Consultation Today!
@@ -166,7 +166,7 @@ function Home() {
 						<div style={{
 							textAlign: 'center',
 							fontSize: '0.9rem',
-							color: '#64748b',
+							color: '#475569',
 							lineHeight: '1.4'
 						}}>
 							<p style={{ margin: '0', fontStyle: 'italic' }}>
@@ -195,7 +195,7 @@ function Home() {
 						</h2>
 						<p style={{
 							fontSize: '1.2rem',
-							color: '#64748b',
+							color: '#475569',
 							marginBottom: '50px'
 						}}>
 							Complete digital marketing services for service businesses including HVAC companies, plumbers, electricians, landscapers, and more
@@ -234,7 +234,7 @@ function Home() {
 									AI Chatbot for Service Businesses
 								</h3>
 								<p style={{
-									color: '#64748b',
+									color: '#475569',
 									lineHeight: '1.6'
 								}}>
 									Custom AI chatbot development for service businesses including HVAC, plumbing, electrical, landscaping, and more. Automated lead capture, customer support, and appointment booking 24/7. Never miss another customer inquiry.
@@ -252,7 +252,7 @@ function Home() {
 									Digital Marketing Agency
 								</h3>
 								<p style={{
-									color: '#64748b',
+									color: '#475569',
 									lineHeight: '1.6'
 								}}>
 									SEO, Google Ads, and social media marketing for service businesses. Get found on Google and convert leads into booked jobs with our proven strategies.
@@ -270,7 +270,7 @@ function Home() {
 									Service Business Website Design
 								</h3>
 								<p style={{
-									color: '#64748b',
+									color: '#475569',
 									lineHeight: '1.6'
 								}}>
 									Professional website development for service businesses including HVAC, plumbing, electrical, landscaping, and more. Mobile-responsive sites with lead capture, online booking, and SEO optimization.
@@ -288,7 +288,7 @@ function Home() {
 									Service Business Analytics
 								</h3>
 								<p style={{
-									color: '#64748b',
+									color: '#475569',
 									lineHeight: '1.6'
 								}}>
 									Track marketing ROI and lead sources for service businesses. Google Analytics setup, conversion tracking, and monthly reporting to optimize your marketing spend.
@@ -328,7 +328,7 @@ function Home() {
 						<p style={{
 							fontSize: '1.2rem',
 							marginBottom: '40px',
-							color: '#cbd5e1',
+							color: '#e2e8f0',
 							lineHeight: '1.6'
 						}}>
 							Join service businesses that are getting more leads and booking more jobs with our AI-powered websites and marketing systems. 
@@ -340,25 +340,25 @@ function Home() {
 							style={{
 								fontSize: '1.3rem',
 								padding: '22px 48px',
-								background: 'linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)',
+								background: 'linear-gradient(135deg, #9e74d0 0%, #8b5fc7 100%)',
 								color: 'white',
 								border: 'none',
 								borderRadius: '10px',
 								cursor: 'pointer',
 								fontWeight: '600',
 								transition: 'all 0.3s ease',
-								boxShadow: '0 8px 20px rgba(59, 130, 246, 0.2)',
+								boxShadow: '0 8px 20px rgba(158, 116, 208, 0.3)',
 								letterSpacing: '0.02em'
 							}}
 							onMouseEnter={(e) => {
-								e.target.style.background = 'linear-gradient(135deg, #2563eb 0%, #1e40af 100%)';
+								e.target.style.background = 'linear-gradient(135deg, #8b5fc7 0%, #7a4ab8 100%)';
 								e.target.style.transform = 'translateY(-2px)';
-								e.target.style.boxShadow = '0 12px 28px rgba(59, 130, 246, 0.3)';
+								e.target.style.boxShadow = '0 12px 28px rgba(158, 116, 208, 0.4)';
 							}}
 							onMouseLeave={(e) => {
-								e.target.style.background = 'linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)';
+								e.target.style.background = 'linear-gradient(135deg, #9e74d0 0%, #8b5fc7 100%)';
 								e.target.style.transform = 'translateY(0)';
-								e.target.style.boxShadow = '0 8px 20px rgba(59, 130, 246, 0.2)';
+								e.target.style.boxShadow = '0 8px 20px rgba(158, 116, 208, 0.3)';
 							}}
 						>
 							Get Free Consultation Today

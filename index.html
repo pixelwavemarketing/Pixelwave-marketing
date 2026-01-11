@@ -1,25 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <!-- GA4 base -->
-  <script>
-    // Load Google Analytics script with error handling
-    const gaScript = document.createElement('script');
-    gaScript.async = true;
-    gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-R7SFT14JN7';
-    
-    gaScript.onerror = function() {
-      console.warn('Google Analytics script failed to load');
-      window.gtagLoadError = true;
-    };
-    
-    gaScript.onload = function() {
-      console.log('Google Analytics script loaded successfully');
-      window.gtagLoadSuccess = true;
-    };
-    
-    document.head.appendChild(gaScript);
-  </script>
+      <!-- GA4 base - Load on user interaction or after delay for better performance -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){ 
@@ -36,93 +18,201 @@
 
     // Enable "DebugView" only when ?debug=1 is present
     var DEBUG = location.search.includes('debug=1');
+    var analyticsLoaded = false;
 
-    try {
-      gtag('js', new Date());
-      gtag('config', 'G-R7SFT14JN7', {
-        send_page_view: true,              // make the initial page_view explicit
-        cookie_domain: 'auto',
-        cookie_flags: 'SameSite=None;Secure',
-        debug_mode: DEBUG,                 // lets you see events instantly in Admin → DebugView
-        // Enhanced measurement
-        enhanced_measurement: true,
-        // Custom parameters for service business
-        custom_map: {
-          'custom_parameter_1': 'service_type',
-          'custom_parameter_2': 'business_size'
+    function loadAnalytics() {
+      if (analyticsLoaded) return;
+      analyticsLoaded = true;
+
+      // Load Google Analytics script with error handling
+      const gaScript = document.createElement('script');
+      gaScript.async = true;
+      gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-R7SFT14JN7';
+      
+      gaScript.onerror = function() {
+        console.warn('Google Analytics script failed to load');
+        window.gtagLoadError = true;
+      };
+      
+      gaScript.onload = function() {
+        console.log('Google Analytics script loaded successfully');
+        window.gtagLoadSuccess = true;
+        
+        // Initialize after script loads
+        try {
+          gtag('js', new Date());
+          gtag('config', 'G-R7SFT14JN7', {
+            send_page_view: true,
+            cookie_domain: 'auto',
+            cookie_flags: 'SameSite=None;Secure',
+            debug_mode: DEBUG,
+            enhanced_measurement: true,
+            custom_map: {
+              'custom_parameter_1': 'service_type',
+              'custom_parameter_2': 'business_size'
+            }
+          });
+          gtag('config', 'AW-17598200279');
+        
+        // Initialize SPA tracking after GA is ready
+        if (window.initSPATracking) {
+          window.initSPATracking();
         }
-      });
-      gtag('config', 'AW-17598200279');
-    } catch(e) {
-      console.warn('Google Analytics initialization failed:', e);
+        } catch(e) {
+          console.warn('Google Analytics initialization failed:', e);
+        }
+      };
+      
+      document.head.appendChild(gaScript);
     }
+
+    // Load analytics on user interaction (scroll, click, touch, keypress) or after 3 seconds
+    var interactionEvents = ['scroll', 'click', 'touchstart', 'keydown'];
+    var hasInteracted = false;
+    var loadTimeout = setTimeout(loadAnalytics, 3000); // Load after 3 seconds if no interaction
+
+    interactionEvents.forEach(function(event) {
+      window.addEventListener(event, function() {
+        if (!hasInteracted) {
+          hasInteracted = true;
+          clearTimeout(loadTimeout);
+          // Use requestIdleCallback if available, otherwise load immediately
+          if ('requestIdleCallback' in window) {
+            requestIdleCallback(loadAnalytics, { timeout: 2000 });
+          } else {
+            setTimeout(loadAnalytics, 100);
+          }
+        }
+      }, { once: true, passive: true });
+    });
   </script>
 
   <!-- SPA/Client-side routing support for GA4 -->
   <script>
   (function(){
-    if (!window.gtag || window.gtagLoadError) return;
-
-    function sendPV(){
-      try {
-        gtag('event', 'page_view', {
-          page_location: location.href,
-          page_path: location.pathname + location.search + location.hash,
-          page_title: document.title
-        });
-      } catch(e) {
-        console.warn('Google Analytics page view tracking failed:', e);
+    // Wait for gtag to be available
+    function initSPATracking() {
+      if (!window.gtag || window.gtagLoadError) {
+        // Only retry if analytics is loaded
+        if (window.gtagLoadSuccess || analyticsLoaded) {
+          setTimeout(initSPATracking, 100);
+        }
+        return;
       }
+
+      function sendPV(){
+        try {
+          gtag('event', 'page_view', {
+            page_location: location.href,
+            page_path: location.pathname + location.search + location.hash,
+            page_title: document.title
+          });
+        } catch(e) {
+          console.warn('Google Analytics page view tracking failed:', e);
+        }
+      }
+
+      // Fire on history API changes (pushState/replaceState)
+      ['pushState','replaceState'].forEach(function(m){
+        var orig = history[m];
+        history[m] = function(){
+          var ret = orig.apply(this, arguments);
+          // Use requestIdleCallback for non-blocking tracking
+          if ('requestIdleCallback' in window) {
+            requestIdleCallback(sendPV, { timeout: 1000 });
+          } else {
+            setTimeout(sendPV, 0);
+          }
+          return ret;
+        };
+      });
+
+      // Fire on back/forward & hash changes (non-blocking)
+      window.addEventListener('popstate', function() {
+        if ('requestIdleCallback' in window) {
+          requestIdleCallback(sendPV, { timeout: 1000 });
+        } else {
+          setTimeout(sendPV, 0);
+        }
+      }, { passive: true });
+      
+      window.addEventListener('hashchange', function() {
+        if ('requestIdleCallback' in window) {
+          requestIdleCallback(sendPV, { timeout: 1000 });
+        } else {
+          setTimeout(sendPV, 0);
+        }
+      }, { passive: true });
     }
-
-    // Fire on history API changes (pushState/replaceState)
-    ['pushState','replaceState'].forEach(function(m){
-      var orig = history[m];
-      history[m] = function(){
-        var ret = orig.apply(this, arguments);
-        sendPV();
-        return ret;
-      };
-    });
-
-    // Fire on back/forward & hash changes
-    window.addEventListener('popstate', sendPV);
-    window.addEventListener('hashchange', sendPV);
+    
+      // Start initialization when analytics loads
+      // This will be called after user interaction or timeout
+      window.initSPATracking = initSPATracking;
+      
+      // Also try to initialize if analytics is already loaded
+      if (window.gtagLoadSuccess) {
+        initSPATracking();
+      }
   })();
   </script>
 
-  <!-- Facebook Pixel Code -->
+  <!-- Facebook Pixel Code - Load on user interaction for better performance -->
   <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    
-    // Add error handling for Facebook Pixel script loading
-    t.onerror = function() {
-      console.warn('Facebook Pixel script failed to load');
-      // Set a flag to indicate pixel failed to load
-      window.fbqLoadError = true;
-    };
-    
-    t.onload = function() {
-      console.log('Facebook Pixel script loaded successfully');
-      // Set a flag to indicate pixel loaded successfully
-      window.fbqLoadSuccess = true;
-    };
-    
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    
-    // Initialize pixel with error handling
-    try {
-      fbq('init', '1291420825372627');
-      fbq('track', 'PageView');
-    } catch(e) {
-      console.warn('Facebook Pixel initialization failed:', e);
+    var pixelLoaded = false;
+
+    function loadFacebookPixel() {
+      if (pixelLoaded) return;
+      pixelLoaded = true;
+
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      
+      // Add error handling for Facebook Pixel script loading
+      t.onerror = function() {
+        console.warn('Facebook Pixel script failed to load');
+        window.fbqLoadError = true;
+      };
+      
+      t.onload = function() {
+        console.log('Facebook Pixel script loaded successfully');
+        window.fbqLoadSuccess = true;
+        
+        // Initialize pixel with error handling
+        try {
+          fbq('init', '1291420825372627');
+          fbq('track', 'PageView');
+        } catch(e) {
+          console.warn('Facebook Pixel initialization failed:', e);
+        }
+      };
+      
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
     }
+
+    // Load Facebook Pixel on user interaction or after 3 seconds
+    var interactionEvents = ['scroll', 'click', 'touchstart', 'keydown'];
+    var hasInteractedPixel = false;
+    var pixelLoadTimeout = setTimeout(loadFacebookPixel, 3000);
+
+    interactionEvents.forEach(function(event) {
+      window.addEventListener(event, function() {
+        if (!hasInteractedPixel) {
+          hasInteractedPixel = true;
+          clearTimeout(pixelLoadTimeout);
+          // Use requestIdleCallback if available, otherwise load immediately
+          if ('requestIdleCallback' in window) {
+            requestIdleCallback(loadFacebookPixel, { timeout: 2000 });
+          } else {
+            setTimeout(loadFacebookPixel, 100);
+          }
+        }
+      }, { once: true, passive: true });
+    });
   </script>
   <!-- End Facebook Pixel Code -->
     
@@ -280,11 +370,10 @@
 
 
     <!-- Responsive Design -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Preload critical assets -->
-    <link rel="preload" as="image" href="/PixelWave.png" fetchpriority="high" type="image/png" media="(min-width: 1px)">
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" crossorigin onload="this.onload=null;this.rel='stylesheet'">
+    <!-- Preload critical LCP image - using medium size as default for better performance -->
+    <link rel="preload" as="image" href="/PixelWave.png" fetchpriority="high" type="image/png">
     
     <!-- DNS Prefetch for external resources -->
     <link rel="dns-prefetch" href="https://www.googletagmanager.com">
@@ -295,6 +384,10 @@
     
     <!-- Preconnect to critical third-party origins -->
     <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://www.facebook.com" crossorigin>
+    <link rel="preconnect" href="https://connect.facebook.net" crossorigin>
+    <link rel="preconnect" href="https://googleads.g.doubleclick.net" crossorigin>
+    <link rel="preconnect" href="https://www.google.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
@@ -309,7 +402,10 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     
-    <!-- Performance hints -->
+    <!-- Performance hints - Load fonts asynchronously -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"></noscript>
     
   </head>
@@ -323,30 +419,46 @@
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
     
-    <!-- Service Worker Registration with Auto-Update -->
+    <!-- Service Worker Registration with Auto-Update - Optimized for bfcache -->
     <script>
       if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
+        // Use pageshow instead of load to support bfcache
+        window.addEventListener('pageshow', (event) => {
+          // Only register/update on initial load, not on bfcache restore
+          if (event.persisted) {
+            // Page was restored from bfcache, skip service worker update
+            return;
+          }
+          
           navigator.serviceWorker.register('/sw.js')
             .then((registration) => {
               console.log('SW registered: ', registration);
               
-              // Check for updates every time the page loads
+              // Check for updates, but don't force reload immediately
               registration.addEventListener('updatefound', () => {
                 console.log('New service worker found, updating...');
                 const newWorker = registration.installing;
                 
                 newWorker.addEventListener('statechange', () => {
                   if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
-                    // New service worker is available, force reload
-                    console.log('New service worker installed, reloading page...');
-                    window.location.reload(true);
+                    // New service worker is available
+                    // Don't force reload immediately - let user continue browsing
+                    // The new service worker will activate on next page load
+                    console.log('New service worker installed. Will activate on next navigation.');
                   }
                 });
               });
               
-              // Force check for updates
-              registration.update();
+              // Check for updates in the background (non-blocking)
+              if ('requestIdleCallback' in window) {
+                requestIdleCallback(() => {
+                  registration.update();
+                }, { timeout: 5000 });
+              } else {
+                setTimeout(() => {
+                  registration.update();
+                }, 2000);
+              }
             })
             .catch((registrationError) => {
               console.log('SW registration failed: ', registrationError);

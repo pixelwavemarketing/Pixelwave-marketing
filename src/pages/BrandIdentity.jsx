@@ -53,7 +53,7 @@ function BrandIdentity() {
           </h1>
           <p style={{
             fontSize: '1.3rem',
-            color: '#64748b',
+            color: '#475569',
             lineHeight: '1.6',
             marginBottom: '40px'
           }}>
@@ -121,7 +121,7 @@ function BrandIdentity() {
                 Logo Design
               </h3>
               <p style={{
-                color: '#64748b',
+                color: '#475569',
                 lineHeight: '1.6'
               }}>
                 Custom logo designs that capture your brand essence and work across all platforms.
@@ -155,7 +155,7 @@ function BrandIdentity() {
                 Business Card Design
               </h3>
               <p style={{
-                color: '#64748b',
+                color: '#475569',
                 lineHeight: '1.6'
               }}>
                 Professional business cards that make a lasting impression.
@@ -189,7 +189,7 @@ function BrandIdentity() {
                 Brand Guidelines
               </h3>
               <p style={{
-                color: '#64748b',
+                color: '#475569',
                 lineHeight: '1.6'
               }}>
                 Comprehensive brand guidelines ensuring consistent application across all materials.
@@ -210,7 +210,7 @@ function BrandIdentity() {
             }}>
               <div style={{
                 fontSize: '3rem',
-                color: '#2563eb',
+                color: '#9e74d0',
                 marginBottom: '20px'
               }}>
                 <FontAwesomeIcon icon={faLightbulb} />
@@ -223,7 +223,7 @@ function BrandIdentity() {
                 Visual Identity
               </h3>
               <p style={{
-                color: '#64748b',
+                color: '#475569',
                 lineHeight: '1.6'
               }}>
                 Complete visual identity including color palettes, typography, and design elements.

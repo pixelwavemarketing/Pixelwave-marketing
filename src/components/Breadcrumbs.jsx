@@ -112,7 +112,7 @@ const Breadcrumbs = ({ customBreadcrumbs = null }) => {
               {index > 0 && (
                 <span style={{ 
                   margin: '0 6px', 
-                  color: '#94a3b8',
+                  color: '#475569',
                   userSelect: 'none',
                   fontSize: '0.7rem'
                 }}>
@@ -124,7 +124,7 @@ const Breadcrumbs = ({ customBreadcrumbs = null }) => {
                 // Current page - not a link
                 <span 
                   style={{ 
-                    color: '#64748b',
+                    color: '#475569',
                     fontWeight: '400',
                     fontSize: '0.75rem'
                   }}

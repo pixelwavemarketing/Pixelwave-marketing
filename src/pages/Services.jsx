@@ -94,7 +94,7 @@ function Services() {
           </h2>
           <p style={{
             fontSize: '1.1rem',
-            color: '#64748b',
+            color: '#475569',
             marginBottom: '50px',
             maxWidth: '700px',
             margin: '0 auto 50px auto'
@@ -118,7 +118,7 @@ function Services() {
               }}
               className="service-card service-box"
               style={{
-                background: 'linear-gradient(135deg, #3b82f6 0%, #1e40af 100%)',
+                background: 'linear-gradient(135deg, #9e74d0 0%, #8b5fc7 100%)',
                 color: 'white',
                 border: 'none',
                 boxShadow: '0 10px 30px rgba(59, 130, 246, 0.3)'
@@ -374,7 +374,7 @@ function Services() {
               }}
               className="service-card service-box"
               style={{
-                background: 'linear-gradient(135deg, #60a5fa 0%, #1e40af 100%)',
+                background: 'linear-gradient(135deg, #9cecff 0%, #8b5fc7 100%)',
                 color: 'white',
                 border: 'none',
                 boxShadow: '0 10px 30px rgba(96, 165, 250, 0.3)'
@@ -459,7 +459,7 @@ function Services() {
               }}
               style={{
                 fontSize: '1.3rem',
-                background: 'linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)',
+                background: 'linear-gradient(135deg, #9e74d0 0%, #8b5fc7 100%)',
                 color: 'white',
                 fontWeight: '600',
                 padding: '22px 48px',
@@ -471,12 +471,12 @@ function Services() {
                 letterSpacing: '0.02em'
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.background = 'linear-gradient(135deg, #2563eb 0%, #1e40af 100%)'
+                e.currentTarget.style.background = 'linear-gradient(135deg, #8b5fc7 0%, #7a4ab8 100%)'
                 e.currentTarget.style.transform = 'translateY(-2px)'
                 e.currentTarget.style.boxShadow = '0 12px 28px rgba(59, 130, 246, 0.3)'
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.background = 'linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)'
+                e.currentTarget.style.background = 'linear-gradient(135deg, #9e74d0 0%, #8b5fc7 100%)'
                 e.currentTarget.style.transform = 'translateY(0)'
                 e.currentTarget.style.boxShadow = '0 8px 20px rgba(59, 130, 246, 0.2)'
               }}
@@ -507,7 +507,7 @@ function Services() {
           </h2>
           <p style={{
             fontSize: '1.1rem',
-            color: '#64748b',
+            color: '#475569',
             marginBottom: '50px',
             maxWidth: '700px',
             margin: '0 auto 50px auto'
@@ -551,7 +551,7 @@ function Services() {
                 Industry Expertise
               </h3>
               <p style={{ 
-                color: '#64748b', 
+                color: '#475569', 
                 lineHeight: '1.7',
                 fontSize: '1rem'
               }}>
@@ -587,7 +587,7 @@ function Services() {
                 Custom Solutions
               </h3>
               <p style={{ 
-                color: '#64748b', 
+                color: '#475569', 
                 lineHeight: '1.7',
                 fontSize: '1rem'
               }}>
@@ -623,7 +623,7 @@ function Services() {
                 Results Driven
               </h3>
               <p style={{ 
-                color: '#64748b', 
+                color: '#475569', 
                 lineHeight: '1.7',
                 fontSize: '1rem'
               }}>
@@ -654,7 +654,7 @@ function Services() {
           </h2>
           <p style={{
             fontSize: '1.1rem',
-            color: '#64748b',
+            color: '#475569',
             marginBottom: '50px',
             maxWidth: '800px',
             margin: '0 auto 50px auto',
@@ -706,7 +706,7 @@ function Services() {
                 🏢 Google Business Profile Optimization
               </h3>
               <p style={{ 
-                color: '#64748b', 
+                color: '#475569', 
                 lineHeight: '1.7', 
                 marginBottom: '16px',
                 fontSize: '1rem'
@@ -714,7 +714,7 @@ function Services() {
                 Most businesses have a Google listing, but 90% aren't optimized correctly. We claim, verify, and optimize your profile for maximum local visibility.
               </p>
               <ul style={{ 
-                color: '#64748b', 
+                color: '#475569', 
                 paddingLeft: '20px', 
                 lineHeight: '1.8', 
                 fontSize: '0.95rem',
@@ -762,7 +762,7 @@ function Services() {
                 📊 Analytics & Tracking Setup
               </h3>
               <p style={{ 
-                color: '#64748b', 
+                color: '#475569', 
                 lineHeight: '1.7', 
                 marginBottom: '16px',
                 fontSize: '1rem'
@@ -770,7 +770,7 @@ function Services() {
                 Know exactly where your leads come from with professional analytics setup and clean reporting dashboards.
               </p>
               <ul style={{ 
-                color: '#64748b', 
+                color: '#475569', 
                 paddingLeft: '20px', 
                 lineHeight: '1.8', 
                 fontSize: '0.95rem',
@@ -819,7 +819,7 @@ function Services() {
                 🎯 Local SEO Foundation
               </h3>
               <p style={{ 
-                color: '#64748b', 
+                color: '#475569', 
                 lineHeight: '1.7', 
                 marginBottom: '16px',
                 fontSize: '1rem'
@@ -827,7 +827,7 @@ function Services() {
                 Consistent business information across all directories is crucial for local search rankings. We audit and fix everything.
               </p>
               <ul style={{ 
-                color: '#64748b', 
+                color: '#475569', 
                 paddingLeft: '20px', 
                 lineHeight: '1.8', 
                 fontSize: '0.95rem',
@@ -876,7 +876,7 @@ function Services() {
                 🚀 Website Enhancement Tools
               </h3>
               <p style={{ 
-                color: '#64748b', 
+                color: '#475569', 
                 lineHeight: '1.7', 
                 marginBottom: '16px',
                 fontSize: '1rem'
@@ -884,7 +884,7 @@ function Services() {
                 Turn your website into a lead generating machine with professional tools that capture and convert visitors.
               </p>
               <ul style={{ 
-                color: '#64748b', 
+                color: '#475569', 
                 paddingLeft: '20px', 
                 lineHeight: '1.8', 
                 fontSize: '0.95rem',
@@ -932,7 +932,7 @@ function Services() {
                 ⚡ Performance & Ad Readiness
               </h3>
               <p style={{ 
-                color: '#64748b', 
+                color: '#475569', 
                 lineHeight: '1.7', 
                 marginBottom: '16px',
                 fontSize: '1rem'
@@ -940,7 +940,7 @@ function Services() {
                 Speed optimization and advertising infrastructure setup. Start collecting data now, run ads later.
               </p>
               <ul style={{ 
-                color: '#64748b', 
+                color: '#475569', 
                 paddingLeft: '20px', 
                 lineHeight: '1.8', 
                 fontSize: '0.95rem',

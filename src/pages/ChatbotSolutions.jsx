@@ -53,7 +53,7 @@ function ChatbotSolutions() {
         {/* Hero Section */}
         <section style={{
           padding: '80px 20px',
-          background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+          background: 'linear-gradient(135deg, #9e74d0 0%, #8b5fc7 100%)',
           color: 'white',
           textAlign: 'center'
         }}>
@@ -88,7 +88,7 @@ function ChatbotSolutions() {
             <button
               onClick={() => handleCTAClick('Hero CTA')}
               style={{
-                background: 'linear-gradient(135deg, #6d28d9 0%, #764ba2 100%)',
+                background: 'linear-gradient(135deg, #8b5fc7 0%, #7a4ab8 100%)',
                 color: '#ffffff',
                 padding: '15px 35px',
                 fontSize: '1.2rem',
@@ -100,12 +100,12 @@ function ChatbotSolutions() {
                 boxShadow: '0 4px 15px rgba(102, 126, 234, 0.3)'
               }}
               onMouseEnter={(e) => {
-                e.target.style.background = 'linear-gradient(135deg, #764ba2 0%, #667eea 100%)';
+                e.target.style.background = 'linear-gradient(135deg, #8b5fc7 0%, #9e74d0 100%)';
                 e.target.style.transform = 'translateY(-2px)';
                 e.target.style.boxShadow = '0 6px 20px rgba(102, 126, 234, 0.4)';
               }}
               onMouseLeave={(e) => {
-                e.target.style.background = 'linear-gradient(135deg, #764ba2 0%, #667eea 100%)';
+                e.target.style.background = 'linear-gradient(135deg, #8b5fc7 0%, #9e74d0 100%)';
                 e.target.style.transform = 'translateY(0)';
                 e.target.style.boxShadow = '0 4px 15px rgba(102, 126, 234, 0.3)';
               }}
@@ -134,7 +134,7 @@ function ChatbotSolutions() {
             </h2>
             <p style={{
               fontSize: '1.1rem',
-              color: '#64748b',
+              color: '#475569',
               lineHeight: '1.7',
               marginBottom: '30px'
             }}>
@@ -162,7 +162,7 @@ function ChatbotSolutions() {
                 borderRadius: '8px',
                 border: '1px solid #e2e8f0'
               }}>
-                <strong style={{ color: '#667eea' }}>✓ Custom Chatbot Development</strong>
+                <strong style={{ color: '#9e74d0' }}>✓ Custom Chatbot Development</strong>
               </div>
               <div style={{
                 backgroundColor: '#f8fafc',
@@ -170,7 +170,7 @@ function ChatbotSolutions() {
                 borderRadius: '8px',
                 border: '1px solid #e2e8f0'
               }}>
-                <strong style={{ color: '#667eea' }}>✓ Small Business Focused</strong>
+                <strong style={{ color: '#9e74d0' }}>✓ Small Business Focused</strong>
               </div>
             </div>
           </div>
@@ -179,7 +179,7 @@ function ChatbotSolutions() {
         {/* Prominent CTA Section */}
         <section style={{
           padding: '80px 20px',
-          background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+          background: 'linear-gradient(135deg, #9e74d0 0%, #8b5fc7 100%)',
           color: 'white',
           textAlign: 'center'
         }}>
@@ -206,7 +206,7 @@ function ChatbotSolutions() {
               onClick={() => handleCTAClick('Prominent CTA')}
               style={{
                 background: 'white',
-                color: '#667eea',
+                color: '#9e74d0',
                 padding: '18px 45px',
                 fontSize: '1.3rem',
                 border: 'none',
@@ -249,7 +249,7 @@ function ChatbotSolutions() {
             </h2>
             <p style={{
               fontSize: '1.2rem',
-              color: '#64748b',
+              color: '#475569',
               marginBottom: '60px',
               maxWidth: '700px',
               margin: '0 auto 60px auto'
@@ -285,7 +285,7 @@ function ChatbotSolutions() {
                 <h3 style={{ fontSize: '1.5rem', marginBottom: '15px', color: '#1e293b' }}>
                   24/7 Availability
                 </h3>
-                <p style={{ color: '#64748b', lineHeight: '1.6' }}>
+                <p style={{ color: '#475569', lineHeight: '1.6' }}>
                   Never miss a lead again. Your chatbot works around the clock, capturing inquiries 
                   even when you're sleeping or busy with other customers.
                 </p>
@@ -309,7 +309,7 @@ function ChatbotSolutions() {
                 <h3 style={{ fontSize: '1.5rem', marginBottom: '15px', color: '#1e293b' }}>
                   Instant Lead Capture
                 </h3>
-                <p style={{ color: '#64748b', lineHeight: '1.6' }}>
+                <p style={{ color: '#475569', lineHeight: '1.6' }}>
                   Collect contact information from visitors while providing 
                   immediate answers about your services and business.
                 </p>
@@ -333,7 +333,7 @@ function ChatbotSolutions() {
                 <h3 style={{ fontSize: '1.5rem', marginBottom: '15px', color: '#1e293b' }}>
                   Improved Customer Experience
                 </h3>
-                <p style={{ color: '#64748b', lineHeight: '1.6' }}>
+                <p style={{ color: '#475569', lineHeight: '1.6' }}>
                   Provide instant answers to common questions and guide customers to the 
                   information they need most.
                 </p>
@@ -364,7 +364,7 @@ function ChatbotSolutions() {
               </h2>
               <p style={{
                 fontSize: '1.2rem',
-                color: '#64748b',
+                color: '#475569',
                 maxWidth: '700px',
                 margin: '0 auto'
               }}>
@@ -388,20 +388,20 @@ function ChatbotSolutions() {
                   transition: 'all 0.3s ease'
                 }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = '#667eea';
+                e.currentTarget.style.borderColor = '#9e74d0';
                 e.currentTarget.style.transform = 'translateY(-3px)';
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.borderColor = '#e2e8f0';
                 e.currentTarget.style.transform = 'translateY(0)';
               }}>
-                <div style={{ fontSize: '2.5rem', color: '#667eea', marginBottom: '15px' }}>
+                <div style={{ fontSize: '2.5rem', color: '#9e74d0', marginBottom: '15px' }}>
                   <FontAwesomeIcon icon={faBolt} />
                 </div>
                 <h3 style={{ fontSize: '1.3rem', marginBottom: '10px', color: '#1e293b' }}>
                   Intelligent Responses
                 </h3>
-                <p style={{ color: '#64748b', lineHeight: '1.6', fontSize: '0.95rem' }}>
+                <p style={{ color: '#475569', lineHeight: '1.6', fontSize: '0.95rem' }}>
                   AI powered natural language processing reads your website content and provides relevant, helpful responses 
                   based on the information from your pages.
                 </p>
@@ -429,7 +429,7 @@ function ChatbotSolutions() {
                 <h3 style={{ fontSize: '1.3rem', marginBottom: '10px', color: '#1e293b' }}>
                   Email Integration
                 </h3>
-                <p style={{ color: '#64748b', lineHeight: '1.6', fontSize: '0.95rem' }}>
+                <p style={{ color: '#475569', lineHeight: '1.6', fontSize: '0.95rem' }}>
                   Automatically sends detailed conversation summaries and lead information directly to your email inbox.
                 </p>
               </div>
@@ -456,7 +456,7 @@ function ChatbotSolutions() {
                 <h3 style={{ fontSize: '1.3rem', marginBottom: '10px', color: '#1e293b' }}>
                   Data Security
                 </h3>
-                <p style={{ color: '#64748b', lineHeight: '1.6', fontSize: '0.95rem' }}>
+                <p style={{ color: '#475569', lineHeight: '1.6', fontSize: '0.95rem' }}>
                   Enterprise grade security ensures customer data is protected with encryption and secure data handling.
                 </p>
               </div>
@@ -484,7 +484,7 @@ function ChatbotSolutions() {
                 <h3 style={{ fontSize: '1.3rem', marginBottom: '10px', color: '#1e293b' }}>
                   Easy Integration
                 </h3>
-                <p style={{ color: '#64748b', lineHeight: '1.6', fontSize: '0.95rem' }}>
+                <p style={{ color: '#475569', lineHeight: '1.6', fontSize: '0.95rem' }}>
                   Simple one line code integration that works with any website platform or CMS.
                 </p>
               </div>
@@ -511,7 +511,7 @@ function ChatbotSolutions() {
                 <h3 style={{ fontSize: '1.3rem', marginBottom: '10px', color: '#1e293b' }}>
                   Auto Updates Daily
                 </h3>
-                <p style={{ color: '#64748b', lineHeight: '1.6', fontSize: '0.95rem' }}>
+                <p style={{ color: '#475569', lineHeight: '1.6', fontSize: '0.95rem' }}>
                   Our chatbot automatically reads your website daily to ensure it stays current with your latest content, services, and pricing information.
                 </p>
               </div>
@@ -539,7 +539,7 @@ function ChatbotSolutions() {
             </h2>
             <p style={{
               fontSize: '1.2rem',
-              color: '#64748b',
+              color: '#475569',
               marginBottom: '40px'
             }}>
               Try our live chatbot right here on this page! Look for the chat bubble in the bottom right corner. 
@@ -568,26 +568,26 @@ function ChatbotSolutions() {
                 textAlign: 'left'
               }}>
                 <div className="service-box">
-                  <h4 style={{ color: '#667eea', marginBottom: '10px' }}>✓ Reads Your Website</h4>
-                  <p style={{ color: '#64748b', fontSize: '0.95rem' }}>
+                  <div style={{ color: '#9e74d0', marginBottom: '10px', fontWeight: '600', fontSize: '1rem' }}>✓ Reads Your Website</div>
+                  <p style={{ color: '#475569', fontSize: '0.95rem' }}>
                     Automatically reads and understands your website content to answer questions
                   </p>
                 </div>
                 <div className="service-box">
-                  <h4 style={{ color: '#667eea', marginBottom: '10px' }}>✓ Information Collection</h4>
-                  <p style={{ color: '#64748b', fontSize: '0.95rem' }}>
+                  <div style={{ color: '#9e74d0', marginBottom: '10px', fontWeight: '600', fontSize: '1rem' }}>✓ Information Collection</div>
+                  <p style={{ color: '#475569', fontSize: '0.95rem' }}>
                     Collects contact information from interested visitors while providing helpful answers
                   </p>
                 </div>
                 <div className="service-box">
-                  <h4 style={{ color: '#667eea', marginBottom: '10px' }}>✓ Email Notifications</h4>
-                  <p style={{ color: '#64748b', fontSize: '0.95rem' }}>
+                  <div style={{ color: '#9e74d0', marginBottom: '10px', fontWeight: '600', fontSize: '1rem' }}>✓ Email Notifications</div>
+                  <p style={{ color: '#475569', fontSize: '0.95rem' }}>
                     Sends conversation summaries and lead information directly to your email
                   </p>
                 </div>
                 <div className="service-box">
-                  <h4 style={{ color: '#667eea', marginBottom: '10px' }}>✓ Page-Based Responses</h4>
-                  <p style={{ color: '#64748b', fontSize: '0.95rem' }}>
+                  <div style={{ color: '#9e74d0', marginBottom: '10px', fontWeight: '600', fontSize: '1rem' }}>✓ Page-Based Responses</div>
+                  <p style={{ color: '#475569', fontSize: '0.95rem' }}>
                     Responds with information directly from your website pages and content
                   </p>
                 </div>
@@ -597,7 +597,7 @@ function ChatbotSolutions() {
             <button
               onClick={() => handleCTAClick('Demo CTA')}
               style={{
-                background: 'linear-gradient(135deg, #6d28d9 0%, #764ba2 100%)',
+                background: 'linear-gradient(135deg, #8b5fc7 0%, #7a4ab8 100%)',
                 color: 'white',
                 padding: '15px 35px',
                 fontSize: '1.2rem',
@@ -609,12 +609,12 @@ function ChatbotSolutions() {
                 boxShadow: '0 4px 15px rgba(102, 126, 234, 0.3)'
               }}
               onMouseEnter={(e) => {
-                e.target.style.background = 'linear-gradient(135deg, #764ba2 0%, #667eea 100%)';
+                e.target.style.background = 'linear-gradient(135deg, #8b5fc7 0%, #9e74d0 100%)';
                 e.target.style.transform = 'translateY(-2px)';
                 e.target.style.boxShadow = '0 6px 20px rgba(102, 126, 234, 0.4)';
               }}
               onMouseLeave={(e) => {
-                e.target.style.background = 'linear-gradient(135deg, #764ba2 0%, #667eea 100%)';
+                e.target.style.background = 'linear-gradient(135deg, #8b5fc7 0%, #9e74d0 100%)';
                 e.target.style.transform = 'translateY(0)';
                 e.target.style.boxShadow = '0 4px 15px rgba(102, 126, 234, 0.3)';
               }}
@@ -643,7 +643,7 @@ function ChatbotSolutions() {
             </h2>
             <p style={{
               fontSize: '1.2rem',
-              color: '#64748b',
+              color: '#475569',
               marginBottom: '50px'
             }}>
               Every business is unique, and so are your chatbot needs. We create custom solutions 
@@ -659,7 +659,7 @@ function ChatbotSolutions() {
             }}>
               <div style={{
                 fontSize: '4rem',
-                color: '#667eea',
+                color: '#9e74d0',
                 marginBottom: '30px'
               }}>
                 💬
@@ -675,7 +675,7 @@ function ChatbotSolutions() {
               
               <p style={{
                 fontSize: '1.1rem',
-                color: '#64748b',
+                color: '#475569',
                 marginBottom: '30px',
                 lineHeight: '1.6'
               }}>
@@ -697,8 +697,8 @@ function ChatbotSolutions() {
                   boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
                   minWidth: '200px'
                 }}>
-                  <h4 style={{ color: '#667eea', marginBottom: '10px' }}>✓ What's Included</h4>
-                  <ul style={{ textAlign: 'left', color: '#64748b', lineHeight: '1.8', fontSize: '0.95rem', paddingLeft: '20px' }}>
+                  <div style={{ color: '#9e74d0', marginBottom: '10px', fontWeight: '600', fontSize: '1rem' }}>✓ What's Included</div>
+                  <ul style={{ textAlign: 'left', color: '#475569', lineHeight: '1.8', fontSize: '0.95rem', paddingLeft: '20px' }}>
                     <li>Custom chatbot development</li>
                     <li>Website content reading setup</li>
                     <li>Full setup & integration</li>
@@ -713,8 +713,8 @@ function ChatbotSolutions() {
                   boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
                   minWidth: '200px'
                 }}>
-                  <h4 style={{ color: '#10b981', marginBottom: '10px' }}>✓ Pricing Factors</h4>
-                  <ul style={{ textAlign: 'left', color: '#64748b', lineHeight: '1.8', fontSize: '0.95rem', paddingLeft: '20px' }}>
+                  <div style={{ color: '#10b981', marginBottom: '10px', fontWeight: '600', fontSize: '1rem' }}>✓ Pricing Factors</div>
+                  <ul style={{ textAlign: 'left', color: '#475569', lineHeight: '1.8', fontSize: '0.95rem', paddingLeft: '20px' }}>
                     <li>Expected conversation volume</li>
                     <li>Website size and content amount</li>
                     <li>Website integration requirements</li>
@@ -726,7 +726,7 @@ function ChatbotSolutions() {
               <button
                 onClick={() => handleCTAClick('Custom Pricing')}
                 style={{
-                  background: 'linear-gradient(135deg, #6d28d9 0%, #764ba2 100%)',
+                  background: 'linear-gradient(135deg, #8b5fc7 0%, #7a4ab8 100%)',
                   color: 'white',
                   padding: '15px 35px',
                   fontSize: '1.2rem',
@@ -738,12 +738,12 @@ function ChatbotSolutions() {
                   boxShadow: '0 4px 15px rgba(102, 126, 234, 0.3)'
                 }}
                 onMouseEnter={(e) => {
-                  e.target.style.background = 'linear-gradient(135deg, #764ba2 0%, #667eea 100%)';
+                  e.target.style.background = 'linear-gradient(135deg, #8b5fc7 0%, #9e74d0 100%)';
                   e.target.style.transform = 'translateY(-2px)';
                   e.target.style.boxShadow = '0 6px 20px rgba(102, 126, 234, 0.4)';
                 }}
                 onMouseLeave={(e) => {
-                  e.target.style.background = 'linear-gradient(135deg, #764ba2 0%, #667eea 100%)';
+                  e.target.style.background = 'linear-gradient(135deg, #8b5fc7 0%, #9e74d0 100%)';
                   e.target.style.transform = 'translateY(0)';
                   e.target.style.boxShadow = '0 4px 15px rgba(102, 126, 234, 0.3)';
                 }}
@@ -752,7 +752,7 @@ function ChatbotSolutions() {
               </button>
             </div>
 
-            <p style={{ color: '#64748b', fontSize: '0.95rem' }}>
+            <p style={{ color: '#475569', fontSize: '0.95rem' }}>
               Free consultation • No commitment required • Transparent pricing
             </p>
           </div>
@@ -790,7 +790,7 @@ function ChatbotSolutions() {
                 <h3 style={{ fontSize: '1.3rem', marginBottom: '15px', color: '#1e293b' }}>
                   How much does a custom chatbot cost for a small business?
                 </h3>
-                <p style={{ color: '#64748b', lineHeight: '1.6' }}>
+                <p style={{ color: '#475569', lineHeight: '1.6' }}>
                   Custom chatbot pricing varies based on your business needs, expected conversation volume, and 
                   integration requirements. We provide personalized quotes for businesses, typically 
                   ranging from affordable monthly plans for small businesses to comprehensive solutions for larger companies.
@@ -806,7 +806,7 @@ function ChatbotSolutions() {
                 <h3 style={{ fontSize: '1.3rem', marginBottom: '15px', color: '#1e293b' }}>
                   What's the difference between a chatbot and live chat?
                 </h3>
-                <p style={{ color: '#64748b', lineHeight: '1.6' }}>
+                <p style={{ color: '#475569', lineHeight: '1.6' }}>
                   A chatbot uses AI to automatically respond to customer questions 24/7, while live chat requires 
                   human agents to be online. Our AI chatbots can handle most customer inquiries instantly and send 
                   detailed conversation summaries to your email for complex requests that need human follow-up.
@@ -822,7 +822,7 @@ function ChatbotSolutions() {
                 <h3 style={{ fontSize: '1.3rem', marginBottom: '15px', color: '#1e293b' }}>
                   Can I add a chatbot to my existing website?
                 </h3>
-                <p style={{ color: '#64748b', lineHeight: '1.6' }}>
+                <p style={{ color: '#475569', lineHeight: '1.6' }}>
                   Yes! Our chatbots integrate with any website platform including WordPress, Shopify, Squarespace, 
                   Wix, and custom built sites. Installation is simple, just one line of code that we provide and 
                   can help you install.
@@ -838,7 +838,7 @@ function ChatbotSolutions() {
                 <h3 style={{ fontSize: '1.3rem', marginBottom: '15px', color: '#1e293b' }}>
                   How do I know if my business needs a chatbot?
                 </h3>
-                <p style={{ color: '#64748b', lineHeight: '1.6' }}>
+                <p style={{ color: '#475569', lineHeight: '1.6' }}>
                   If you get customer inquiries through your website, miss calls outside business hours, want to 
                   capture more leads, or spend time answering the same questions repeatedly, a business chatbot 
                   can help. It's especially valuable for service businesses across all industries and professional practices.
@@ -854,7 +854,7 @@ function ChatbotSolutions() {
                 <h3 style={{ fontSize: '1.3rem', marginBottom: '15px', color: '#1e293b' }}>
                   Are AI chatbots better than human customer service?
                 </h3>
-                <p style={{ color: '#64748b', lineHeight: '1.6' }}>
+                <p style={{ color: '#475569', lineHeight: '1.6' }}>
                   AI chatbots excel at providing instant responses, handling multiple conversations simultaneously, 
                   and being available 24/7. They're perfect for answering common questions, capturing leads, and 
                   initial customer support. However, they work best when combined with human follow-up for complex 
@@ -895,7 +895,7 @@ function ChatbotSolutions() {
             <button
               onClick={() => handleCTAClick('Final CTA')}
               style={{
-                background: 'linear-gradient(135deg, #6d28d9 0%, #764ba2 100%)',
+                background: 'linear-gradient(135deg, #8b5fc7 0%, #7a4ab8 100%)',
                 color: 'white',
                 padding: '18px 40px',
                 fontSize: '1.3rem',
@@ -907,12 +907,12 @@ function ChatbotSolutions() {
                 boxShadow: '0 4px 15px rgba(102, 126, 234, 0.3)'
               }}
               onMouseEnter={(e) => {
-                e.target.style.background = 'linear-gradient(135deg, #764ba2 0%, #667eea 100%)';
+                e.target.style.background = 'linear-gradient(135deg, #8b5fc7 0%, #9e74d0 100%)';
                 e.target.style.transform = 'translateY(-2px)';
                 e.target.style.boxShadow = '0 6px 20px rgba(102, 126, 234, 0.4)';
               }}
               onMouseLeave={(e) => {
-                e.target.style.background = 'linear-gradient(135deg, #764ba2 0%, #667eea 100%)';
+                e.target.style.background = 'linear-gradient(135deg, #8b5fc7 0%, #9e74d0 100%)';
                 e.target.style.transform = 'translateY(0)';
                 e.target.style.boxShadow = '0 4px 15px rgba(102, 126, 234, 0.3)';
               }}

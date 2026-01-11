@@ -60,7 +60,7 @@ function ThankYou() {
           <p style={{ 
             marginBottom: '30px',
             fontSize: '1.2rem',
-            color: '#64748b',
+            color: '#475569',
             lineHeight: '1.6'
           }}>
             Your message has been received. We'll get back to you soon.

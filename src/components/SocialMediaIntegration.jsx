@@ -82,7 +82,7 @@ const SocialMediaIntegration = ({
             Connect With Us
           </h3>
           {showDescription && (
-            <p style={{ color: '#64748b', fontSize: '1rem' }}>
+            <p style={{ color: '#475569', fontSize: '1rem' }}>
               Follow us on social media for the latest updates, tips, and insights
             </p>
           )}

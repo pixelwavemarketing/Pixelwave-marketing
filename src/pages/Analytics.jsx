@@ -46,7 +46,7 @@ function Analytics() {
           </h1>
           <p style={{
             fontSize: '1.3rem',
-            color: '#64748b',
+            color: '#475569',
             lineHeight: '1.6',
             marginBottom: '40px'
           }}>
@@ -114,7 +114,7 @@ function Analytics() {
                 Performance Tracking
               </h3>
               <p style={{
-                color: '#64748b',
+                color: '#475569',
                 lineHeight: '1.6'
               }}>
                 Comprehensive tracking of key performance indicators to measure your business success.
@@ -147,7 +147,7 @@ function Analytics() {
                 Data Analysis
               </h3>
               <p style={{
-                color: '#64748b',
+                color: '#475569',
                 lineHeight: '1.6'
               }}>
                 Deep analysis of your business data to uncover trends and opportunities for growth.
@@ -180,7 +180,7 @@ function Analytics() {
                 ROI Measurement
               </h3>
               <p style={{
-                color: '#64748b',
+                color: '#475569',
                 lineHeight: '1.6'
               }}>
                 Accurate measurement of return on investment for all your marketing and business activities.
@@ -200,7 +200,7 @@ function Analytics() {
             >
               <div style={{
                 fontSize: '3rem',
-                color: '#2563eb',
+                color: '#9e74d0',
                 marginBottom: '20px'
               }}>
                 <FontAwesomeIcon icon={faUsers} />
@@ -213,7 +213,7 @@ function Analytics() {
                 Customer Insights
               </h3>
               <p style={{
-                color: '#64748b',
+                color: '#475569',
                 lineHeight: '1.6'
               }}>
                 Understand your customers better with detailed analytics and behavioral insights.
@@ -226,7 +226,7 @@ function Analytics() {
       {/* Prominent CTA Section */}
       <section style={{
         padding: '80px 20px',
-        background: 'linear-gradient(135deg, #60a5fa 0%, #1e40af 100%)',
+        background: 'linear-gradient(135deg, #9cecff 0%, #8b5fc7 100%)',
         color: 'white',
         textAlign: 'center'
       }}>
@@ -327,7 +327,7 @@ function Analytics() {
                 Proven Results
               </h3>
               <p style={{
-                color: '#64748b',
+                color: '#475569',
                 lineHeight: '1.6'
               }}>
                 We've helped businesses increase their ROI through data driven insights and strategic optimization. Your success is our mission.
@@ -360,7 +360,7 @@ function Analytics() {
                 Personalized Strategy
               </h3>
               <p style={{
-                color: '#64748b',
+                color: '#475569',
                 lineHeight: '1.6'
               }}>
                 Every business is unique. We create custom analytics strategies tailored to your specific industry, goals, and challenges.
@@ -393,7 +393,7 @@ function Analytics() {
                 Expert Team
               </h3>
               <p style={{
-                color: '#64748b',
+                color: '#475569',
                 lineHeight: '1.6'
               }}>
                 Our certified analytics experts bring years of experience and deep industry knowledge to every project. We speak your language.
@@ -413,7 +413,7 @@ function Analytics() {
             >
               <div style={{
                 fontSize: '3rem',
-                color: '#2563eb',
+                color: '#9e74d0',
                 marginBottom: '20px'
               }}>
                 <FontAwesomeIcon icon={faUsers} />
@@ -426,7 +426,7 @@ function Analytics() {
                 Ongoing Support
               </h3>
               <p style={{
-                color: '#64748b',
+                color: '#475569',
                 lineHeight: '1.6'
               }}>
                 We don't just set up analytics we're your long term partner. Reports, strategy sessions, and continuous optimization.

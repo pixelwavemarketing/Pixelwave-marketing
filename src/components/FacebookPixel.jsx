@@ -123,11 +123,11 @@ const FacebookPixel = () => {
       }, 100)
     }
 
-    // Listen for popstate events (back/forward navigation)
-    window.addEventListener('popstate', handleRouteChange)
+    // Listen for popstate events (back/forward navigation) - non-blocking
+    window.addEventListener('popstate', handleRouteChange, { passive: true })
     
-    // Listen for hash changes
-    window.addEventListener('hashchange', handleRouteChange)
+    // Listen for hash changes - non-blocking
+    window.addEventListener('hashchange', handleRouteChange, { passive: true })
 
     // Cleanup
     return () => {

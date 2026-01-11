@@ -10,7 +10,7 @@ const Testimonials = ({ testimonials, title = "What Our Clients Say", descriptio
           <h2 style={{ fontSize: '2.5rem', color: '#1e293b', marginBottom: '15px' }}>
             {title}
           </h2>
-          <p style={{ fontSize: '1.1rem', color: '#64748b', lineHeight: '1.6' }}>
+          <p style={{ fontSize: '1.1rem', color: '#475569', lineHeight: '1.6' }}>
             {description}
           </p>
         </div>
@@ -114,7 +114,7 @@ const Testimonials = ({ testimonials, title = "What Our Clients Say", descriptio
                     {testimonial.name}
                   </h4>
                   <p style={{
-                    color: '#64748b',
+                    color: '#475569',
                     margin: '0',
                     fontSize: '0.9rem'
                   }}>
@@ -122,7 +122,7 @@ const Testimonials = ({ testimonials, title = "What Our Clients Say", descriptio
                   </p>
                   {testimonial.company && (
                     <p style={{
-                      color: '#64748b',
+                      color: '#475569',
                       margin: '5px 0 0 0',
                       fontSize: '0.9rem',
                       fontWeight: '500'

@@ -83,7 +83,7 @@ function FAQ() {
           </h1>
           <p style={{
             fontSize: '1.2rem',
-            color: '#64748b',
+            color: '#475569',
             lineHeight: '1.6',
             marginBottom: '40px'
           }}>
@@ -117,7 +117,7 @@ function FAQ() {
             <p style={{
               fontSize: '1.3rem',
               lineHeight: '1.6',
-              color: '#64748b',
+              color: '#475569',
               marginBottom: faq.linkUrl ? '15px' : '0'
             }}>
               {faq.answer}
@@ -126,7 +126,7 @@ function FAQ() {
               <a 
                 href={faq.linkUrl}
                 style={{
-                  color: '#2563eb',
+                  color: '#9e74d0',
                   textDecoration: 'none',
                   fontWeight: '500',
                   fontSize: '1rem',
@@ -158,7 +158,7 @@ function FAQ() {
           </h3>
           <p style={{
             fontSize: '1.1rem',
-            color: '#64748b',
+            color: '#475569',
             marginBottom: '30px'
           }}>
             We're here to help! Contact us for personalized answers to your specific questions.

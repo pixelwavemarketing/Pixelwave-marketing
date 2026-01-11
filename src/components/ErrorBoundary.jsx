@@ -30,7 +30,7 @@ class ErrorBoundary extends React.Component {
           <h2 style={{ color: '#ef4444', marginBottom: '20px' }}>
             Oops! Something went wrong
           </h2>
-          <p style={{ color: '#64748b', marginBottom: '20px' }}>
+          <p style={{ color: '#475569', marginBottom: '20px' }}>
             We're working to fix this issue. Please try refreshing the page.
           </p>
           <button

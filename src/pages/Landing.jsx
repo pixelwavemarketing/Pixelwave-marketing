@@ -119,7 +119,7 @@ function Landing() {
 								type="button"
 								onClick={handlePrimaryCTA}
 								style={{
-									background: 'linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)',
+									background: 'linear-gradient(135deg, #9e74d0 0%, #8b5fc7 100%)',
 									color: 'white',
 									border: 'none',
 									borderRadius: '10px',
@@ -127,21 +127,21 @@ function Landing() {
 									fontSize: '1.3rem',
 									fontWeight: '600',
 									cursor: 'pointer',
-									boxShadow: '0 8px 20px rgba(59, 130, 246, 0.2)',
+									boxShadow: '0 8px 20px rgba(158, 116, 208, 0.3)',
 									transition: 'all 0.3s ease',
 									letterSpacing: '0.02em'
 								}}
 								onMouseEnter={(e) => {
 									const target = e.currentTarget
-									target.style.background = 'linear-gradient(135deg, #2563eb 0%, #1e40af 100%)'
+									target.style.background = 'linear-gradient(135deg, #8b5fc7 0%, #7a4ab8 100%)'
 									target.style.transform = 'translateY(-2px)'
-									target.style.boxShadow = '0 12px 28px rgba(59, 130, 246, 0.3)'
+									target.style.boxShadow = '0 12px 28px rgba(158, 116, 208, 0.4)'
 								}}
 								onMouseLeave={(e) => {
 									const target = e.currentTarget
-									target.style.background = 'linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)'
+									target.style.background = 'linear-gradient(135deg, #9e74d0 0%, #8b5fc7 100%)'
 									target.style.transform = 'translateY(0)'
-									target.style.boxShadow = '0 8px 20px rgba(59, 130, 246, 0.2)'
+									target.style.boxShadow = '0 8px 20px rgba(158, 116, 208, 0.3)'
 								}}
 							>
 								Get My Free Website & Lead Audit
@@ -149,7 +149,7 @@ function Landing() {
 							<p
 								style={{
 									fontSize: '0.95rem',
-									color: 'rgba(226, 232, 240, 0.75)',
+									color: 'rgba(226, 232, 240, 0.9)',
 									maxWidth: '360px'
 								}}
 							>
@@ -371,7 +371,7 @@ function Landing() {
 								fontSize: '1.3rem',
 								fontWeight: '600',
 								cursor: 'pointer',
-								boxShadow: '0 8px 20px rgba(59, 130, 246, 0.2)',
+								boxShadow: '0 8px 20px rgba(158, 116, 208, 0.3)',
 								transition: 'all 0.3s ease',
 								letterSpacing: '0.02em'
 							}}

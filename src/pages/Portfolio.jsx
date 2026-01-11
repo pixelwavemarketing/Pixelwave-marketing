@@ -133,7 +133,7 @@ function Portfolio() {
                   marginBottom: '15px'
                 }}>
                   <span style={{
-                    backgroundColor: '#2563eb',
+                    backgroundColor: '#9e74d0',
                     color: 'white',
                     padding: '6px 16px',
                     borderRadius: '20px',
@@ -143,7 +143,7 @@ function Portfolio() {
                     Web Development
                   </span>
                   <span style={{
-                    color: '#64748b',
+                    color: '#475569',
                     fontSize: '0.9rem'
                   }}>
                   </span>
@@ -157,7 +157,7 @@ function Portfolio() {
                   The Dumpster Man
                 </h3>
                 <p style={{
-                  color: '#64748b',
+                  color: '#475569',
                   lineHeight: '1.6',
                   marginBottom: '20px'
                 }}>
@@ -267,7 +267,7 @@ function Portfolio() {
                     Logo Design
                   </span>
                   <span style={{
-                    color: '#64748b',
+                    color: '#475569',
                     fontSize: '0.9rem'
                   }}>
                   </span>
@@ -281,7 +281,7 @@ function Portfolio() {
                   Easy Clean Pressure Washing
                 </h3>
                 <p style={{
-                  color: '#64748b',
+                  color: '#475569',
                   lineHeight: '1.6',
                   marginBottom: '20px'
                 }}>
@@ -382,7 +382,7 @@ function Portfolio() {
                     Logo Design
                   </span>
                   <span style={{
-                    color: '#64748b',
+                    color: '#475569',
                     fontSize: '0.9rem'
                   }}>
                   </span>
@@ -396,7 +396,7 @@ function Portfolio() {
                   Cinematic Mounting
                 </h3>
                 <p style={{
-                  color: '#64748b',
+                  color: '#475569',
                   lineHeight: '1.6',
                   marginBottom: '20px'
                 }}>
@@ -488,7 +488,7 @@ function Portfolio() {
                   marginBottom: '15px'
                 }}>
                   <span style={{
-                    backgroundColor: '#2563eb',
+                    backgroundColor: '#9e74d0',
                     color: 'white',
                     padding: '6px 16px',
                     borderRadius: '20px',
@@ -498,7 +498,7 @@ function Portfolio() {
                     Web Development
                   </span>
                   <span style={{
-                    color: '#64748b',
+                    color: '#475569',
                     fontSize: '0.9rem'
                   }}>
                   </span>
@@ -512,7 +512,7 @@ function Portfolio() {
                   Open Finance Calculators
                 </h3>
                 <p style={{
-                  color: '#64748b',
+                  color: '#475569',
                   lineHeight: '1.6',
                   marginBottom: '20px'
                 }}>
@@ -584,7 +584,7 @@ function Portfolio() {
             }}>
               <div style={{
                 fontSize: '3rem',
-                color: '#94a3b8',
+                color: '#64748b',
                 marginBottom: '20px'
               }}>
                 💡
@@ -592,12 +592,12 @@ function Portfolio() {
               <h3 style={{
                 fontSize: '1.5rem',
                 marginBottom: '15px',
-                color: '#64748b'
+                color: '#475569'
               }}>
                 Your Project Could Be Next
               </h3>
               <p style={{
-                color: '#94a3b8',
+                color: '#64748b',
                 lineHeight: '1.6',
                 maxWidth: '300px'
               }}>
@@ -628,7 +628,7 @@ function Portfolio() {
           <p style={{
             fontSize: '1.2rem',
             marginBottom: '40px',
-            color: '#64748b',
+            color: '#475569',
             lineHeight: '1.6'
           }}>
             Let's discuss your project and create something that will make your business stand out.

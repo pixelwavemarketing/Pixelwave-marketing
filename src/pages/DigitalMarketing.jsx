@@ -54,7 +54,7 @@ function DigitalMarketing() {
           </h1>
           <p style={{
             fontSize: '1.3rem',
-            color: '#64748b',
+            color: '#475569',
             lineHeight: '1.6',
             marginBottom: '40px'
           }}>
@@ -122,7 +122,7 @@ function DigitalMarketing() {
                 Google Ads Management
               </h3>
               <p style={{
-                color: '#64748b',
+                color: '#475569',
                 lineHeight: '1.6'
               }}>
                 Strategic Google Ads campaigns for service businesses including HVAC, plumbing, electrical, landscaping, and more. Target customers and maximize your advertising ROI with our proven strategies.
@@ -155,7 +155,7 @@ function DigitalMarketing() {
                 Social Media Marketing
               </h3>
               <p style={{
-                color: '#64748b',
+                color: '#475569',
                 lineHeight: '1.6'
               }}>
                 Build your service business brand across Facebook, Instagram, LinkedIn, and other platforms with engaging content that drives customer engagement and conversions.
@@ -188,7 +188,7 @@ function DigitalMarketing() {
                 SEO Services
               </h3>
               <p style={{
-                color: '#64748b',
+                color: '#475569',
                 lineHeight: '1.6'
               }}>
                 Improve your service business search rankings and drive organic traffic with our comprehensive SEO strategies tailored for service businesses across all industries.
@@ -201,7 +201,7 @@ function DigitalMarketing() {
       {/* Prominent CTA Section */}
       <section style={{
         padding: '80px 20px',
-        background: 'linear-gradient(135deg, #3b82f6 0%, #1e40af 100%)',
+        background: 'linear-gradient(135deg, #9e74d0 0%, #8b5fc7 100%)',
         color: 'white',
         textAlign: 'center'
       }}>
@@ -228,7 +228,7 @@ function DigitalMarketing() {
             onClick={() => navigate('/contact')}
             style={{
               background: 'white',
-              color: '#3b82f6',
+              color: '#9e74d0',
               padding: '18px 45px',
               fontSize: '1.3rem',
               border: 'none',
@@ -290,7 +290,7 @@ function DigitalMarketing() {
                 Industry Expertise
               </h3>
               <p style={{
-                color: '#64748b',
+                color: '#475569',
                 lineHeight: '1.6'
               }}>
                 We understand various industries and can help you reach your target customers effectively.
@@ -311,7 +311,7 @@ function DigitalMarketing() {
                 Data Driven Results
               </h3>
               <p style={{
-                color: '#64748b',
+                color: '#475569',
                 lineHeight: '1.6'
               }}>
                 Every strategy is backed by analytics and reporting so you can see your ROI.
@@ -332,7 +332,7 @@ function DigitalMarketing() {
                 Transparent Communication
               </h3>
               <p style={{
-                color: '#64748b',
+                color: '#475569',
                 lineHeight: '1.6'
               }}>
                 Regular updates and clear reporting keep you informed about your campaign performance.
@@ -375,7 +375,7 @@ function DigitalMarketing() {
               <div style={{
                 width: '60px',
                 height: '60px',
-                backgroundColor: '#2563eb',
+                backgroundColor: '#9e74d0',
                 borderRadius: '50%',
                 display: 'flex',
                 alignItems: 'center',
@@ -395,7 +395,7 @@ function DigitalMarketing() {
                 Strategy Development
               </h3>
               <p style={{
-                color: '#64748b',
+                color: '#475569',
                 lineHeight: '1.6'
               }}>
                 We analyze your business, competitors, and target audience to create a customized marketing strategy.
@@ -411,7 +411,7 @@ function DigitalMarketing() {
               <div style={{
                 width: '60px',
                 height: '60px',
-                backgroundColor: '#2563eb',
+                backgroundColor: '#9e74d0',
                 borderRadius: '50%',
                 display: 'flex',
                 alignItems: 'center',
@@ -431,7 +431,7 @@ function DigitalMarketing() {
                 Campaign Setup
               </h3>
               <p style={{
-                color: '#64748b',
+                color: '#475569',
                 lineHeight: '1.6'
               }}>
                 We implement your marketing campaigns across all relevant channels with optimized targeting.
@@ -447,7 +447,7 @@ function DigitalMarketing() {
               <div style={{
                 width: '60px',
                 height: '60px',
-                backgroundColor: '#2563eb',
+                backgroundColor: '#9e74d0',
                 borderRadius: '50%',
                 display: 'flex',
                 alignItems: 'center',
@@ -467,7 +467,7 @@ function DigitalMarketing() {
                 Optimization
               </h3>
               <p style={{
-                color: '#64748b',
+                color: '#475569',
                 lineHeight: '1.6'
               }}>
                 Continuous monitoring and optimization ensure your campaigns perform at their best.
@@ -483,7 +483,7 @@ function DigitalMarketing() {
               <div style={{
                 width: '60px',
                 height: '60px',
-                backgroundColor: '#2563eb',
+                backgroundColor: '#9e74d0',
                 borderRadius: '50%',
                 display: 'flex',
                 alignItems: 'center',
@@ -503,7 +503,7 @@ function DigitalMarketing() {
                 Results & Growth
               </h3>
               <p style={{
-                color: '#64748b',
+                color: '#475569',
                 lineHeight: '1.6'
               }}>
                 Regular reporting shows your growth and we scale successful strategies for continued success.

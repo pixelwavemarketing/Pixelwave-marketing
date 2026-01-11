@@ -38,7 +38,7 @@ function Contact() {
       {/* Hero Section */}
       <section style={{
         padding: '60px 20px',
-        background: 'linear-gradient(135deg, #3b82f6 0%, #1e40af 50%, #667eea 100%)',
+        background: 'linear-gradient(135deg, #9e74d0 0%, #8b5fc7 50%, #ba9fe7 100%)',
         color: 'white',
         textAlign: 'center'
       }}>
@@ -112,7 +112,7 @@ function Contact() {
                   marginBottom: '16px',
                   color: '#1e293b',
                   fontWeight: '700',
-                  background: 'linear-gradient(135deg, #3b82f6 0%, #667eea 100%)',
+                  background: 'linear-gradient(135deg, #9e74d0 0%, #ba9fe7 100%)',
                   WebkitBackgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
                   backgroundClip: 'text'
@@ -122,7 +122,7 @@ function Contact() {
                 
                 <p style={{
                   fontSize: '1.1rem',
-                  color: '#64748b',
+                  color: '#475569',
                   lineHeight: '1.7',
                   marginBottom: '32px'
                 }}>
@@ -148,7 +148,7 @@ function Contact() {
                 onMouseEnter={(e) => {
                   e.currentTarget.style.transform = 'translateX(4px)'
                   e.currentTarget.style.boxShadow = '0 4px 12px rgba(59, 130, 246, 0.15)'
-                  e.currentTarget.style.borderColor = '#3b82f6'
+                  e.currentTarget.style.borderColor = '#9e74d0'
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.transform = 'translateX(0)'
@@ -159,7 +159,7 @@ function Contact() {
                     width: '48px',
                     height: '48px',
                     borderRadius: '12px',
-                    background: 'linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)',
+                    background: 'linear-gradient(135deg, #9e74d0 0%, #8b5fc7 100%)',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -172,7 +172,7 @@ function Contact() {
                     <h3 style={{
                       fontSize: '0.9rem',
                       fontWeight: '600',
-                      color: '#64748b',
+                      color: '#475569',
                       marginBottom: '4px',
                       textTransform: 'uppercase',
                       letterSpacing: '0.5px',
@@ -240,7 +240,7 @@ function Contact() {
                     <h3 style={{
                       fontSize: '0.9rem',
                       fontWeight: '600',
-                      color: '#64748b',
+                      color: '#475569',
                       marginBottom: '4px',
                       textTransform: 'uppercase',
                       letterSpacing: '0.5px',
@@ -308,7 +308,7 @@ function Contact() {
                     <h3 style={{
                       fontSize: '0.9rem',
                       fontWeight: '600',
-                      color: '#64748b',
+                      color: '#475569',
                       marginBottom: '4px',
                       textTransform: 'uppercase',
                       letterSpacing: '0.5px',

@@ -46,7 +46,7 @@ function PrintDesign() {
           </h1>
           <p style={{
             fontSize: '1.3rem',
-            color: '#64748b',
+            color: '#475569',
             lineHeight: '1.6',
             marginBottom: '40px'
           }}>
@@ -115,7 +115,7 @@ function PrintDesign() {
                 Business Cards
               </h3>
               <p style={{
-                color: '#64748b',
+                color: '#475569',
                 lineHeight: '1.6'
               }}>
                 Professional business cards that make a strong first impression and reflect your brand identity.
@@ -149,7 +149,7 @@ function PrintDesign() {
                 Brochures & Flyers
               </h3>
               <p style={{
-                color: '#64748b',
+                color: '#475569',
                 lineHeight: '1.6'
               }}>
                 Informative and visually appealing brochures and flyers to promote your products and services.
@@ -183,7 +183,7 @@ function PrintDesign() {
                 Marketing Materials
               </h3>
               <p style={{
-                color: '#64748b',
+                color: '#475569',
                 lineHeight: '1.6'
               }}>
                 Complete marketing collateral including posters, banners, and promotional materials.
@@ -204,7 +204,7 @@ function PrintDesign() {
             }}>
               <div style={{
                 fontSize: '3rem',
-                color: '#2563eb',
+                color: '#9e74d0',
                 marginBottom: '20px'
               }}>
                 <FontAwesomeIcon icon={faLightbulb} />
@@ -217,7 +217,7 @@ function PrintDesign() {
                 Brand Consistency
               </h3>
               <p style={{
-                color: '#64748b',
+                color: '#475569',
                 lineHeight: '1.6'
               }}>
                 Ensure all print materials maintain consistent branding with your digital presence.

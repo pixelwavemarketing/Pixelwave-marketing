@@ -55,7 +55,7 @@ function FAQ() {
             <h3 style={{ fontSize: '1.3rem', marginBottom: '10px', color: '#1e293b' }}>
               {faq.question}
             </h3>
-            <p style={{ fontSize: '1.1rem', lineHeight: '1.6', color: '#64748b' }}>
+            <p style={{ fontSize: '1.1rem', lineHeight: '1.6', color: '#475569' }}>
               {faq.answer}
             </p>
           </div>
