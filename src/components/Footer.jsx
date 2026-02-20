@@ -3,12 +3,13 @@ import { faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-sv
 import siteConfig from '../config/siteConfig.js';
 
 function Footer() {
-	return (
+		return (
 		<footer style={{
 			width: '100%',
 			padding: '40px 20px',
-			backgroundColor: '#333',
-			color: 'white'
+			backgroundColor: '#0f172a',
+			color: '#e2e8f0',
+			borderTop: '1px solid #334155'
 		}}>
 			<div style={{
 				maxWidth: '1200px',
@@ -140,13 +141,13 @@ function Footer() {
 			
 			{/* Copyright Section */}
 			<div style={{
-				borderTop: '1px solid #555',
+				borderTop: '1px solid #334155',
 				marginTop: '30px',
 				paddingTop: '20px',
 				textAlign: 'center'
 			}}>
 				<p style={{
-					color: '#999',
+					color: '#94a3b8',
 					fontSize: '0.9rem',
 					margin: 0
 				}}>

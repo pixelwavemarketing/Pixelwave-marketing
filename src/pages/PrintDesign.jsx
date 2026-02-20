@@ -21,7 +21,8 @@ function PrintDesign() {
       <div className="other-page" style={{
         display: 'flex',
         flexDirection: 'column',
-        minHeight: '100vh'
+        minHeight: '100vh',
+        backgroundColor: '#0f172a'
       }}>
       <Header />
       <Breadcrumbs />
@@ -29,7 +30,7 @@ function PrintDesign() {
       {/* Hero Section */}
       <section style={{
         padding: '80px 20px',
-        backgroundColor: '#f8fafc',
+        backgroundColor: '#0f172a',
         textAlign: 'center'
       }}>
         <div style={{
@@ -38,7 +39,7 @@ function PrintDesign() {
         }}>
           <h1 style={{
             fontSize: '3rem',
-            color: '#1e293b',
+            color: '#f8fafc',
             marginBottom: '20px',
             fontWeight: '700'
           }}>
@@ -46,7 +47,7 @@ function PrintDesign() {
           </h1>
           <p style={{
             fontSize: '1.3rem',
-            color: '#475569',
+            color: '#cbd5e1',
             lineHeight: '1.6',
             marginBottom: '40px'
           }}>
@@ -68,7 +69,7 @@ function PrintDesign() {
       {/* Services Overview */}
       <section style={{
         padding: '60px 20px',
-        backgroundColor: 'white'
+        backgroundColor: '#1e293b'
       }}>
         <div style={{
           maxWidth: '1200px',
@@ -78,7 +79,7 @@ function PrintDesign() {
             fontSize: '2.5rem',
             textAlign: 'center',
             marginBottom: '50px',
-            color: '#1e293b'
+            color: '#f8fafc'
           }}>
             Print Design Services
           </h2>
@@ -110,12 +111,12 @@ function PrintDesign() {
               <h3 style={{
                 fontSize: '1.5rem',
                 marginBottom: '15px',
-                color: '#1e293b'
+                color: '#f8fafc'
               }}>
                 Business Cards
               </h3>
               <p style={{
-                color: '#475569',
+                color: '#cbd5e1',
                 lineHeight: '1.6'
               }}>
                 Professional business cards that make a strong first impression and reflect your brand identity.
@@ -144,12 +145,12 @@ function PrintDesign() {
               <h3 style={{
                 fontSize: '1.5rem',
                 marginBottom: '15px',
-                color: '#1e293b'
+                color: '#f8fafc'
               }}>
                 Brochures & Flyers
               </h3>
               <p style={{
-                color: '#475569',
+                color: '#cbd5e1',
                 lineHeight: '1.6'
               }}>
                 Informative and visually appealing brochures and flyers to promote your products and services.
@@ -178,12 +179,12 @@ function PrintDesign() {
               <h3 style={{
                 fontSize: '1.5rem',
                 marginBottom: '15px',
-                color: '#1e293b'
+                color: '#f8fafc'
               }}>
                 Marketing Materials
               </h3>
               <p style={{
-                color: '#475569',
+                color: '#cbd5e1',
                 lineHeight: '1.6'
               }}>
                 Complete marketing collateral including posters, banners, and promotional materials.
@@ -212,12 +213,12 @@ function PrintDesign() {
               <h3 style={{
                 fontSize: '1.5rem',
                 marginBottom: '15px',
-                color: '#1e293b'
+                color: '#f8fafc'
               }}>
                 Brand Consistency
               </h3>
               <p style={{
-                color: '#475569',
+                color: '#cbd5e1',
                 lineHeight: '1.6'
               }}>
                 Ensure all print materials maintain consistent branding with your digital presence.
@@ -256,8 +257,8 @@ function PrintDesign() {
           <button
             onClick={() => navigate('/contact')}
             style={{
-              background: 'white',
-              color: '#818cf8',
+              background: '#334155',
+              color: '#a5b4fc',
               padding: '18px 45px',
               fontSize: '1.3rem',
               border: 'none',

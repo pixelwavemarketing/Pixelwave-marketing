@@ -3,6 +3,7 @@ import SEOOptimizer from '../components/SEOOptimizer'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Breadcrumbs from '../components/Breadcrumbs'
+import bearRidgeLogo from '../assets/BR_PM_LOGO.webp'
 import truckImage from '../assets/truck-25.webp'
 import easyCleanLogo from '../assets/Easy clean - Pressure Washing.webp'
 import cinematicMountingLogo from '../assets/Cinematic Mounting.webp'
@@ -15,7 +16,8 @@ function Portfolio() {
     <div className="other-page" style={{
       display: 'flex',
       flexDirection: 'column',
-      minHeight: '100vh'
+      minHeight: '100vh',
+      backgroundColor: '#0f172a'
     }}>
       <SEOOptimizer 
         title="Portfolio | Pixelwave Marketing - Web Design Projects"
@@ -32,8 +34,8 @@ function Portfolio() {
       {/* Hero Section */}
       <section style={{
         padding: '80px 20px',
-        backgroundColor: '#1e293b',
-        color: 'white',
+        backgroundColor: '#0f172a',
+        color: '#f8fafc',
         textAlign: 'center'
       }}>
         <div style={{
@@ -43,7 +45,7 @@ function Portfolio() {
           <h1 style={{
             fontSize: '2.5rem',
             marginBottom: '20px',
-            color: '#FFFFFF'
+            color: '#f8fafc'
           }}>
             Our Portfolio of Success
           </h1>
@@ -75,7 +77,7 @@ function Portfolio() {
       {/* Portfolio Grid */}
       <section style={{
         padding: '60px 20px',
-        backgroundColor: 'white'
+        backgroundColor: '#0f172a'
       }}>
         <div style={{
           maxWidth: '1200px',
@@ -85,7 +87,7 @@ function Portfolio() {
             fontSize: '2.5rem',
             textAlign: 'center',
             marginBottom: '50px',
-            color: '#1e293b'
+            color: '#f8fafc'
           }}>
             Featured Projects
           </h2>
@@ -97,17 +99,140 @@ function Portfolio() {
             justifyContent: 'center',
             marginBottom: '60px'
           }}>
-            {/* The Dumpster Man Project */}
+            {/* Bear Ridge Property Maintenance - Web Development */}
             <div 
               className="portfolio-card"
               style={{
-                backgroundColor: '#ffffff',
+                backgroundColor: '#1e293b',
                 borderRadius: '12px',
                 overflow: 'hidden',
                 maxWidth: '400px',
                 minWidth: '280px',
                 flex: '1 1 350px',
-                margin: '0 auto'
+                margin: '0 auto',
+                border: '1px solid #334155'
+              }}
+              onClick={() => window.open('https://bearridgepm.com/', '_blank', 'noopener,noreferrer')}
+            >
+              <div style={{
+                padding: '40px',
+                textAlign: 'center',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'center',
+                minHeight: '250px',
+                backgroundColor: '#334155',
+                aspectRatio: '16/10'
+              }}>
+                <img 
+                  src={bearRidgeLogo}
+                  alt="Bear Ridge Property Maintenance - Professional property maintenance website"
+                  loading="lazy"
+                  width="400"
+                  height="250"
+                  style={{
+                    maxWidth: '100%',
+                    maxHeight: '250px',
+                    width: 'auto',
+                    height: 'auto',
+                    objectFit: 'contain'
+                  }}
+                />
+              </div>
+              <div style={{
+                padding: '30px'
+              }}>
+                <div style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  marginBottom: '15px'
+                }}>
+                  <span style={{
+                    backgroundColor: '#9e74d0',
+                    color: 'white',
+                    padding: '6px 16px',
+                    borderRadius: '20px',
+                    fontSize: '0.9rem',
+                    fontWeight: '500'
+                  }}>
+                    Web Development
+                  </span>
+                </div>
+                <h3 style={{
+                  fontSize: '1.5rem',
+                  marginBottom: '15px',
+                  color: '#f8fafc',
+                  fontWeight: '600'
+                }}>
+                  Bear Ridge Property Maintenance
+                </h3>
+                <p style={{
+                  color: '#cbd5e1',
+                  lineHeight: '1.6',
+                  marginBottom: '20px'
+                }}>
+                  Professional website for a property maintenance company. Clean, modern design with 
+                  service information, contact form, and mobile responsive layout.
+                </p>
+                <div style={{
+                  display: 'flex',
+                  flexWrap: 'wrap',
+                  gap: '8px'
+                }}>
+                  <span style={{
+                    backgroundColor: '#334155',
+                    color: '#cbd5e1',
+                    padding: '4px 12px',
+                    borderRadius: '12px',
+                    fontSize: '0.8rem'
+                  }}>
+                    React
+                  </span>
+                  <span style={{
+                    backgroundColor: '#334155',
+                    color: '#cbd5e1',
+                    padding: '4px 12px',
+                    borderRadius: '12px',
+                    fontSize: '0.8rem'
+                  }}>
+                    Responsive Design
+                  </span>
+                  <span style={{
+                    backgroundColor: '#334155',
+                    color: '#cbd5e1',
+                    padding: '4px 12px',
+                    borderRadius: '12px',
+                    fontSize: '0.8rem'
+                  }}>
+                    Local SEO
+                  </span>
+                  <span style={{
+                    backgroundColor: '#334155',
+                    color: '#cbd5e1',
+                    padding: '4px 12px',
+                    borderRadius: '12px',
+                    fontSize: '0.8rem'
+                  }}>
+                    Contact Forms
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* The Dumpster Man Project */}
+            <div 
+              className="portfolio-card"
+              style={{
+                backgroundColor: '#1e293b',
+                borderRadius: '12px',
+                overflow: 'hidden',
+                maxWidth: '400px',
+                minWidth: '280px',
+                flex: '1 1 350px',
+                margin: '0 auto',
+                border: '1px solid #334155'
               }}
               onClick={() => window.open('https://thedumpsterman518.com', '_blank', 'noopener,noreferrer')}
             >
@@ -143,7 +268,7 @@ function Portfolio() {
                     Web Development
                   </span>
                   <span style={{
-                    color: '#475569',
+                    color: '#94a3b8',
                     fontSize: '0.9rem'
                   }}>
                   </span>
@@ -151,13 +276,13 @@ function Portfolio() {
                 <h3 style={{
                   fontSize: '1.5rem',
                   marginBottom: '15px',
-                  color: '#1e293b',
+                  color: '#f8fafc',
                   fontWeight: '600'
                 }}>
                   The Dumpster Man
                 </h3>
                 <p style={{
-                  color: '#475569',
+                  color: '#cbd5e1',
                   lineHeight: '1.6',
                   marginBottom: '20px'
                 }}>
@@ -170,8 +295,8 @@ function Portfolio() {
                   gap: '8px'
                 }}>
                   <span style={{
-                    backgroundColor: '#f1f5f9',
-                    color: '#475569',
+                    backgroundColor: '#334155',
+                    color: '#cbd5e1',
                     padding: '4px 12px',
                     borderRadius: '12px',
                     fontSize: '0.8rem'
@@ -179,8 +304,8 @@ function Portfolio() {
                     React
                   </span>
                   <span style={{
-                    backgroundColor: '#f1f5f9',
-                    color: '#475569',
+                    backgroundColor: '#334155',
+                    color: '#cbd5e1',
                     padding: '4px 12px',
                     borderRadius: '12px',
                     fontSize: '0.8rem'
@@ -188,8 +313,8 @@ function Portfolio() {
                     Responsive Design
                   </span>
                   <span style={{
-                    backgroundColor: '#f1f5f9',
-                    color: '#475569',
+                    backgroundColor: '#334155',
+                    color: '#cbd5e1',
                     padding: '4px 12px',
                     borderRadius: '12px',
                     fontSize: '0.8rem'
@@ -197,8 +322,8 @@ function Portfolio() {
                     Local SEO
                   </span>
                   <span style={{
-                    backgroundColor: '#f1f5f9',
-                    color: '#475569',
+                    backgroundColor: '#334155',
+                    color: '#cbd5e1',
                     padding: '4px 12px',
                     borderRadius: '12px',
                     fontSize: '0.8rem'
@@ -212,14 +337,14 @@ function Portfolio() {
             {/* Easy Clean Logo Design */}
             <div 
               style={{
-                backgroundColor: '#ffffff',
+                backgroundColor: '#1e293b',
                 borderRadius: '12px',
                 overflow: 'hidden',
                 maxWidth: '400px',
                 minWidth: '280px',
                 flex: '1 1 350px',
                 margin: '0 auto',
-                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
+                border: '1px solid #334155'
               }}
             >
               <div style={{
@@ -230,7 +355,8 @@ function Portfolio() {
                 alignItems: 'center',
                 justifyContent: 'center',
                 minHeight: '250px',
-                aspectRatio: '16/10'
+                aspectRatio: '16/10',
+                backgroundColor: '#334155'
               }}>
                 <img 
                   src={easyCleanLogo}
@@ -267,7 +393,7 @@ function Portfolio() {
                     Logo Design
                   </span>
                   <span style={{
-                    color: '#475569',
+                    color: '#94a3b8',
                     fontSize: '0.9rem'
                   }}>
                   </span>
@@ -275,13 +401,13 @@ function Portfolio() {
                 <h3 style={{
                   fontSize: '1.5rem',
                   marginBottom: '15px',
-                  color: '#1e293b',
+                  color: '#f8fafc',
                   fontWeight: '600'
                 }}>
                   Easy Clean Pressure Washing
                 </h3>
                 <p style={{
-                  color: '#475569',
+                  color: '#cbd5e1',
                   lineHeight: '1.6',
                   marginBottom: '20px'
                 }}>
@@ -294,8 +420,8 @@ function Portfolio() {
                   gap: '8px'
                 }}>
                   <span style={{
-                    backgroundColor: '#f1f5f9',
-                    color: '#475569',
+                    backgroundColor: '#334155',
+                    color: '#cbd5e1',
                     padding: '4px 12px',
                     borderRadius: '12px',
                     fontSize: '0.8rem'
@@ -303,8 +429,8 @@ function Portfolio() {
                     Logo Design
                   </span>
                   <span style={{
-                    backgroundColor: '#f1f5f9',
-                    color: '#475569',
+                    backgroundColor: '#334155',
+                    color: '#cbd5e1',
                     padding: '4px 12px',
                     borderRadius: '12px',
                     fontSize: '0.8rem'
@@ -312,8 +438,8 @@ function Portfolio() {
                     Brand Identity
                   </span>
                   <span style={{
-                    backgroundColor: '#f1f5f9',
-                    color: '#475569',
+                    backgroundColor: '#334155',
+                    color: '#cbd5e1',
                     padding: '4px 12px',
                     borderRadius: '12px',
                     fontSize: '0.8rem'
@@ -327,20 +453,20 @@ function Portfolio() {
             {/* Cinematic Mounting Logo Design */}
             <div 
               style={{
-                backgroundColor: '#ffffff',
+                backgroundColor: '#1e293b',
                 borderRadius: '12px',
                 overflow: 'hidden',
                 maxWidth: '400px',
                 minWidth: '280px',
                 flex: '1 1 350px',
                 margin: '0 auto',
-                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
+                border: '1px solid #334155'
               }}
             >
               <div style={{
                 padding: '0',
                 textAlign: 'center',
-                backgroundColor: '#f8fafc',
+                backgroundColor: '#334155',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
@@ -382,7 +508,7 @@ function Portfolio() {
                     Logo Design
                   </span>
                   <span style={{
-                    color: '#475569',
+                    color: '#94a3b8',
                     fontSize: '0.9rem'
                   }}>
                   </span>
@@ -390,13 +516,13 @@ function Portfolio() {
                 <h3 style={{
                   fontSize: '1.5rem',
                   marginBottom: '15px',
-                  color: '#1e293b',
+                  color: '#f8fafc',
                   fontWeight: '600'
                 }}>
                   Cinematic Mounting
                 </h3>
                 <p style={{
-                  color: '#475569',
+                  color: '#cbd5e1',
                   lineHeight: '1.6',
                   marginBottom: '20px'
                 }}>
@@ -409,8 +535,8 @@ function Portfolio() {
                   gap: '8px'
                 }}>
                   <span style={{
-                    backgroundColor: '#f1f5f9',
-                    color: '#475569',
+                    backgroundColor: '#334155',
+                    color: '#cbd5e1',
                     padding: '4px 12px',
                     borderRadius: '12px',
                     fontSize: '0.8rem'
@@ -418,8 +544,8 @@ function Portfolio() {
                     Brand Identity
                   </span>
                   <span style={{
-                    backgroundColor: '#f1f5f9',
-                    color: '#475569',
+                    backgroundColor: '#334155',
+                    color: '#cbd5e1',
                     padding: '4px 12px',
                     borderRadius: '12px',
                     fontSize: '0.8rem'
@@ -427,8 +553,8 @@ function Portfolio() {
                     Home Services
                   </span>
                   <span style={{
-                    backgroundColor: '#f1f5f9',
-                    color: '#475569',
+                    backgroundColor: '#334155',
+                    color: '#cbd5e1',
                     padding: '4px 12px',
                     borderRadius: '12px',
                     fontSize: '0.8rem'
@@ -443,13 +569,14 @@ function Portfolio() {
             <div 
               className="portfolio-card"
               style={{
-                backgroundColor: '#ffffff',
+                backgroundColor: '#1e293b',
                 borderRadius: '12px',
                 overflow: 'hidden',
                 maxWidth: '400px',
                 minWidth: '280px',
                 flex: '1 1 350px',
-                margin: '0 auto'
+                margin: '0 auto',
+                border: '1px solid #334155'
               }}
               onClick={() => window.open('https://openfinancecalculators.com', '_blank', 'noopener,noreferrer')}
             >
@@ -461,7 +588,7 @@ function Portfolio() {
                 alignItems: 'center',
                 justifyContent: 'center',
                 minHeight: '250px',
-                backgroundColor: '#f8fafc',
+                backgroundColor: '#334155',
                 aspectRatio: '16/10'
               }}>
                 <img 
@@ -498,7 +625,7 @@ function Portfolio() {
                     Web Development
                   </span>
                   <span style={{
-                    color: '#475569',
+                    color: '#94a3b8',
                     fontSize: '0.9rem'
                   }}>
                   </span>
@@ -506,13 +633,13 @@ function Portfolio() {
                 <h3 style={{
                   fontSize: '1.5rem',
                   marginBottom: '15px',
-                  color: '#1e293b',
+                  color: '#f8fafc',
                   fontWeight: '600'
                 }}>
                   Open Finance Calculators
                 </h3>
                 <p style={{
-                  color: '#475569',
+                  color: '#cbd5e1',
                   lineHeight: '1.6',
                   marginBottom: '20px'
                 }}>
@@ -526,8 +653,8 @@ function Portfolio() {
                   gap: '8px'
                 }}>
                   <span style={{
-                    backgroundColor: '#f1f5f9',
-                    color: '#475569',
+                    backgroundColor: '#334155',
+                    color: '#cbd5e1',
                     padding: '4px 12px',
                     borderRadius: '12px',
                     fontSize: '0.8rem'
@@ -535,8 +662,8 @@ function Portfolio() {
                     Financial Tools
                   </span>
                   <span style={{
-                    backgroundColor: '#f1f5f9',
-                    color: '#475569',
+                    backgroundColor: '#334155',
+                    color: '#cbd5e1',
                     padding: '4px 12px',
                     borderRadius: '12px',
                     fontSize: '0.8rem'
@@ -544,8 +671,8 @@ function Portfolio() {
                     Calculator Apps
                   </span>
                   <span style={{
-                    backgroundColor: '#f1f5f9',
-                    color: '#475569',
+                    backgroundColor: '#334155',
+                    color: '#cbd5e1',
                     padding: '4px 12px',
                     borderRadius: '12px',
                     fontSize: '0.8rem'
@@ -553,8 +680,8 @@ function Portfolio() {
                     Responsive Design
                   </span>
                   <span style={{
-                    backgroundColor: '#f1f5f9',
-                    color: '#475569',
+                    backgroundColor: '#334155',
+                    color: '#cbd5e1',
                     padding: '4px 12px',
                     borderRadius: '12px',
                     fontSize: '0.8rem'
@@ -567,9 +694,9 @@ function Portfolio() {
 
             {/* Another Coming Soon Placeholder */}
             <div style={{
-              backgroundColor: '#f8fafc',
+              backgroundColor: '#1e293b',
               borderRadius: '12px',
-              border: '2px dashed #cbd5e1',
+              border: '2px dashed #475569',
               padding: '60px 30px',
               textAlign: 'center',
               display: 'flex',
@@ -592,12 +719,12 @@ function Portfolio() {
               <h3 style={{
                 fontSize: '1.5rem',
                 marginBottom: '15px',
-                color: '#475569'
+                color: '#cbd5e1'
               }}>
                 Your Project Could Be Next
               </h3>
               <p style={{
-                color: '#64748b',
+                color: '#94a3b8',
                 lineHeight: '1.6',
                 maxWidth: '300px'
               }}>
@@ -611,7 +738,7 @@ function Portfolio() {
       {/* CTA Section */}
       <section style={{
         padding: '60px 20px',
-        backgroundColor: '#f8fafc',
+        backgroundColor: '#0f172a',
         textAlign: 'center'
       }}>
         <div style={{
@@ -621,14 +748,14 @@ function Portfolio() {
           <h2 style={{
             fontSize: '2.5rem',
             marginBottom: '20px',
-            color: '#1e293b'
+            color: '#f8fafc'
           }}>
             Ready to Join Our Portfolio?
           </h2>
           <p style={{
             fontSize: '1.2rem',
             marginBottom: '40px',
-            color: '#475569',
+            color: '#cbd5e1',
             lineHeight: '1.6'
           }}>
             Let's discuss your project and create something that will make your business stand out.

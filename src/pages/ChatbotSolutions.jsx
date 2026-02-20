@@ -45,7 +45,8 @@ function ChatbotSolutions() {
       <div className="other-page" style={{
         display: 'flex',
         flexDirection: 'column',
-        minHeight: '100vh'
+        minHeight: '100vh',
+        backgroundColor: '#0f172a'
       }}>
         <Header />
         <Breadcrumbs />
@@ -64,7 +65,7 @@ function ChatbotSolutions() {
             <div style={{ 
               fontSize: '4rem', 
               marginBottom: '20px',
-              color: '#ffffff'
+              color: '#f8fafc'
             }}>
               <FontAwesomeIcon icon={faRobot} />
             </div>
@@ -89,7 +90,7 @@ function ChatbotSolutions() {
               onClick={() => handleCTAClick('Hero CTA')}
               style={{
                 background: 'linear-gradient(135deg, #8b5fc7 0%, #7a4ab8 100%)',
-                color: '#ffffff',
+                color: '#f8fafc',
                 padding: '15px 35px',
                 fontSize: '1.2rem',
                 border: 'none',
@@ -118,7 +119,7 @@ function ChatbotSolutions() {
         {/* AI Chatbot Services Section */}
         <section style={{
           padding: '60px 20px',
-          backgroundColor: 'white',
+          backgroundColor: '#1e293b',
           textAlign: 'center'
         }}>
           <div style={{
@@ -128,13 +129,13 @@ function ChatbotSolutions() {
             <h2 style={{
               fontSize: '2.2rem',
               marginBottom: '20px',
-              color: '#1e293b'
+              color: '#f8fafc'
             }}>
               AI Chatbot Development for Service Businesses
             </h2>
             <p style={{
               fontSize: '1.1rem',
-              color: '#475569',
+              color: '#cbd5e1',
               lineHeight: '1.7',
               marginBottom: '30px'
             }}>
@@ -157,7 +158,7 @@ function ChatbotSolutions() {
               marginTop: '30px'
             }}>
               <div style={{
-                backgroundColor: '#f8fafc',
+                backgroundColor: '#0f172a',
                 padding: '20px 30px',
                 borderRadius: '8px',
                 border: '1px solid #e2e8f0'
@@ -165,7 +166,7 @@ function ChatbotSolutions() {
                 <strong style={{ color: '#9e74d0' }}>✓ Custom Chatbot Development</strong>
               </div>
               <div style={{
-                backgroundColor: '#f8fafc',
+                backgroundColor: '#0f172a',
                 padding: '20px 30px',
                 borderRadius: '8px',
                 border: '1px solid #e2e8f0'
@@ -205,8 +206,8 @@ function ChatbotSolutions() {
             <button
               onClick={() => handleCTAClick('Prominent CTA')}
               style={{
-                background: 'white',
-                color: '#9e74d0',
+                background: '#334155',
+                color: '#c4b5fd',
                 padding: '18px 45px',
                 fontSize: '1.3rem',
                 border: 'none',
@@ -233,7 +234,7 @@ function ChatbotSolutions() {
         {/* Key Benefits Section */}
         <section style={{
           padding: '80px 20px',
-          backgroundColor: '#f8fafc'
+          backgroundColor: '#0f172a'
         }}>
           <div style={{
             maxWidth: '1200px',
@@ -243,13 +244,13 @@ function ChatbotSolutions() {
             <h2 style={{
               fontSize: '2.5rem',
               marginBottom: '20px',
-              color: '#1e293b'
+              color: '#f8fafc'
             }}>
               Why Every Business Needs an AI Chatbot in 2025
             </h2>
             <p style={{
               fontSize: '1.2rem',
-              color: '#475569',
+              color: '#cbd5e1',
               marginBottom: '60px',
               maxWidth: '700px',
               margin: '0 auto 60px auto'
@@ -270,7 +271,7 @@ function ChatbotSolutions() {
               <div 
                 className="service-box"
                 style={{
-                  backgroundColor: 'white',
+                  backgroundColor: '#1e293b',
                   padding: '40px 30px',
                   borderRadius: '12px',
                   boxShadow: '0 4px 20px rgba(0,0,0,0.1)',
@@ -282,10 +283,10 @@ function ChatbotSolutions() {
                 <div style={{ fontSize: '3rem', color: '#10b981', marginBottom: '20px' }}>
                   <FontAwesomeIcon icon={faClock} />
                 </div>
-                <h3 style={{ fontSize: '1.5rem', marginBottom: '15px', color: '#1e293b' }}>
+                <h3 style={{ fontSize: '1.5rem', marginBottom: '15px', color: '#f8fafc' }}>
                   24/7 Availability
                 </h3>
-                <p style={{ color: '#475569', lineHeight: '1.6' }}>
+                <p style={{ color: '#cbd5e1', lineHeight: '1.6' }}>
                   Never miss a lead again. Your chatbot works around the clock, capturing inquiries 
                   even when you're sleeping or busy with other customers.
                 </p>
@@ -294,7 +295,7 @@ function ChatbotSolutions() {
               <div 
                 className="service-box"
                 style={{
-                  backgroundColor: 'white',
+                  backgroundColor: '#1e293b',
                   padding: '40px 30px',
                   borderRadius: '12px',
                   boxShadow: '0 4px 20px rgba(0,0,0,0.1)',
@@ -306,10 +307,10 @@ function ChatbotSolutions() {
                 <div style={{ fontSize: '3rem', color: '#3b82f6', marginBottom: '20px' }}>
                   <FontAwesomeIcon icon={faChartLine} />
                 </div>
-                <h3 style={{ fontSize: '1.5rem', marginBottom: '15px', color: '#1e293b' }}>
+                <h3 style={{ fontSize: '1.5rem', marginBottom: '15px', color: '#f8fafc' }}>
                   Instant Lead Capture
                 </h3>
-                <p style={{ color: '#475569', lineHeight: '1.6' }}>
+                <p style={{ color: '#cbd5e1', lineHeight: '1.6' }}>
                   Collect contact information from visitors while providing 
                   immediate answers about your services and business.
                 </p>
@@ -318,7 +319,7 @@ function ChatbotSolutions() {
               <div 
                 className="service-box"
                 style={{
-                  backgroundColor: 'white',
+                  backgroundColor: '#1e293b',
                   padding: '40px 30px',
                   borderRadius: '12px',
                   boxShadow: '0 4px 20px rgba(0,0,0,0.1)',
@@ -330,10 +331,10 @@ function ChatbotSolutions() {
                 <div style={{ fontSize: '3rem', color: '#f59e0b', marginBottom: '20px' }}>
                   <FontAwesomeIcon icon={faUsers} />
                 </div>
-                <h3 style={{ fontSize: '1.5rem', marginBottom: '15px', color: '#1e293b' }}>
+                <h3 style={{ fontSize: '1.5rem', marginBottom: '15px', color: '#f8fafc' }}>
                   Improved Customer Experience
                 </h3>
-                <p style={{ color: '#475569', lineHeight: '1.6' }}>
+                <p style={{ color: '#cbd5e1', lineHeight: '1.6' }}>
                   Provide instant answers to common questions and guide customers to the 
                   information they need most.
                 </p>
@@ -345,7 +346,7 @@ function ChatbotSolutions() {
         {/* Features Section */}
         <section style={{
           padding: '80px 20px',
-          backgroundColor: 'white'
+          backgroundColor: '#1e293b'
         }}>
           <div style={{
             maxWidth: '1200px',
@@ -358,13 +359,13 @@ function ChatbotSolutions() {
               <h2 style={{
                 fontSize: '2.5rem',
                 marginBottom: '20px',
-                color: '#1e293b'
+                color: '#f8fafc'
               }}>
                 Chatbot Features That Drive Results
               </h2>
               <p style={{
                 fontSize: '1.2rem',
-                color: '#475569',
+                color: '#cbd5e1',
                 maxWidth: '700px',
                 margin: '0 auto'
               }}>
@@ -398,10 +399,10 @@ function ChatbotSolutions() {
                 <div style={{ fontSize: '2.5rem', color: '#9e74d0', marginBottom: '15px' }}>
                   <FontAwesomeIcon icon={faBolt} />
                 </div>
-                <h3 style={{ fontSize: '1.3rem', marginBottom: '10px', color: '#1e293b' }}>
+                <h3 style={{ fontSize: '1.3rem', marginBottom: '10px', color: '#f8fafc' }}>
                   Intelligent Responses
                 </h3>
-                <p style={{ color: '#475569', lineHeight: '1.6', fontSize: '0.95rem' }}>
+                <p style={{ color: '#cbd5e1', lineHeight: '1.6', fontSize: '0.95rem' }}>
                   AI powered natural language processing reads your website content and provides relevant, helpful responses 
                   based on the information from your pages.
                 </p>
@@ -426,10 +427,10 @@ function ChatbotSolutions() {
                 <div style={{ fontSize: '2.5rem', color: '#10b981', marginBottom: '15px' }}>
                   <FontAwesomeIcon icon={faComments} />
                 </div>
-                <h3 style={{ fontSize: '1.3rem', marginBottom: '10px', color: '#1e293b' }}>
+                <h3 style={{ fontSize: '1.3rem', marginBottom: '10px', color: '#f8fafc' }}>
                   Email Integration
                 </h3>
-                <p style={{ color: '#475569', lineHeight: '1.6', fontSize: '0.95rem' }}>
+                <p style={{ color: '#cbd5e1', lineHeight: '1.6', fontSize: '0.95rem' }}>
                   Automatically sends detailed conversation summaries and lead information directly to your email inbox.
                 </p>
               </div>
@@ -453,10 +454,10 @@ function ChatbotSolutions() {
                 <div style={{ fontSize: '2.5rem', color: '#f59e0b', marginBottom: '15px' }}>
                   <FontAwesomeIcon icon={faShield} />
                 </div>
-                <h3 style={{ fontSize: '1.3rem', marginBottom: '10px', color: '#1e293b' }}>
+                <h3 style={{ fontSize: '1.3rem', marginBottom: '10px', color: '#f8fafc' }}>
                   Data Security
                 </h3>
-                <p style={{ color: '#475569', lineHeight: '1.6', fontSize: '0.95rem' }}>
+                <p style={{ color: '#cbd5e1', lineHeight: '1.6', fontSize: '0.95rem' }}>
                   Enterprise grade security ensures customer data is protected with encryption and secure data handling.
                 </p>
               </div>
@@ -481,10 +482,10 @@ function ChatbotSolutions() {
                 <div style={{ fontSize: '2.5rem', color: '#8b5cf6', marginBottom: '15px' }}>
                   <FontAwesomeIcon icon={faCode} />
                 </div>
-                <h3 style={{ fontSize: '1.3rem', marginBottom: '10px', color: '#1e293b' }}>
+                <h3 style={{ fontSize: '1.3rem', marginBottom: '10px', color: '#f8fafc' }}>
                   Easy Integration
                 </h3>
-                <p style={{ color: '#475569', lineHeight: '1.6', fontSize: '0.95rem' }}>
+                <p style={{ color: '#cbd5e1', lineHeight: '1.6', fontSize: '0.95rem' }}>
                   Simple one line code integration that works with any website platform or CMS.
                 </p>
               </div>
@@ -508,10 +509,10 @@ function ChatbotSolutions() {
                 <div style={{ fontSize: '2.5rem', color: '#06b6d4', marginBottom: '15px' }}>
                   <FontAwesomeIcon icon={faSync} />
                 </div>
-                <h3 style={{ fontSize: '1.3rem', marginBottom: '10px', color: '#1e293b' }}>
+                <h3 style={{ fontSize: '1.3rem', marginBottom: '10px', color: '#f8fafc' }}>
                   Auto Updates Daily
                 </h3>
-                <p style={{ color: '#475569', lineHeight: '1.6', fontSize: '0.95rem' }}>
+                <p style={{ color: '#cbd5e1', lineHeight: '1.6', fontSize: '0.95rem' }}>
                   Our chatbot automatically reads your website daily to ensure it stays current with your latest content, services, and pricing information.
                 </p>
               </div>
@@ -523,7 +524,7 @@ function ChatbotSolutions() {
         {/* Live Demo Section */}
         <section style={{
           padding: '80px 20px',
-          backgroundColor: '#f8fafc',
+          backgroundColor: '#0f172a',
           textAlign: 'center'
         }}>
           <div style={{
@@ -533,13 +534,13 @@ function ChatbotSolutions() {
             <h2 style={{
               fontSize: '2.5rem',
               marginBottom: '20px',
-              color: '#1e293b'
+              color: '#f8fafc'
             }}>
               See Our Chatbot in Action
             </h2>
             <p style={{
               fontSize: '1.2rem',
-              color: '#475569',
+              color: '#cbd5e1',
               marginBottom: '40px'
             }}>
               Try our live chatbot right here on this page! Look for the chat bubble in the bottom right corner. 
@@ -547,7 +548,7 @@ function ChatbotSolutions() {
             </p>
             
             <div style={{
-              backgroundColor: 'white',
+              backgroundColor: '#1e293b',
               padding: '40px',
               borderRadius: '12px',
               boxShadow: '0 4px 20px rgba(0,0,0,0.1)',
@@ -556,7 +557,7 @@ function ChatbotSolutions() {
               <h3 style={{
                 fontSize: '1.5rem',
                 marginBottom: '20px',
-                color: '#1e293b'
+                color: '#f8fafc'
               }}>
                 What Makes Our Chatbots Different?
               </h3>
@@ -569,25 +570,25 @@ function ChatbotSolutions() {
               }}>
                 <div className="service-box">
                   <div style={{ color: '#9e74d0', marginBottom: '10px', fontWeight: '600', fontSize: '1rem' }}>✓ Reads Your Website</div>
-                  <p style={{ color: '#475569', fontSize: '0.95rem' }}>
+                  <p style={{ color: '#cbd5e1', fontSize: '0.95rem' }}>
                     Automatically reads and understands your website content to answer questions
                   </p>
                 </div>
                 <div className="service-box">
                   <div style={{ color: '#9e74d0', marginBottom: '10px', fontWeight: '600', fontSize: '1rem' }}>✓ Information Collection</div>
-                  <p style={{ color: '#475569', fontSize: '0.95rem' }}>
+                  <p style={{ color: '#cbd5e1', fontSize: '0.95rem' }}>
                     Collects contact information from interested visitors while providing helpful answers
                   </p>
                 </div>
                 <div className="service-box">
                   <div style={{ color: '#9e74d0', marginBottom: '10px', fontWeight: '600', fontSize: '1rem' }}>✓ Email Notifications</div>
-                  <p style={{ color: '#475569', fontSize: '0.95rem' }}>
+                  <p style={{ color: '#cbd5e1', fontSize: '0.95rem' }}>
                     Sends conversation summaries and lead information directly to your email
                   </p>
                 </div>
                 <div className="service-box">
                   <div style={{ color: '#9e74d0', marginBottom: '10px', fontWeight: '600', fontSize: '1rem' }}>✓ Page-Based Responses</div>
-                  <p style={{ color: '#475569', fontSize: '0.95rem' }}>
+                  <p style={{ color: '#cbd5e1', fontSize: '0.95rem' }}>
                     Responds with information directly from your website pages and content
                   </p>
                 </div>
@@ -627,7 +628,7 @@ function ChatbotSolutions() {
         {/* Pricing Section */}
         <section style={{
           padding: '80px 20px',
-          backgroundColor: 'white'
+          backgroundColor: '#1e293b'
         }}>
           <div style={{
             maxWidth: '800px',
@@ -637,13 +638,13 @@ function ChatbotSolutions() {
             <h2 style={{
               fontSize: '2.5rem',
               marginBottom: '20px',
-              color: '#1e293b'
+              color: '#f8fafc'
             }}>
               Custom Pricing for Your Business
             </h2>
             <p style={{
               fontSize: '1.2rem',
-              color: '#475569',
+              color: '#cbd5e1',
               marginBottom: '50px'
             }}>
               Every business is unique, and so are your chatbot needs. We create custom solutions 
@@ -651,7 +652,7 @@ function ChatbotSolutions() {
             </p>
 
             <div style={{
-              backgroundColor: '#f8fafc',
+              backgroundColor: '#0f172a',
               padding: '60px 40px',
               borderRadius: '16px',
               border: '2px solid #e2e8f0',
@@ -668,14 +669,14 @@ function ChatbotSolutions() {
               <h3 style={{
                 fontSize: '2rem',
                 marginBottom: '20px',
-                color: '#1e293b'
+                color: '#f8fafc'
               }}>
                 Contact Us for Pricing
               </h3>
               
               <p style={{
                 fontSize: '1.1rem',
-                color: '#475569',
+                color: '#cbd5e1',
                 marginBottom: '30px',
                 lineHeight: '1.6'
               }}>
@@ -691,14 +692,14 @@ function ChatbotSolutions() {
                 marginBottom: '30px'
               }}>
                 <div style={{
-                  backgroundColor: 'white',
+                  backgroundColor: '#1e293b',
                   padding: '20px',
                   borderRadius: '8px',
                   boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
                   minWidth: '200px'
                 }}>
                   <div style={{ color: '#9e74d0', marginBottom: '10px', fontWeight: '600', fontSize: '1rem' }}>✓ What's Included</div>
-                  <ul style={{ textAlign: 'left', color: '#475569', lineHeight: '1.8', fontSize: '0.95rem', paddingLeft: '20px' }}>
+                  <ul style={{ textAlign: 'left', color: '#cbd5e1', lineHeight: '1.8', fontSize: '0.95rem', paddingLeft: '20px' }}>
                     <li>Custom chatbot development</li>
                     <li>Website content reading setup</li>
                     <li>Full setup & integration</li>
@@ -707,14 +708,14 @@ function ChatbotSolutions() {
                 </div>
                 
                 <div style={{
-                  backgroundColor: 'white',
+                  backgroundColor: '#1e293b',
                   padding: '20px',
                   borderRadius: '8px',
                   boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
                   minWidth: '200px'
                 }}>
                   <div style={{ color: '#10b981', marginBottom: '10px', fontWeight: '600', fontSize: '1rem' }}>✓ Pricing Factors</div>
-                  <ul style={{ textAlign: 'left', color: '#475569', lineHeight: '1.8', fontSize: '0.95rem', paddingLeft: '20px' }}>
+                  <ul style={{ textAlign: 'left', color: '#cbd5e1', lineHeight: '1.8', fontSize: '0.95rem', paddingLeft: '20px' }}>
                     <li>Expected conversation volume</li>
                     <li>Website size and content amount</li>
                     <li>Website integration requirements</li>
@@ -752,7 +753,7 @@ function ChatbotSolutions() {
               </button>
             </div>
 
-            <p style={{ color: '#475569', fontSize: '0.95rem' }}>
+            <p style={{ color: '#cbd5e1', fontSize: '0.95rem' }}>
               Free consultation • No commitment required • Transparent pricing
             </p>
           </div>
@@ -761,7 +762,7 @@ function ChatbotSolutions() {
         {/* FAQ Section for SEO */}
         <section style={{
           padding: '80px 20px',
-          backgroundColor: '#f8fafc'
+          backgroundColor: '#0f172a'
         }}>
           <div style={{
             maxWidth: '800px',
@@ -770,7 +771,7 @@ function ChatbotSolutions() {
             <h2 style={{
               fontSize: '2.5rem',
               marginBottom: '50px',
-              color: '#1e293b',
+              color: '#f8fafc',
               textAlign: 'center'
             }}>
               Frequently Asked Questions About Business Chatbots
@@ -782,15 +783,15 @@ function ChatbotSolutions() {
               gap: '30px'
             }}>
               <div style={{
-                backgroundColor: 'white',
+                backgroundColor: '#1e293b',
                 padding: '30px',
                 borderRadius: '12px',
                 boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
               }}>
-                <h3 style={{ fontSize: '1.3rem', marginBottom: '15px', color: '#1e293b' }}>
+                <h3 style={{ fontSize: '1.3rem', marginBottom: '15px', color: '#f8fafc' }}>
                   How much does a custom chatbot cost for a small business?
                 </h3>
-                <p style={{ color: '#475569', lineHeight: '1.6' }}>
+                <p style={{ color: '#cbd5e1', lineHeight: '1.6' }}>
                   Custom chatbot pricing varies based on your business needs, expected conversation volume, and 
                   integration requirements. We provide personalized quotes for businesses, typically 
                   ranging from affordable monthly plans for small businesses to comprehensive solutions for larger companies.
@@ -798,15 +799,15 @@ function ChatbotSolutions() {
               </div>
 
               <div style={{
-                backgroundColor: 'white',
+                backgroundColor: '#1e293b',
                 padding: '30px',
                 borderRadius: '12px',
                 boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
               }}>
-                <h3 style={{ fontSize: '1.3rem', marginBottom: '15px', color: '#1e293b' }}>
+                <h3 style={{ fontSize: '1.3rem', marginBottom: '15px', color: '#f8fafc' }}>
                   What's the difference between a chatbot and live chat?
                 </h3>
-                <p style={{ color: '#475569', lineHeight: '1.6' }}>
+                <p style={{ color: '#cbd5e1', lineHeight: '1.6' }}>
                   A chatbot uses AI to automatically respond to customer questions 24/7, while live chat requires 
                   human agents to be online. Our AI chatbots can handle most customer inquiries instantly and send 
                   detailed conversation summaries to your email for complex requests that need human follow-up.
@@ -814,15 +815,15 @@ function ChatbotSolutions() {
               </div>
 
               <div style={{
-                backgroundColor: 'white',
+                backgroundColor: '#1e293b',
                 padding: '30px',
                 borderRadius: '12px',
                 boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
               }}>
-                <h3 style={{ fontSize: '1.3rem', marginBottom: '15px', color: '#1e293b' }}>
+                <h3 style={{ fontSize: '1.3rem', marginBottom: '15px', color: '#f8fafc' }}>
                   Can I add a chatbot to my existing website?
                 </h3>
-                <p style={{ color: '#475569', lineHeight: '1.6' }}>
+                <p style={{ color: '#cbd5e1', lineHeight: '1.6' }}>
                   Yes! Our chatbots integrate with any website platform including WordPress, Shopify, Squarespace, 
                   Wix, and custom built sites. Installation is simple, just one line of code that we provide and 
                   can help you install.
@@ -830,15 +831,15 @@ function ChatbotSolutions() {
               </div>
 
               <div style={{
-                backgroundColor: 'white',
+                backgroundColor: '#1e293b',
                 padding: '30px',
                 borderRadius: '12px',
                 boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
               }}>
-                <h3 style={{ fontSize: '1.3rem', marginBottom: '15px', color: '#1e293b' }}>
+                <h3 style={{ fontSize: '1.3rem', marginBottom: '15px', color: '#f8fafc' }}>
                   How do I know if my business needs a chatbot?
                 </h3>
-                <p style={{ color: '#475569', lineHeight: '1.6' }}>
+                <p style={{ color: '#cbd5e1', lineHeight: '1.6' }}>
                   If you get customer inquiries through your website, miss calls outside business hours, want to 
                   capture more leads, or spend time answering the same questions repeatedly, a business chatbot 
                   can help. It's especially valuable for service businesses across all industries and professional practices.
@@ -846,15 +847,15 @@ function ChatbotSolutions() {
               </div>
 
               <div style={{
-                backgroundColor: 'white',
+                backgroundColor: '#1e293b',
                 padding: '30px',
                 borderRadius: '12px',
                 boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
               }}>
-                <h3 style={{ fontSize: '1.3rem', marginBottom: '15px', color: '#1e293b' }}>
+                <h3 style={{ fontSize: '1.3rem', marginBottom: '15px', color: '#f8fafc' }}>
                   Are AI chatbots better than human customer service?
                 </h3>
-                <p style={{ color: '#475569', lineHeight: '1.6' }}>
+                <p style={{ color: '#cbd5e1', lineHeight: '1.6' }}>
                   AI chatbots excel at providing instant responses, handling multiple conversations simultaneously, 
                   and being available 24/7. They're perfect for answering common questions, capturing leads, and 
                   initial customer support. However, they work best when combined with human follow-up for complex 

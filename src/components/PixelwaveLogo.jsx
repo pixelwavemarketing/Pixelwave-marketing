@@ -38,7 +38,7 @@ function PixelwaveLogo() {
           src={pixelwaveLogoMedium}
           alt="PixelWave Marketing Logo - Digital marketing and web development services"
           loading="eager"
-          fetchPriority="high"
+          fetchpriority="high"
           width="1200"
           height="400"
           style={{

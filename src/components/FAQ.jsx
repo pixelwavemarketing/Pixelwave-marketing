@@ -21,9 +21,9 @@ function FAQ() {
   ]
 
   return (
-    <section style={{ padding: '60px 20px', backgroundColor: '#f8fafc' }}>
+    <section style={{ padding: '60px 20px', backgroundColor: '#0f172a' }}>
       <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-        <h2 style={{ textAlign: 'center', marginBottom: '40px', fontSize: '2.5rem' }}>
+        <h2 style={{ textAlign: 'center', marginBottom: '40px', fontSize: '2.5rem', color: '#f8fafc' }}>
           Frequently Asked Questions
         </h2>
         
@@ -52,10 +52,10 @@ function FAQ() {
 
         {faqData.map((faq, index) => (
           <div key={index} style={{ marginBottom: '30px' }}>
-            <h3 style={{ fontSize: '1.3rem', marginBottom: '10px', color: '#1e293b' }}>
+            <h3 style={{ fontSize: '1.3rem', marginBottom: '10px', color: '#f8fafc' }}>
               {faq.question}
             </h3>
-            <p style={{ fontSize: '1.1rem', lineHeight: '1.6', color: '#475569' }}>
+            <p style={{ fontSize: '1.1rem', lineHeight: '1.6', color: '#cbd5e1' }}>
               {faq.answer}
             </p>
           </div>

@@ -4,13 +4,16 @@ const ChatbotLoader = () => {
   const [isLoaded, setIsLoaded] = useState(false)
 
   useEffect(() => {
+    // Skip loading chatbot on localhost - embed expects production widget (avoids 404 and console noise)
+    const isLocalhost = typeof window !== 'undefined' && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
+    if (isLocalhost) return
+
     // Load chatbot on first user interaction
     const loadChatbot = () => {
       if (isLoaded) return
       
       // Check if script is already loaded
       if (document.querySelector('script[src="https://ai-chatbot-p.netlify.app/embed.js"]')) {
-        console.log('Chatbot script already loaded')
         return
       }
 
@@ -29,12 +32,11 @@ const ChatbotLoader = () => {
       
       // Add error handling
       script.onload = () => {
-        console.log('Chatbot script loaded successfully')
         setIsLoaded(true)
       }
       
-      script.onerror = (error) => {
-        console.error('Failed to load chatbot script:', error)
+      script.onerror = () => {
+        // Silently ignore (e.g. network or ad blocker)
       }
       
       document.body.appendChild(script)

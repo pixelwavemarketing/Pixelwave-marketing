@@ -19,7 +19,8 @@ function ContentCreation() {
     <div className="other-page" style={{
       display: 'flex',
       flexDirection: 'column',
-      minHeight: '100vh'
+      minHeight: '100vh',
+      backgroundColor: '#0f172a'
     }}>
       <SEOOptimizer 
         title="Content Creation Services | Social Media Content for Service Businesses"
@@ -47,7 +48,7 @@ function ContentCreation() {
           <div style={{ 
             fontSize: '4rem', 
             marginBottom: '20px',
-            color: '#ffffff'
+            color: '#f8fafc'
           }}>
             <FontAwesomeIcon icon={faVideo} />
           </div>
@@ -70,7 +71,7 @@ function ContentCreation() {
             onClick={() => navigate('/contact')}
             style={{
               background: 'linear-gradient(135deg, #0891b2 0%, #0e7490 100%)',
-              color: '#ffffff',
+              color: '#f8fafc',
               padding: '15px 35px',
               fontSize: '1.2rem',
               border: 'none',
@@ -97,7 +98,7 @@ function ContentCreation() {
       {/* Services Overview */}
       <section style={{
         padding: '60px 20px',
-        backgroundColor: 'white'
+        backgroundColor: '#1e293b'
       }}>
         <div style={{
           maxWidth: '1200px',
@@ -107,7 +108,7 @@ function ContentCreation() {
             fontSize: '2.5rem',
             textAlign: 'center',
             marginBottom: '50px',
-            color: '#1e293b'
+            color: '#f8fafc'
           }}>
             Content Creation Services
           </h2>
@@ -138,12 +139,12 @@ function ContentCreation() {
               <h3 style={{
                 fontSize: '1.5rem',
                 marginBottom: '15px',
-                color: '#1e293b'
+                color: '#f8fafc'
               }}>
                 Social Media Content
               </h3>
               <p style={{
-                color: '#475569',
+                color: '#cbd5e1',
                 lineHeight: '1.6'
               }}>
                 Engaging social media posts for Facebook, Instagram, LinkedIn, and other platforms that showcase your services and connect with your audience.
@@ -171,12 +172,12 @@ function ContentCreation() {
               <h3 style={{
                 fontSize: '1.5rem',
                 marginBottom: '15px',
-                color: '#1e293b'
+                color: '#f8fafc'
               }}>
                 Visual Content
               </h3>
               <p style={{
-                color: '#475569',
+                color: '#cbd5e1',
                 lineHeight: '1.6'
               }}>
                 Eye-catching graphics, infographics, and visual content that makes your brand stand out and drives engagement.
@@ -215,8 +216,8 @@ function ContentCreation() {
           <button
             onClick={() => navigate('/contact')}
             style={{
-              background: 'white',
-              color: '#06b6d4',
+              background: '#334155',
+              color: '#22d3ee',
               padding: '18px 45px',
               fontSize: '1.3rem',
               border: 'none',
@@ -243,7 +244,7 @@ function ContentCreation() {
       {/* Why Choose Us */}
       <section style={{
         padding: '60px 20px',
-        backgroundColor: '#f8fafc'
+        backgroundColor: '#0f172a'
       }}>
         <div style={{
           maxWidth: '1200px',
@@ -253,7 +254,7 @@ function ContentCreation() {
             fontSize: '2.5rem',
             textAlign: 'center',
             marginBottom: '50px',
-            color: '#1e293b'
+            color: '#f8fafc'
           }}>
             Why Choose Pixelwave for Content Creation?
           </h2>
@@ -273,12 +274,12 @@ function ContentCreation() {
               <h3 style={{
                 fontSize: '1.3rem',
                 marginBottom: '15px',
-                color: '#1e293b'
+                color: '#f8fafc'
               }}>
                 Industry-Specific Content
               </h3>
               <p style={{
-                color: '#475569',
+                color: '#cbd5e1',
                 lineHeight: '1.6'
               }}>
                 Content tailored specifically for service businesses including HVAC, plumbing, electrical, landscaping, and more.
@@ -294,12 +295,12 @@ function ContentCreation() {
               <h3 style={{
                 fontSize: '1.3rem',
                 marginBottom: '15px',
-                color: '#1e293b'
+                color: '#f8fafc'
               }}>
                 SEO Optimized
               </h3>
               <p style={{
-                color: '#475569',
+                color: '#cbd5e1',
                 lineHeight: '1.6'
               }}>
                 All content is optimized for search engines to help you rank higher and attract more customers.
@@ -315,12 +316,12 @@ function ContentCreation() {
               <h3 style={{
                 fontSize: '1.3rem',
                 marginBottom: '15px',
-                color: '#1e293b'
+                color: '#f8fafc'
               }}>
                 Consistent Brand Voice
               </h3>
               <p style={{
-                color: '#475569',
+                color: '#cbd5e1',
                 lineHeight: '1.6'
               }}>
                 Maintain a consistent brand voice across all content that reflects your business values and connects with your audience.
@@ -333,7 +334,7 @@ function ContentCreation() {
       {/* Process Section */}
       <section style={{
         padding: '60px 20px',
-        backgroundColor: 'white'
+        backgroundColor: '#1e293b'
       }}>
         <div style={{
           maxWidth: '1000px',
@@ -343,7 +344,7 @@ function ContentCreation() {
             fontSize: '2.5rem',
             textAlign: 'center',
             marginBottom: '50px',
-            color: '#1e293b'
+            color: '#f8fafc'
           }}>
             Our Content Creation Process
           </h2>
@@ -378,12 +379,12 @@ function ContentCreation() {
               <h3 style={{
                 fontSize: '1.3rem',
                 marginBottom: '15px',
-                color: '#1e293b'
+                color: '#f8fafc'
               }}>
                 Content Strategy
               </h3>
               <p style={{
-                color: '#475569',
+                color: '#cbd5e1',
                 lineHeight: '1.6'
               }}>
                 We develop a content strategy aligned with your business goals and target audience.
@@ -414,12 +415,12 @@ function ContentCreation() {
               <h3 style={{
                 fontSize: '1.3rem',
                 marginBottom: '15px',
-                color: '#1e293b'
+                color: '#f8fafc'
               }}>
                 Content Creation
               </h3>
               <p style={{
-                color: '#475569',
+                color: '#cbd5e1',
                 lineHeight: '1.6'
               }}>
                 Our team creates high-quality, engaging content that resonates with your audience.
@@ -450,12 +451,12 @@ function ContentCreation() {
               <h3 style={{
                 fontSize: '1.3rem',
                 marginBottom: '15px',
-                color: '#1e293b'
+                color: '#f8fafc'
               }}>
                 Optimization
               </h3>
               <p style={{
-                color: '#475569',
+                color: '#cbd5e1',
                 lineHeight: '1.6'
               }}>
                 Content is optimized for SEO and engagement to maximize reach and conversions.
@@ -486,12 +487,12 @@ function ContentCreation() {
               <h3 style={{
                 fontSize: '1.3rem',
                 marginBottom: '15px',
-                color: '#1e293b'
+                color: '#f8fafc'
               }}>
                 Publishing & Analysis
               </h3>
               <p style={{
-                color: '#475569',
+                color: '#cbd5e1',
                 lineHeight: '1.6'
               }}>
                 We help publish content and analyze performance to continuously improve results.

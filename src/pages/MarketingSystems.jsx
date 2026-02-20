@@ -18,18 +18,19 @@ function MarketingSystems() {
         canonicalUrl="https://usepixelwave.com/marketing-systems"
         structuredDataType="service"
       />
-      <div className="other-page" style={{
-        display: 'flex',
-        flexDirection: 'column',
-        minHeight: '100vh'
-      }}>
+    <div className="other-page" style={{
+      display: 'flex',
+      flexDirection: 'column',
+      minHeight: '100vh',
+      backgroundColor: '#0f172a'
+    }}>
       <Header />
       <Breadcrumbs />
       
       {/* Hero Section */}
       <section style={{
         padding: '80px 20px',
-        backgroundColor: '#f8fafc',
+        backgroundColor: '#0f172a',
         textAlign: 'center'
       }}>
         <div style={{
@@ -38,7 +39,7 @@ function MarketingSystems() {
         }}>
           <h1 style={{
             fontSize: '3rem',
-            color: '#1e293b',
+            color: '#f8fafc',
             marginBottom: '20px',
             fontWeight: '700'
           }}>
@@ -46,7 +47,7 @@ function MarketingSystems() {
           </h1>
           <p style={{
             fontSize: '1.3rem',
-            color: '#475569',
+            color: '#cbd5e1',
             lineHeight: '1.6',
             marginBottom: '40px'
           }}>
@@ -68,7 +69,7 @@ function MarketingSystems() {
       {/* Services Overview */}
       <section style={{
         padding: '60px 20px',
-        backgroundColor: 'white'
+        backgroundColor: '#1e293b'
       }}>
         <div style={{
           maxWidth: '1200px',
@@ -78,7 +79,7 @@ function MarketingSystems() {
             fontSize: '2.5rem',
             textAlign: 'center',
             marginBottom: '50px',
-            color: '#1e293b'
+            color: '#f8fafc'
           }}>
             Marketing Systems Services
           </h2>
@@ -110,12 +111,12 @@ function MarketingSystems() {
               <h3 style={{
                 fontSize: '1.5rem',
                 marginBottom: '15px',
-                color: '#1e293b'
+                color: '#f8fafc'
               }}>
                 Workflow Automation Setup
               </h3>
               <p style={{
-                color: '#475569',
+                color: '#cbd5e1',
                 lineHeight: '1.6'
               }}>
                 We help you set up workflow automation systems that streamline your business operations and improve efficiency.
@@ -145,12 +146,12 @@ function MarketingSystems() {
               <h3 style={{
                 fontSize: '1.5rem',
                 marginBottom: '15px',
-                color: '#1e293b'
+                color: '#f8fafc'
               }}>
                 Workflow Automation
               </h3>
               <p style={{
-                color: '#475569',
+                color: '#cbd5e1',
                 lineHeight: '1.6'
               }}>
                 Automated workflows that streamline repetitive tasks and improve team productivity.
@@ -179,12 +180,12 @@ function MarketingSystems() {
               <h3 style={{
                 fontSize: '1.5rem',
                 marginBottom: '15px',
-                color: '#1e293b'
+                color: '#f8fafc'
               }}>
                 Performance Tracking
               </h3>
               <p style={{
-                color: '#475569',
+                color: '#cbd5e1',
                 lineHeight: '1.6'
               }}>
                 Comprehensive tracking and reporting to measure the success of your automated marketing campaigns.
@@ -223,8 +224,8 @@ function MarketingSystems() {
           <button
             onClick={() => navigate('/contact')}
             style={{
-              background: 'white',
-              color: '#10b981',
+              background: '#334155',
+              color: '#34d399',
               padding: '18px 45px',
               fontSize: '1.3rem',
               border: 'none',

@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import siteConfig from '../config/siteConfig.js';
 import StructuredData from './StructuredData.jsx';
 
+const VALID_STRUCTURED_TYPES = ['localBusiness', 'service', 'faq', 'product', 'organization', 'aiOptimized'];
+
 const SEOOptimizer = ({ 
   title, 
   description, 
@@ -14,6 +16,11 @@ const SEOOptimizer = ({
   faqData = null,
   serviceData = null
 }) => {
+  // Normalize to lowercase so "Organization" from props is valid
+  const normalizedStructuredType = typeof structuredDataType === 'string' && VALID_STRUCTURED_TYPES.includes(structuredDataType.toLowerCase())
+    ? structuredDataType.toLowerCase()
+    : 'organization';
+
   // Generate default values if not provided
   const defaultTitle = title || siteConfig.company.name;
   const defaultDescription = description || siteConfig.seo.defaultDescription;
@@ -72,11 +79,11 @@ const SEOOptimizer = ({
       
       {/* Structured Data */}
       <script type="application/ld+json">
-        {StructuredData({ type: structuredDataType, faqData, serviceData })}
+        {StructuredData({ type: normalizedStructuredType, faqData, serviceData })}
       </script>
       
       {/* Additional Schema for Organization */}
-      {(structuredDataType === 'localBusiness' || structuredDataType === 'organization') && (
+      {(normalizedStructuredType === 'localBusiness' || normalizedStructuredType === 'organization') && (
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

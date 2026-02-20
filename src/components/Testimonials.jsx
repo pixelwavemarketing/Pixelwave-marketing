@@ -4,13 +4,13 @@ import { faStar, faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 
 const Testimonials = ({ testimonials, title = "What Our Clients Say", description = "Real results from real businesses" }) => {
   return (
-    <div className="testimonials" style={{ padding: '60px 20px', backgroundColor: '#f8fafc' }}>
+    <div className="testimonials" style={{ padding: '60px 20px', backgroundColor: '#0f172a' }}>
       <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <div style={{ textAlign: 'center', marginBottom: '50px' }}>
-          <h2 style={{ fontSize: '2.5rem', color: '#1e293b', marginBottom: '15px' }}>
+          <h2 style={{ fontSize: '2.5rem', color: '#f8fafc', marginBottom: '15px' }}>
             {title}
           </h2>
-          <p style={{ fontSize: '1.1rem', color: '#475569', lineHeight: '1.6' }}>
+          <p style={{ fontSize: '1.1rem', color: '#cbd5e1', lineHeight: '1.6' }}>
             {description}
           </p>
         </div>
@@ -26,10 +26,11 @@ const Testimonials = ({ testimonials, title = "What Our Clients Say", descriptio
               key={index}
               className="testimonial-card"
               style={{
-                backgroundColor: 'white',
+                backgroundColor: '#1e293b',
+                border: '1px solid #334155',
                 padding: '30px',
                 borderRadius: '12px',
-                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.2)',
                 position: 'relative',
                 minHeight: '280px',
                 display: 'flex',
@@ -45,7 +46,7 @@ const Testimonials = ({ testimonials, title = "What Our Clients Say", descriptio
                 top: '20px',
                 right: '20px',
                 fontSize: '2rem',
-                color: '#e2e8f0',
+                color: '#475569',
                 zIndex: 1
               }}>
                 <FontAwesomeIcon icon={faQuoteLeft} />
@@ -64,7 +65,7 @@ const Testimonials = ({ testimonials, title = "What Our Clients Say", descriptio
                     key={i}
                     icon={faStar}
                     style={{
-                      color: i < testimonial.rating ? '#fbbf24' : '#e2e8f0',
+                      color: i < testimonial.rating ? '#fbbf24' : '#475569',
                       fontSize: '1.1rem'
                     }}
                   />
@@ -74,7 +75,7 @@ const Testimonials = ({ testimonials, title = "What Our Clients Say", descriptio
               {/* Testimonial Content */}
               <div style={{ flex: 1, marginBottom: '20px' }}>
                 <p style={{
-                  color: '#475569',
+                  color: '#cbd5e1',
                   lineHeight: '1.6',
                   fontSize: '1rem',
                   fontStyle: 'italic',
@@ -106,7 +107,7 @@ const Testimonials = ({ testimonials, title = "What Our Clients Say", descriptio
                 )}
                 <div>
                   <h4 style={{
-                    color: '#1e293b',
+                    color: '#f8fafc',
                     margin: '0 0 5px 0',
                     fontSize: '1.1rem',
                     fontWeight: '600'
@@ -114,7 +115,7 @@ const Testimonials = ({ testimonials, title = "What Our Clients Say", descriptio
                     {testimonial.name}
                   </h4>
                   <p style={{
-                    color: '#475569',
+                    color: '#94a3b8',
                     margin: '0',
                     fontSize: '0.9rem'
                   }}>
@@ -122,7 +123,7 @@ const Testimonials = ({ testimonials, title = "What Our Clients Say", descriptio
                   </p>
                   {testimonial.company && (
                     <p style={{
-                      color: '#475569',
+                      color: '#94a3b8',
                       margin: '5px 0 0 0',
                       fontSize: '0.9rem',
                       fontWeight: '500'

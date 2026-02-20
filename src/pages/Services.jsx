@@ -37,7 +37,8 @@ function Services() {
       <div className="other-page" style={{
         display: 'flex',
         flexDirection: 'column',
-        minHeight: '100vh'
+        minHeight: '100vh',
+        backgroundColor: '#0f172a'
       }}>
       <Header />
       <Breadcrumbs />
@@ -77,7 +78,7 @@ function Services() {
       {/* Key Services Section - Moved to Top */}
       <div style={{
         padding: '80px 20px',
-        backgroundColor: '#ffffff'
+        backgroundColor: '#1e293b'
       }}>
         <div style={{
           maxWidth: '1400px',
@@ -87,14 +88,14 @@ function Services() {
           <h2 style={{ 
             fontSize: '2.5rem', 
             marginBottom: '20px', 
-            color: '#1e293b',
+            color: '#f8fafc',
             fontWeight: '700'
           }}>
             Our Services
           </h2>
           <p style={{
             fontSize: '1.1rem',
-            color: '#475569',
+            color: '#cbd5e1',
             marginBottom: '50px',
             maxWidth: '700px',
             margin: '0 auto 50px auto'
@@ -490,7 +491,7 @@ function Services() {
       {/* Why Choose Us Section */}
       <div style={{
         padding: '80px 20px',
-        backgroundColor: '#f8fafc'
+        backgroundColor: '#0f172a'
       }}>
         <div style={{
           maxWidth: '1200px',
@@ -500,14 +501,14 @@ function Services() {
           <h2 style={{ 
             fontSize: '2.5rem', 
             marginBottom: '20px', 
-            color: '#1e293b',
+            color: '#f8fafc',
             fontWeight: '700'
           }}>
             Why Service Businesses Choose Pixelwave
           </h2>
           <p style={{
             fontSize: '1.1rem',
-            color: '#475569',
+            color: '#cbd5e1',
             marginBottom: '50px',
             maxWidth: '700px',
             margin: '0 auto 50px auto'
@@ -526,11 +527,11 @@ function Services() {
             <div 
               className="service-box"
               style={{ 
-                backgroundColor: 'white',
+                backgroundColor: '#1e293b',
                 padding: '32px',
                 borderRadius: '16px',
-                border: '1px solid #e2e8f0',
-                boxShadow: '0 4px 20px rgba(0, 0, 0, 0.06)',
+                border: '1px solid #334155',
+                boxShadow: '0 4px 20px rgba(0, 0, 0, 0.2)',
                 transition: 'all 0.3s ease'
               }}
               onMouseEnter={(e) => {
@@ -539,19 +540,19 @@ function Services() {
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.transform = 'translateY(0)'
-                e.currentTarget.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.06)'
+                e.currentTarget.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.2)'
               }}
             >
               <h3 style={{ 
                 fontSize: '1.5rem', 
                 marginBottom: '16px', 
-                color: '#1e293b',
+                color: '#f8fafc',
                 fontWeight: '700'
               }}>
                 Industry Expertise
               </h3>
               <p style={{ 
-                color: '#475569', 
+                color: '#cbd5e1', 
                 lineHeight: '1.7',
                 fontSize: '1rem'
               }}>
@@ -562,11 +563,11 @@ function Services() {
             <div 
               className="service-box"
               style={{ 
-                backgroundColor: 'white',
+                backgroundColor: '#1e293b',
                 padding: '32px',
                 borderRadius: '16px',
-                border: '1px solid #e2e8f0',
-                boxShadow: '0 4px 20px rgba(0, 0, 0, 0.06)',
+                border: '1px solid #334155',
+                boxShadow: '0 4px 20px rgba(0, 0, 0, 0.2)',
                 transition: 'all 0.3s ease'
               }}
               onMouseEnter={(e) => {
@@ -575,19 +576,19 @@ function Services() {
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.transform = 'translateY(0)'
-                e.currentTarget.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.06)'
+                e.currentTarget.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.2)'
               }}
             >
               <h3 style={{ 
                 fontSize: '1.5rem', 
                 marginBottom: '16px', 
-                color: '#1e293b',
+                color: '#f8fafc',
                 fontWeight: '700'
               }}>
                 Custom Solutions
               </h3>
               <p style={{ 
-                color: '#475569', 
+                color: '#cbd5e1', 
                 lineHeight: '1.7',
                 fontSize: '1rem'
               }}>
@@ -598,11 +599,11 @@ function Services() {
             <div 
               className="service-box"
               style={{ 
-                backgroundColor: 'white',
+                backgroundColor: '#1e293b',
                 padding: '32px',
                 borderRadius: '16px',
-                border: '1px solid #e2e8f0',
-                boxShadow: '0 4px 20px rgba(0, 0, 0, 0.06)',
+                border: '1px solid #334155',
+                boxShadow: '0 4px 20px rgba(0, 0, 0, 0.2)',
                 transition: 'all 0.3s ease'
               }}
               onMouseEnter={(e) => {
@@ -611,19 +612,19 @@ function Services() {
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.transform = 'translateY(0)'
-                e.currentTarget.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.06)'
+                e.currentTarget.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.2)'
               }}
             >
               <h3 style={{ 
                 fontSize: '1.5rem', 
                 marginBottom: '16px', 
-                color: '#1e293b',
+                color: '#f8fafc',
                 fontWeight: '700'
               }}>
                 Results Driven
               </h3>
               <p style={{ 
-                color: '#475569', 
+                color: '#cbd5e1', 
                 lineHeight: '1.7',
                 fontSize: '1rem'
               }}>
@@ -637,7 +638,7 @@ function Services() {
       {/* Technical Services Section */}
       <div style={{
         padding: '80px 20px',
-        backgroundColor: '#ffffff'
+        backgroundColor: '#1e293b'
       }}>
         <div style={{
           maxWidth: '1400px',
@@ -647,14 +648,14 @@ function Services() {
           <h2 style={{
             fontSize: '2.5rem',
             marginBottom: '20px',
-            color: '#1e293b',
+            color: '#f8fafc',
             fontWeight: '700'
           }}>
             Technical Services That Most Agencies Don't Offer
           </h2>
           <p style={{
             fontSize: '1.1rem',
-            color: '#475569',
+            color: '#cbd5e1',
             marginBottom: '50px',
             maxWidth: '800px',
             margin: '0 auto 50px auto',
@@ -674,13 +675,13 @@ function Services() {
           }}>
             {/* Google Business Profile */}
             <div style={{
-              backgroundColor: 'white',
+              backgroundColor: '#1e293b',
               padding: '32px',
               borderRadius: '16px',
-              border: '2px solid #e2e8f0',
+              border: '2px solid #334155',
               textAlign: 'left',
               transition: 'all 0.3s ease',
-              boxShadow: '0 4px 20px rgba(0, 0, 0, 0.06)',
+              boxShadow: '0 4px 20px rgba(0, 0, 0, 0.2)',
               flex: '1 1 320px',
               maxWidth: '400px',
               minWidth: '280px',
@@ -693,9 +694,9 @@ function Services() {
               e.currentTarget.style.boxShadow = '0 8px 30px rgba(66, 133, 244, 0.15)';
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.borderColor = '#e2e8f0';
+              e.currentTarget.style.borderColor = '#334155';
               e.currentTarget.style.transform = 'translateY(0)';
-              e.currentTarget.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.06)';
+              e.currentTarget.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.2)';
             }}>
               <h3 style={{ 
                 color: '#4285F4', 
@@ -706,7 +707,7 @@ function Services() {
                 🏢 Google Business Profile Optimization
               </h3>
               <p style={{ 
-                color: '#475569', 
+                color: '#cbd5e1', 
                 lineHeight: '1.7', 
                 marginBottom: '16px',
                 fontSize: '1rem'
@@ -714,7 +715,7 @@ function Services() {
                 Most businesses have a Google listing, but 90% aren't optimized correctly. We claim, verify, and optimize your profile for maximum local visibility.
               </p>
               <ul style={{ 
-                color: '#475569', 
+                color: '#cbd5e1', 
                 paddingLeft: '20px', 
                 lineHeight: '1.8', 
                 fontSize: '0.95rem',
@@ -730,13 +731,13 @@ function Services() {
 
             {/* Analytics & Tracking */}
             <div style={{
-              backgroundColor: 'white',
+              backgroundColor: '#1e293b',
               padding: '32px',
               borderRadius: '16px',
-              border: '2px solid #e2e8f0',
+              border: '2px solid #334155',
               textAlign: 'left',
               transition: 'all 0.3s ease',
-              boxShadow: '0 4px 20px rgba(0, 0, 0, 0.06)',
+              boxShadow: '0 4px 20px rgba(0, 0, 0, 0.2)',
               flex: '1 1 320px',
               maxWidth: '400px',
               minWidth: '280px',
@@ -749,9 +750,9 @@ function Services() {
               e.currentTarget.style.boxShadow = '0 8px 30px rgba(16, 185, 129, 0.15)';
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.borderColor = '#e2e8f0';
+              e.currentTarget.style.borderColor = '#334155';
               e.currentTarget.style.transform = 'translateY(0)';
-              e.currentTarget.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.06)';
+              e.currentTarget.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.2)';
             }}>
               <h3 style={{ 
                 color: '#10b981', 
@@ -762,7 +763,7 @@ function Services() {
                 📊 Analytics & Tracking Setup
               </h3>
               <p style={{ 
-                color: '#475569', 
+                color: '#cbd5e1', 
                 lineHeight: '1.7', 
                 marginBottom: '16px',
                 fontSize: '1rem'
@@ -770,7 +771,7 @@ function Services() {
                 Know exactly where your leads come from with professional analytics setup and clean reporting dashboards.
               </p>
               <ul style={{ 
-                color: '#475569', 
+                color: '#cbd5e1', 
                 paddingLeft: '20px', 
                 lineHeight: '1.8', 
                 fontSize: '0.95rem',
@@ -787,13 +788,13 @@ function Services() {
 
             {/* Local SEO Tools */}
             <div style={{
-              backgroundColor: 'white',
+              backgroundColor: '#1e293b',
               padding: '32px',
               borderRadius: '16px',
-              border: '2px solid #e2e8f0',
+              border: '2px solid #334155',
               textAlign: 'left',
               transition: 'all 0.3s ease',
-              boxShadow: '0 4px 20px rgba(0, 0, 0, 0.06)',
+              boxShadow: '0 4px 20px rgba(0, 0, 0, 0.2)',
               flex: '1 1 320px',
               maxWidth: '400px',
               minWidth: '280px',
@@ -806,9 +807,9 @@ function Services() {
               e.currentTarget.style.boxShadow = '0 8px 30px rgba(124, 58, 237, 0.15)';
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.borderColor = '#e2e8f0';
+              e.currentTarget.style.borderColor = '#334155';
               e.currentTarget.style.transform = 'translateY(0)';
-              e.currentTarget.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.06)';
+              e.currentTarget.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.2)';
             }}>
               <h3 style={{ 
                 color: '#7c3aed', 
@@ -819,7 +820,7 @@ function Services() {
                 🎯 Local SEO Foundation
               </h3>
               <p style={{ 
-                color: '#475569', 
+                color: '#cbd5e1', 
                 lineHeight: '1.7', 
                 marginBottom: '16px',
                 fontSize: '1rem'
@@ -827,7 +828,7 @@ function Services() {
                 Consistent business information across all directories is crucial for local search rankings. We audit and fix everything.
               </p>
               <ul style={{ 
-                color: '#475569', 
+                color: '#cbd5e1', 
                 paddingLeft: '20px', 
                 lineHeight: '1.8', 
                 fontSize: '0.95rem',
@@ -844,13 +845,13 @@ function Services() {
 
             {/* Website Add-Ons */}
             <div style={{
-              backgroundColor: 'white',
+              backgroundColor: '#1e293b',
               padding: '32px',
               borderRadius: '16px',
-              border: '2px solid #e2e8f0',
+              border: '2px solid #334155',
               textAlign: 'left',
               transition: 'all 0.3s ease',
-              boxShadow: '0 4px 20px rgba(0, 0, 0, 0.06)',
+              boxShadow: '0 4px 20px rgba(0, 0, 0, 0.2)',
               flex: '1 1 320px',
               maxWidth: '400px',
               minWidth: '280px',
@@ -863,9 +864,9 @@ function Services() {
               e.currentTarget.style.boxShadow = '0 8px 30px rgba(245, 158, 11, 0.15)';
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.borderColor = '#e2e8f0';
+              e.currentTarget.style.borderColor = '#334155';
               e.currentTarget.style.transform = 'translateY(0)';
-              e.currentTarget.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.06)';
+              e.currentTarget.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.2)';
             }}>
               <h3 style={{ 
                 color: '#f59e0b', 
@@ -876,7 +877,7 @@ function Services() {
                 🚀 Website Enhancement Tools
               </h3>
               <p style={{ 
-                color: '#475569', 
+                color: '#cbd5e1', 
                 lineHeight: '1.7', 
                 marginBottom: '16px',
                 fontSize: '1rem'
@@ -884,7 +885,7 @@ function Services() {
                 Turn your website into a lead generating machine with professional tools that capture and convert visitors.
               </p>
               <ul style={{ 
-                color: '#475569', 
+                color: '#cbd5e1', 
                 paddingLeft: '20px', 
                 lineHeight: '1.8', 
                 fontSize: '0.95rem',
@@ -900,13 +901,13 @@ function Services() {
 
             {/* Performance & Ads Infrastructure */}
             <div style={{
-              backgroundColor: 'white',
+              backgroundColor: '#1e293b',
               padding: '32px',
               borderRadius: '16px',
-              border: '2px solid #e2e8f0',
+              border: '2px solid #334155',
               textAlign: 'left',
               transition: 'all 0.3s ease',
-              boxShadow: '0 4px 20px rgba(0, 0, 0, 0.06)',
+              boxShadow: '0 4px 20px rgba(0, 0, 0, 0.2)',
               flex: '1 1 320px',
               maxWidth: '400px',
               minWidth: '280px',
@@ -919,9 +920,9 @@ function Services() {
               e.currentTarget.style.boxShadow = '0 8px 30px rgba(239, 68, 68, 0.15)';
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.borderColor = '#e2e8f0';
+              e.currentTarget.style.borderColor = '#334155';
               e.currentTarget.style.transform = 'translateY(0)';
-              e.currentTarget.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.06)';
+              e.currentTarget.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.2)';
             }}>
               <h3 style={{ 
                 color: '#ef4444', 
@@ -932,7 +933,7 @@ function Services() {
                 ⚡ Performance & Ad Readiness
               </h3>
               <p style={{ 
-                color: '#475569', 
+                color: '#cbd5e1', 
                 lineHeight: '1.7', 
                 marginBottom: '16px',
                 fontSize: '1rem'
@@ -940,7 +941,7 @@ function Services() {
                 Speed optimization and advertising infrastructure setup. Start collecting data now, run ads later.
               </p>
               <ul style={{ 
-                color: '#475569', 
+                color: '#cbd5e1', 
                 paddingLeft: '20px', 
                 lineHeight: '1.8', 
                 fontSize: '0.95rem',
@@ -961,7 +962,7 @@ function Services() {
               {/* Internal Links Section */}
         <div style={{
           padding: '60px 20px',
-          backgroundColor: '#f8fafc',
+          backgroundColor: '#0f172a',
           textAlign: 'center'
         }}>
           <div style={{
@@ -971,7 +972,7 @@ function Services() {
             <h2 style={{ 
               fontSize: '2rem', 
               marginBottom: '30px',
-              color: '#1e293b'
+              color: '#f8fafc'
             }}>
               Learn More About Our Services
             </h2>

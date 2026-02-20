@@ -3,7 +3,12 @@ import { Helmet } from 'react-helmet-async';
 import PropTypes from 'prop-types';
 import siteConfig from '../config/siteConfig.js';
 
-const Breadcrumbs = ({ customBreadcrumbs = null }) => {
+const Breadcrumbs = ({ customBreadcrumbs = null, variant = 'dark' }) => {
+  const isDark = variant === 'dark';
+  const separatorColor = isDark ? '#94a3b8' : '#475569';
+  const currentPageColor = isDark ? '#cbd5e1' : '#475569';
+  const linkColor = isDark ? '#9cecff' : '#6366f1';
+  const linkHoverColor = isDark ? '#bdf2ff' : '#4f46e5';
   const location = useLocation();
   const pathnames = location.pathname.split('/').filter((x) => x);
 
@@ -112,7 +117,7 @@ const Breadcrumbs = ({ customBreadcrumbs = null }) => {
               {index > 0 && (
                 <span style={{ 
                   margin: '0 6px', 
-                  color: '#475569',
+                  color: separatorColor,
                   userSelect: 'none',
                   fontSize: '0.7rem'
                 }}>
@@ -124,7 +129,7 @@ const Breadcrumbs = ({ customBreadcrumbs = null }) => {
                 // Current page - not a link
                 <span 
                   style={{ 
-                    color: '#475569',
+                    color: currentPageColor,
                     fontWeight: '400',
                     fontSize: '0.75rem'
                   }}
@@ -137,7 +142,7 @@ const Breadcrumbs = ({ customBreadcrumbs = null }) => {
                 <Link 
                   to={item.path}
                   style={{
-                    color: '#6366f1',
+                    color: linkColor,
                     textDecoration: 'none',
                     padding: '2px 4px',
                     borderRadius: '3px',
@@ -147,11 +152,11 @@ const Breadcrumbs = ({ customBreadcrumbs = null }) => {
                   }}
                   onMouseEnter={(e) => {
                     e.target.style.textDecoration = 'underline';
-                    e.target.style.color = '#4f46e5';
+                    e.target.style.color = linkHoverColor;
                   }}
                   onMouseLeave={(e) => {
                     e.target.style.textDecoration = 'none';
-                    e.target.style.color = '#6366f1';
+                    e.target.style.color = linkColor;
                   }}
                 >
                   {item.name}
@@ -169,7 +174,8 @@ Breadcrumbs.propTypes = {
   customBreadcrumbs: PropTypes.arrayOf(PropTypes.shape({
     name: PropTypes.string.isRequired,
     path: PropTypes.string.isRequired
-  }))
+  })),
+  variant: PropTypes.oneOf(['light', 'dark'])
 };
 
 export default Breadcrumbs;

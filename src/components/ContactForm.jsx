@@ -112,7 +112,7 @@ function ContactForm() {
         <label style={{
           display: 'block',
           marginBottom: '5px',
-          color: '#333',
+          color: '#e2e8f0',
           fontWeight: '500'
         }}>
           Name <span style={{ color: '#ff4444' }}>*</span>
@@ -125,7 +125,9 @@ function ContactForm() {
             width: '100%',
             padding: '10px',
             borderRadius: '4px',
-            border: '1px solid #ddd'
+            border: '1px solid #334155',
+            backgroundColor: '#1e293b',
+            color: '#f8fafc'
           }}
         />
       </div>
@@ -134,7 +136,7 @@ function ContactForm() {
         <label style={{
           display: 'block',
           marginBottom: '5px',
-          color: '#333',
+          color: '#e2e8f0',
           fontWeight: '500'
         }}>
           Email <span style={{ color: '#ff4444' }}>*</span>
@@ -147,7 +149,9 @@ function ContactForm() {
             width: '100%',
             padding: '10px',
             borderRadius: '4px',
-            border: '1px solid #ddd'
+            border: '1px solid #334155',
+            backgroundColor: '#1e293b',
+            color: '#f8fafc'
           }}
         />
       </div>
@@ -156,7 +160,7 @@ function ContactForm() {
         <label style={{
           display: 'block',
           marginBottom: '5px',
-          color: '#333',
+          color: '#e2e8f0',
           fontWeight: '500'
         }}>
           Phone Number <span style={{ color: '#ff4444' }}>*</span>
@@ -169,7 +173,9 @@ function ContactForm() {
             width: '100%',
             padding: '10px',
             borderRadius: '4px',
-            border: '1px solid #ddd'
+            border: '1px solid #334155',
+            backgroundColor: '#1e293b',
+            color: '#f8fafc'
           }}
         />
       </div>
@@ -178,7 +184,7 @@ function ContactForm() {
         <label style={{
           display: 'block',
           marginBottom: '5px',
-          color: '#333',
+          color: '#e2e8f0',
           fontWeight: '500'
         }}>
           Business Name <span style={{ color: '#ff4444' }}>*</span>
@@ -191,7 +197,9 @@ function ContactForm() {
             width: '100%',
             padding: '10px',
             borderRadius: '4px',
-            border: '1px solid #ddd'
+            border: '1px solid #334155',
+            backgroundColor: '#1e293b',
+            color: '#f8fafc'
           }}
         />
       </div>
@@ -200,7 +208,7 @@ function ContactForm() {
         <label style={{
           display: 'block',
           marginBottom: '10px',
-          color: '#333',
+          color: '#e2e8f0',
           fontWeight: '500'
         }}>
           Services of Interest (Select all that apply)
@@ -210,9 +218,9 @@ function ContactForm() {
           flexDirection: 'column',
           gap: '10px',
           padding: '15px',
-          backgroundColor: '#f8fafc',
+          backgroundColor: '#1e293b',
           borderRadius: '4px',
-          border: '1px solid #e2e8f0'
+          border: '1px solid #334155'
         }}>
           {services.map((service) => (
             <label
@@ -222,7 +230,7 @@ function ContactForm() {
                 alignItems: 'center',
                 cursor: 'pointer',
                 fontSize: '15px',
-                color: '#333'
+                color: '#cbd5e1'
               }}
             >
               <input
@@ -248,7 +256,7 @@ function ContactForm() {
         <label style={{
           display: 'block',
           marginBottom: '5px',
-          color: '#333',
+          color: '#e2e8f0',
           fontWeight: '500'
         }}>
           Message
@@ -260,7 +268,9 @@ function ContactForm() {
             width: '100%',
             padding: '10px',
             borderRadius: '4px',
-            border: '1px solid #ddd'
+            border: '1px solid #334155',
+            backgroundColor: '#1e293b',
+            color: '#f8fafc'
           }}
         />
       </div>
@@ -271,8 +281,8 @@ function ContactForm() {
           padding: '10px',
           marginBottom: '10px',
           borderRadius: '4px',
-          backgroundColor: '#fee2e2',
-          color: '#dc2626',
+          backgroundColor: '#7f1d1d',
+          color: '#fca5a5',
           fontSize: '0.9rem',
           textAlign: 'center'
         }}>
@@ -287,8 +297,8 @@ function ContactForm() {
         style={{
           width: '100%',
           padding: '12px',
-          backgroundColor: isSubmitting ? '#9ca3af' : '#333',
-          color: 'white',
+          backgroundColor: isSubmitting ? '#64748b' : '#9e74d0',
+          color: '#f8fafc',
           border: 'none',
           borderRadius: '4px',
           cursor: isSubmitting ? 'not-allowed' : 'pointer',

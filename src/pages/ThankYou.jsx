@@ -23,12 +23,13 @@ function ThankYou() {
         description="Thank you for contacting PixelWave Marketing. We'll get back to you within 24 hours to discuss your project needs."
         keywords="thank you, contact confirmation, PixelWave Marketing"
         canonicalUrl="https://usepixelwave.com/thank-you"
-        structuredDataType="Organization"
+        structuredDataType="organization"
       />
       <div className="other-page" style={{
         display: 'flex',
         flexDirection: 'column',
-        minHeight: '100vh'
+        minHeight: '100vh',
+        backgroundColor: '#0f172a'
       }}>
       
       <Header />
@@ -45,7 +46,7 @@ function ThankYou() {
       }}>
         <div style={{
           maxWidth: '600px',
-          backgroundColor: '#ffffff',
+          backgroundColor: '#1e293b',
           padding: '40px',
           borderRadius: '12px',
           boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
@@ -53,14 +54,14 @@ function ThankYou() {
           <h1 style={{ 
             marginBottom: '20px',
             fontSize: '2.5rem',
-            color: '#1e293b'
+            color: '#f8fafc'
           }}>
             Thank You!
           </h1>
           <p style={{ 
             marginBottom: '30px',
             fontSize: '1.2rem',
-            color: '#475569',
+            color: '#cbd5e1',
             lineHeight: '1.6'
           }}>
             Your message has been received. We'll get back to you soon.

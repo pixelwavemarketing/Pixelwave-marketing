@@ -6,15 +6,15 @@ function Header() {
 		<header style={{
 			width: '100%',
 			padding: window.innerWidth <= 768 ? '15px 10px' : '20px',
-			backgroundColor: '#ffffff',
+			backgroundColor: '#0f172a',
 			display: 'flex',
 			justifyContent: 'center',
-			borderBottom: '1px solid #eaeaea',
+			borderBottom: '1px solid #334155',
 			position: 'fixed',
 			top: 0,
 			left: 0,
 			zIndex: 1000,
-			boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
+			boxShadow: '0 2px 8px rgba(0,0,0,0.3)',
 			minHeight: window.innerWidth <= 768 ? '60px' : '80px'
 		}}>
 			<nav style={{ width: '100%', maxWidth: '1200px' }}>

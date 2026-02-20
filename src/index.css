@@ -6,7 +6,8 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #ffffff;
+  background-color: #0f172a;
+  color: #cbd5e1;
   min-height: 100vh;
   width: 100%;
   overflow-x: hidden;
@@ -14,7 +15,7 @@ body {
 
 #root {
   min-height: 100vh;
-  background-color: #ffffff;
+  background-color: #0f172a;
 }
 
 :root {
@@ -85,18 +86,7 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
+/* Site uses dark theme everywhere - no light scheme override */
 
 @media screen and (max-width: 768px) {
   html {
@@ -157,15 +147,15 @@ body {
 
 
 
-/* Enhanced service card hover effects */
+/* Enhanced service card hover effects - dark theme */
 .service-card {
-  background: #ffffff;
-  border: 2px solid transparent;
+  background: #1e293b;
+  border: 2px solid #334155;
   border-radius: 12px;
   padding: 30px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   position: relative;
   overflow: hidden;
 }
@@ -185,7 +175,7 @@ body {
 @media (max-width: 768px) {
   .service-card:active {
     transform: scale(0.98);
-    background-color: #f8fafc;
+    background-color: #334155;
   }
 }
 
@@ -237,10 +227,10 @@ body {
   }
 }
 
-/* Navigation link hover effects */
+/* Navigation link hover effects - dark theme */
 .nav-link {
   text-decoration: none;
-  color: #333333;
+  color: #e2e8f0;
   font-size: 1.2rem;
   font-weight: 500;
   transition: all 0.3s ease;

@@ -21,7 +21,8 @@ function WebDevelopment() {
       <div className="other-page" style={{
         display: 'flex',
         flexDirection: 'column',
-        minHeight: '100vh'
+        minHeight: '100vh',
+        backgroundColor: '#0f172a'
       }}>
       <Header />
       <Breadcrumbs />
@@ -29,7 +30,7 @@ function WebDevelopment() {
       {/* Hero Section */}
       <section style={{
         padding: '80px 20px',
-        backgroundColor: '#f8fafc',
+        backgroundColor: '#0f172a',
         textAlign: 'center'
       }}>
         <div style={{
@@ -38,7 +39,7 @@ function WebDevelopment() {
         }}>
           <h1 style={{
             fontSize: '3rem',
-            color: '#1e293b',
+            color: '#f8fafc',
             marginBottom: '20px',
             fontWeight: '700'
           }}>
@@ -46,7 +47,7 @@ function WebDevelopment() {
           </h1>
           <p style={{
             fontSize: '1.3rem',
-            color: '#475569',
+            color: '#cbd5e1',
             lineHeight: '1.6',
             marginBottom: '40px'
           }}>
@@ -70,7 +71,7 @@ function WebDevelopment() {
       {/* Services Overview */}
       <section style={{
         padding: '60px 20px',
-        backgroundColor: 'white'
+        backgroundColor: '#1e293b'
       }}>
         <div style={{
           maxWidth: '1200px',
@@ -80,7 +81,7 @@ function WebDevelopment() {
             fontSize: '2.5rem',
             textAlign: 'center',
             marginBottom: '50px',
-            color: '#1e293b'
+            color: '#f8fafc'
           }}>
             Service Business Website Development Services
           </h2>
@@ -111,12 +112,12 @@ function WebDevelopment() {
               <h3 style={{
                 fontSize: '1.5rem',
                 marginBottom: '15px',
-                color: '#1e293b'
+                color: '#f8fafc'
               }}>
                 Custom Service Business Website Design
               </h3>
               <p style={{
-                color: '#475569',
+                color: '#cbd5e1',
                 lineHeight: '1.6'
               }}>
                 Bespoke service business websites designed to reflect your brand and drive conversions. 
@@ -145,12 +146,12 @@ function WebDevelopment() {
               <h3 style={{
                 fontSize: '1.5rem',
                 marginBottom: '15px',
-                color: '#1e293b'
+                color: '#f8fafc'
               }}>
                 Mobile-Responsive Design
               </h3>
               <p style={{
-                color: '#475569',
+                color: '#cbd5e1',
                 lineHeight: '1.6'
               }}>
                 Service business websites that look and function perfectly on all devices - desktop, tablet, and mobile phones. 
@@ -179,12 +180,12 @@ function WebDevelopment() {
               <h3 style={{
                 fontSize: '1.5rem',
                 marginBottom: '15px',
-                color: '#1e293b'
+                color: '#f8fafc'
               }}>
                 SEO-Optimized Website Development
               </h3>
               <p style={{
-                color: '#475569',
+                color: '#cbd5e1',
                 lineHeight: '1.6'
               }}>
                 Service business websites built with SEO optimization from the ground up for better Google visibility. 
@@ -224,8 +225,8 @@ function WebDevelopment() {
           <button
             onClick={() => navigate('/contact')}
             style={{
-              background: 'white',
-              color: '#475569',
+              background: '#334155',
+              color: '#e2e8f0',
               padding: '18px 45px',
               fontSize: '1.3rem',
               border: 'none',
@@ -252,7 +253,7 @@ function WebDevelopment() {
       {/* Technologies */}
       <section style={{
         padding: '60px 20px',
-        backgroundColor: '#f8fafc'
+        backgroundColor: '#0f172a'
       }}>
         <div style={{
           maxWidth: '1200px',
@@ -263,7 +264,7 @@ function WebDevelopment() {
             fontSize: '2.5rem',
             textAlign: 'center',
             marginBottom: '50px',
-            color: '#1e293b'
+            color: '#f8fafc'
           }}>
             Technologies We Use
           </h2>
@@ -278,7 +279,7 @@ function WebDevelopment() {
           }}>
             <div style={{
               padding: '20px',
-              backgroundColor: 'white',
+              backgroundColor: '#1e293b',
               borderRadius: '8px',
               textAlign: 'center',
               boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
@@ -289,13 +290,13 @@ function WebDevelopment() {
             }}>
               <h3 style={{
                 fontSize: '1.2rem',
-                color: '#1e293b',
+                color: '#f8fafc',
                 marginBottom: '10px'
               }}>
                 React.js
               </h3>
               <p style={{
-                color: '#475569',
+                color: '#cbd5e1',
                 fontSize: '0.9rem'
               }}>
                 Modern frontend framework
@@ -303,7 +304,7 @@ function WebDevelopment() {
             </div>
             <div style={{
               padding: '20px',
-              backgroundColor: 'white',
+              backgroundColor: '#1e293b',
               borderRadius: '8px',
               textAlign: 'center',
               boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
@@ -314,13 +315,13 @@ function WebDevelopment() {
             }}>
               <h3 style={{
                 fontSize: '1.2rem',
-                color: '#1e293b',
+                color: '#f8fafc',
                 marginBottom: '10px'
               }}>
                 Node.js
               </h3>
               <p style={{
-                color: '#475569',
+                color: '#cbd5e1',
                 fontSize: '0.9rem'
               }}>
                 Server side JavaScript
@@ -328,7 +329,7 @@ function WebDevelopment() {
             </div>
             <div style={{
               padding: '20px',
-              backgroundColor: 'white',
+              backgroundColor: '#1e293b',
               borderRadius: '8px',
               textAlign: 'center',
               boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
@@ -339,13 +340,13 @@ function WebDevelopment() {
             }}>
               <h3 style={{
                 fontSize: '1.2rem',
-                color: '#1e293b',
+                color: '#f8fafc',
                 marginBottom: '10px'
               }}>
                 Custom Website
               </h3>
               <p style={{
-                color: '#475569',
+                color: '#cbd5e1',
                 fontSize: '0.9rem'
               }}>
                 Responsive design
@@ -358,7 +359,7 @@ function WebDevelopment() {
       {/* Process */}
       <section style={{
         padding: '60px 20px',
-        backgroundColor: 'white'
+        backgroundColor: '#1e293b'
       }}>
         <div style={{
           maxWidth: '1000px',
@@ -368,7 +369,7 @@ function WebDevelopment() {
             fontSize: '2.5rem',
             textAlign: 'center',
             marginBottom: '50px',
-            color: '#1e293b'
+            color: '#f8fafc'
           }}>
             Our Development Process
           </h2>
@@ -403,12 +404,12 @@ function WebDevelopment() {
               <h3 style={{
                 fontSize: '1.3rem',
                 marginBottom: '15px',
-                color: '#1e293b'
+                color: '#f8fafc'
               }}>
                 Discovery & Planning
               </h3>
               <p style={{
-                color: '#475569',
+                color: '#cbd5e1',
                 lineHeight: '1.6'
               }}>
                 We understand your business goals, target audience, and requirements to create a comprehensive project plan.
@@ -439,12 +440,12 @@ function WebDevelopment() {
               <h3 style={{
                 fontSize: '1.3rem',
                 marginBottom: '15px',
-                color: '#1e293b'
+                color: '#f8fafc'
               }}>
                 Design & Prototyping
               </h3>
               <p style={{
-                color: '#475569',
+                color: '#cbd5e1',
                 lineHeight: '1.6'
               }}>
                 We create wireframes and design mockups for your approval before moving to development.
@@ -475,12 +476,12 @@ function WebDevelopment() {
               <h3 style={{
                 fontSize: '1.3rem',
                 marginBottom: '15px',
-                color: '#1e293b'
+                color: '#f8fafc'
               }}>
                 Development
               </h3>
               <p style={{
-                color: '#475569',
+                color: '#cbd5e1',
                 lineHeight: '1.6'
               }}>
                 Our team builds your website using modern technologies and best practices for optimal performance.
@@ -511,12 +512,12 @@ function WebDevelopment() {
               <h3 style={{
                 fontSize: '1.3rem',
                 marginBottom: '15px',
-                color: '#1e293b'
+                color: '#f8fafc'
               }}>
                 Testing & Launch
               </h3>
               <p style={{
-                color: '#475569',
+                color: '#cbd5e1',
                 lineHeight: '1.6'
               }}>
                 Thorough testing ensures everything works perfectly before we launch your website to the world.

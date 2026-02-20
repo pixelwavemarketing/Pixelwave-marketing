@@ -35,7 +35,6 @@
       };
       
       gaScript.onload = function() {
-        console.log('Google Analytics script loaded successfully');
         window.gtagLoadSuccess = true;
         
         // Initialize after script loads
@@ -171,14 +170,12 @@
       n.queue=[];t=b.createElement(e);t.async=!0;
       t.src=v;s=b.getElementsByTagName(e)[0];
       
-      // Add error handling for Facebook Pixel script loading
+      // Add error handling for Facebook Pixel script loading (e.g. blocked by ad blocker - no console noise)
       t.onerror = function() {
-        console.warn('Facebook Pixel script failed to load');
         window.fbqLoadError = true;
       };
       
       t.onload = function() {
-        console.log('Facebook Pixel script loaded successfully');
         window.fbqLoadSuccess = true;
         
         // Initialize pixel with error handling
@@ -372,8 +369,7 @@
     <!-- Responsive Design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Preload critical LCP image - using medium size as default for better performance -->
-    <link rel="preload" as="image" href="/PixelWave.png" fetchpriority="high" type="image/png">
+    <!-- LCP image loaded via responsive picture in PixelwaveLogo (no preload to avoid unused-resource warning) -->
     
     <!-- DNS Prefetch for external resources -->
     <link rel="dns-prefetch" href="https://www.googletagmanager.com">
@@ -432,23 +428,15 @@
           
           navigator.serviceWorker.register('/sw.js')
             .then((registration) => {
-              console.log('SW registered: ', registration);
-              
               // Check for updates, but don't force reload immediately
               registration.addEventListener('updatefound', () => {
-                console.log('New service worker found, updating...');
                 const newWorker = registration.installing;
-                
                 newWorker.addEventListener('statechange', () => {
                   if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
-                    // New service worker is available
-                    // Don't force reload immediately - let user continue browsing
-                    // The new service worker will activate on next page load
-                    console.log('New service worker installed. Will activate on next navigation.');
+                    // New worker will activate on next navigation
                   }
                 });
               });
-              
               // Check for updates in the background (non-blocking)
               if ('requestIdleCallback' in window) {
                 requestIdleCallback(() => {
@@ -460,9 +448,7 @@
                 }, 2000);
               }
             })
-            .catch((registrationError) => {
-              console.log('SW registration failed: ', registrationError);
-            });
+            .catch(() => {});
         });
       }
     </script>

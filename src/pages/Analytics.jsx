@@ -21,7 +21,8 @@ function Analytics() {
       <div className="other-page" style={{
         display: 'flex',
         flexDirection: 'column',
-        minHeight: '100vh'
+        minHeight: '100vh',
+        backgroundColor: '#0f172a'
       }}>
       <Header />
       <Breadcrumbs />
@@ -29,7 +30,7 @@ function Analytics() {
       {/* Hero Section */}
       <section style={{
         padding: '80px 20px',
-        backgroundColor: '#f8fafc',
+        backgroundColor: '#0f172a',
         textAlign: 'center'
       }}>
         <div style={{
@@ -38,7 +39,7 @@ function Analytics() {
         }}>
           <h1 style={{
             fontSize: '3rem',
-            color: '#1e293b',
+            color: '#f8fafc',
             marginBottom: '20px',
             fontWeight: '700'
           }}>
@@ -46,7 +47,7 @@ function Analytics() {
           </h1>
           <p style={{
             fontSize: '1.3rem',
-            color: '#475569',
+            color: '#cbd5e1',
             lineHeight: '1.6',
             marginBottom: '40px'
           }}>
@@ -68,7 +69,7 @@ function Analytics() {
       {/* Services Overview */}
       <section style={{
         padding: '60px 20px',
-        backgroundColor: 'white'
+        backgroundColor: '#1e293b'
       }}>
         <div style={{
           maxWidth: '1200px',
@@ -78,7 +79,7 @@ function Analytics() {
             fontSize: '2.5rem',
             textAlign: 'center',
             marginBottom: '50px',
-            color: '#1e293b'
+            color: '#f8fafc'
           }}>
             Analytics Services
           </h2>
@@ -109,12 +110,12 @@ function Analytics() {
               <h3 style={{
                 fontSize: '1.5rem',
                 marginBottom: '15px',
-                color: '#1e293b'
+                color: '#f8fafc'
               }}>
                 Performance Tracking
               </h3>
               <p style={{
-                color: '#475569',
+                color: '#cbd5e1',
                 lineHeight: '1.6'
               }}>
                 Comprehensive tracking of key performance indicators to measure your business success.
@@ -142,12 +143,12 @@ function Analytics() {
               <h3 style={{
                 fontSize: '1.5rem',
                 marginBottom: '15px',
-                color: '#1e293b'
+                color: '#f8fafc'
               }}>
                 Data Analysis
               </h3>
               <p style={{
-                color: '#475569',
+                color: '#cbd5e1',
                 lineHeight: '1.6'
               }}>
                 Deep analysis of your business data to uncover trends and opportunities for growth.
@@ -175,12 +176,12 @@ function Analytics() {
               <h3 style={{
                 fontSize: '1.5rem',
                 marginBottom: '15px',
-                color: '#1e293b'
+                color: '#f8fafc'
               }}>
                 ROI Measurement
               </h3>
               <p style={{
-                color: '#475569',
+                color: '#cbd5e1',
                 lineHeight: '1.6'
               }}>
                 Accurate measurement of return on investment for all your marketing and business activities.
@@ -208,12 +209,12 @@ function Analytics() {
               <h3 style={{
                 fontSize: '1.5rem',
                 marginBottom: '15px',
-                color: '#1e293b'
+                color: '#f8fafc'
               }}>
                 Customer Insights
               </h3>
               <p style={{
-                color: '#475569',
+                color: '#cbd5e1',
                 lineHeight: '1.6'
               }}>
                 Understand your customers better with detailed analytics and behavioral insights.
@@ -252,8 +253,8 @@ function Analytics() {
           <button
             onClick={() => navigate('/contact')}
             style={{
-              background: 'white',
-              color: '#60a5fa',
+              background: '#334155',
+              color: '#93c5fd',
               padding: '18px 45px',
               fontSize: '1.3rem',
               border: 'none',
@@ -280,7 +281,7 @@ function Analytics() {
       {/* Why Choose Us */}
       <section style={{
         padding: '60px 20px',
-        backgroundColor: '#f8fafc'
+        backgroundColor: '#0f172a'
       }}>
         <div style={{
           maxWidth: '1200px',
@@ -290,7 +291,7 @@ function Analytics() {
             fontSize: '2.5rem',
             textAlign: 'center',
             marginBottom: '50px',
-            color: '#1e293b'
+            color: '#f8fafc'
           }}>
             Why Choose Pixelwave for Analytics?
           </h2>
@@ -322,12 +323,12 @@ function Analytics() {
               <h3 style={{
                 fontSize: '1.5rem',
                 marginBottom: '15px',
-                color: '#1e293b'
+                color: '#f8fafc'
               }}>
                 Proven Results
               </h3>
               <p style={{
-                color: '#475569',
+                color: '#cbd5e1',
                 lineHeight: '1.6'
               }}>
                 We've helped businesses increase their ROI through data driven insights and strategic optimization. Your success is our mission.
@@ -355,12 +356,12 @@ function Analytics() {
               <h3 style={{
                 fontSize: '1.5rem',
                 marginBottom: '15px',
-                color: '#1e293b'
+                color: '#f8fafc'
               }}>
                 Personalized Strategy
               </h3>
               <p style={{
-                color: '#475569',
+                color: '#cbd5e1',
                 lineHeight: '1.6'
               }}>
                 Every business is unique. We create custom analytics strategies tailored to your specific industry, goals, and challenges.
@@ -388,12 +389,12 @@ function Analytics() {
               <h3 style={{
                 fontSize: '1.5rem',
                 marginBottom: '15px',
-                color: '#1e293b'
+                color: '#f8fafc'
               }}>
                 Expert Team
               </h3>
               <p style={{
-                color: '#475569',
+                color: '#cbd5e1',
                 lineHeight: '1.6'
               }}>
                 Our certified analytics experts bring years of experience and deep industry knowledge to every project. We speak your language.
@@ -421,12 +422,12 @@ function Analytics() {
               <h3 style={{
                 fontSize: '1.5rem',
                 marginBottom: '15px',
-                color: '#1e293b'
+                color: '#f8fafc'
               }}>
                 Ongoing Support
               </h3>
               <p style={{
-                color: '#475569',
+                color: '#cbd5e1',
                 lineHeight: '1.6'
               }}>
                 We don't just set up analytics we're your long term partner. Reports, strategy sessions, and continuous optimization.

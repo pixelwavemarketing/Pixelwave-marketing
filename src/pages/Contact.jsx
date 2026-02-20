@@ -25,12 +25,13 @@ function Contact() {
         description="Get in touch with PixelWave Marketing for digital marketing, web development, and SEO services. Contact us for a free consultation."
         keywords="contact PixelWave Marketing, digital marketing contact, web development consultation, SEO services"
         canonicalUrl="https://usepixelwave.com/contact"
-        structuredDataType="Organization"
+        structuredDataType="organization"
       />
       <div className="other-page" style={{
         display: 'flex',
         flexDirection: 'column',
-        minHeight: '100vh'
+        minHeight: '100vh',
+        backgroundColor: '#0f172a'
       }}>
       <Header />
       <Breadcrumbs />
@@ -71,7 +72,7 @@ function Contact() {
         padding: '60px 20px',
         maxWidth: '1200px',
         margin: '0 auto',
-        backgroundColor: '#ffffff'
+        backgroundColor: '#1e293b'
       }}>
         
         <div style={{
@@ -87,11 +88,11 @@ function Contact() {
             width: '100%'
           }}>
             <div style={{
-              background: 'linear-gradient(135deg, #f8fafc 0%, #ffffff 100%)',
+              background: 'linear-gradient(135deg, #1e293b 0%, #334155 100%)',
               padding: '40px',
               borderRadius: '16px',
-              border: '2px solid #e2e8f0',
-              boxShadow: '0 10px 30px rgba(0, 0, 0, 0.08)',
+              border: '2px solid #334155',
+              boxShadow: '0 10px 30px rgba(0, 0, 0, 0.3)',
               position: 'relative',
               overflow: 'hidden'
             }}>
@@ -110,7 +111,7 @@ function Contact() {
                 <h2 style={{
                   fontSize: '2rem',
                   marginBottom: '16px',
-                  color: '#1e293b',
+                  color: '#f8fafc',
                   fontWeight: '700',
                   background: 'linear-gradient(135deg, #9e74d0 0%, #ba9fe7 100%)',
                   WebkitBackgroundClip: 'text',
@@ -122,7 +123,7 @@ function Contact() {
                 
                 <p style={{
                   fontSize: '1.1rem',
-                  color: '#475569',
+                  color: '#cbd5e1',
                   lineHeight: '1.7',
                   marginBottom: '32px'
                 }}>
@@ -139,21 +140,21 @@ function Contact() {
                   alignItems: 'center',
                   gap: '16px',
                   padding: '16px',
-                  backgroundColor: 'white',
+                  backgroundColor: '#334155',
                   borderRadius: '12px',
-                  border: '1px solid #e2e8f0',
+                  border: '1px solid #475569',
                   transition: 'all 0.3s ease',
-                  boxShadow: '0 2px 8px rgba(0, 0, 0, 0.04)'
+                  boxShadow: '0 2px 8px rgba(0, 0, 0, 0.2)'
                 }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.transform = 'translateX(4px)'
-                  e.currentTarget.style.boxShadow = '0 4px 12px rgba(59, 130, 246, 0.15)'
+                  e.currentTarget.style.boxShadow = '0 4px 12px rgba(158, 116, 208, 0.25)'
                   e.currentTarget.style.borderColor = '#9e74d0'
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.transform = 'translateX(0)'
-                  e.currentTarget.style.boxShadow = '0 2px 8px rgba(0, 0, 0, 0.04)'
-                  e.currentTarget.style.borderColor = '#e2e8f0'
+                  e.currentTarget.style.boxShadow = '0 2px 8px rgba(0, 0, 0, 0.2)'
+                  e.currentTarget.style.borderColor = '#475569'
                 }}>
                   <div style={{
                     width: '48px',
@@ -172,7 +173,7 @@ function Contact() {
                     <h3 style={{
                       fontSize: '0.9rem',
                       fontWeight: '600',
-                      color: '#475569',
+                      color: '#cbd5e1',
                       marginBottom: '4px',
                       textTransform: 'uppercase',
                       letterSpacing: '0.5px',
@@ -183,7 +184,7 @@ function Contact() {
                     <a 
                       href={`tel:${siteConfig.company.telephone}`}
                       style={{
-                        color: '#1e293b',
+                        color: '#f8fafc',
                         textDecoration: 'none',
                         fontSize: '1.1rem',
                         fontWeight: '600',
@@ -193,7 +194,7 @@ function Contact() {
                         e.currentTarget.style.color = '#3b82f6'
                       }}
                       onMouseLeave={(e) => {
-                        e.currentTarget.style.color = '#1e293b'
+                        e.currentTarget.style.color = '#f8fafc'
                       }}
                     >
                       {siteConfig.company.telephone}
@@ -207,9 +208,9 @@ function Contact() {
                   alignItems: 'center',
                   gap: '16px',
                   padding: '16px',
-                  backgroundColor: 'white',
+                  backgroundColor: '#334155',
                   borderRadius: '12px',
-                  border: '1px solid #e2e8f0',
+                  border: '1px solid #475569',
                   transition: 'all 0.3s ease',
                   boxShadow: '0 2px 8px rgba(0, 0, 0, 0.04)'
                 }}
@@ -221,7 +222,7 @@ function Contact() {
                 onMouseLeave={(e) => {
                   e.currentTarget.style.transform = 'translateX(0)'
                   e.currentTarget.style.boxShadow = '0 2px 8px rgba(0, 0, 0, 0.04)'
-                  e.currentTarget.style.borderColor = '#e2e8f0'
+                  e.currentTarget.style.borderColor = '#475569'
                 }}>
                   <div style={{
                     width: '48px',
@@ -240,7 +241,7 @@ function Contact() {
                     <h3 style={{
                       fontSize: '0.9rem',
                       fontWeight: '600',
-                      color: '#475569',
+                      color: '#cbd5e1',
                       marginBottom: '4px',
                       textTransform: 'uppercase',
                       letterSpacing: '0.5px',
@@ -251,7 +252,7 @@ function Contact() {
                     <a 
                       href={`mailto:${siteConfig.company.email}`}
                       style={{
-                        color: '#1e293b',
+                        color: '#f8fafc',
                         textDecoration: 'none',
                         fontSize: '1rem',
                         fontWeight: '600',
@@ -262,7 +263,7 @@ function Contact() {
                         e.currentTarget.style.color = '#667eea'
                       }}
                       onMouseLeave={(e) => {
-                        e.currentTarget.style.color = '#1e293b'
+                        e.currentTarget.style.color = '#f8fafc'
                       }}
                     >
                       {siteConfig.company.email}
@@ -275,9 +276,9 @@ function Contact() {
                   alignItems: 'center',
                   gap: '16px',
                   padding: '16px',
-                  backgroundColor: 'white',
+                  backgroundColor: '#334155',
                   borderRadius: '12px',
-                  border: '1px solid #e2e8f0',
+                  border: '1px solid #475569',
                   transition: 'all 0.3s ease',
                   boxShadow: '0 2px 8px rgba(0, 0, 0, 0.04)'
                 }}
@@ -289,7 +290,7 @@ function Contact() {
                 onMouseLeave={(e) => {
                   e.currentTarget.style.transform = 'translateX(0)'
                   e.currentTarget.style.boxShadow = '0 2px 8px rgba(0, 0, 0, 0.04)'
-                  e.currentTarget.style.borderColor = '#e2e8f0'
+                  e.currentTarget.style.borderColor = '#475569'
                 }}>
                   <div style={{
                     width: '48px',
@@ -308,7 +309,7 @@ function Contact() {
                     <h3 style={{
                       fontSize: '0.9rem',
                       fontWeight: '600',
-                      color: '#475569',
+                      color: '#cbd5e1',
                       marginBottom: '4px',
                       textTransform: 'uppercase',
                       letterSpacing: '0.5px',
@@ -317,7 +318,7 @@ function Contact() {
                       Business Hours
                     </h3>
                     <p style={{
-                      color: '#1e293b',
+                      color: '#f8fafc',
                       fontSize: '1rem',
                       margin: 0,
                       fontWeight: '600'
@@ -333,7 +334,7 @@ function Contact() {
                 <h3 style={{
                   fontSize: '1.1rem',
                   fontWeight: '700',
-                  color: '#1e293b',
+                  color: '#f8fafc',
                   marginBottom: '20px'
                 }}>
                   Connect With Us

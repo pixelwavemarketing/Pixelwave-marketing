@@ -11,10 +11,18 @@ export default defineConfig({
       ext: '.gz'
     })
   ],
+  resolve: {
+    // Prevent duplicate React instances (fixes "Invalid hook call" / useContext null)
+    dedupe: ['react', 'react-dom', 'react-router-dom']
+  },
   server: {
     host: '0.0.0.0',
     port: 5173,
-    hmr: true,
+    hmr: {
+      protocol: 'ws',
+      host: 'localhost',
+      clientPort: 5173
+    },
     watch: {
       usePolling: true
     }

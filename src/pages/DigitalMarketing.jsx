@@ -20,7 +20,8 @@ function DigitalMarketing() {
     <div className="other-page" style={{
       display: 'flex',
       flexDirection: 'column',
-      minHeight: '100vh'
+      minHeight: '100vh',
+      backgroundColor: '#0f172a'
     }}>
       <SEOOptimizer 
         title="Digital Marketing Agency | SEO & Google Ads for Service Businesses"
@@ -37,7 +38,7 @@ function DigitalMarketing() {
       {/* Hero Section */}
       <section style={{
         padding: '80px 20px',
-        backgroundColor: '#f8fafc',
+        backgroundColor: '#0f172a',
         textAlign: 'center'
       }}>
         <div style={{
@@ -46,7 +47,7 @@ function DigitalMarketing() {
         }}>
           <h1 style={{
             fontSize: '3rem',
-            color: '#1e293b',
+            color: '#f8fafc',
             marginBottom: '20px',
             fontWeight: '700'
           }}>
@@ -54,7 +55,7 @@ function DigitalMarketing() {
           </h1>
           <p style={{
             fontSize: '1.3rem',
-            color: '#475569',
+            color: '#cbd5e1',
             lineHeight: '1.6',
             marginBottom: '40px'
           }}>
@@ -76,7 +77,7 @@ function DigitalMarketing() {
       {/* Services Overview */}
       <section style={{
         padding: '60px 20px',
-        backgroundColor: 'white'
+        backgroundColor: '#1e293b'
       }}>
         <div style={{
           maxWidth: '1200px',
@@ -86,7 +87,7 @@ function DigitalMarketing() {
             fontSize: '2.5rem',
             textAlign: 'center',
             marginBottom: '50px',
-            color: '#1e293b'
+            color: '#f8fafc'
           }}>
             Digital Marketing Services for Service Businesses
           </h2>
@@ -117,12 +118,12 @@ function DigitalMarketing() {
               <h3 style={{
                 fontSize: '1.5rem',
                 marginBottom: '15px',
-                color: '#1e293b'
+                color: '#f8fafc'
               }}>
                 Google Ads Management
               </h3>
               <p style={{
-                color: '#475569',
+                color: '#cbd5e1',
                 lineHeight: '1.6'
               }}>
                 Strategic Google Ads campaigns for service businesses including HVAC, plumbing, electrical, landscaping, and more. Target customers and maximize your advertising ROI with our proven strategies.
@@ -150,12 +151,12 @@ function DigitalMarketing() {
               <h3 style={{
                 fontSize: '1.5rem',
                 marginBottom: '15px',
-                color: '#1e293b'
+                color: '#f8fafc'
               }}>
                 Social Media Marketing
               </h3>
               <p style={{
-                color: '#475569',
+                color: '#cbd5e1',
                 lineHeight: '1.6'
               }}>
                 Build your service business brand across Facebook, Instagram, LinkedIn, and other platforms with engaging content that drives customer engagement and conversions.
@@ -183,12 +184,12 @@ function DigitalMarketing() {
               <h3 style={{
                 fontSize: '1.5rem',
                 marginBottom: '15px',
-                color: '#1e293b'
+                color: '#f8fafc'
               }}>
                 SEO Services
               </h3>
               <p style={{
-                color: '#475569',
+                color: '#cbd5e1',
                 lineHeight: '1.6'
               }}>
                 Improve your service business search rankings and drive organic traffic with our comprehensive SEO strategies tailored for service businesses across all industries.
@@ -227,8 +228,8 @@ function DigitalMarketing() {
           <button
             onClick={() => navigate('/contact')}
             style={{
-              background: 'white',
-              color: '#9e74d0',
+              background: '#334155',
+              color: '#c4b5fd',
               padding: '18px 45px',
               fontSize: '1.3rem',
               border: 'none',
@@ -255,7 +256,7 @@ function DigitalMarketing() {
       {/* Why Choose Us */}
       <section style={{
         padding: '60px 20px',
-        backgroundColor: '#f8fafc'
+        backgroundColor: '#0f172a'
       }}>
         <div style={{
           maxWidth: '1200px',
@@ -265,7 +266,7 @@ function DigitalMarketing() {
             fontSize: '2.5rem',
             textAlign: 'center',
             marginBottom: '50px',
-            color: '#1e293b'
+            color: '#f8fafc'
           }}>
             Why Choose Pixelwave for Digital Marketing?
           </h2>
@@ -285,12 +286,12 @@ function DigitalMarketing() {
               <h3 style={{
                 fontSize: '1.3rem',
                 marginBottom: '15px',
-                color: '#1e293b'
+                color: '#f8fafc'
               }}>
                 Industry Expertise
               </h3>
               <p style={{
-                color: '#475569',
+                color: '#cbd5e1',
                 lineHeight: '1.6'
               }}>
                 We understand various industries and can help you reach your target customers effectively.
@@ -306,12 +307,12 @@ function DigitalMarketing() {
               <h3 style={{
                 fontSize: '1.3rem',
                 marginBottom: '15px',
-                color: '#1e293b'
+                color: '#f8fafc'
               }}>
                 Data Driven Results
               </h3>
               <p style={{
-                color: '#475569',
+                color: '#cbd5e1',
                 lineHeight: '1.6'
               }}>
                 Every strategy is backed by analytics and reporting so you can see your ROI.
@@ -327,12 +328,12 @@ function DigitalMarketing() {
               <h3 style={{
                 fontSize: '1.3rem',
                 marginBottom: '15px',
-                color: '#1e293b'
+                color: '#f8fafc'
               }}>
                 Transparent Communication
               </h3>
               <p style={{
-                color: '#475569',
+                color: '#cbd5e1',
                 lineHeight: '1.6'
               }}>
                 Regular updates and clear reporting keep you informed about your campaign performance.
@@ -345,7 +346,7 @@ function DigitalMarketing() {
       {/* Process Section */}
       <section style={{
         padding: '60px 20px',
-        backgroundColor: 'white'
+        backgroundColor: '#1e293b'
       }}>
         <div style={{
           maxWidth: '1000px',
@@ -355,7 +356,7 @@ function DigitalMarketing() {
             fontSize: '2.5rem',
             textAlign: 'center',
             marginBottom: '50px',
-            color: '#1e293b'
+            color: '#f8fafc'
           }}>
             Our Digital Marketing Process
           </h2>
@@ -390,12 +391,12 @@ function DigitalMarketing() {
               <h3 style={{
                 fontSize: '1.3rem',
                 marginBottom: '15px',
-                color: '#1e293b'
+                color: '#f8fafc'
               }}>
                 Strategy Development
               </h3>
               <p style={{
-                color: '#475569',
+                color: '#cbd5e1',
                 lineHeight: '1.6'
               }}>
                 We analyze your business, competitors, and target audience to create a customized marketing strategy.
@@ -426,12 +427,12 @@ function DigitalMarketing() {
               <h3 style={{
                 fontSize: '1.3rem',
                 marginBottom: '15px',
-                color: '#1e293b'
+                color: '#f8fafc'
               }}>
                 Campaign Setup
               </h3>
               <p style={{
-                color: '#475569',
+                color: '#cbd5e1',
                 lineHeight: '1.6'
               }}>
                 We implement your marketing campaigns across all relevant channels with optimized targeting.
@@ -462,12 +463,12 @@ function DigitalMarketing() {
               <h3 style={{
                 fontSize: '1.3rem',
                 marginBottom: '15px',
-                color: '#1e293b'
+                color: '#f8fafc'
               }}>
                 Optimization
               </h3>
               <p style={{
-                color: '#475569',
+                color: '#cbd5e1',
                 lineHeight: '1.6'
               }}>
                 Continuous monitoring and optimization ensure your campaigns perform at their best.
@@ -498,12 +499,12 @@ function DigitalMarketing() {
               <h3 style={{
                 fontSize: '1.3rem',
                 marginBottom: '15px',
-                color: '#1e293b'
+                color: '#f8fafc'
               }}>
                 Results & Growth
               </h3>
               <p style={{
-                color: '#475569',
+                color: '#cbd5e1',
                 lineHeight: '1.6'
               }}>
                 Regular reporting shows your growth and we scale successful strategies for continued success.

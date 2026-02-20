@@ -58,7 +58,7 @@ function Landing() {
 					display: 'flex',
 					flexDirection: 'column',
 					minHeight: '100vh',
-					backgroundColor: '#f1f5f9',
+					backgroundColor: '#0f172a',
 					paddingTop: isMobile ? '70px' : '60px'
 				}}
 			>
@@ -162,7 +162,7 @@ function Landing() {
 				<section
 					style={{
 						padding: '60px 20px',
-						backgroundColor: '#f8fafc'
+						backgroundColor: '#1e293b'
 					}}
 				>
 					<div
@@ -196,9 +196,10 @@ function Landing() {
 							<div
 								key={item.title}
 								style={{
-									backgroundColor: 'white',
+									backgroundColor: '#1e293b',
 									padding: '24px',
 									borderRadius: '16px',
+									border: '1px solid #334155',
 									border: '1px solid #e2e8f0',
 									boxShadow: '0 10px 25px rgba(15, 23, 42, 0.05)',
 									flex: '1 1 260px',
@@ -208,7 +209,7 @@ function Landing() {
 								<h3
 									style={{
 										fontSize: '1.4rem',
-										color: '#0f172a',
+										color: '#f8fafc',
 										marginBottom: '12px'
 									}}
 								>
@@ -216,7 +217,7 @@ function Landing() {
 								</h3>
 								<p
 									style={{
-										color: '#475569',
+										color: '#cbd5e1',
 										lineHeight: '1.6'
 									}}
 								>
@@ -316,7 +317,7 @@ function Landing() {
 				<section
 					style={{
 						padding: '60px 20px',
-						backgroundColor: '#f8fafc'
+						backgroundColor: '#1e293b'
 					}}
 				>
 					<Testimonials
@@ -329,7 +330,7 @@ function Landing() {
 				<section
 					style={{
 						padding: '70px 20px 90px',
-						backgroundColor: 'white'
+						backgroundColor: '#1e293b'
 					}}
 				>
 					<div
@@ -343,7 +344,7 @@ function Landing() {
 							style={{
 								fontSize: '2.4rem',
 								fontWeight: '800',
-								color: '#0f172a',
+								color: '#f8fafc',
 								marginBottom: '24px'
 							}}
 						>
@@ -352,7 +353,7 @@ function Landing() {
 						<p
 							style={{
 								fontSize: '1.2rem',
-								color: '#475569',
+								color: '#cbd5e1',
 								lineHeight: '1.7',
 								marginBottom: '36px'
 							}}

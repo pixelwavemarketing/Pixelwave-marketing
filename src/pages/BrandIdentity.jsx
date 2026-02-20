@@ -19,7 +19,8 @@ function BrandIdentity() {
     <div className="other-page" style={{
       display: 'flex',
       flexDirection: 'column',
-      minHeight: '100vh'
+      minHeight: '100vh',
+      backgroundColor: '#0f172a'
     }}>
       <SEOOptimizer 
         title="Brand Identity Design | Pixelwave Marketing"
@@ -36,7 +37,7 @@ function BrandIdentity() {
       {/* Hero Section */}
       <section style={{
         padding: '80px 20px',
-        backgroundColor: '#f8fafc',
+        backgroundColor: '#0f172a',
         textAlign: 'center'
       }}>
         <div style={{
@@ -45,7 +46,7 @@ function BrandIdentity() {
         }}>
           <h1 style={{
             fontSize: '3rem',
-            color: '#1e293b',
+            color: '#f8fafc',
             marginBottom: '20px',
             fontWeight: '700'
           }}>
@@ -53,7 +54,7 @@ function BrandIdentity() {
           </h1>
           <p style={{
             fontSize: '1.3rem',
-            color: '#475569',
+            color: '#cbd5e1',
             lineHeight: '1.6',
             marginBottom: '40px'
           }}>
@@ -75,7 +76,7 @@ function BrandIdentity() {
       {/* Services Overview */}
       <section style={{
         padding: '60px 20px',
-        backgroundColor: 'white'
+        backgroundColor: '#1e293b'
       }}>
         <div style={{
           maxWidth: '1200px',
@@ -85,7 +86,7 @@ function BrandIdentity() {
             fontSize: '2.5rem',
             textAlign: 'center',
             marginBottom: '50px',
-            color: '#1e293b'
+            color: '#f8fafc'
           }}>
             Brand Identity Services
           </h2>
@@ -116,12 +117,12 @@ function BrandIdentity() {
               <h3 style={{
                 fontSize: '1.5rem',
                 marginBottom: '15px',
-                color: '#1e293b'
+                color: '#f8fafc'
               }}>
                 Logo Design
               </h3>
               <p style={{
-                color: '#475569',
+                color: '#cbd5e1',
                 lineHeight: '1.6'
               }}>
                 Custom logo designs that capture your brand essence and work across all platforms.
@@ -150,12 +151,12 @@ function BrandIdentity() {
               <h3 style={{
                 fontSize: '1.5rem',
                 marginBottom: '15px',
-                color: '#1e293b'
+                color: '#f8fafc'
               }}>
                 Business Card Design
               </h3>
               <p style={{
-                color: '#475569',
+                color: '#cbd5e1',
                 lineHeight: '1.6'
               }}>
                 Professional business cards that make a lasting impression.
@@ -184,12 +185,12 @@ function BrandIdentity() {
               <h3 style={{
                 fontSize: '1.5rem',
                 marginBottom: '15px',
-                color: '#1e293b'
+                color: '#f8fafc'
               }}>
                 Brand Guidelines
               </h3>
               <p style={{
-                color: '#475569',
+                color: '#cbd5e1',
                 lineHeight: '1.6'
               }}>
                 Comprehensive brand guidelines ensuring consistent application across all materials.
@@ -218,12 +219,12 @@ function BrandIdentity() {
               <h3 style={{
                 fontSize: '1.5rem',
                 marginBottom: '15px',
-                color: '#1e293b'
+                color: '#f8fafc'
               }}>
                 Visual Identity
               </h3>
               <p style={{
-                color: '#475569',
+                color: '#cbd5e1',
                 lineHeight: '1.6'
               }}>
                 Complete visual identity including color palettes, typography, and design elements.
@@ -262,8 +263,8 @@ function BrandIdentity() {
           <button
             onClick={() => navigate('/contact')}
             style={{
-              background: 'white',
-              color: '#8b5cf6',
+              background: '#334155',
+              color: '#a78bfa',
               padding: '18px 45px',
               fontSize: '1.3rem',
               border: 'none',

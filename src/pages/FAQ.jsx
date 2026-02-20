@@ -37,10 +37,6 @@ function FAQ() {
     {
       question: "What is your process for starting a new project?",
       answer: "Our process begins with a free consultation to understand your business goals and challenges. We then create a customized strategy, present our recommendations, and once approved, we implement the solution with regular check ins and reporting. We maintain open communication throughout the entire process."
-    },
-    {
-      question: "Do you provide training for managing your own marketing?",
-      answer: "Yes, we believe in empowering our clients with knowledge. We provide training and resources to help you understand and manage your digital marketing efforts. This includes tutorials, documentation, and ongoing support to ensure you feel confident in your marketing strategy."
     }
   ]
 
@@ -57,7 +53,8 @@ function FAQ() {
       <div className="other-page" style={{
         display: 'flex',
         flexDirection: 'column',
-        minHeight: '100vh'
+        minHeight: '100vh',
+        backgroundColor: '#0f172a'
       }}>
         
       <Header />
@@ -66,7 +63,7 @@ function FAQ() {
       {/* Hero Section */}
       <section style={{
         padding: '80px 20px',
-        backgroundColor: '#f8fafc',
+        backgroundColor: '#1e293b',
         textAlign: 'center'
       }}>
         <div style={{
@@ -75,7 +72,7 @@ function FAQ() {
         }}>
           <h1 style={{
             fontSize: '3rem',
-            color: '#1e293b',
+            color: '#f8fafc',
             marginBottom: '20px',
             fontWeight: '700'
           }}>
@@ -83,7 +80,7 @@ function FAQ() {
           </h1>
           <p style={{
             fontSize: '1.2rem',
-            color: '#475569',
+            color: '#cbd5e1',
             lineHeight: '1.6',
             marginBottom: '40px'
           }}>
@@ -102,14 +99,14 @@ function FAQ() {
           <div key={index} style={{
             marginBottom: '40px',
             padding: '30px',
-            backgroundColor: '#ffffff',
+            backgroundColor: '#1e293b',
             borderRadius: '12px',
             boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)'
           }}>
             <h3 style={{
               fontSize: '1.4rem',
               marginBottom: '15px',
-              color: '#1e293b',
+              color: '#f8fafc',
               fontWeight: '600'
             }}>
               {faq.question}
@@ -117,7 +114,7 @@ function FAQ() {
             <p style={{
               fontSize: '1.3rem',
               lineHeight: '1.6',
-              color: '#475569',
+              color: '#cbd5e1',
               marginBottom: faq.linkUrl ? '15px' : '0'
             }}>
               {faq.answer}
@@ -146,19 +143,19 @@ function FAQ() {
           textAlign: 'center',
           marginTop: '60px',
           padding: '40px',
-          backgroundColor: '#f1f5f9',
+          backgroundColor: '#334155',
           borderRadius: '12px'
         }}>
           <h3 style={{
             fontSize: '2rem',
-            color: '#1e293b',
+            color: '#f8fafc',
             marginBottom: '20px'
           }}>
             Still Have Questions?
           </h3>
           <p style={{
             fontSize: '1.1rem',
-            color: '#475569',
+            color: '#cbd5e1',
             marginBottom: '30px'
           }}>
             We're here to help! Contact us for personalized answers to your specific questions.

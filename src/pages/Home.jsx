@@ -47,12 +47,13 @@ function Home() {
 				description="Leading service business marketing agency. AI chatbots, service business websites, SEO, and digital marketing for HVAC, plumbing, electrical, landscaping, and more."
 				keywords="service business marketing, service business website design, AI chatbot, SEO services, HVAC marketing, plumber website design, electrician marketing, service business lead generation, digital marketing agency, service business lead generation"
 				canonicalUrl="https://usepixelwave.com/"
-				structuredDataType="Organization"
+				structuredDataType="organization"
 			/>
 			<main className="home-page" style={{
 				display: 'flex',
 				flexDirection: 'column',
-				minHeight: '100vh'
+				minHeight: '100vh',
+				backgroundColor: '#0f172a'
 			}}>
 				<Header />
 				<section style={{ 
@@ -73,7 +74,7 @@ function Home() {
 				}}>
 					<h1 style={{
 						fontSize: '2.8rem',
-						color: '#1e293b',
+						color: '#f8fafc',
 						marginBottom: '20px',
 						fontWeight: '700'
 					}}>
@@ -82,7 +83,7 @@ function Home() {
 					
 					<p style={{
 						fontSize: '1.3rem',
-						color: '#475569',
+						color: '#cbd5e1',
 						lineHeight: '1.6',
 						marginBottom: '30px',
 						fontWeight: '500'
@@ -91,15 +92,15 @@ function Home() {
 					</p>
 
 					<div style={{
-						backgroundColor: '#f8fafc',
+						backgroundColor: '#1e293b',
 						padding: '25px',
 						borderRadius: '12px',
-						border: '2px solid #e2e8f0',
+						border: '2px solid #334155',
 						marginBottom: '40px'
 					}}>
 						<h2 style={{
 							fontSize: '1.4rem',
-							color: '#1e293b',
+							color: '#f8fafc',
 							marginBottom: '15px',
 							fontWeight: '600'
 						}}>
@@ -111,15 +112,15 @@ function Home() {
 							gap: '15px',
 							justifyContent: 'center',
 							fontSize: '1rem',
-							color: '#475569'
+							color: '#cbd5e1'
 						}}>
-							<span style={{ backgroundColor: 'white', padding: '8px 16px', borderRadius: '20px', border: '1px solid #e2e8f0' }}>Service Businesses</span>
-							<span style={{ backgroundColor: 'white', padding: '8px 16px', borderRadius: '20px', border: '1px solid #e2e8f0' }}>Landscapers</span>
-							<span style={{ backgroundColor: 'white', padding: '8px 16px', borderRadius: '20px', border: '1px solid #e2e8f0' }}>HVAC Companies</span>
-							<span style={{ backgroundColor: 'white', padding: '8px 16px', borderRadius: '20px', border: '1px solid #e2e8f0' }}>Plumbers</span>
-							<span style={{ backgroundColor: 'white', padding: '8px 16px', borderRadius: '20px', border: '1px solid #e2e8f0' }}>Electricians</span>
-							<span style={{ backgroundColor: 'white', padding: '8px 16px', borderRadius: '20px', border: '1px solid #e2e8f0' }}>Pressure Washing</span>
-							<span style={{ backgroundColor: 'white', padding: '8px 16px', borderRadius: '20px', border: '1px solid #e2e8f0' }}>And Many More</span>
+							<span style={{ backgroundColor: '#334155', padding: '8px 16px', borderRadius: '20px', border: '1px solid #e2e8f0' }}>Service Businesses</span>
+							<span style={{ backgroundColor: '#334155', padding: '8px 16px', borderRadius: '20px', border: '1px solid #e2e8f0' }}>Landscapers</span>
+							<span style={{ backgroundColor: '#334155', padding: '8px 16px', borderRadius: '20px', border: '1px solid #e2e8f0' }}>HVAC Companies</span>
+							<span style={{ backgroundColor: '#334155', padding: '8px 16px', borderRadius: '20px', border: '1px solid #e2e8f0' }}>Plumbers</span>
+							<span style={{ backgroundColor: '#334155', padding: '8px 16px', borderRadius: '20px', border: '1px solid #e2e8f0' }}>Electricians</span>
+							<span style={{ backgroundColor: '#334155', padding: '8px 16px', borderRadius: '20px', border: '1px solid #e2e8f0' }}>Pressure Washing</span>
+							<span style={{ backgroundColor: '#334155', padding: '8px 16px', borderRadius: '20px', border: '1px solid #e2e8f0' }}>And Many More</span>
 						</div>
 					</div>
 
@@ -166,7 +167,7 @@ function Home() {
 						<div style={{
 							textAlign: 'center',
 							fontSize: '0.9rem',
-							color: '#475569',
+							color: '#cbd5e1',
 							lineHeight: '1.4'
 						}}>
 							<p style={{ margin: '0', fontStyle: 'italic' }}>
@@ -179,7 +180,7 @@ function Home() {
 				{/* Services Section */}
 				<section style={{
 					padding: '60px 20px',
-					backgroundColor: '#f8fafc'
+					backgroundColor: '#1e293b'
 				}}>
 					<div style={{
 						maxWidth: '1200px',
@@ -188,14 +189,14 @@ function Home() {
 					}}>
 						<h2 style={{
 							fontSize: '2.5rem',
-							color: '#1e293b',
+							color: '#f8fafc',
 							marginBottom: '20px'
 						}}>
 							Service Business Marketing Solutions
 						</h2>
 						<p style={{
 							fontSize: '1.2rem',
-							color: '#475569',
+							color: '#cbd5e1',
 							marginBottom: '50px'
 						}}>
 							Complete digital marketing services for service businesses including HVAC companies, plumbers, electricians, landscapers, and more
@@ -228,13 +229,13 @@ function Home() {
 								</div>
 								<h3 className="service-title" style={{
 									fontSize: '1.5rem',
-									color: '#1e293b',
+									color: '#f8fafc',
 									marginBottom: '15px'
 								}}>
 									AI Chatbot for Service Businesses
 								</h3>
 								<p style={{
-									color: '#475569',
+									color: '#cbd5e1',
 									lineHeight: '1.6'
 								}}>
 									Custom AI chatbot development for service businesses including HVAC, plumbing, electrical, landscaping, and more. Automated lead capture, customer support, and appointment booking 24/7. Never miss another customer inquiry.
@@ -246,13 +247,13 @@ function Home() {
 								onClick={() => navigate('/digital-marketing')}>
 								<h3 className="service-title" style={{
 									fontSize: '1.5rem',
-									color: '#1e293b',
+									color: '#f8fafc',
 									marginBottom: '15px'
 								}}>
 									Digital Marketing Agency
 								</h3>
 								<p style={{
-									color: '#475569',
+									color: '#cbd5e1',
 									lineHeight: '1.6'
 								}}>
 									SEO, Google Ads, and social media marketing for service businesses. Get found on Google and convert leads into booked jobs with our proven strategies.
@@ -264,13 +265,13 @@ function Home() {
 								onClick={() => navigate('/web-development')}>
 								<h3 className="service-title" style={{
 									fontSize: '1.5rem',
-									color: '#1e293b',
+									color: '#f8fafc',
 									marginBottom: '15px'
 								}}>
 									Service Business Website Design
 								</h3>
 								<p style={{
-									color: '#475569',
+									color: '#cbd5e1',
 									lineHeight: '1.6'
 								}}>
 									Professional website development for service businesses including HVAC, plumbing, electrical, landscaping, and more. Mobile-responsive sites with lead capture, online booking, and SEO optimization.
@@ -282,13 +283,13 @@ function Home() {
 								onClick={() => navigate('/analytics')}>
 								<h3 className="service-title" style={{
 									fontSize: '1.5rem',
-									color: '#1e293b',
+									color: '#f8fafc',
 									marginBottom: '15px'
 								}}>
 									Service Business Analytics
 								</h3>
 								<p style={{
-									color: '#475569',
+									color: '#cbd5e1',
 									lineHeight: '1.6'
 								}}>
 									Track marketing ROI and lead sources for service businesses. Google Analytics setup, conversion tracking, and monthly reporting to optimize your marketing spend.
@@ -328,7 +329,7 @@ function Home() {
 						<p style={{
 							fontSize: '1.2rem',
 							marginBottom: '40px',
-							color: '#e2e8f0',
+							color: '#cbd5e1',
 							lineHeight: '1.6'
 						}}>
 							Join service businesses that are getting more leads and booking more jobs with our AI-powered websites and marketing systems. 
